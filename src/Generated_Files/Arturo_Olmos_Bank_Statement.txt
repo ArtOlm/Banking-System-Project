@@ -1,0 +1,814 @@
+Name: Arturo Olmos
+Address: 500 W. University Ave., El Paso, TX 79968
+Phone: (915) 747-5000
+DOB: 6/17/57
+ID: 67
+Checking Account Number: 1000067   Current Checking Account Balance: 96533.13$
+Savings Account Number: 2000067   Current Savings Account Balance: 176834.11$
+Credit Account Number: 3000067   Current Credit Account Balance: 98.65$   Credit Score: 346   Credit Limit: 100
+----------------------------------------------------------------------
+
+Session Start: 2022/03/12 12:51:18
+Starting Checking Balance: 188.17$
+Starting Savings Balance: 13620.51$
+Starting Credit Balance: 0.15$
+
+----------------------------------------------------------------------
+Session End: 2022/03/12 12:56:46
+Ending Checking Balance: 96533.13$
+Ending Savings Balance: 176834.11$
+Ending Credit Balance: 98.65$
+
+----------------------------------------------------------------------
+Account Activity
+----------------
+Arturo Olmos purchased a Random Item 49 for 15.03$ from miners bank using their Checking account at 2022/03/12 12:51:18
+
+Arturo Olmos purchased a Random Item 31 for 21.06$ from miners bank using their Checking account at 2022/03/12 12:51:19
+
+Arturo Olmos purchased a Random Item 24 for 82.40$ from miners bank using their Checking account at 2022/03/12 12:51:19
+
+Arturo Olmos deposited 1331.08$ from their Checking account at 2022/03/12 12:51:20
+
+Arturo Olmos paid 808.41$ from their Checking account to Dalton Bryant into their Savings account at 2022/03/12 12:51:20
+
+Arturo Olmos purchased a Random Item 36 for 99.38$ from miners bank using their Checking account at 2022/03/12 12:51:20
+
+Arturo Olmos paid 332.26$ from their Checking account to Jennifer Smith into their Savings account at 2022/03/12 12:51:21
+
+Arturo Olmos purchased a Random Item 17 for 67.39$ from miners bank using their Checking account at 2022/03/12 12:51:21
+
+Arturo Olmos paid 509.50$ from their Checking account to Brandon Smith into their Savings account at 2022/03/12 12:51:22
+
+Arturo Olmos purchased a Random Item 74 for 43.69$ from miners bank using their Credit account at 2022/03/12 12:51:23
+
+Arturo Olmos deposited 1664.50$ from their Savings account at 2022/03/12 12:51:23
+
+Arturo Olmos deposited 4052.62$ from their Savings account at 2022/03/12 12:51:24
+
+Arturo Olmos purchased a Random Item 75 for 5.33$ from miners bank using their Credit account at 2022/03/12 12:51:24
+
+Arturo Olmos paid 620.62$ from their Checking account to Jessica Martin into their Savings account at 2022/03/12 12:51:25
+
+Arturo Olmos purchased a Random Item 39 for 3.85$ from miners bank using their Credit account at 2022/03/12 12:51:28
+
+Arturo Olmos deposited 61.14$ from their Savings account at 2022/03/12 12:51:28
+
+Arturo Olmos purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/03/12 12:51:28
+
+Arturo Olmos purchased a Trenta Shaken Caramel Iced Latte with half Oat Milk and half Almond Milk with 2.5 Pumps of Vanilla and whip for 13.57$ from miners bank using their Credit account at 2022/03/12 12:51:31
+
+Arturo Olmos purchased a Random Item 75 for 5.33$ from miners bank using their Checking account at 2022/03/12 12:51:31
+
+Arturo Olmos deposited 1680.65$ from their Checking account at 2022/03/12 12:51:31
+
+Arturo Olmos paid 219.54$ from their Checking account to Stitch Disney into their Savings account at 2022/03/12 12:51:32
+
+Arturo Olmos paid 317.53$ from their Checking account to Jeffrey Sloan into their Savings account at 2022/03/12 12:51:32
+
+Arturo Olmos paid 37.04$ from their Checking account to Victoria Ellis into their Savings account at 2022/03/12 12:51:32
+
+Arturo Olmos paid 952.03$ from their Checking account to Patrick Bennett into their Savings account at 2022/03/12 12:51:33
+
+Arturo Olmos paid 294.82$ from their Checking account to Barbara Love into their Savings account at 2022/03/12 12:51:33
+
+Arturo Olmos deposited 249.96$ from their Checking account at 2022/03/12 12:51:33
+
+Arturo Olmos deposited 2993.34$ from their Checking account at 2022/03/12 12:51:36
+
+Arturo Olmos deposited 2263.48$ from their Checking account at 2022/03/12 12:51:40
+
+Arturo Olmos purchased a Post-It Notes for 4.50$ from miners bank using their Checking account at 2022/03/12 12:51:43
+
+Arturo Olmos paid 921.69$ from their Checking account to Mufassa Disney into their Checking account at 2022/03/12 12:51:46
+
+Arturo Olmos purchased a Random Item 65 for 51.55$ from miners bank using their Checking account at 2022/03/12 12:51:46
+
+Arturo Olmos deposited 1831.73$ from their Savings account at 2022/03/12 12:51:47
+
+Arturo Olmos purchased a Random Item 41 for 25.83$ from miners bank using their Checking account at 2022/03/12 12:51:49
+
+Arturo Olmos paid 945.17$ from their Checking account to Carlos Irwin into their Checking account at 2022/03/12 12:51:50
+
+Arturo Olmos purchased a Random Item 73 for 28.21$ from miners bank using their Credit account at 2022/03/12 12:51:50
+
+Arturo Olmos paid 895.93$ from their Checking account to Vanessa Watson into their Savings account at 2022/03/12 12:51:51
+
+Arturo Olmos purchased a Random Item 29 for 46.58$ from miners bank using their Checking account at 2022/03/12 12:51:51
+
+Arturo Olmos paid 954.66$ from their Checking account to Kylie Summers into their Savings account at 2022/03/12 12:51:51
+
+Arturo Olmos paid 568.41$ from their Checking account to Susan Garcia into their Savings account at 2022/03/12 12:51:51
+
+Arturo Olmos deposited 1313.63$ from their Savings account at 2022/03/12 12:51:51
+
+Arturo Olmos deposited 4120.35$ from their Checking account at 2022/03/12 12:51:54
+
+Arturo Olmos purchased a Random Item 30 for 12.76$ from miners bank using their Checking account at 2022/03/12 12:51:54
+
+Arturo Olmos paid 512.31$ from their Checking account to Kara Summers into their Savings account at 2022/03/12 12:51:56
+
+Arturo Olmos purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Checking account at 2022/03/12 12:51:57
+
+Arturo Olmos deposited 1050.34$ from their Checking account at 2022/03/12 12:51:58
+
+Arturo Olmos purchased a Random Item 74 for 43.69$ from miners bank using their Checking account at 2022/03/12 12:51:59
+
+Arturo Olmos paid 656.20$ from their Checking account to Tyrone Alvarado into their Checking account at 2022/03/12 12:52:00
+
+Arturo Olmos paid 179.40$ from their Checking account to Sara Fox into their Checking account at 2022/03/12 12:52:02
+
+Arturo Olmos purchased a Random Item 59 for 99.23$ from miners bank using their Checking account at 2022/03/12 12:52:03
+
+Arturo Olmos paid 88.17$ from their Checking account to Kimberly Richardson into their Savings account at 2022/03/12 12:52:03
+
+Arturo Olmos paid 493.18$ from their Checking account to Craig Brown into their Savings account at 2022/03/12 12:52:05
+
+Arturo Olmos paid 238.54$ from their Checking account to Gregory Sullivan into their Savings account at 2022/03/12 12:52:06
+
+Arturo Olmos purchased a Random Item 18 for 23.83$ from miners bank using their Checking account at 2022/03/12 12:52:08
+
+Arturo Olmos deposited 134.86$ from their Checking account at 2022/03/12 12:52:09
+
+Arturo Olmos paid 12.94$ from their Checking account to Jeremy Morris into their Checking account at 2022/03/12 12:52:09
+
+Arturo Olmos paid 821.51$ from their Checking account to Mark Stewart into their Savings account at 2022/03/12 12:52:09
+
+Arturo Olmos paid 580.57$ from their Checking account to Karen Thomas into their Checking account at 2022/03/12 12:52:09
+
+Arturo Olmos paid 534.88$ from their Checking account to Robert Lyons into their Savings account at 2022/03/12 12:52:10
+
+Arturo Olmos paid 307.74$ from their Checking account to Victor Ross into their Checking account at 2022/03/12 12:52:11
+
+Arturo Olmos deposited 2275.57$ from their Checking account at 2022/03/12 12:52:12
+
+Arturo Olmos deposited 3638.37$ from their Checking account at 2022/03/12 12:52:13
+
+Arturo Olmos purchased a Random Item 76 for 96.82$ from miners bank using their Checking account at 2022/03/12 12:52:14
+
+Arturo Olmos deposited 3472.49$ from their Savings account at 2022/03/12 12:52:16
+
+Arturo Olmos purchased a UTEP T-Shirt for 19.97$ from miners bank using their Checking account at 2022/03/12 12:52:17
+
+Arturo Olmos purchased a Random Item 19 for 35.25$ from miners bank using their Checking account at 2022/03/12 12:52:18
+
+Arturo Olmos deposited 3320.05$ from their Savings account at 2022/03/12 12:52:18
+
+Arturo Olmos purchased a Parking Permit B for 250.00$ from miners bank using their Checking account at 2022/03/12 12:52:18
+
+Arturo Olmos paid 532.52$ from their Checking account to Ruben Edwards into their Checking account at 2022/03/12 12:52:19
+
+Arturo Olmos paid 639.86$ from their Checking account to Richard Brown into their Checking account at 2022/03/12 12:52:21
+
+Arturo Olmos paid 57.03$ from their Checking account to Sherri Armstrong into their Savings account at 2022/03/12 12:52:24
+
+Arturo Olmos deposited 2208.32$ from their Checking account at 2022/03/12 12:52:24
+
+Arturo Olmos paid 522.39$ from their Checking account to Margaret Smith into their Savings account at 2022/03/12 12:52:25
+
+Arturo Olmos paid 897.05$ from their Checking account to Edward Jackson into their Checking account at 2022/03/12 12:52:25
+
+Arturo Olmos deposited 4746.68$ from their Checking account at 2022/03/12 12:52:27
+
+Arturo Olmos paid 95.97$ from their Checking account to Patricia Hughes into their Savings account at 2022/03/12 12:52:28
+
+Arturo Olmos paid 547.93$ from their Checking account to Deanna Cummings into their Checking account at 2022/03/12 12:52:28
+
+Arturo Olmos paid 813.75$ from their Checking account to David Gross into their Savings account at 2022/03/12 12:52:29
+
+Arturo Olmos paid 672.17$ from their Checking account to Tyrone Johnston into their Savings account at 2022/03/12 12:52:29
+
+Arturo Olmos purchased a Random Item 15 for 97.56$ from miners bank using their Checking account at 2022/03/12 12:52:31
+
+Arturo Olmos paid 227.61$ from their Checking account to Emily Jackson into their Savings account at 2022/03/12 12:52:32
+
+Arturo Olmos purchased a UTEP T-Shirt for 19.97$ from miners bank using their Checking account at 2022/03/12 12:52:32
+
+Arturo Olmos paid 743.54$ from their Checking account to Deborah Hunt into their Savings account at 2022/03/12 12:52:32
+
+Arturo Olmos purchased a Random Item 77 for 66.21$ from miners bank using their Checking account at 2022/03/12 12:52:32
+
+Arturo Olmos purchased a Random Item 31 for 21.06$ from miners bank using their Checking account at 2022/03/12 12:52:33
+
+Arturo Olmos deposited 225.24$ from their Checking account at 2022/03/12 12:52:33
+
+Arturo Olmos deposited 4806.11$ from their Checking account at 2022/03/12 12:52:34
+
+Arturo Olmos paid 365.59$ from their Checking account to Alexandra Fox into their Savings account at 2022/03/12 12:52:34
+
+Arturo Olmos paid 413.33$ from their Checking account to Matthew Gonzalez into their Checking account at 2022/03/12 12:52:35
+
+Arturo Olmos purchased a Random Item 32 for 76.55$ from miners bank using their Checking account at 2022/03/12 12:52:36
+
+Arturo Olmos purchased a Random Item 37 for 88.11$ from miners bank using their Checking account at 2022/03/12 12:52:36
+
+Arturo Olmos purchased a Parking Permit C for 300.00$ from miners bank using their Checking account at 2022/03/12 12:52:36
+
+Arturo Olmos paid 128.52$ from their Checking account to Richard Vargas into their Savings account at 2022/03/12 12:52:37
+
+Arturo Olmos paid 789.75$ from their Checking account to Kimberly Kline into their Checking account at 2022/03/12 12:52:37
+
+Arturo Olmos paid 777.73$ from their Checking account to Sonia Durham into their Checking account at 2022/03/12 12:52:37
+
+Arturo Olmos deposited 1782.27$ from their Savings account at 2022/03/12 12:52:37
+
+Arturo Olmos deposited 1218.93$ from their Savings account at 2022/03/12 12:52:38
+
+Arturo Olmos deposited 3005.34$ from their Checking account at 2022/03/12 12:52:38
+
+Arturo Olmos purchased a Random Item 14 for 73.96$ from miners bank using their Checking account at 2022/03/12 12:52:39
+
+Arturo Olmos purchased a Random Item 29 for 46.58$ from miners bank using their Checking account at 2022/03/12 12:52:42
+
+Arturo Olmos purchased a UTEP Hoodie for 29.99$ from miners bank using their Checking account at 2022/03/12 12:52:43
+
+Arturo Olmos paid 68.35$ from their Checking account to Rachel Roberson into their Checking account at 2022/03/12 12:52:44
+
+Arturo Olmos purchased a Random Item 70 for 18.25$ from miners bank using their Checking account at 2022/03/12 12:52:44
+
+Arturo Olmos purchased a Random Item 28 for 94.47$ from miners bank using their Checking account at 2022/03/12 12:52:45
+
+Arturo Olmos paid 261.07$ from their Checking account to Andrew Hall into their Checking account at 2022/03/12 12:52:45
+
+Arturo Olmos paid 257.34$ from their Checking account to Michelle Maldonado into their Savings account at 2022/03/12 12:52:45
+
+Arturo Olmos paid 776.04$ from their Checking account to Jerry Smith into their Checking account at 2022/03/12 12:52:47
+
+Arturo Olmos purchased a Random Item 61 for 24.63$ from miners bank using their Checking account at 2022/03/12 12:52:47
+
+Arturo Olmos paid 708.95$ from their Checking account to Sheila Lewis into their Savings account at 2022/03/12 12:52:48
+
+Arturo Olmos paid 364.49$ from their Checking account to Emily Brady into their Savings account at 2022/03/12 12:52:49
+
+Arturo Olmos deposited 1272.07$ from their Savings account at 2022/03/12 12:52:50
+
+Arturo Olmos paid 354.41$ from their Checking account to Jason Wolfe into their Savings account at 2022/03/12 12:52:50
+
+Arturo Olmos paid 978.52$ from their Checking account to Monica Craig into their Savings account at 2022/03/12 12:52:50
+
+Arturo Olmos deposited 4901.40$ from their Savings account at 2022/03/12 12:52:51
+
+Arturo Olmos deposited 2247.60$ from their Savings account at 2022/03/12 12:52:51
+
+Arturo Olmos purchased a Random Item 22 for 36.48$ from miners bank using their Checking account at 2022/03/12 12:52:54
+
+Arturo Olmos paid 23.52$ from their Checking account to Anthony Sims into their Savings account at 2022/03/12 12:52:54
+
+Arturo Olmos paid 805.93$ from their Checking account to Kirsten Robinson into their Checking account at 2022/03/12 12:52:55
+
+Arturo Olmos purchased a Random Item 1 for 9.06$ from miners bank using their Checking account at 2022/03/12 12:52:56
+
+Arturo Olmos deposited 813.02$ from their Savings account at 2022/03/12 12:52:58
+
+Arturo Olmos paid 877.13$ from their Checking account to Diana Rivera into their Savings account at 2022/03/12 12:52:59
+
+Arturo Olmos paid 710.00$ from their Checking account to Tiffany May into their Checking account at 2022/03/12 12:52:59
+
+Arturo Olmos deposited 991.08$ from their Savings account at 2022/03/12 12:52:59
+
+Arturo Olmos paid 447.23$ from their Checking account to Ray Huynh into their Savings account at 2022/03/12 12:53:00
+
+Arturo Olmos paid 200.22$ from their Checking account to Maria Loya into their Savings account at 2022/03/12 12:53:04
+
+Arturo Olmos paid 671.14$ from their Checking account to Beth Sharp into their Savings account at 2022/03/12 12:53:05
+
+Arturo Olmos purchased a Random Item 68 for 38.36$ from miners bank using their Checking account at 2022/03/12 12:53:06
+
+Arturo Olmos paid 868.66$ from their Checking account to Ronald Martinez into their Savings account at 2022/03/12 12:53:07
+
+Arturo Olmos paid 20.33$ from their Checking account to Dana Miller into their Savings account at 2022/03/12 12:53:08
+
+Arturo Olmos purchased a Random Item 39 for 3.85$ from miners bank using their Credit account at 2022/03/12 12:53:08
+
+Arturo Olmos paid 89.69$ from their Checking account to Timothy Johnson into their Checking account at 2022/03/12 12:53:11
+
+Arturo Olmos purchased a UTEP T-Shirt for 19.97$ from miners bank using their Checking account at 2022/03/12 12:53:12
+
+Arturo Olmos paid 298.78$ from their Checking account to Holly Schneider into their Savings account at 2022/03/12 12:53:14
+
+Arturo Olmos paid 451.78$ from their Checking account to Brian Jensen into their Checking account at 2022/03/12 12:53:14
+
+Arturo Olmos deposited 4837.98$ from their Checking account at 2022/03/12 12:53:14
+
+Arturo Olmos paid 561.14$ from their Checking account to Jasmine Ramirez into their Checking account at 2022/03/12 12:53:15
+
+Arturo Olmos purchased a Random Item 76 for 96.82$ from miners bank using their Checking account at 2022/03/12 12:53:15
+
+Arturo Olmos paid 122.77$ from their Checking account to John Jones into their Savings account at 2022/03/12 12:53:16
+
+Arturo Olmos paid 491.38$ from their Checking account to Jared Perry into their Savings account at 2022/03/12 12:53:17
+
+Arturo Olmos deposited 2278.90$ from their Checking account at 2022/03/12 12:53:17
+
+Arturo Olmos purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/03/12 12:53:17
+
+Arturo Olmos paid 876.19$ from their Checking account to Joseph Brooks into their Savings account at 2022/03/12 12:53:17
+
+Arturo Olmos paid 850.57$ from their Checking account to Kylie Summers into their Checking account at 2022/03/12 12:53:18
+
+Arturo Olmos deposited 1020.19$ from their Savings account at 2022/03/12 12:53:20
+
+Arturo Olmos purchased a Random Item 46 for 49.06$ from miners bank using their Checking account at 2022/03/12 12:53:21
+
+Arturo Olmos deposited 1317.84$ from their Savings account at 2022/03/12 12:53:23
+
+Arturo Olmos paid 929.95$ from their Checking account to Christina Dodson into their Checking account at 2022/03/12 12:53:23
+
+Arturo Olmos paid 320.88$ from their Checking account to Christopher Robinson into their Savings account at 2022/03/12 12:53:23
+
+Arturo Olmos paid 352.21$ from their Checking account to Christopher Jones into their Checking account at 2022/03/12 12:53:24
+
+Arturo Olmos purchased a Random Item 16 for 80.85$ from miners bank using their Checking account at 2022/03/12 12:53:25
+
+Arturo Olmos deposited 45.46$ from their Savings account at 2022/03/12 12:53:25
+
+Arturo Olmos paid 55.00$ from their Checking account to Michele Stevens into their Checking account at 2022/03/12 12:53:27
+
+Arturo Olmos paid 72.52$ from their Checking account to Lisa Garrett into their Savings account at 2022/03/12 12:53:27
+
+Arturo Olmos deposited 1504.25$ from their Checking account at 2022/03/12 12:53:28
+
+Arturo Olmos paid 946.58$ from their Checking account to Sarah Mosley into their Savings account at 2022/03/12 12:53:28
+
+Arturo Olmos paid 586.44$ from their Checking account to Alejandra Morris into their Checking account at 2022/03/12 12:53:29
+
+Arturo Olmos paid 516.59$ from their Checking account to Bradley Rodriguez into their Savings account at 2022/03/12 12:53:29
+
+Arturo Olmos paid 844.97$ from their Checking account to Tracy Fitzgerald into their Savings account at 2022/03/12 12:53:29
+
+Arturo Olmos deposited 181.46$ from their Savings account at 2022/03/12 12:53:30
+
+Arturo Olmos paid 130.60$ from their Checking account to Jose Evans into their Checking account at 2022/03/12 12:53:30
+
+Arturo Olmos deposited 1939.59$ from their Savings account at 2022/03/12 12:53:31
+
+Arturo Olmos paid 206.50$ from their Checking account to Deyanira OchoaMercado into their Checking account at 2022/03/12 12:53:31
+
+Arturo Olmos deposited 4499.10$ from their Savings account at 2022/03/12 12:53:31
+
+Arturo Olmos paid 326.57$ from their Checking account to Chip Disney into their Savings account at 2022/03/12 12:53:34
+
+Arturo Olmos deposited 540.53$ from their Checking account at 2022/03/12 12:53:34
+
+Arturo Olmos paid 109.69$ from their Checking account to Christine Ellis into their Checking account at 2022/03/12 12:53:34
+
+Arturo Olmos purchased a Random Item 22 for 36.48$ from miners bank using their Checking account at 2022/03/12 12:53:35
+
+Arturo Olmos deposited 4262.85$ from their Checking account at 2022/03/12 12:53:36
+
+Arturo Olmos paid 992.87$ from their Checking account to Lisa Gaines into their Checking account at 2022/03/12 12:53:37
+
+Arturo Olmos deposited 367.25$ from their Savings account at 2022/03/12 12:53:42
+
+Arturo Olmos paid 203.73$ from their Checking account to Chip Disney into their Checking account at 2022/03/12 12:53:42
+
+Arturo Olmos paid 372.24$ from their Checking account to Jack Morgan into their Checking account at 2022/03/12 12:53:43
+
+Arturo Olmos deposited 2492.47$ from their Checking account at 2022/03/12 12:53:44
+
+Arturo Olmos deposited 1995.91$ from their Checking account at 2022/03/12 12:53:44
+
+Arturo Olmos deposited 2262.93$ from their Checking account at 2022/03/12 12:53:45
+
+Arturo Olmos purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Checking account at 2022/03/12 12:53:46
+
+Arturo Olmos purchased a Random Item 6 for 51.00$ from miners bank using their Checking account at 2022/03/12 12:53:46
+
+Arturo Olmos deposited 593.28$ from their Checking account at 2022/03/12 12:53:46
+
+Arturo Olmos paid 134.40$ from their Checking account to Donald Haynes into their Checking account at 2022/03/12 12:53:47
+
+Arturo Olmos deposited 2931.29$ from their Savings account at 2022/03/12 12:53:47
+
+Arturo Olmos paid 398.78$ from their Checking account to Richard Vargas into their Savings account at 2022/03/12 12:53:48
+
+Arturo Olmos paid 719.00$ from their Checking account to Rebecca Brown into their Checking account at 2022/03/12 12:53:49
+
+Arturo Olmos paid 628.89$ from their Checking account to Tammy Waters into their Checking account at 2022/03/12 12:53:49
+
+Arturo Olmos deposited 4432.61$ from their Savings account at 2022/03/12 12:53:49
+
+Arturo Olmos paid 718.93$ from their Checking account to David Brown into their Checking account at 2022/03/12 12:53:50
+
+Arturo Olmos paid 778.65$ from their Checking account to David Soto into their Savings account at 2022/03/12 12:53:50
+
+Arturo Olmos paid 392.54$ from their Checking account to Hayden Mcdaniel into their Savings account at 2022/03/12 12:53:51
+
+Arturo Olmos deposited 4982.61$ from their Savings account at 2022/03/12 12:53:51
+
+Arturo Olmos paid 848.74$ from their Checking account to Robert Kennedy into their Savings account at 2022/03/12 12:53:51
+
+Arturo Olmos deposited 2479.44$ from their Savings account at 2022/03/12 12:53:53
+
+Arturo Olmos paid 597.89$ from their Checking account to Martha Perry into their Checking account at 2022/03/12 12:53:54
+
+Arturo Olmos paid 374.03$ from their Checking account to Melissa Evans into their Checking account at 2022/03/12 12:53:54
+
+Arturo Olmos paid 886.43$ from their Checking account to Kimberly Roberts into their Checking account at 2022/03/12 12:53:56
+
+Arturo Olmos deposited 560.00$ from their Checking account at 2022/03/12 12:53:57
+
+Arturo Olmos purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/03/12 12:53:58
+
+Arturo Olmos paid 248.83$ from their Checking account to Jason Skinner into their Checking account at 2022/03/12 12:54:00
+
+Arturo Olmos paid 124.15$ from their Checking account to Dylan Harris into their Savings account at 2022/03/12 12:54:02
+
+Arturo Olmos deposited 4186.81$ from their Checking account at 2022/03/12 12:54:03
+
+Arturo Olmos paid 665.23$ from their Checking account to Craig Fleming into their Checking account at 2022/03/12 12:54:04
+
+Arturo Olmos purchased a Random Item 67 for 22.09$ from miners bank using their Checking account at 2022/03/12 12:54:05
+
+Arturo Olmos paid 951.63$ from their Checking account to Lori Livingston into their Savings account at 2022/03/12 12:54:05
+
+Arturo Olmos paid 916.72$ from their Checking account to Susan Humphrey into their Savings account at 2022/03/12 12:54:07
+
+Arturo Olmos purchased a Random Item 65 for 51.55$ from miners bank using their Checking account at 2022/03/12 12:54:09
+
+Arturo Olmos paid 486.19$ from their Checking account to Craig Brown into their Savings account at 2022/03/12 12:54:11
+
+Arturo Olmos paid 732.13$ from their Checking account to Courtney Johnson into their Checking account at 2022/03/12 12:54:11
+
+Arturo Olmos deposited 3195.73$ from their Savings account at 2022/03/12 12:54:12
+
+Arturo Olmos paid 676.06$ from their Checking account to Carlos Castanon into their Checking account at 2022/03/12 12:54:12
+
+Arturo Olmos paid 511.19$ from their Checking account to Michelle Griffin into their Savings account at 2022/03/12 12:54:13
+
+Arturo Olmos deposited 2921.45$ from their Checking account at 2022/03/12 12:54:13
+
+Arturo Olmos purchased a Random Item 54 for 17.87$ from miners bank using their Checking account at 2022/03/12 12:54:13
+
+Arturo Olmos paid 402.92$ from their Checking account to Timothy Jones into their Checking account at 2022/03/12 12:54:14
+
+Arturo Olmos purchased a Random Item 35 for 45.67$ from miners bank using their Checking account at 2022/03/12 12:54:16
+
+Arturo Olmos purchased a Random Item 53 for 19.40$ from miners bank using their Checking account at 2022/03/12 12:54:17
+
+Arturo Olmos paid 680.45$ from their Checking account to Lori Johnson into their Savings account at 2022/03/12 12:54:17
+
+Arturo Olmos paid 951.12$ from their Checking account to Jason Burke into their Checking account at 2022/03/12 12:54:18
+
+Arturo Olmos purchased a Random Item 58 for 15.58$ from miners bank using their Checking account at 2022/03/12 12:54:18
+
+Arturo Olmos purchased a Random Item 7 for 69.70$ from miners bank using their Checking account at 2022/03/12 12:54:18
+
+Arturo Olmos paid 539.06$ from their Checking account to John Davis into their Checking account at 2022/03/12 12:54:20
+
+Arturo Olmos purchased a Random Item 14 for 73.96$ from miners bank using their Checking account at 2022/03/12 12:54:20
+
+Arturo Olmos paid 464.35$ from their Checking account to Cassandra Cook into their Checking account at 2022/03/12 12:54:20
+
+Arturo Olmos purchased a Random Item 47 for 4.54$ from miners bank using their Checking account at 2022/03/12 12:54:21
+
+Arturo Olmos purchased a Random Item 68 for 38.36$ from miners bank using their Checking account at 2022/03/12 12:54:22
+
+Arturo Olmos deposited 4184.01$ from their Checking account at 2022/03/12 12:54:22
+
+Arturo Olmos paid 88.69$ from their Checking account to Angela Lang into their Checking account at 2022/03/12 12:54:23
+
+Arturo Olmos deposited 4591.82$ from their Checking account at 2022/03/12 12:54:25
+
+Arturo Olmos purchased a Parking Permit B for 250.00$ from miners bank using their Checking account at 2022/03/12 12:54:27
+
+Arturo Olmos paid 206.11$ from their Checking account to Christina Villanueva into their Savings account at 2022/03/12 12:54:28
+
+Arturo Olmos deposited 1440.83$ from their Checking account at 2022/03/12 12:54:29
+
+Arturo Olmos purchased a Random Item 76 for 96.82$ from miners bank using their Checking account at 2022/03/12 12:54:29
+
+Arturo Olmos deposited 3578.53$ from their Checking account at 2022/03/12 12:54:30
+
+Arturo Olmos paid 966.27$ from their Checking account to Amy Bradley into their Savings account at 2022/03/12 12:54:30
+
+Arturo Olmos paid 350.67$ from their Checking account to David Mares into their Savings account at 2022/03/12 12:54:30
+
+Arturo Olmos purchased a Random Item 45 for 88.04$ from miners bank using their Checking account at 2022/03/12 12:54:30
+
+Arturo Olmos paid 517.92$ from their Checking account to Donald Haynes into their Checking account at 2022/03/12 12:54:30
+
+Arturo Olmos deposited 765.65$ from their Savings account at 2022/03/12 12:54:30
+
+Arturo Olmos paid 915.60$ from their Checking account to Tiffany Jones into their Savings account at 2022/03/12 12:54:30
+
+Arturo Olmos paid 40.06$ from their Checking account to Dawn King into their Savings account at 2022/03/12 12:54:31
+
+Arturo Olmos purchased a Random Item 51 for 98.87$ from miners bank using their Checking account at 2022/03/12 12:54:32
+
+Arturo Olmos purchased a Random Item 1 for 9.06$ from miners bank using their Checking account at 2022/03/12 12:54:32
+
+Arturo Olmos purchased a Random Item 13 for 94.16$ from miners bank using their Checking account at 2022/03/12 12:54:34
+
+Arturo Olmos deposited 1823.26$ from their Checking account at 2022/03/12 12:54:34
+
+Arturo Olmos deposited 1528.26$ from their Checking account at 2022/03/12 12:54:34
+
+Arturo Olmos paid 498.79$ from their Checking account to Mary Stevens into their Savings account at 2022/03/12 12:54:35
+
+Arturo Olmos purchased a UTEP Hoodie for 29.99$ from miners bank using their Checking account at 2022/03/12 12:54:36
+
+Arturo Olmos purchased a Sushi Meal for 11.25$ from miners bank using their Checking account at 2022/03/12 12:54:36
+
+Arturo Olmos paid 698.65$ from their Checking account to Peggy Murphy into their Savings account at 2022/03/12 12:54:39
+
+Arturo Olmos purchased a Random Item 52 for 54.15$ from miners bank using their Checking account at 2022/03/12 12:54:40
+
+Arturo Olmos purchased a Random Item 23 for 71.93$ from miners bank using their Checking account at 2022/03/12 12:54:41
+
+Arturo Olmos paid 710.54$ from their Checking account to Jenna Chase into their Savings account at 2022/03/12 12:54:42
+
+Arturo Olmos purchased a Random Item 48 for 22.70$ from miners bank using their Checking account at 2022/03/12 12:54:42
+
+Arturo Olmos paid 672.69$ from their Checking account to Matthew Erickson into their Checking account at 2022/03/12 12:54:43
+
+Arturo Olmos paid 387.94$ from their Checking account to Heather Robbins into their Savings account at 2022/03/12 12:54:44
+
+Arturo Olmos paid 645.25$ from their Checking account to Kristen Martinez into their Checking account at 2022/03/12 12:54:44
+
+Arturo Olmos deposited 973.26$ from their Checking account at 2022/03/12 12:54:45
+
+Arturo Olmos paid 630.90$ from their Checking account to Megan Noble into their Checking account at 2022/03/12 12:54:46
+
+Arturo Olmos paid 864.19$ from their Checking account to Jonathan Christian into their Savings account at 2022/03/12 12:54:46
+
+Arturo Olmos purchased a Pick N Shovel Meal for 10.87$ from miners bank using their Checking account at 2022/03/12 12:54:47
+
+Arturo Olmos paid 47.28$ from their Checking account to Nicole Johnson into their Checking account at 2022/03/12 12:54:47
+
+Arturo Olmos deposited 371.57$ from their Savings account at 2022/03/12 12:54:48
+
+Arturo Olmos paid 94.55$ from their Checking account to Shannon Bennett into their Savings account at 2022/03/12 12:54:48
+
+Arturo Olmos deposited 3002.21$ from their Savings account at 2022/03/12 12:54:49
+
+Arturo Olmos deposited 3917.81$ from their Savings account at 2022/03/12 12:54:49
+
+Arturo Olmos paid 261.12$ from their Checking account to Heather Little into their Savings account at 2022/03/12 12:54:50
+
+Arturo Olmos deposited 1342.05$ from their Checking account at 2022/03/12 12:54:50
+
+Arturo Olmos purchased a Random Item 58 for 15.58$ from miners bank using their Checking account at 2022/03/12 12:54:50
+
+Arturo Olmos deposited 708.13$ from their Checking account at 2022/03/12 12:54:51
+
+Arturo Olmos purchased a Random Item 6 for 51.00$ from miners bank using their Checking account at 2022/03/12 12:54:52
+
+Arturo Olmos deposited 2431.56$ from their Checking account at 2022/03/12 12:54:53
+
+Arturo Olmos paid 121.31$ from their Checking account to Jonathan Christian into their Savings account at 2022/03/12 12:54:53
+
+Arturo Olmos paid 803.35$ from their Checking account to Monica Sullivan into their Savings account at 2022/03/12 12:54:54
+
+Arturo Olmos paid 544.22$ from their Checking account to Rachel Vasquez into their Checking account at 2022/03/12 12:54:55
+
+Arturo Olmos deposited 996.04$ from their Savings account at 2022/03/12 12:54:56
+
+Arturo Olmos purchased a Random Item 50 for 12.98$ from miners bank using their Checking account at 2022/03/12 12:54:59
+
+Arturo Olmos paid 385.29$ from their Checking account to Lee Burke into their Checking account at 2022/03/12 12:55:01
+
+Arturo Olmos paid 283.57$ from their Checking account to Lauren Neal into their Savings account at 2022/03/12 12:55:02
+
+Arturo Olmos paid 25.49$ from their Checking account to Jorge Huerta into their Checking account at 2022/03/12 12:55:04
+
+Arturo Olmos purchased a Random Item 30 for 12.76$ from miners bank using their Checking account at 2022/03/12 12:55:05
+
+Arturo Olmos paid 378.21$ from their Checking account to Tami Weaver into their Checking account at 2022/03/12 12:55:06
+
+Arturo Olmos purchased a Highlighters for 4.99$ from miners bank using their Checking account at 2022/03/12 12:55:08
+
+Arturo Olmos purchased a Random Item 33 for 66.76$ from miners bank using their Checking account at 2022/03/12 12:55:09
+
+Arturo Olmos paid 504.21$ from their Checking account to Dorothy Cox into their Savings account at 2022/03/12 12:55:09
+
+Arturo Olmos purchased a Random Item 28 for 94.47$ from miners bank using their Checking account at 2022/03/12 12:55:09
+
+Arturo Olmos paid 162.83$ from their Checking account to Linda Robles into their Savings account at 2022/03/12 12:55:11
+
+Arturo Olmos deposited 4021.81$ from their Savings account at 2022/03/12 12:55:11
+
+Arturo Olmos paid 570.32$ from their Checking account to George Ayala into their Checking account at 2022/03/12 12:55:11
+
+Arturo Olmos purchased a Pen for 3.99$ from miners bank using their Checking account at 2022/03/12 12:55:11
+
+Arturo Olmos deposited 2323.74$ from their Checking account at 2022/03/12 12:55:12
+
+Arturo Olmos paid 298.46$ from their Checking account to Leonard King into their Savings account at 2022/03/12 12:55:12
+
+Arturo Olmos deposited 4526.66$ from their Checking account at 2022/03/12 12:55:13
+
+Arturo Olmos deposited 105.57$ from their Savings account at 2022/03/12 12:55:14
+
+Arturo Olmos paid 350.15$ from their Checking account to Brittany Richard into their Checking account at 2022/03/12 12:55:15
+
+Arturo Olmos purchased a Random Item 21 for 48.18$ from miners bank using their Checking account at 2022/03/12 12:55:16
+
+Arturo Olmos paid 171.69$ from their Checking account to Susan Allen into their Checking account at 2022/03/12 12:55:16
+
+Arturo Olmos paid 614.78$ from their Checking account to Travis Mcdonald into their Checking account at 2022/03/12 12:55:17
+
+Arturo Olmos deposited 2239.92$ from their Savings account at 2022/03/12 12:55:17
+
+Arturo Olmos paid 41.24$ from their Checking account to Christopher Jones into their Checking account at 2022/03/12 12:55:18
+
+Arturo Olmos deposited 3523.15$ from their Savings account at 2022/03/12 12:55:19
+
+Arturo Olmos deposited 2761.53$ from their Savings account at 2022/03/12 12:55:19
+
+Arturo Olmos deposited 4335.70$ from their Checking account at 2022/03/12 12:55:21
+
+Arturo Olmos paid 407.10$ from their Checking account to Gabriel Sanders into their Checking account at 2022/03/12 12:55:21
+
+Arturo Olmos paid 386.08$ from their Checking account to Scott Rose into their Checking account at 2022/03/12 12:55:22
+
+Arturo Olmos paid 917.17$ from their Checking account to Ethan Holmes into their Savings account at 2022/03/12 12:55:23
+
+Arturo Olmos paid 680.72$ from their Checking account to Jennifer Smith into their Savings account at 2022/03/12 12:55:24
+
+Arturo Olmos paid 819.17$ from their Checking account to Henry Salazar into their Savings account at 2022/03/12 12:55:24
+
+Arturo Olmos deposited 1971.19$ from their Savings account at 2022/03/12 12:55:25
+
+Arturo Olmos purchased a Random Item 13 for 94.16$ from miners bank using their Checking account at 2022/03/12 12:55:25
+
+Arturo Olmos deposited 788.16$ from their Savings account at 2022/03/12 12:55:25
+
+Arturo Olmos purchased a Chick-Fil-A Combo for 9.87$ from miners bank using their Checking account at 2022/03/12 12:55:26
+
+Arturo Olmos deposited 786.16$ from their Checking account at 2022/03/12 12:55:28
+
+Arturo Olmos deposited 848.03$ from their Checking account at 2022/03/12 12:55:28
+
+Arturo Olmos deposited 4918.70$ from their Checking account at 2022/03/12 12:55:29
+
+Arturo Olmos paid 864.41$ from their Checking account to Julian Gutierrez into their Savings account at 2022/03/12 12:55:30
+
+Arturo Olmos paid 930.13$ from their Checking account to Brian Castillo into their Savings account at 2022/03/12 12:55:30
+
+Arturo Olmos deposited 1543.73$ from their Savings account at 2022/03/12 12:55:31
+
+Arturo Olmos paid 422.00$ from their Checking account to Bryan Fields into their Checking account at 2022/03/12 12:55:33
+
+Arturo Olmos purchased a Random Item 43 for 29.97$ from miners bank using their Checking account at 2022/03/12 12:55:33
+
+Arturo Olmos paid 20.83$ from their Checking account to Karl Davis into their Checking account at 2022/03/12 12:55:35
+
+Arturo Olmos paid 522.73$ from their Checking account to Barbara Lane into their Savings account at 2022/03/12 12:55:35
+
+Arturo Olmos paid 583.77$ from their Checking account to Samantha Howell into their Savings account at 2022/03/12 12:55:37
+
+Arturo Olmos paid 9.53$ from their Checking account to Anthony Kramer into their Checking account at 2022/03/12 12:55:39
+
+Arturo Olmos purchased a Random Item 13 for 94.16$ from miners bank using their Checking account at 2022/03/12 12:55:39
+
+Arturo Olmos paid 341.42$ from their Checking account to Lilo Disney into their Savings account at 2022/03/12 12:55:41
+
+Arturo Olmos paid 735.26$ from their Checking account to Brendan Phillips into their Checking account at 2022/03/12 12:55:41
+
+Arturo Olmos deposited 2883.65$ from their Savings account at 2022/03/12 12:55:41
+
+Arturo Olmos paid 481.25$ from their Checking account to Sarah Stanton into their Savings account at 2022/03/12 12:55:41
+
+Arturo Olmos paid 309.00$ from their Checking account to Darren Gibbs into their Savings account at 2022/03/12 12:55:42
+
+Arturo Olmos deposited 2121.07$ from their Savings account at 2022/03/12 12:55:42
+
+Arturo Olmos deposited 2038.85$ from their Savings account at 2022/03/12 12:55:42
+
+Arturo Olmos purchased a Post-It Notes for 4.50$ from miners bank using their Checking account at 2022/03/12 12:55:42
+
+Arturo Olmos purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Checking account at 2022/03/12 12:55:43
+
+Arturo Olmos purchased a Random Item 60 for 100.47$ from miners bank using their Checking account at 2022/03/12 12:55:43
+
+Arturo Olmos deposited 3416.36$ from their Checking account at 2022/03/12 12:55:44
+
+Arturo Olmos deposited 1899.99$ from their Savings account at 2022/03/12 12:55:44
+
+Arturo Olmos purchased a Random Item 8 for 24.21$ from miners bank using their Checking account at 2022/03/12 12:55:45
+
+Arturo Olmos deposited 2799.59$ from their Savings account at 2022/03/12 12:55:46
+
+Arturo Olmos paid 124.84$ from their Checking account to Christian Ellis into their Checking account at 2022/03/12 12:55:48
+
+Arturo Olmos deposited 877.34$ from their Savings account at 2022/03/12 12:55:49
+
+Arturo Olmos deposited 2073.66$ from their Savings account at 2022/03/12 12:55:50
+
+Arturo Olmos deposited 3478.27$ from their Checking account at 2022/03/12 12:55:50
+
+Arturo Olmos purchased a Random Item 53 for 19.40$ from miners bank using their Checking account at 2022/03/12 12:55:51
+
+Arturo Olmos deposited 438.95$ from their Savings account at 2022/03/12 12:55:51
+
+Arturo Olmos paid 400.81$ from their Checking account to Crystal Hayes into their Checking account at 2022/03/12 12:55:52
+
+Arturo Olmos paid 421.94$ from their Checking account to Joe Cochran into their Checking account at 2022/03/12 12:55:54
+
+Arturo Olmos purchased a Random Item 30 for 12.76$ from miners bank using their Checking account at 2022/03/12 12:55:56
+
+Arturo Olmos purchased a Random Item 64 for 33.20$ from miners bank using their Checking account at 2022/03/12 12:55:57
+
+Arturo Olmos deposited 4892.69$ from their Checking account at 2022/03/12 12:55:58
+
+Arturo Olmos paid 667.22$ from their Checking account to Megan Noble into their Checking account at 2022/03/12 12:55:59
+
+Arturo Olmos purchased a Pick N Shovel Meal for 10.87$ from miners bank using their Checking account at 2022/03/12 12:56:00
+
+Arturo Olmos purchased a Random Item 36 for 99.38$ from miners bank using their Checking account at 2022/03/12 12:56:00
+
+Arturo Olmos paid 41.70$ from their Checking account to Kimberly Mejia into their Savings account at 2022/03/12 12:56:01
+
+Arturo Olmos purchased a Random Item 75 for 5.33$ from miners bank using their Checking account at 2022/03/12 12:56:02
+
+Arturo Olmos paid 326.01$ from their Checking account to Richard Sullivan into their Checking account at 2022/03/12 12:56:02
+
+Arturo Olmos paid 376.56$ from their Checking account to Michelle Jones into their Savings account at 2022/03/12 12:56:03
+
+Arturo Olmos paid 174.39$ from their Checking account to Kaylee Patterson into their Savings account at 2022/03/12 12:56:04
+
+Arturo Olmos paid 815.30$ from their Checking account to Kimberly Kline into their Savings account at 2022/03/12 12:56:04
+
+Arturo Olmos paid 13.35$ from their Checking account to Lori Hall into their Savings account at 2022/03/12 12:56:05
+
+Arturo Olmos paid 683.07$ from their Checking account to Alexander Wilson into their Savings account at 2022/03/12 12:56:06
+
+Arturo Olmos purchased a Random Item 74 for 43.69$ from miners bank using their Checking account at 2022/03/12 12:56:09
+
+Arturo Olmos purchased a Random Item 60 for 100.47$ from miners bank using their Checking account at 2022/03/12 12:56:12
+
+Arturo Olmos paid 288.84$ from their Checking account to Megan Noble into their Checking account at 2022/03/12 12:56:16
+
+Arturo Olmos deposited 4885.12$ from their Checking account at 2022/03/12 12:56:17
+
+Arturo Olmos purchased a Random Item 58 for 15.58$ from miners bank using their Checking account at 2022/03/12 12:56:18
+
+Arturo Olmos deposited 4185.48$ from their Checking account at 2022/03/12 12:56:18
+
+Arturo Olmos purchased a Random Item 4 for 14.85$ from miners bank using their Checking account at 2022/03/12 12:56:19
+
+Arturo Olmos deposited 2985.83$ from their Checking account at 2022/03/12 12:56:20
+
+Arturo Olmos paid 115.45$ from their Checking account to Emily Estes into their Savings account at 2022/03/12 12:56:20
+
+Arturo Olmos paid 495.88$ from their Checking account to Christopher Berry into their Checking account at 2022/03/12 12:56:20
+
+Arturo Olmos purchased a Random Item 42 for 9.91$ from miners bank using their Checking account at 2022/03/12 12:56:23
+
+Arturo Olmos deposited 697.21$ from their Savings account at 2022/03/12 12:56:23
+
+Arturo Olmos paid 947.41$ from their Checking account to Chelsea Gallagher into their Savings account at 2022/03/12 12:56:25
+
+Arturo Olmos purchased a Random Item 20 for 24.04$ from miners bank using their Checking account at 2022/03/12 12:56:25
+
+Arturo Olmos deposited 3242.56$ from their Checking account at 2022/03/12 12:56:26
+
+Arturo Olmos paid 238.65$ from their Checking account to Allison Chang into their Checking account at 2022/03/12 12:56:27
+
+Arturo Olmos paid 122.18$ from their Checking account to Brian Lopez into their Checking account at 2022/03/12 12:56:29
+
+Arturo Olmos purchased a Parking Permit A for 200.00$ from miners bank using their Checking account at 2022/03/12 12:56:29
+
+Arturo Olmos paid 494.86$ from their Checking account to Karen Zhang into their Checking account at 2022/03/12 12:56:31
+
+Arturo Olmos deposited 4059.79$ from their Savings account at 2022/03/12 12:56:31
+
+Arturo Olmos deposited 3721.96$ from their Savings account at 2022/03/12 12:56:35
+
+Arturo Olmos deposited 1047.31$ from their Savings account at 2022/03/12 12:56:35
+
+Arturo Olmos deposited 806.52$ from their Checking account at 2022/03/12 12:56:35
+
+Arturo Olmos deposited 49.66$ from their Savings account at 2022/03/12 12:56:35
+
+Arturo Olmos paid 577.09$ from their Checking account to Robin Watson into their Checking account at 2022/03/12 12:56:36
+
+Arturo Olmos paid 916.12$ from their Checking account to Crystal Rice into their Savings account at 2022/03/12 12:56:37
+
+Arturo Olmos deposited 4393.87$ from their Checking account at 2022/03/12 12:56:37
+
+Arturo Olmos paid 709.26$ from their Checking account to Paul Herman into their Checking account at 2022/03/12 12:56:37
+
+Arturo Olmos paid 115.10$ from their Checking account to Rick Parrish into their Savings account at 2022/03/12 12:56:39
+
+Arturo Olmos purchased a Random Item 42 for 9.91$ from miners bank using their Checking account at 2022/03/12 12:56:39
+
+Arturo Olmos deposited 3722.17$ from their Savings account at 2022/03/12 12:56:40
+
+Arturo Olmos deposited 3988.41$ from their Checking account at 2022/03/12 12:56:41
+
+Arturo Olmos deposited 3004.13$ from their Checking account at 2022/03/12 12:56:44
+
+Arturo Olmos paid 483.91$ from their Checking account to Cody Robles into their Savings account at 2022/03/12 12:56:44
+
+Arturo Olmos paid 505.35$ from their Checking account to Theresa Hardy into their Savings account at 2022/03/12 12:56:45
+
+Arturo Olmos deposited 4102.67$ from their Savings account at 2022/03/12 12:56:46
+
+Arturo Olmos paid 706.34$ from their Checking account to Brittany Weaver into their Checking account at 2022/03/12 12:56:46
+
+Arturo Olmos paid 603.51$ from their Checking account to Andrew Norris into their Savings account at 2022/03/12 12:56:46
+
+
+----------------------------------------------------------------------

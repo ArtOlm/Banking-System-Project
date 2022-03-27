@@ -1,0 +1,11 @@
+Name: Kendra Sawyer
+Address: 101 Random Rd., El Paso, TX 79999
+Phone: (915) 123-4567
+DOB: 1/18/05
+ID: 1038
+Checking Account Number: 1001038   Current Checking Account Balance: 724.63$
+Savings Account Number: 2001038   Current Savings Account Balance: 13785.73$
+Credit Account Number: 3001038   Current Credit Account Balance: 2955.23$   Credit Score: 843   Credit Limit: 19700
+----------------------------------------------------------------------
+
+ No session started yet
