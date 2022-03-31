@@ -131,7 +131,7 @@ public class Utilities{
 		String city = info[1];
 		double cBalance = Double.parseDouble(info[2]);
 		String chNum = info[3];
-		String zip = info[4];
+		int zip = Integer.parseInt(info[4]);
 		String fName = info[5];
 		int cLimit = Integer.parseInt(info[6]);
 		String lName = info[7];
@@ -272,7 +272,7 @@ public class Utilities{
 				updateFileInfo.write("ID,Pin,First Name,Last Name,Address,City,State,Zip,Phone Number,Date of Birth,Checking Account Number,Checking Balance,Savings Account Number,Savings Balance,Credit Account Number,Credit Balance,Credit Score,Credit Limit\n");
 				for(int i = 1;i < integerMapped.size() + 1;i++){
 					Customer user = integerMapped.get(i);
-					updateFileInfo.write(user.getID()+","+ user.getPin()+","+user.getFName()+","+user.getLName()+","+user.getAddress()+","+user.getCity()+","+user.getState()+","+user.getZip()+","+user.getPhone()+","+user.getDOB() + "," + user.getCheck().getAccNum() + "," + user.getCheck().getBalance() + "," + user.getSave().getAccNum() + "," + user.getSave().getBalance() + "," + user.getCredit().getAccNum() + "," + user.getCredit().getBalance()+ "," + user.getCredit().getScore()+ "," + user.getCredit().getLimit() + "\n");
+					updateFileInfo.write(user.getID()+","+ user.getPin()+","+user.getFirstName()+","+user.getLastName()+","+user.getAddress()+","+user.getCity()+","+user.getState()+","+user.getZipCode()+","+user.getPhoneNum()+","+user.getDOB() + "," + user.getCheck().getAccNum() + "," + user.getCheck().getBalance() + "," + user.getSave().getAccNum() + "," + user.getSave().getBalance() + "," + user.getCredit().getAccNum() + "," + user.getCredit().getBalance()+ "," + user.getCredit().getScore()+ "," + user.getCredit().getLimit() + "\n");
 				}
 				updateFileInfo.close();
 			}
@@ -333,7 +333,7 @@ public class Utilities{
 	 */
 	public void writeBankStatement(Customer cus, String statement){
 		try {
-			String path = String.format("src/Generated_Files/%s_%s_Bank_Statement.txt",cus.getFName(),cus.getLName());
+			String path = String.format("src/Generated_Files/%s_%s_Bank_Statement.txt",cus.getFirstName(),cus.getLastName());
 			File f = new File(path);
 			if(!f.exists()){
 				f.createNewFile();

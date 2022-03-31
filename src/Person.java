@@ -1,168 +1,95 @@
-/**
- * @author Arturo Olmos
- * @version 1.0
- * abstract class represents a person
- */
-public abstract class Person{
-	private String fname;
-	private String lname;
+public class Person {
+	private String firstName;
+	private String lastName;
 	private String address;
-	private String state;
 	private String city;
-	private String zip;
+	private String state;
+	private int zipCode;
 	private String phoneNum;
-	private String dob;
-	//costructors
-	public Person(){
+	private String DOB;
 
+	public Person() {
 	}
 
-	public Person(String fname,String lname,String address,String city,String state,String zip,String phoneNum,String dob){
-		this.fname = fname;
-		this.lname = lname;
+	public Person(String firstName, String lastName, String address, String city, String state, int zipCode, String phoneNum, String DOB) {
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.address = address;
-		this.state = state;
-		this.zip = zip;
-		this.phoneNum = phoneNum;
-		this.dob = dob;
 		this.city = city;
-
-	}
-	//set/get methods below
-
-	/**
-	 *
-	 * @param fname sets first name attribute
-	 */
-	public void setFName(String fname){
-		this.fname = fname;
+		this.state = state;
+		this.zipCode = zipCode;
+		this.phoneNum = phoneNum;
+		this.DOB = DOB;
 	}
 
-	/**
-	 *
-	 * @param lname sets last name attribute
-	 */
-	public void setLName(String lname){
-		this.lname = lname;
+	//setters
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
-	/**
-	 *
-	 * @param add sets address attribute
-	 */
-	public void setAddress(String add){
-		this.address = add;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
-	/**
-	 *
-	 * @param st sets state attribute
-	 */
-	public void setState(String st){
-		this.state = st;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
-	/**
-	 *
-	 * @param zip sets zip attribute
-	 */
-	public void setZip(String zip){
-		this.zip = zip;
+	public void setCity(String city) {
+		this.city = city;
 	}
 
-	/**
-	 *
-	 * @param phone sets phone attribute
-	 */
-	public void setPhone(String phone){
-		this.phoneNum = phone;
+	public void setState(String state) {
+		this.state = state;
 	}
 
-	/**
-	 *
-	 * @param dob sets date of birth attribute
-	 */
-	public void setDOB(String dob){
-		this.dob = dob;
+	public void setZipCode(int zipCode) {
+		this.zipCode = zipCode;
 	}
 
-	/**
-	 *
-	 * @return returns the first name attribute
-	 */
-	public String getFName(){
-		return this.fname;
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 
-	/**
-	 *
-	 * @return last name attribute
-	 */
-	public String getLName(){
-		return this.lname;
+	public void setDOB(String DOB) {
+		this.DOB = DOB;
 	}
 
-	/**
-	 *
-	 * @return returns address attribute
-	 */
-	public String getAddress(){
+	//getters
+
+	public String getFirstName() {
+		return this.firstName;
+	}
+
+	public String getLastName() {
+		return this.lastName;
+	}
+
+	public String getAddress() {
 		return this.address;
 	}
 
-	/**
-	 *
-	 * @return returns state attribute
-	 */
-	public String getState(){
-		return this.state;
-	}
-
-	/**
-	 *
-	 * @return returns zip attribute
-	 */
-	public String getZip(){
-		return this.zip;
-	}
-
-	/**
-	 *
-	 * @return returns the phone number attribute
-	 */
-	public String getPhone(){
-		return this.phoneNum;
-	}
-
-	/**
-	 *
-	 * @return returns the date of birth attribute
-	 */
-	public String getDOB(){
-		return this.dob;
-	}
-
-	/**
-	 *
-	 * @return returns the city attribute
-	 */
-	public String getCity(){
+	public String getCity() {
 		return this.city;
 	}
 
-	/**
-	 *
-	 * @param city sets the city attribute
-	 */
-	public void setCity(String city){
-		this.city = city;
+	public String getState() {
+		return this.state;
+	}
+	public int getZipCode() {
+		return this.zipCode;
 	}
 
-	/**
-	 *
-	 * @return returns a formatted String containing all the Person information
-	 */
+	public String getPhoneNum() {
+		return this.phoneNum;
+	}
+
+	public String getDOB() {
+		return this.DOB;
+	}
+
 	public String toString(){
-		return ("Name: " + this.fname + " " + this.lname + "\nAddress: " + this.address + ", " + this.city + ", " + this.state + " " + this.zip + "\nPhone: " + this.phoneNum + "\nDOB: " + this.dob);
+		return ("Name: " + this.firstName + " " + this.lastName + "\nAddress: " + this.address + ", " + this.city + ", " + this.state + " " + this.zipCode + "\nPhone: " + this.phoneNum + "\nDOB: " + this.DOB);
 	}
 }
