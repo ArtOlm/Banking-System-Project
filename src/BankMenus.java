@@ -124,7 +124,7 @@ public class BankMenus{
 		String key = myHandler.generateKey(fName,lName);
 		//generate random pin
 		int pin = generatePin(pins);
-		Customer cus = new Customer(fName,lName,add,city,state,zip,phoneNum,dob,id,ch,save,cr,pin);
+		Customer cus = new Customer(fName,lName,add,city,state,Integer.parseInt(zip),phoneNum,dob,id,ch,save,cr,pin);
 		customers.put(key,cus);
 		//add 1 to last max id for next user created
 		myHandler.incrementMaxCustomerIDX();
@@ -304,7 +304,7 @@ public class BankMenus{
 						}
 						//generate key by name
 						cus = customers.get(key);
-						if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
+						if(name.split("\\s+").length != (cus.getFirstName() + " " + cus.getLastName()).split("\\s+").length){
 							System.out.println("no users found");
 							continue;
 						}
@@ -427,7 +427,7 @@ public class BankMenus{
 					userAccount.setStartCreditBal(userAccount.getCredit().getBalance());
 				}
 				System.out.println("-------------------------------------------------");
-				System.out.println("Hello " + userAccount.getFName() + " " + userAccount.getLName() + " what would you like to do today?(Enter 1-7)");
+				System.out.println("Hello " + userAccount.getFirstName() + " " + userAccount.getLastName() + " what would you like to do today?(Enter 1-7)");
 				//stirng ponters is used later on to point to account chosen by user
 				String accType;
 				String from;
@@ -473,7 +473,7 @@ public class BankMenus{
 							//let user know of success
 							System.out.printf("%s currently has %.2f$\n", accType,transactionHandler.checkBalance(userAccount,accType));
 							//log what happened
-							transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),accType,time.format(LocalDateTime.now()));
+							transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),accType,time.format(LocalDateTime.now()));
 							myHandler.logToFile(transactionLog);
 
 							System.out.println("-------------------------------------------------");
@@ -515,7 +515,7 @@ public class BankMenus{
 								continue;
 							}
 							//if success then we tell user and log it
-							transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),deposit,accType,time.format(LocalDateTime.now()));
+							transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),deposit,accType,time.format(LocalDateTime.now()));
 							userAccount.addTransaction(String.format(transactionLog));
 							myHandler.logToFile(transactionLog);
 
@@ -573,7 +573,7 @@ public class BankMenus{
 							}
 							//if success then we tell user and log it
 								System.out.printf("The transfer was a success, %.2f$ was transferred from %s to %s\n",transfer,from,to);
-							    transactionLog = String.format("%s %s tranfered %.2f$ from %s to %s at %s\n",userAccount.getFName(),userAccount.getLName(),transfer,from,to,time.format(LocalDateTime.now()));
+							    transactionLog = String.format("%s %s tranfered %.2f$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transfer,from,to,time.format(LocalDateTime.now()));
 							    userAccount.addTransaction(String.format(transactionLog));
 							myHandler.logToFile(transactionLog);
 						break;
@@ -614,7 +614,7 @@ public class BankMenus{
 								continue;
 							}
 							//if success then we tell user and log it
-							transactionLog = String.format("%s %s withdrew %.2f$ from the %s account at %s\n",userAccount.getFName(),userAccount.getLName(),withdrawl,accType,time.format(LocalDateTime.now()));
+							transactionLog = String.format("%s %s withdrew %.2f$ from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withdrawl,accType,time.format(LocalDateTime.now()));
 							System.out.printf("The withdrawl of %.2f$ was a success\n",withdrawl);
 							userAccount.addTransaction(String.format(transactionLog));
 							myHandler.logToFile(transactionLog);
@@ -706,9 +706,9 @@ public class BankMenus{
 									continue;
 								}
 								//if success then we tell user and log it
-								System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFName(),userToPay.getLName(),to);
+								System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFirstName(),userToPay.getLastName(),to);
 
-								transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),pay,from,userToPay.getFName(),userToPay.getLName(),to,time.format(LocalDateTime.now()));
+								transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),pay,from,userToPay.getFirstName(),userToPay.getLastName(),to,time.format(LocalDateTime.now()));
 								userAccount.addTransaction(String.format(transactionLog));
 								myHandler.logToFile(transactionLog);
 							}
@@ -818,7 +818,7 @@ public class BankMenus{
 											userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + itemToBuy.getPrice());
 											//log transaction info
 											System.out.printf("your purchase of %s for %.2f$ was a success\n", itemToBuy.getName(), itemToBuy.getPrice());
-											transactionLog = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", userAccount.getFName(), userAccount.getLName(), itemToBuy.getName(), itemToBuy.getPrice(), accType, time.format(LocalDateTime.now()));
+											transactionLog = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), itemToBuy.getName(), itemToBuy.getPrice(), accType, time.format(LocalDateTime.now()));
 											userAccount.addTransaction(String.format(transactionLog));
 											myHandler.logToFile(transactionLog);
 										}
@@ -837,7 +837,7 @@ public class BankMenus{
 						case 7:
 							//user logs out
 							System.out.println("-------------------------------------------------");
-							System.out.println("Thank you " + userAccount.getFName() + " " + userAccount.getLName() + ", have a great day!");
+							System.out.println("Thank you " + userAccount.getFirstName() + " " + userAccount.getLastName() + ", have a great day!");
 							System.out.println("Logging out in");
 							for(int i = 3;i > 0;i--){
 								System.out.println(i);
@@ -916,7 +916,7 @@ public class BankMenus{
 			//get the customer
 			Customer user = customers.get(key);
 			//ensure that there are no wired strings the are split apart
-			if(user.getFName().split("\\s+").length != fName.split("\\s+").length || user.getLName().split("\\s+").length != lName.split("\\s+").length || user.getSave().getAccNum().split("\\s+").length != userSaveNum.split("\\s+").length || user.getCredit().getAccNum().split("\\s+").length != userCreditNum.split("\\s+").length || user.getCheck().getAccNum().split("\\s+").length != userCheckNum.split("\\s+").length){
+			if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length || user.getSave().getAccNum().split("\\s+").length != userSaveNum.split("\\s+").length || user.getCredit().getAccNum().split("\\s+").length != userCreditNum.split("\\s+").length || user.getCheck().getAccNum().split("\\s+").length != userCheckNum.split("\\s+").length){
 				System.out.println("no");
 				return false;
 			}
@@ -941,11 +941,11 @@ public class BankMenus{
 		}
 		//get customer
 		Customer user = customers.get(key);
-		if(user.getFName().split("\\s+").length != fName.split("\\s+").length || user.getLName().split("\\s+").length != lName.split("\\s+").length){
+		if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length){
 			return false;
 		}
 		//compare information
-		return  user.getID() == id && myHandler.strNWS(user.getFName()).equals(myHandler.strNWS(fName)) && myHandler.strNWS(user.getLName()).equals(myHandler.strNWS(lName));
+		return  user.getID() == id && myHandler.strNWS(user.getFirstName()).equals(myHandler.strNWS(fName)) && myHandler.strNWS(user.getLastName()).equals(myHandler.strNWS(lName));
 	}
 	/**
 	 *
@@ -963,10 +963,10 @@ public class BankMenus{
 			return false;
 		}
 		//compare infromation
-		if(userAccount.getFName().split("\\s+").length != userToPayFirstName.split("\\s+").length || userAccount.getLName().split("\\s+").length != userToPayLastName.split("\\s+").length){
+		if(userAccount.getFirstName().split("\\s+").length != userToPayFirstName.split("\\s+").length || userAccount.getLastName().split("\\s+").length != userToPayLastName.split("\\s+").length){
 			return false;
 		}
-		return myHandler.strNWS(userAccount.getFName()).equals(myHandler.strNWS(userToPayFirstName)) && myHandler.strNWS(userAccount.getLName()).equals(myHandler.strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
+		return myHandler.strNWS(userAccount.getFirstName()).equals(myHandler.strNWS(userToPayFirstName)) && myHandler.strNWS(userAccount.getLastName()).equals(myHandler.strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
 	}
 	/**
 	 * prints all the items found in miner mall

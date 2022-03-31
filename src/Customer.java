@@ -42,7 +42,7 @@ public class Customer extends Person{
 	 * @param pin
 	 * takes in all parameters needed to create a cusotmer
 	 */
-	public Customer(String fname,String lname,String address,String city,String state,String zip,String phoneNum,String dob,int id,Checking cAcc,Savings sAcc,Credit crAcc,int pin){
+	public Customer(String fname,String lname,String address,String city,String state,int zip,String phoneNum,String dob,int id,Checking cAcc,Savings sAcc,Credit crAcc,int pin){
 		super(fname,lname,address,city,state,zip,phoneNum,dob);
 		this.id = id;
 		this.cAcc = cAcc;

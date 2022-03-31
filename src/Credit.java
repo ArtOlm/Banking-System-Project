@@ -26,6 +26,25 @@ public class Credit extends Account{
 		this.score = score;
 
 	}
+
+	public void generateCredit(int creditScore){
+		this.limit = -9999;
+
+		if(creditScore > 800){
+			limit = (int)Math.floor(Math.random()*(25000-100+1)+1600);
+		}else if(creditScore > 739){
+			limit = (int)Math.floor(Math.random()*(15999-100+1)+7500);
+
+		}else if (creditScore > 669){
+			limit = (int)Math.floor(Math.random()*(7499-100+1)+5000);
+
+		}else if (creditScore > 580){
+			limit = (int)Math.floor(Math.random()*(4999-100+1)+700);
+
+		}else if (creditScore > -1) {
+			limit = (int)Math.floor(Math.random()*(699-100+1)+100);
+		}
+	}
 	//setter/getter
 
 	/**
