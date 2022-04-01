@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.FileNotFoundException;
-import java.util.Set;
 
 /**
  * @author Arturo
@@ -32,7 +31,7 @@ public class Utilities{
 	 */
 	public ArrayList<String[]> loadTransactions(){
 		//arraylist containing the transactions
-		ArrayList<String []> transactions = new ArrayList<String[]>();
+		ArrayList<String []> transactions = new ArrayList<>();
 		File transactionFile = new File("src/Read_Only_Files/actions PA4.csv");
 		Scanner transactionsReader = null;
 		try {
@@ -56,10 +55,10 @@ public class Utilities{
 	}
 	/**
 	 *
-	 * @param fName
-	 * @param lName
+	 * @param fName the first name of the user
+	 * @param lName the last name of the user
 	 *
-	 * @return
+	 * @return returns a generated string based on the users first and last name
 	 * generates a key for the hash map
 	 */
 	public String generateKey(String fName,String lName){
@@ -73,8 +72,7 @@ public class Utilities{
 		for(int i = 0;i < lnameNWS.length;i++){
 			nwsLName += lnameNWS[i];
 		}
-		String key = nwsFName + nwsLName;
-		return key;
+		return nwsFName + nwsLName;
 	}
 	/**
 	 *
@@ -103,12 +101,54 @@ public class Utilities{
 			System.out.println("Error: Cannot find src/Read_Only_Files/Bank Customers 4.csv");
 			System.exit(1);
 		}
-		fileReader.nextLine();//gets rid of the heading in the csv file
+		//use the header to dynamically read csv file
+		String[] header = fileReader.nextLine().split(",");
+		int[] headerIndexes = new int[header.length];
+		//setting up the indexes based on the header ordering
+		for(int i = 0;i < header.length;i++) {
+			if(header[i].equals("ID")){
+				headerIndexes[0] = i;
+			} else if(header[i].equals("PIN")){
+				headerIndexes[1] = i;
+			} else if(header[i].equals("First Name")){
+				headerIndexes[2] = i;
+			} else if(header[i].equals("Last Name")){
+				headerIndexes[3] = i;
+			} else if(header[i].equals("Address Checking Balance")){
+				headerIndexes[4] = i;
+			} else if(header[i].equals("City")){
+				headerIndexes[5] = i;
+			} else if(header[i].equals("State")){
+				headerIndexes[6] = i;
+			} else if(header[i].equals("Zip")){
+				headerIndexes[7] = i;
+			} else if(header[i].equals("Phone Number")){
+				headerIndexes[8] = i;
+			} else if(header[i].equals("Date of Birth")){
+				headerIndexes[9] = i;
+			} else if(header[i].equals("Checking Account Number")){
+				headerIndexes[10] = i;
+			} else if(header[i].equals("Checking Balance")){
+				headerIndexes[11] = i;
+			} else if(header[i].equals("Savings Account Number")){
+				headerIndexes[12] = i;
+			} else if(header[i].equals("Savings Balance")){
+				headerIndexes[13] = i;
+			} else if(header[i].equals("Credit Account Number")){
+				headerIndexes[14] = i;
+			} else if(header[i].equals("Credit Balance")){
+				headerIndexes[15] = i;
+			} else if(header[i].equals("Credit Score")){
+				headerIndexes[16] = i;
+			} else if(header[i].equals("Credit Limit")){
+				headerIndexes[17] = i;
+			}
+		}
 
-		HashMap<String,Customer> users = new HashMap<String,Customer>();
+		HashMap<String,Customer> users = new HashMap<>();
 		//add customer objects from file
 		while(fileReader.hasNextLine()){
-			createCustomer(fileReader.nextLine(),users);//adds Customer object to the users list
+			createCustomer(fileReader.nextLine(),users,headerIndexes);//adds Customer object to the users list
 		}
 		fileReader.close();
 
@@ -121,30 +161,30 @@ public class Utilities{
 	 * @param users array list that is populated as Customer objects are made
 	 */
 	//small method to simplify the creating of a checking object so it doesn't get to messy
-	private void createCustomer(String accInfo,HashMap<String,Customer> users) {
+	private void createCustomer(String accInfo,HashMap<String,Customer> users,int[] indexes) {
 
 		String[] info = accInfo.split(",");
 
 		//give names what info contains to properly identify because csv file is a mess
 		//order accordingly to the csv file
-		String state = info[0];
-		String city = info[1];
-		double cBalance = Double.parseDouble(info[2]);
-		String chNum = info[3];
-		String zip = info[4];
-		String fName = info[5];
-		int cLimit = Integer.parseInt(info[6]);
-		String lName = info[7];
-		double sBalance = Double.parseDouble(info[8]);
-		String phoneNum = info[9];
-		int id = Integer.parseInt(info[10]);
-		int pin = Integer.parseInt(info[11]);
-		String sNum = info[12];
-		String dob = info[13];
-		String cNum = info[14];
-		int cScore = Integer.parseInt(info[15]);
-		String add = info[16];
-		double chBalance = Double.parseDouble(info[17]);
+		String state = info[indexes[6]];
+		String city = info[indexes[5]];
+		double cBalance = Double.parseDouble(info[indexes[15]]);
+		String chNum = info[indexes[10]];
+		String zip = info[indexes[7]];
+		String fName = info[indexes[2]];
+		int cLimit = Integer.parseInt(info[indexes[17]]);
+		String lName = info[indexes[3]];
+		double sBalance = Double.parseDouble(info[indexes[13]]);
+		String phoneNum = info[indexes[8]];
+		int id = Integer.parseInt(info[indexes[0]]);
+		int pin = Integer.parseInt(info[indexes[1]]);
+		String sNum = info[indexes[12]];
+		String dob = info[indexes[9]];
+		String cNum = info[indexes[14]];
+		int cScore = Integer.parseInt(info[indexes[16]]);
+		String add = info[indexes[4]];
+		double chBalance = Double.parseDouble(info[indexes[11]]);
 		//create account objects needed
 		Checking chAcc =  new Checking(chNum,chBalance);
 		Savings sAcc  = new Savings(sNum,sBalance);
@@ -177,12 +217,27 @@ public class Utilities{
 			System.exit(1);
 		}
 		//assuming it has a header
-		fileReader.nextLine();//gets rid of the heading in the csv file
-		//ArrayList that will be populated
-		HashMap<Integer,Item> items = new HashMap<Integer,Item>();
+		//based on the header set up indexes for attributes of the item
+		String[] header = fileReader.nextLine().split(",");
+		int[] headerIndexes = new int[header.length];
+		//set up indexes so that file can be read in any order
+		for(int i = 0;i < header.length;i++){
+			if(header[i].equals("ID")){
+				headerIndexes[0] = i;
+
+			} else if(header[i].equals("Item")){
+				headerIndexes[1] = i;
+			} else if(header[i].equals("Price")){
+				headerIndexes[2] = i;
+			} else if(header[i].equals("Max")){
+				headerIndexes[3] = i;
+			}
+		}
+		//Hashmap that will be populated
+		HashMap<Integer,Item> items = new HashMap<>();
 
 		while(fileReader.hasNextLine()){
-			createItem(fileReader.nextLine(),items);//adds Item object to the users list
+			createItem(fileReader.nextLine(),items,headerIndexes);//adds Item object to the users list
 		}
 		fileReader.close();
 
@@ -210,13 +265,13 @@ public class Utilities{
 	 * @param itemInfo info from a csv file which is split and allocated accordingly
 	 * @param items ArrayList which will be populated as the Item is created
 	 */
-	private void createItem(String itemInfo,HashMap<Integer,Item> items) {
+	private void createItem(String itemInfo,HashMap<Integer,Item> items,int[] indexes) {
 		//split the info
 		String[] info = itemInfo.split(",");
-		double price = Double.parseDouble(info[0]);
-		String name = info[1];
-		int max = Integer.parseInt(info[2]);
-		int id = Integer.parseInt(info[3]);
+		double price = Double.parseDouble(info[indexes[2]]);
+		String name = info[indexes[1]];
+		int max = Integer.parseInt(info[indexes[3]]);
+		int id = Integer.parseInt(info[indexes[0]]);
 		//add item
 		items.put(id,new Item(id,name,price,max));
 	}
@@ -237,7 +292,6 @@ public class Utilities{
 				logger.close();
 			}
 			else{//if file not found the create it and write to it
-				findFile.createNewFile();
 				BufferedWriter logger = new BufferedWriter(new FileWriter("src/Generated_Files/Log.txt"));
 				logger.write(stringToLog);
 				logger.close();
@@ -256,12 +310,11 @@ public class Utilities{
 	 * updates the Bank Customers 2.csv file
 	 * @param users an HashMap populated by Customer Objects which is used to write to the file
 	 */
-	public void updateCustomerInfo(HashMap<String,Customer> users){
-		HashMap<Integer,Customer> integerMapped = new HashMap<Integer,Customer>();
-		Set<String> keySet = users.keySet();
-		Object[] keys = keySet.toArray();
-		for(int i = 0;i < keys.length;i++){
-			Customer cus = users.get(keys[i].toString());
+	public void updateCustomerInfo(CustomerCollection users){
+		HashMap<Integer,Customer> integerMapped = new HashMap<>();
+		CustomerCollectionIterator customerCollectionIterator = users.createIterator();
+		while (customerCollectionIterator.hasNext()){
+			Customer cus = customerCollectionIterator.next();
 			integerMapped.put(cus.getID(),cus);
 		}
 		while(true){
