@@ -1,11 +1,7 @@
-
-
 import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Set;
 
 /**
  * @author Arturo
@@ -26,7 +22,7 @@ public class ManagerActions{
 
 	/**
 	 * gets the only instance of this class
-	 * @return
+	 * @return returns an instance of the class
 	 */
 	public static ManagerActions getInstance(){
 		return manager;
@@ -35,7 +31,7 @@ public class ManagerActions{
 	/**
 	 * generates the bank statement
 	 * @param cus customer whose transaction will be written
-	 * @return
+	 * @return returns a formatted string for the bank statement
 	 */
 	public String generateBankStatement(Customer cus){
 		String statement = cus.toString() + "\n----------------------------------------------------------------------\n";
@@ -70,9 +66,8 @@ public class ManagerActions{
 	 * executes the transactions in actions.csv file
 	 * @param customers all customers in the system
 	 * @param items all items in the system
-	 * @throws FileNotFoundException
 	 */
-	public void execTransactions(CustomerCollection customers,HashMap<Integer,Item> items){
+	public void execTransactions(CustomerCollection customers,ItemCollection items){
 		ArrayList<String[]> transactions = handler.loadTransactions();
 		for(int i = 0;i < transactions.size();i++){
 			Object[] transaction = transactions.get(i);
@@ -83,7 +78,7 @@ public class ManagerActions{
 			//get the customer
 			Customer cus = null;
 			if(customers.hasKey(key)){
-				 cus = (Customer) customers.get(key);
+				 cus = customers.get(key);
 			}
 			//check if customer was set
 			if(cus != null){
@@ -133,7 +128,7 @@ public class ManagerActions{
 			return;
 		}
 		//get the customer if they exist
-		Customer depositDestination = (Customer) customers.get(key);
+		Customer depositDestination = customers.get(key);
 		//set start time and balances
 
 		if (depositDestination.getSessionStart() == null){
@@ -170,7 +165,7 @@ public class ManagerActions{
 			return;
 		}
 		//get the customer if they exist
-		Customer customerToPay = (Customer) customers.get(key);
+		Customer customerToPay = customers.get(key);
 		//see if the transaction was successful
 		//if not then just return from the method
 		try{
@@ -192,9 +187,9 @@ public class ManagerActions{
 	 * @param items map of items
 	 * @param transaction information about the transaction
 	 */
-	private void buyProcedure(Customer cus,HashMap<Integer,Item> items,Object[] transaction){
+	private void buyProcedure(Customer cus,ItemCollection items,Object[] transaction){
 		//check if the item exists within the hash map
-		if(!items.containsKey(Integer.parseInt(transaction[8].toString()))){
+		if(!items.hasKey(Integer.parseInt(transaction[8].toString()))){
 			System.out.println("Error: no item with index found");
 			return;
 		}
@@ -215,7 +210,6 @@ public class ManagerActions{
 			System.out.println(eBuy.getMessage());
 			return;
 		}
-
 		//at this point everything went well so i then just proceed log everything
 		String fString = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", cus.getFName(), cus.getLName(), item.getName(), item.getPrice(), transaction[2].toString(), time.format(LocalDateTime.now()));
 		//updates transactions made by the user
@@ -226,8 +220,6 @@ public class ManagerActions{
 		cus.addItemBought(item.getName());
 		//log to file
 		handler.logToFile(fString);
-
-		return;
 	}
 	//method managerInquire is overloaded
 	//this one below handles id manager is looking by name
@@ -250,7 +242,7 @@ public class ManagerActions{
 			System.out.println("No user with the provided name found");
 			return;
 		}
-		Customer cus = (Customer) customers.get(key);
+		Customer cus = customers.get(key);
 		//ensure the name is not split somewhere in the string
 		if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
 			System.out.println("no users found");
@@ -281,7 +273,7 @@ public class ManagerActions{
 		System.out.println("The following accounts where found given the name");
 		System.out.println("-------------------------------------------------");
 		int c = 0;
-		CustomerCollectionIterator customerCollectionIterator = (CustomerCollectionIterator) customers.createIterator();
+		CustomerCollectionIterator customerCollectionIterator = customers.createIterator();
 		//based on the account type 1 is checking 2 is savings 3 is credit
 		//based on the type method searched for the account number
 		//Check Customer toString method for more detail
@@ -309,8 +301,7 @@ public class ManagerActions{
 					c++;
 				}
 			}
-		}
-		else if (type == 2) {//this is done for savings
+		} else if (type == 2) {//this is done for savings
 			while(customerCollectionIterator.hasNext()){
 				Customer cus = customerCollectionIterator.next();
 				Savings s = cus.getSave();
@@ -334,8 +325,7 @@ public class ManagerActions{
 					c++;
 				}
 			}
-		}
-		else if (type == 3) {//this is done for credit
+		}else if (type == 3) {//this is done for credit
 			//search for the customer based on their info
 			while(customerCollectionIterator.hasNext()){
 				Customer cus = customerCollectionIterator.next();
@@ -363,7 +353,7 @@ public class ManagerActions{
 			}
 		}
 		if(c == 0){
-			//at this point there is no user found so we let user know
+			//at this point there is no user found, so we let user know
 			System.out.println("No user with the provided number found");
 		}
 	}

@@ -1,9 +1,7 @@
-import java.util.HashMap;
 import java.util.Scanner;
-import java.util.Set;
 
 public class ManagerMenu extends BankMenu{
-    public ManagerMenu(Scanner scnr,CustomerCollection customers,HashMap<Integer,Item> items){
+    public ManagerMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
     }
     /**
@@ -12,7 +10,7 @@ public class ManagerMenu extends BankMenu{
     public void display(){
         System.out.println("Hello Manager what would you like to do?(Enter:1-5)");
         //option used for action
-        int moption = -1;
+        int moption;
 
         while(true){
             System.out.println("1.Inquire customer by name");
@@ -25,7 +23,7 @@ public class ManagerMenu extends BankMenu{
                 moption = Integer.parseInt(this.getUserInput().nextLine());
             }
             catch(Exception e){
-                System.out.println("error enter an appropiate integer(1-3)");
+                System.out.println("error enter an appropriate integer(1-3)");
                 continue;
             }
             switch(moption){
@@ -45,9 +43,8 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("2.Savings");
                     System.out.println("3.Credit");
                     int op = -1;
-                    boolean outerloop = true;
                     //ensure correct input happens
-                    while(outerloop && (op < 1 || op > 3)){
+                    while((op < 1 || op > 3)){
                         while(true){
                             try{
                                 op = Integer.parseInt(this.getUserInput().nextLine());
@@ -77,7 +74,7 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("How would you like to generate the bank statement by?");
                     System.out.println("1.Name");
                     System.out.println("2.ID");
-                    int option = -1;
+                    int option;
                     while(true){
                         try {
                             option = Integer.parseInt(this.getUserInput().nextLine());
@@ -109,7 +106,7 @@ public class ManagerMenu extends BankMenu{
                                 continue;
                             }
                             //generate key by name
-                            cus = (Customer) this.getCustomers().get(key);
+                            cus = this.getCustomers().get(key);
                             if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
                                 System.out.println("no users found");
                                 continue;
@@ -123,7 +120,7 @@ public class ManagerMenu extends BankMenu{
                         //by id
                         case 2:
                             System.out.println("Please enter an ID");
-                            int id = -1;
+                            int id;
                             //ensure id is an integer
                             while(true){
                                 try {
@@ -149,7 +146,7 @@ public class ManagerMenu extends BankMenu{
                                     break;
                                 }
                             }
-                            //reset to ensure iteration starts at 0 again
+                            //reset to ensure iteration starts at 0 again to reuse obj
                             this.getCustomerIterator().reset();
                             //if the customer is not null it was found
                             if(cus != null){
@@ -176,7 +173,7 @@ public class ManagerMenu extends BankMenu{
                     return;
                 //not a proper option chosen
                 default:
-                    System.out.println("Error: enter an appropiate integer(1-3)");
+                    System.out.println("Error: enter an appropriate integer(1-3)");
                     continue;
             }
             //ask what the manager wants to do next

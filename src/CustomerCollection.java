@@ -12,13 +12,13 @@ public class CustomerCollection implements Collections {
         customers.put(key.toString(),(Customer) o);
     }
 
-    public Object get(Object key){
-        return (Object) customers.get(key.toString());
+    public Customer get(Object key){
+        return customers.get(key.toString());
     }
     public boolean hasKey(Object key){
         return this.customers.containsKey(key.toString());
     }
-    public Iterator createIterator(){
+    public CustomerCollectionIterator createIterator(){
             return new CustomerCollectionIterator(this.customers);
     }
     public int size(){

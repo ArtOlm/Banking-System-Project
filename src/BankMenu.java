@@ -13,17 +13,17 @@ public abstract class BankMenu {
     //map containing the customers
     private CustomerCollection customers;
     //map containing the items
-    private HashMap<Integer,Item> items;
+    private ItemCollection items;
     //iterates over the customer iterator
     private CustomerCollectionIterator customerIterator;
-    public BankMenu(Scanner userInput,CustomerCollection customers,HashMap<Integer,Item> items){
+    public BankMenu(Scanner userInput,CustomerCollection customers,ItemCollection items){
         this.transactionHandler = Transactions.getInstance();
         this.myHandler = Utilities.getInstance();
         this.manHandler = ManagerActions.getInstance();
         this.userInput = userInput;
         this.customers = customers;
         this.items = items;
-        this.customerIterator = (CustomerCollectionIterator) this.customers.createIterator();
+        this.customerIterator = this.customers.createIterator();
     }
     public abstract void display();
     public Transactions getTransactionHandler() {
@@ -46,7 +46,7 @@ public abstract class BankMenu {
         return customers;
     }
 
-    public HashMap<Integer, Item> getItems() {
+    public ItemCollection getItems() {
         return items;
     }
 

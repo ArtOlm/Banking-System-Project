@@ -11,7 +11,7 @@ public class CustomerCollectionIterator implements Iterator{
     }
 
     public boolean hasNext(){
-        return this.pos < this.customers.size();
+        return this.pos < this.keys.length;
     }
     public Customer next(){
         Customer cus = this.customers.get(keys[pos]);

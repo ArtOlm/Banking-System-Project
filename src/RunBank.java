@@ -21,7 +21,7 @@ public class RunBank{
 	public static void main(String[] args){
 		//populates the main data structures
 		CustomerCollection customers = new CustomerCollection(Utilities.getInstance().populateCustomers());
-		HashMap<Integer,Item> items = Utilities.getInstance().populateItems();
+		ItemCollection items = new ItemCollection(Utilities.getInstance().populateItems());
 		//object that handles the user input
 		Scanner userInput = new Scanner(System.in);
 		//handles the menus depending on the user
@@ -108,6 +108,6 @@ public class RunBank{
 			}
 		}
 		// this line updates and generates the new file with updated information when user exits the system
-		//Utilities.getInstance().updateCustomerInfo(customers);
+		Utilities.getInstance().updateCustomerInfo(customers);
 	}
 }
