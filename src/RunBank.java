@@ -20,12 +20,13 @@ public class RunBank{
 
 	public static void main(String[] args){
 		//populates the main data structures
-		HashMap<String,Customer> customers = Utilities.getInstance().populateCustomers();
+		CustomerCollection customers = new CustomerCollection(Utilities.getInstance().populateCustomers());
 		HashMap<Integer,Item> items = Utilities.getInstance().populateItems();
 		//object that handles the user input
 		Scanner userInput = new Scanner(System.in);
 		//handles the menus depending on the user
-		BankMenus myMenus = new BankMenus(userInput,customers,items);
+		ManagerMenu managerMenu = new ManagerMenu(userInput,customers,items);
+		UserMenu userMenu = new UserMenu(userInput,customers,items);
 		//handles the user option
 		int option1;
 		//handles the exit of the program
@@ -68,17 +69,17 @@ public class RunBank{
 			switch(option1){
 			case 1://go to the user menu
 					System.out.println("-------------------------------------------");
-					myMenus.userMenu();
+					userMenu.display();
 					System.out.println("-------------------------------------------");
 				break;
 			case 2://go to the managed menu
 					System.out.println("-------------------------------------------");
-					myMenus.managerMenu();
+					managerMenu.display();
 					System.out.println("-------------------------------------------");
 			    break;
 			case 3://menu for creating user
 					System.out.println("-------------------------------------------");
-					myMenus.creationMenu();
+					userMenu.userCreation();
 					System.out.println("-------------------------------------------");
 				break;
 			case 4://exit
@@ -107,6 +108,6 @@ public class RunBank{
 			}
 		}
 		// this line updates and generates the new file with updated information when user exits the system
-		Utilities.getInstance().updateCustomerInfo(customers);
+		//Utilities.getInstance().updateCustomerInfo(customers);
 	}
 }

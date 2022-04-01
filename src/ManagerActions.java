@@ -72,7 +72,7 @@ public class ManagerActions{
 	 * @param items all items in the system
 	 * @throws FileNotFoundException
 	 */
-	public void execTransactions(HashMap<String,Customer> customers,HashMap<Integer,Item> items){
+	public void execTransactions(CustomerCollection customers,HashMap<Integer,Item> items){
 		ArrayList<String[]> transactions = handler.loadTransactions();
 		for(int i = 0;i < transactions.size();i++){
 			Object[] transaction = transactions.get(i);
@@ -82,8 +82,8 @@ public class ManagerActions{
 			//and check that action is not a deposit
 			//get the customer
 			Customer cus = null;
-			if(customers.containsKey(key)){
-				 cus = customers.get(key);
+			if(customers.hasKey(key)){
+				 cus = (Customer) customers.get(key);
 			}
 			//check if customer was set
 			if(cus != null){
@@ -124,16 +124,16 @@ public class ManagerActions{
 	 * @param customers list of customers
 	 * @param transaction transaction being executed
 	 */
-	private void depositProcedure(HashMap<String,Customer> customers,Object[] transaction){
+	private void depositProcedure(CustomerCollection customers,Object[] transaction){
 		//get the customer who will have money deposited to their account
 		String key  = handler.generateKey(transaction[4].toString(),transaction[5].toString());
 		//check if customer exists
-		if(!customers.containsKey(key)){
+		if(!customers.hasKey(key)){
 			System.out.println("No customer exist");
 			return;
 		}
 		//get the customer if they exist
-		Customer depositDestination = customers.get(key);
+		Customer depositDestination = (Customer) customers.get(key);
 		//set start time and balances
 
 		if (depositDestination.getSessionStart() == null){
@@ -162,15 +162,15 @@ public class ManagerActions{
 	 * @param customers map of customers
 	 * @param transaction array holding information about the transaction
 	 */
-	private void payProcedure(Customer cus,HashMap<String,Customer> customers,Object[] transaction){
+	private void payProcedure(Customer cus,CustomerCollection customers,Object[] transaction){
 		String key  = handler.generateKey(transaction[4].toString(),transaction[5].toString());
 		//check if customer exists
-		if(!customers.containsKey(key)){
+		if(!customers.hasKey(key)){
 			System.out.println("No customer exist");
 			return;
 		}
 		//get the customer if they exist
-		Customer customerToPay = customers.get(key);
+		Customer customerToPay = (Customer) customers.get(key);
 		//see if the transaction was successful
 		//if not then just return from the method
 		try{
@@ -236,7 +236,7 @@ public class ManagerActions{
 	 * @param name the name used for searching
 	 * @param customers the HashMap containing the Customer objects
 	 */
-	public void managerInquire(String name, HashMap<String,Customer> customers){
+	public void managerInquire(String name, CustomerCollection customers){
 		System.out.println("The following accounts where found given the name");
 		System.out.println("-------------------------------------------------");
 
@@ -244,39 +244,32 @@ public class ManagerActions{
 			System.out.println("Error: not enough info provided");
 			return;
 		}
-		int count = 0;
-		//goes through HashMap comparing names
-		Set<String> kS = customers.keySet();
-		Object[] allKeys = kS.toArray();
-		for(int i = 0;i < allKeys.length;i++){
-			Customer cus = customers.get(allKeys[i].toString());
-			//compare names without any white spaces
-			if(handler.strNWS(name).equalsIgnoreCase(handler.strNWS(cus.getFName(),cus.getLName()))){
-				//ensure the name is not split somewhere in the string
-				if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
-					System.out.println("no users found");
-					return;
-				}
-				//Check Customer toString method
-				// in general everything abut a Customer is printed
-				System.out.println(cus);
-				System.out.println("Items bought");
-				System.out.println("-------------------------");
-				cus.printItemsBought();
-				System.out.println("Time of purchase and item purchased ");
-				System.out.println("-------------------------");
-				cus.printTransactions();
-				System.out.println("Total Money Spent at Miners Mall");
-				System.out.println("---------------------------------");
-				System.out.printf("%.2f$\n",cus.getTotalMoneySpent());
 
-				count++;
-			}
-		}
-		if(count == 0){//if count is 0 then no users were found
+		String key = handler.generateKey("",name);
+		if(!customers.hasKey(key)){
 			System.out.println("No user with the provided name found");
+			return;
 		}
+		Customer cus = (Customer) customers.get(key);
+		//ensure the name is not split somewhere in the string
+		if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
+			System.out.println("no users found");
+			return;
+		}
+		//Check Customer toString method
+		// in general everything abut a Customer is printed
+		System.out.println(cus);
+		System.out.println("Items bought");
+		System.out.println("-------------------------");
+		cus.printItemsBought();
+		System.out.println("Time of purchase and item purchased ");
+		System.out.println("-------------------------");
+		cus.printTransactions();
+		System.out.println("Total Money Spent at Miners Mall");
+		System.out.println("---------------------------------");
+		System.out.printf("%.2f$\n",cus.getTotalMoneySpent());
 	}
+
 	/**
 	 * method handles inquire if an account by account type and number
 	 * @param type integer that describes account type
@@ -284,20 +277,18 @@ public class ManagerActions{
 	 * @param customers HashMap of Customer objects
 	 */
 	//this one below handles id manager is looking by account
-	public void managerInquire(int type,String number,HashMap<String,Customer> customers){
+	public void managerInquire(int type,String number,CustomerCollection customers){
 		System.out.println("The following accounts where found given the name");
 		System.out.println("-------------------------------------------------");
 		int c = 0;
-		//getting all keys to search hash table
-		Set<String> keys = customers.keySet();
-		Object[] allKeys = keys.toArray();
+		CustomerCollectionIterator customerCollectionIterator = (CustomerCollectionIterator) customers.createIterator();
 		//based on the account type 1 is checking 2 is savings 3 is credit
 		//based on the type method searched for the account number
 		//Check Customer toString method for more detail
 		// in general everything abut a Customer is printed
 		if(type == 1){//this is node for checking
-			for(int i = 0;i < allKeys.length;i++){
-				Customer cus = customers.get(allKeys[i].toString());
+			while(customerCollectionIterator.hasNext()){
+				Customer cus = customerCollectionIterator.next();
 				Checking ch = cus.getCheck();
 				if(handler.strNWS(ch.getAccNum()).equals(handler.strNWS(number))){
 					//ensure string is of proper length
@@ -320,8 +311,8 @@ public class ManagerActions{
 			}
 		}
 		else if (type == 2) {//this is done for savings
-			for(int i = 0;i < allKeys.length;i++){
-				Customer cus = customers.get(allKeys[i].toString());
+			while(customerCollectionIterator.hasNext()){
+				Customer cus = customerCollectionIterator.next();
 				Savings s = cus.getSave();
 				//print info if number matches
 				if(handler.strNWS(s.getAccNum()).equals(handler.strNWS(number))){
@@ -346,8 +337,8 @@ public class ManagerActions{
 		}
 		else if (type == 3) {//this is done for credit
 			//search for the customer based on their info
-			for(int i= 0;i < allKeys.length;i++){
-				Customer cus = customers.get(allKeys[i].toString());
+			while(customerCollectionIterator.hasNext()){
+				Customer cus = customerCollectionIterator.next();
 				//get temp customer
 				Credit cr = cus.getCredit();
 				//if number matches print their info
