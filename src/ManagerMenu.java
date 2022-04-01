@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * @author Arturo Olmos
+ * @version 1.0
+ * this class handles the manager menu
+ */
 public class ManagerMenu extends BankMenu{
     public ManagerMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
@@ -140,7 +145,12 @@ public class ManagerMenu extends BankMenu{
                             //search for customer by id
                             cus = null;
                             while(this.getCustomerIterator().hasNext()){
-                                Customer temp = this.getCustomerIterator().next();
+                                Customer temp = null;
+                                try {
+                                    temp = this.getCustomerIterator().next();
+                                }catch (IndexOutOfBoundsException e){
+                                    System.out.println(e.getMessage());
+                                }
                                 if(id == temp.getID()){
                                     cus = temp;
                                     break;

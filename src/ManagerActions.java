@@ -1,4 +1,3 @@
-import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -280,7 +279,13 @@ public class ManagerActions{
 		// in general everything abut a Customer is printed
 		if(type == 1){//this is node for checking
 			while(customerCollectionIterator.hasNext()){
-				Customer cus = customerCollectionIterator.next();
+				Customer cus = null;
+				try {
+					cus = customerCollectionIterator.next();
+				}
+				catch (IndexOutOfBoundsException e){
+					System.out.println(e.getMessage());
+				}
 				Checking ch = cus.getCheck();
 				if(handler.strNWS(ch.getAccNum()).equals(handler.strNWS(number))){
 					//ensure string is of proper length
@@ -303,7 +308,13 @@ public class ManagerActions{
 			}
 		} else if (type == 2) {//this is done for savings
 			while(customerCollectionIterator.hasNext()){
-				Customer cus = customerCollectionIterator.next();
+				Customer cus = null;
+				try {
+					cus = customerCollectionIterator.next();
+				}
+				catch (IndexOutOfBoundsException e){
+					System.out.println(e.getMessage());
+				}
 				Savings s = cus.getSave();
 				//print info if number matches
 				if(handler.strNWS(s.getAccNum()).equals(handler.strNWS(number))){
@@ -328,7 +339,13 @@ public class ManagerActions{
 		}else if (type == 3) {//this is done for credit
 			//search for the customer based on their info
 			while(customerCollectionIterator.hasNext()){
-				Customer cus = customerCollectionIterator.next();
+				Customer cus = null;
+				try {
+					cus = customerCollectionIterator.next();
+				}
+				catch (IndexOutOfBoundsException e){
+					System.out.println(e.getMessage());
+				}
 				//get temp customer
 				Credit cr = cus.getCredit();
 				//if number matches print their info

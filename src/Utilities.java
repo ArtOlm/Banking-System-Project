@@ -9,7 +9,7 @@ import java.io.FileNotFoundException;
 
 /**
  * @author Arturo
- * @version 1.0
+ * @version 4.0
  * class has helpful methods used to solve problems in many classes
  * this class is my approach to a singleton design pattern
  * this file used to be known as FReaderWriter in my lab 2
@@ -23,7 +23,6 @@ public class Utilities{
 	private int maxCustomerIDX;
 	//default editor
 	private Utilities(){ this.maxCustomerIDX = 0;}
-
 	/**
 	 *
 	 * @return an array list filled with an array of string
@@ -154,7 +153,6 @@ public class Utilities{
 
 		return users;
 	}
-
 	/**
 	 * *
 	 * @param accInfo given information based on a csv we use it to split into correct data
@@ -162,9 +160,7 @@ public class Utilities{
 	 */
 	//small method to simplify the creating of a checking object so it doesn't get to messy
 	private void createCustomer(String accInfo,HashMap<String,Customer> users,int[] indexes) {
-
 		String[] info = accInfo.split(",");
-
 		//give names what info contains to properly identify because csv file is a mess
 		//order accordingly to the csv file
 		String state = info[indexes[6]];
@@ -193,14 +189,10 @@ public class Utilities{
 		if(this.maxCustomerIDX < id){
 			this.maxCustomerIDX = id;
 		}
-
-
 		String key = generateKey(fName,lName);
 		//add the customer to the hash map
 		users.put(key,cus);
-
 	}
-
 	/**
 	 * reads Miners Mall.csv and populates HashMap of Item objects
 	 * @return returns a HashMap populated with Item objects
@@ -224,7 +216,6 @@ public class Utilities{
 		for(int i = 0;i < header.length;i++){
 			if(header[i].equals("ID")){
 				headerIndexes[0] = i;
-
 			} else if(header[i].equals("Item")){
 				headerIndexes[1] = i;
 			} else if(header[i].equals("Price")){
@@ -235,14 +226,11 @@ public class Utilities{
 		}
 		//Hashmap that will be populated
 		HashMap<Integer,Item> items = new HashMap<>();
-
 		while(fileReader.hasNextLine()){
 			createItem(fileReader.nextLine(),items,headerIndexes);//adds Item object to the users list
 		}
 		fileReader.close();
-
 		return items;
-
 	}
 
 	/**
@@ -275,7 +263,6 @@ public class Utilities{
 		//add item
 		items.put(id,new Item(id,name,price,max));
 	}
-
 	/**
 	 *
 	 * @param stringToLog a string that will be logged onto a file called Log.txt
@@ -290,8 +277,7 @@ public class Utilities{
 				BufferedWriter logger = new BufferedWriter(new FileWriter("src/Generated_Files/Log.txt",true));
 				logger.write(stringToLog);
 				logger.close();
-			}
-			else{//if file not found the create it and write to it
+			} else{//if file not found the create it and write to it
 				BufferedWriter logger = new BufferedWriter(new FileWriter("src/Generated_Files/Log.txt"));
 				logger.write(stringToLog);
 				logger.close();
@@ -305,7 +291,6 @@ public class Utilities{
 		}
 	}
 	//updates the CVS file containing customer info
-
 	/**
 	 * updates the Bank Customers 2.csv file
 	 * @param users an HashMap populated by Customer Objects which is used to write to the file
@@ -328,8 +313,7 @@ public class Utilities{
 					updateFileInfo.write(user.getID()+","+ user.getPin()+","+user.getFName()+","+user.getLName()+","+user.getAddress()+","+user.getCity()+","+user.getState()+","+user.getZip()+","+user.getPhone()+","+user.getDOB() + "," + user.getCheck().getAccNum() + "," + user.getCheck().getBalance() + "," + user.getSave().getAccNum() + "," + user.getSave().getBalance() + "," + user.getCredit().getAccNum() + "," + user.getCredit().getBalance()+ "," + user.getCredit().getScore()+ "," + user.getCredit().getLimit() + "\n");
 				}
 				updateFileInfo.close();
-			}
-			catch (IOException e){
+			} catch (IOException e){
 				//if the file is open then we let user know to close it and give them some time to close it
 				System.out.println("ERROR: Please close the file src/Generated_Files/Updated Customers Sheet.csv");
 				System.out.println("Data might not have been updated!");

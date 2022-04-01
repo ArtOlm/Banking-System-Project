@@ -2,6 +2,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/**
+ * @author Arturo Olmos
+ * @version 1.0
+ * Class is used to handle the user menu
+ */
 public class UserMenu extends BankMenu{
     //item iterator only for this class since it is the only that iterates over hash map
     private ItemCollectionIterator itemCollectionIterator;
@@ -30,7 +35,6 @@ public class UserMenu extends BankMenu{
             //getting their id helps since we stored  with indexing
             int userID;
             System.out.print("ID: ");
-
             //ensure the user inputs an integer
             //user is able to type random string
             while(true){
@@ -154,8 +158,6 @@ public class UserMenu extends BankMenu{
                             transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),deposit,accType,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             this.getMyHandler().logToFile(transactionLog);
-
-
                             System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
                             System.out.println("-------------------------------------------------");
                             break;
@@ -169,7 +171,6 @@ public class UserMenu extends BankMenu{
                             while(!from.equals("Checking") && !from.equals("Savings") && !from.equals("Credit")){
                                 System.out.println("Please enter a correct option");
                                 from = this.getUserInput().nextLine();
-
                             }
                             System.out.println("Please enter the name of the account you want to transfer to");
                             System.out.println("1.Checking");
@@ -179,7 +180,6 @@ public class UserMenu extends BankMenu{
                             while(!to.equals("Checking") && !to.equals("Savings") && !to.equals("Credit")){
                                 System.out.println("Please enter a correct option");
                                 to = this.getUserInput().nextLine();
-
                             }
                             System.out.println("How much would you like to transfer?(Do not include comma)");
                             double transfer;
@@ -223,7 +223,6 @@ public class UserMenu extends BankMenu{
                             while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
                                 System.out.println("Please enter a correct option");
                                 accType = this.getUserInput().nextLine();
-
                             }
                             System.out.println("Please enter the amount you would like to withdraw:(DO NOT USE COMMA)");
                             double withdrawl;
@@ -266,7 +265,6 @@ public class UserMenu extends BankMenu{
                             while(!from.equals("Checking") && !from.equals("Savings") && !from.equals("Credit")){
                                 System.out.println("Please enter a correct option");
                                 from = this.getUserInput().nextLine();
-
                             }
                             System.out.println("How much would you like to pay?(Do not include comma)");
                             double pay;
@@ -292,7 +290,6 @@ public class UserMenu extends BankMenu{
                             String userToPayLastName = this.getUserInput().nextLine();
                             int userToPayID;
                             System.out.print("ID: ");
-
                             //ensure a proper id is entered
                             while(true){
                                 try{
@@ -343,7 +340,6 @@ public class UserMenu extends BankMenu{
                                 }
                                 //if success then we tell user and log it
                                 System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFName(),userToPay.getLName(),to);
-
                                 transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),pay,from,userToPay.getFName(),userToPay.getLName(),to,time.format(LocalDateTime.now()));
                                 userAccount.addTransaction(transactionLog);
                                 this.getMyHandler().logToFile(transactionLog);
@@ -508,8 +504,7 @@ public class UserMenu extends BankMenu{
                         System.out.println("What else would you like to do today?");
                     }
                 }
-            }
-            else{
+            } else{
                 System.out.println("-------------------------------------------");
                 // user did not enter matching credential, we then ask if they would like to retry of just exit
                 System.out.println("Look like something went wrong, would you like to try again(Enter Y to continue or n to exit)");
@@ -521,12 +516,10 @@ public class UserMenu extends BankMenu{
                 if(decision.equals("Y")){
                     System.out.println("-------------------------------------------");
                     continue;
-                }
-                else{
+                } else{
                     System.out.println("-------------------------------------------");
                     break;
                 }
-
             }
         }
     }
@@ -602,9 +595,12 @@ public class UserMenu extends BankMenu{
                 System.out.println("Please enter a proper integer");
                 continue;
             }
+            if(score < 0){
+                System.out.println("Error: Not possible");
+                continue;
+            }
             break;
         }
-
         int id = this.getMyHandler().getMaxCustomerIDX();
         int checkNum = id + 1000000;
         int saveNum = id + 2000000;
@@ -631,7 +627,6 @@ public class UserMenu extends BankMenu{
         System.out.println("Your Savings Number is: " + saveNum);
         System.out.println("Your Credit Number is: " + creditNum);
     }
-
     /**
      * generates a pin not found in the csv file
      * @param pins all the pins found in the customers collection
@@ -759,7 +754,11 @@ public class UserMenu extends BankMenu{
     private void printItemMenu(){
         System.out.println("-------------------------------------------------");
         while (this.itemCollectionIterator.hasNext()){
-            System.out.println(this.itemCollectionIterator.next());
+            try {
+                System.out.println(this.itemCollectionIterator.next());
+            }catch (IndexOutOfBoundsException e){
+                System.out.println(e.getMessage());
+            }
         }
         //reset so that iterator can be reused
         this.itemCollectionIterator.reset();

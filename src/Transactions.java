@@ -1,6 +1,6 @@
 /**
  * @author Arturo Olmos
- * @version 2.0
+ * @version 3.0
  * class helps handle all transaction processes
  */
 public class Transactions{
@@ -11,7 +11,7 @@ public class Transactions{
 	private String moreThanCreditBalMessage;
 	private String unknownExceptionMessage;
 	private Transactions(){
-		this.negativeValueMessage = "ERROR: Cannot deposit negative values";
+		this.negativeValueMessage = "Error: Cannot deposit negative values";
 		this.moreThanCreditBalMessage = "Error: cannot deposit more than credit balance";
 		this.notEnoughFundsMessage = "Error: Not enough funds";
 		this.overCreditLimitMessage = "Error: Transaction puts you over the credit limit";
@@ -26,7 +26,6 @@ public class Transactions{
 		if(transactionHandler == null){
 			transactionHandler = new Transactions();
 		}
-
 		return transactionHandler;
 	}
 	/**
@@ -59,33 +58,26 @@ public class Transactions{
 	 * @return returns based on success,true = successful,false = failure
 	 */
 	public void userDeposit(Customer userAccount,String acountType,double deposit) throws TransactionException{
-
 		//set a maximum and minimum value to how much they can deposit at once
 		if(deposit < 0){
 			throw new TransactionException(this.negativeValueMessage);
 		}
-
-
 		//check to see what account is being deposited to
 		if(acountType.equals("Checking")){
 		double newBalance = userAccount.getCheck().getBalance() + deposit;
 		userAccount.getCheck().setBalance(newBalance);//update balance accordingly
-		}
-		else if (acountType.equals("Savings")) {
+		} else if (acountType.equals("Savings")) {
 			double newBalance = userAccount.getSave().getBalance() + deposit;
 			userAccount.getSave().setBalance(newBalance);	
-		}
-		else if (acountType.equals("Credit")) {
+		} else if (acountType.equals("Credit")) {
 			if(userAccount.getCredit().getBalance() - deposit < 0){
 				throw new TransactionException(this.moreThanCreditBalMessage);
 			}
 			double newBalance = userAccount.getCredit().getBalance() - deposit;//deposit is being subtracted because it is money being paid
 			userAccount.getCredit().setBalance(newBalance);
-		}
-		else{//there is an error, this is handled in Menu
+		} else{//there is an error, this is handled in Menu
 			throw new TransactionException("Error: No such account found");
 		}
-
 	}
 	/**
 	 * handles a users account transfer(e.g checking to savings)
@@ -99,9 +91,7 @@ public class Transactions{
 		//ensure the transfer is not to the same account
 		if(from.equals(to)){
 			throw new TransactionException("ERROR: can only transfer to a different account type");
-		}
-		//ensure transfer is not a negative value
-		else if(transfer < 0){
+		} else if(transfer < 0){
 			throw new TransactionException(this.negativeValueMessage);
 		}
 		//check which account transferring from and to
@@ -119,56 +109,50 @@ public class Transactions{
 				//update balance
 		    	userAccount.getSave().setBalance(userAccount.getSave().getBalance() + transfer);
 				userAccount.getCheck().setBalance(nb);
-			}
-			else if (to.equals("Credit")) {
+			} else if (to.equals("Credit")) {
 				if(userAccount.getCredit().getBalance() - transfer < 0){
 					throw new TransactionException(this.moreThanCreditBalMessage);
 				}
 				//update balance
 				userAccount.getCheck().setBalance(nb);
 				userAccount.getCredit().setBalance(userAccount.getCredit().getBalance() - transfer);
-			}
-			else{//at this point there is an error and then we do nothing 
+			} else{//at this point there is an error and then we do nothing
 				throw new TransactionException(this.unknownExceptionMessage);
 			}	
-		}
-		else if (from.equals("Savings")) {//this is done for savings, similar to checking
+		} else if (from.equals("Savings")) {//this is done for savings, similar to checking
 			double nb = userAccount.getSave().getBalance() - transfer;
+			//check if the balance is less than 0
 			if(nb < 0){
 				throw new TransactionException(this.notEnoughFundsMessage);
 			}
 		    if (to.equals("Checking")) {
 		    	userAccount.getCheck().setBalance(userAccount.getCheck().getBalance() + transfer);
 				userAccount.getSave().setBalance(nb);
-			}
-			else if (to.equals("Credit")) {
+			} else if (to.equals("Credit")) {
 				if(userAccount.getCredit().getBalance() - transfer < 0){
 					throw new TransactionException(this.moreThanCreditBalMessage);
 				}
 				userAccount.getCredit().setBalance(userAccount.getCredit().getBalance() - transfer);
 				userAccount.getSave().setBalance(nb);
-			}
-			else{
+			} else{
 				throw new TransactionException(this.unknownExceptionMessage);
 			}	
-		}
-		else if (from.equals("Credit")) {
+		} else if (from.equals("Credit")) {
 			double nb = userAccount.getCredit().getBalance() + transfer;
-			if(nb > userAccount.getCredit().getLimit()){//ensure user does not go over the limit
+			//ensure user does not go over the limit
+			if(nb > userAccount.getCredit().getLimit()){
 				throw new TransactionException(this.notEnoughFundsMessage);
 			}
 			userAccount.getCredit().setBalance(nb);
+			//look for the account the transfer will go to
 		    if (to.equals("Savings")) {
 		    	userAccount.getSave().setBalance(userAccount.getSave().getBalance() + transfer);	
-			}
-			else if (to.equals("Checking")) {
+			} else if (to.equals("Checking")) {
 				userAccount.getCheck().setBalance(userAccount.getCheck().getBalance() + transfer);
-			}
-			else{//at this point something went wrong, and we return to the main menu
+			} else{//at this point something went wrong, and we return to the main menu
 				throw new TransactionException(this.unknownExceptionMessage);
 			}
-		}
-		else{//something was wrong from the user, this is handled in the Menu Class
+		} else{//something was wrong from the user, this is handled in the Menu Class
 			throw new TransactionException(this.unknownExceptionMessage);
 		}
 	}
@@ -194,27 +178,24 @@ public class Transactions{
 			}
 			//sets new baalnce if all goes well
 			userAccount.getCheck().setBalance(nb);
-		}
-		else if (accType.equals("Savings")) {
+		} else if (accType.equals("Savings")) {
 			double nb = userAccount.getSave().getBalance() - withdrawl;
 			if(nb < 0){
 				throw new TransactionException(this.notEnoughFundsMessage);
 			}
 			userAccount.getSave().setBalance(nb);	
-		}
-		else if (accType.equals("Credit")) {
+		} else if (accType.equals("Credit")) {
 			double nb = userAccount.getCredit().getBalance() + withdrawl;
 			if(nb > userAccount.getCredit().getLimit()) {//ensure credit balance does not pass the limit
 				throw new TransactionException(this.overCreditLimitMessage);
 			}
 			userAccount.getCredit().setBalance(nb);
-		}
-		else{
+		} else{
 			throw new TransactionException(this.unknownExceptionMessage);
 		}
 	}
 	/**
-	 * handles a users transaction to another user
+	 * handles a user's transaction to another user
 	 * @param userAccount Customer object containing all information
 	 * @param userToPay user that will receive money
 	 * @param from the type of account user uses to pay
@@ -227,6 +208,7 @@ public class Transactions{
 		if(pay < 0){
 			throw new TransactionException(this.negativeValueMessage);
 		}
+		//check if the user is trying to pay themselves
         if(userAccount.getID() == userToPay.getID()){
             throw new TransactionException("Error: Cannot pay yourself");
         }
@@ -241,20 +223,17 @@ public class Transactions{
 		    if (to.equals("Savings")) {
 		    	userToPay.getSave().setBalance(userToPay.getSave().getBalance() + pay);
 				userAccount.getCheck().setBalance(nb);
-			}
-			else if (to.equals("Credit")) {
+			} else if (to.equals("Credit")) {
 				if(userToPay.getCredit().getBalance() - pay < 0){
 					throw new TransactionException(this.moreThanCreditBalMessage);
 				}
 
 				userToPay.getCredit().setBalance(userToPay.getCredit().getBalance() - pay);
 				userAccount.getCheck().setBalance(nb);
-			}
-			else if (to.equals("Checking")) {
+			} else if (to.equals("Checking")) {
 				userToPay.getCheck().setBalance(userToPay.getCheck().getBalance() + pay);
 				userAccount.getCheck().setBalance(nb);
-			}
-			else{//at this point there is an error, then we do nothing, this is prevented in the Menu class
+			} else{//at this point there is an error, then we do nothing, this is prevented in the Menu class
 				throw new TransactionException(this.unknownExceptionMessage);
 			}	
 		}
@@ -267,24 +246,19 @@ public class Transactions{
 		    if (to.equals("Checking")) {
 		    	userToPay.getCheck().setBalance(userToPay.getCheck().getBalance() + pay);
 				userAccount.getSave().setBalance(nb);
-			}
-			else if (to.equals("Credit")) {
+			} else if (to.equals("Credit")) {
 				if(userToPay.getCredit().getBalance() - pay < 0){
 					throw new TransactionException(this.moreThanCreditBalMessage);
 				}
 				userToPay.getCredit().setBalance(userToPay.getCredit().getBalance() - pay);
 				userAccount.getSave().setBalance(nb);
-			}
-			else if (to.equals("Savings")) {
+			} else if (to.equals("Savings")) {
 				userToPay.getSave().setBalance(userToPay.getSave().getBalance() + pay);
 				userAccount.getSave().setBalance(nb);
-			}
-			else{
+			} else{
 				throw new TransactionException(this.unknownExceptionMessage);
 			}	
-		}
-		//transfer from credit to other
-		else if (from.equals("Credit")) {
+		} else if (from.equals("Credit")) {//paying from the credit
 			double nb = userAccount.getCredit().getBalance() + pay;
 			if(nb > userAccount.getCredit().getLimit()){
 				throw new TransactionException(this.overCreditLimitMessage);
@@ -292,23 +266,19 @@ public class Transactions{
 		    if (to.equals("Savings")) {
 		    	userAccount.getSave().setBalance(userAccount.getSave().getBalance() + pay);
 				userAccount.getCredit().setBalance(nb);
-			}
-			else if (to.equals("Checking")) {
+			} else if (to.equals("Checking")) {
 				userToPay.getCheck().setBalance(userToPay.getCheck().getBalance() + pay);
 				userAccount.getCredit().setBalance(nb);
-			}
-			else if (to.equals("Credit")) {
+			} else if (to.equals("Credit")) {
 				if(userToPay.getCredit().getBalance() - pay < 0){
 					throw new TransactionException(this.moreThanCreditBalMessage);
 				}
 				userToPay.getCredit().setBalance(userToPay.getCredit().getBalance() - pay);
 				userAccount.getCredit().setBalance(nb);
-			}
-			else{//at this point something went wrong and we return to the main menu
+			} else{//at this point something went wrong and we return to the main menu
 				throw new TransactionException(this.unknownExceptionMessage);
 			}
-		}
-		else{
+		} else{
 			throw new TransactionException(this.unknownExceptionMessage);
 		}
 	}
@@ -330,18 +300,15 @@ public class Transactions{
 			}
 			//update balance
 			userAccount.getCheck().setBalance(nb);
-		}
-		else if (accType.equals("Savings")) {
+		} else if (accType.equals("Savings")) {
 			throw new TransactionException("Error: Unable to use savings to purchase items!");
-		}
-		else if (accType.equals("Credit")) {
+		} else if (accType.equals("Credit")) {
 			double nb = userAccount.getCredit().getBalance() + itemValue;
 			if(nb > userAccount.getCredit().getLimit()){//credit not allowed to continue if credit limit is reached
 				throw new TransactionException(this.overCreditLimitMessage);
 			}
 			userAccount.getCredit().setBalance(nb);
-		}
-		else{//no proper account found, this is handled in Menu Class
+		} else{//no proper account found, this is handled in Menu Class
 			throw new TransactionException(this.unknownExceptionMessage);
 		}
 	}
