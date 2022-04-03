@@ -428,7 +428,7 @@ public class BankMenus{
 				}
 				System.out.println("-------------------------------------------------");
 				System.out.println("Hello " + userAccount.getFirstName() + " " + userAccount.getLastName() + " what would you like to do today?(Enter 1-7)");
-				//stirng ponters is used later on to point to account chosen by user
+				//string pointers are used later on to point to account chosen by user
 				String accType;
 				String from;
 				String to;
@@ -444,14 +444,14 @@ public class BankMenus{
 					System.out.println("6.Go to Miners Mall");
 					System.out.println("7.Logout");
 					int option = 0;
-					//ensure the user chooses and appropiate option
+					//ensure the user chooses and appropriate option
 					while(true){
 						try{
 							option = Integer.parseInt(userInput.nextLine());
 						}
 						catch(Exception e){
 							System.out.println("-------------------------------------------------");
-							System.out.println("Please choose an appropiate option(1-7)");
+							System.out.println("Please choose an appropriate option(1-7)");
 							continue;
 						}
 						break;
@@ -461,12 +461,13 @@ public class BankMenus{
 						case 1://inquire procedure
 							System.out.println("-------------------------------------------------");
 							System.out.println("Enter the name of the account you would like to inquire?");
-							System.out.println("1.Checking");
-							System.out.println("2.Savings");
-							System.out.println("3.Credit");
+//							System.out.println("1.Checking");
+//							System.out.println("2.Savings");
+//							System.out.println("3.Credit");
+							printAccounts();
 							accType = userInput.nextLine();
-							//ensure porper account is chosen
-							while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
+							//ensure proper account is chosen
+							while(incorrectOption(accType)){
 								System.out.println("Please enter a correct option");
 								accType = userInput.nextLine();
 							}
@@ -481,12 +482,10 @@ public class BankMenus{
 						case 2://deposit procedure
 							System.out.println("-------------------------------------------------");
 							System.out.println("Enter the name of the account would you like to deposit to?");
-							System.out.println("1.Checking");
-							System.out.println("2.Savings");
-							System.out.println("3.Credit");
+							printAccounts();
 							accType = userInput.nextLine();
 							//ensure proper account is chosen
-							while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
+							while(incorrectOption(accType)){
 								System.out.println("Please enter a correct option");
 								accType = userInput.nextLine();
 							}
@@ -520,32 +519,28 @@ public class BankMenus{
 							myHandler.logToFile(transactionLog);
 
 
-							System.out.printf("The deposit of %.2f$ into %s was a sucess!\n",deposit,accType);
+							System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
 							System.out.println("-------------------------------------------------");
 						break;
 						case 3://transaction between two customers of the same customer
 							System.out.println("-------------------------------------------------");
-							System.out.println("Please enter the name of the account you want to tranfer from");
-							System.out.println("1.Checking");
-							System.out.println("2.Savings");
-							System.out.println("3.Credit");
-						   from = userInput.nextLine();
-							while(!from.equals("Checking") && !from.equals("Savings") && !from.equals("Credit")){
+							System.out.println("Please enter the name of the account you want to transfer from");
+							printAccounts();
+						    from = userInput.nextLine();
+							while(incorrectOption(from)){
 								System.out.println("Please enter a correct option");
 								from = userInput.nextLine();
 
 							}
-							System.out.println("Please enter the name of the account you want to tranfer to");
-							System.out.println("1.Checking");
-							System.out.println("2.Savings");
-							System.out.println("3.Credit");
+							System.out.println("Please enter the name of the account you want to transfer to");
+							printAccounts();
 							 to = userInput.nextLine();
-							while(!to.equals("Checking") && !to.equals("Savings") && !to.equals("Credit")){
+							while(incorrectOption(to)){
 								System.out.println("Please enter a correct option");
 								to = userInput.nextLine();
 
 							}
-							System.out.println("How much would you like to tranfer?(Do not include comma)");
+							System.out.println("How much would you like to transfer?(Do not include comma)");
 							double transfer = -1;
 							while(true){
 								try{
@@ -573,18 +568,16 @@ public class BankMenus{
 							}
 							//if success then we tell user and log it
 								System.out.printf("The transfer was a success, %.2f$ was transferred from %s to %s\n",transfer,from,to);
-							    transactionLog = String.format("%s %s tranfered %.2f$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transfer,from,to,time.format(LocalDateTime.now()));
+							    transactionLog = String.format("%s %s transferred %.2f$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transfer,from,to,time.format(LocalDateTime.now()));
 							    userAccount.addTransaction(String.format(transactionLog));
 							myHandler.logToFile(transactionLog);
 						break;
 						case 4://withdraw procedure
 							System.out.println("-------------------------------------------------");
 							System.out.println("Enter the name of the account would you like to withdraw from?");
-							System.out.println("1.Checking");
-							System.out.println("2.Savings");
-							System.out.println("3.Credit");
+							printAccounts();
 							accType = userInput.nextLine();
-							while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
+							while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
 								System.out.println("Please enter a correct option");
 								accType = userInput.nextLine();
 
@@ -627,7 +620,7 @@ public class BankMenus{
 							System.out.println("3.Credit");
 							from = userInput.nextLine();
 							//ensure a proper account is entered
-							while(!from.equals("Checking") && !from.equals("Savings") && !from.equals("Credit")){
+							while(incorrectOption(from)){
 								System.out.println("Please enter a correct option");
 								from = userInput.nextLine();
 
@@ -978,5 +971,21 @@ public class BankMenus{
 			System.out.println(items.get(i));
 		}
 		System.out.println("-------------------------------------------------");
+	}
+
+	/**
+	 * Prints all the accounts that user can select
+	 */
+	private void printAccounts(){
+		System.out.println("1.Checking");
+		System.out.println("2.Savings");
+		System.out.println("3.Credit");
+	}
+
+	private boolean incorrectOption(String option){
+		if(!option.equalsIgnoreCase("Checking") && !option.equalsIgnoreCase("Savings") && !option.equalsIgnoreCase("Credit")){
+			return true;
+		}else
+			return false;
 	}
 }

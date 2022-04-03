@@ -1,6 +1,5 @@
 /**
- * Name: Jaehyeon Park
- * Date:
+ *@Author Jaehyeon Park
  */
 public class FactoryException extends Exception{
     private String message;

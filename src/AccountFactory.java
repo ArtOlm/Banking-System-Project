@@ -1,14 +1,18 @@
 import java.util.ArrayList;
 
 /**
- * Name: Jaehyeon Park
- * Date:
+ * @Author Jaehyeon Park
  */
 public class AccountFactory {
     private AccountFactory factory;
     private AccountFactory(){
 
     }
+
+    /**
+     *
+     * @return AccountFactory
+     */
     public AccountFactory getInstance(){
         if(factory == null){
             factory = new AccountFactory();
@@ -16,6 +20,12 @@ public class AccountFactory {
         return factory;
     }
 
+    /**
+     *
+     * @param args
+     * @return Account
+     * @throws FactoryException
+     */
     public Account generateAccount(String [] args) throws Exception {
         if (args.length == 0) {
             throw new FactoryException("Nothing has been entered");
