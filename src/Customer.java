@@ -1,7 +1,6 @@
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Set;
-
 /**
  * @author Arturo Olmos
  * @version 2.0
@@ -51,7 +50,6 @@ public class Customer extends Person{
 		itemsBought = new HashMap<String,Integer>();
 		logTransactions = new ArrayList<String>();
 		this.pin = pin;
-
 	}
 	/**
 	 * @return
@@ -101,61 +99,52 @@ public class Customer extends Person{
 	public void setID(int id){
 		this.id = id;
 	}
-
 	/**
 	 * @param c sets Checking attribute
 	 */
 	public void setCheck(Checking c){
 		this.cAcc = c;
 	}
-
 	/**
 	 * @param s sets Savings attribute
 	 */
 	public void setSave(Savings s){
 		this.sAcc = s;
 	}
-
 	/**
 	 * @param cr sets the Credit attribute
 	 */
 	public void setCredit(Credit cr){
 		this.crAcc = cr;
 	}
-
 	/**
 	 * @return returns the id attribute
 	 */
 	public int getID(){
 		return this.id;
 	}
-
 	/**
 	 * @return returns a reference to the Checking attribute
 	 */
 	public Checking getCheck(){
 		return this.cAcc;
 	}
-
 	/**
 	 * @return returns reference to the Savings attribute
 	 */
 	public Savings getSave(){
 		return this.sAcc;
 	}
-
 	/**
 	 * @return returns reference of the Credit attribute
 	 */
 	public Credit getCredit(){
 		return this.crAcc;
 	}
-
 	/**
 	 * @return returns a formatted String containing the customers information
 	 * override method from Object
 	 */
-
 	public String toString(){
 		String temp = super.toString() +  "\nID: " + id + "\nChecking Account Number: " + cAcc.getAccNum() + String.format("   Current Checking Account Balance: %.2f$",cAcc.getBalance());
 		temp += "\nSavings Account Number: " + sAcc.getAccNum() + String.format("   Current Savings Account Balance: %.2f$",sAcc.getBalance());
@@ -214,41 +203,41 @@ public class Customer extends Person{
 	}
 	/**
 	 * @param totalMoneySpent the total money spent by customer in miners mall
-	 * sets the total money spent by a customer
+	 * sets the total money spent by a customer at miners mall
 	 */
 	public void setTotalMoneySpent(double totalMoneySpent){
 		this.totalMoneySpent = totalMoneySpent;
 	}
 	/**
 	 * @return the total money spent
+	 * gets total money spent at miners mall
 	 */
 	public double getTotalMoneySpent(){
 		return totalMoneySpent;
 	}
 	/**
-	 * @return
+	 * @return returns the start of the session as a string
 	 * returns the start of the session for this user objects
 	 */
 	public String getSessionStart() {
 		return sessionStart;
 	}
 	/**
-	 * @param sessionStart
-	 * zets the start of the session for this user objects
+	 * @param sessionStart formatted string as the time
+	 * sets the start of the session for this user objects
 	 */
 	public void setSessionStart(String sessionStart) {
 		this.sessionStart = sessionStart;
 	}
 	/**
-	 * @return
-	 * return the end of the seddion for this user objects
+	 * @return returns the time of end as a string
+	 * return the end of the session for this user objects
 	 */
 	public String getSesstionEnd() {
 		return sesstionEnd;
 	}
 	/**
-	 *
-	 * @param sesstionEnd
+	 * @param sesstionEnd time when session ends
 	 * sets the end of the session for this user objects
 	 */
 	public void setSesstionEnd(String sesstionEnd) {
@@ -256,55 +245,49 @@ public class Customer extends Person{
 	}
 	/**
 	 * returns all transactions of the user
-	 * @return
-	 */
+	 * @return returns list of transactions
+ 	 */
 	public ArrayList<String> getTransactions(){
 		return logTransactions;
 	}
-
 	/**
 	 * gets the ending checking balance
-	 * @return
+	 * @return the ending checking balance of a session
 	 */
 	public double getEndCheckBal() {
 		return endCheckBal;
 	}
-
 	/**
 	 * sets the ending checking balance of the session
-	 * @param endCheckBal
+	 * @param endCheckBal sets the ending checking balance of a session
 	 */
 	public void setEndCheckBal(double endCheckBal) {
 		this.endCheckBal = endCheckBal;
 	}
-
 	/**
 	 * gets the ending balance of the session
-	 * @return
+	 * @return the ending savings balance of a session
 	 */
 	public double getEndSaveBal() {
 		return endSaveBal;
 	}
-
 	/**
 	 * sets the endong balance of the savings for the session
-	 * @param endSaveBal
+	 * @param endSaveBal sets the ending savings balance of a session
 	 */
 	public void setEndSaveBal(double endSaveBal) {
 		this.endSaveBal = endSaveBal;
 	}
-
 	/**
 	 * gets the ending balance of the session
-	 * @return
+	 * @return returns ending balance for credit
 	 */
 	public double getEndCreditBal() {
 		return endCreditBal;
 	}
-
 	/**
 	 * sets ending credit balance of the session
-	 * @param endCreditBal
+	 * @param endCreditBal the ending balance of credit
 	 */
 	public void setEndCreditBal(double endCreditBal) {
 		this.endCreditBal = endCreditBal;
@@ -312,7 +295,10 @@ public class Customer extends Person{
 	public int getPin() {
 		return pin;
 	}
-
+	/**
+	 * sets pin
+	 * @param pin users pin
+	 */
 	public void setPin(int pin) {
 		this.pin = pin;
 	}
