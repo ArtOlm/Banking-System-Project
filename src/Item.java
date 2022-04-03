@@ -1,5 +1,5 @@
 /**
- * @author Arturo Olmos
+ * @author Arturo Olmos/Jaehyeon Park
  * @version 2.0
  * represents an item that is created by reading file
  */

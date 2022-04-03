@@ -1,13 +1,11 @@
 /**
- * Name:Arturo Olmos
+ * Names:Arturo Olmos, Jaehyeon Park, Miguel Ortiz
  * Instructor:Daniel Mejia
- * Assignment: Programming Assignment 3
+ * Assignment: Programming Assignment 4
  * Course: CS3331
  * Date: 3/13/2022
  * Honesty statement: I did not receive any help from anyone.
  */
-import java.io.FileNotFoundException;
-import java.util.HashMap;
 import java.util.Scanner;
 
 

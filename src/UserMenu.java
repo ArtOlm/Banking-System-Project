@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
- * @author Arturo Olmos
+ * @author Arturo Olmos/Jaehyeon Park
  * @version 1.0
  * Class is used to handle the user menu
  */
@@ -67,7 +67,7 @@ public class UserMenu extends BankMenu{
                     userAccount.setStartCreditBal(userAccount.getCredit().getBalance());
                 }
                 System.out.println("-------------------------------------------------");
-                System.out.println("Hello " + userAccount.getFName() + " " + userAccount.getLName() + " what would you like to do today?(Enter 1-7)");
+                System.out.println("Hello " + userAccount.getFirstName() + " " + userAccount.getLastName() + " what would you like to do today?(Enter 1-7)");
                 //string pointers is used later on to point to account chosen by user
                 String accType;
                 String from;
@@ -113,7 +113,7 @@ public class UserMenu extends BankMenu{
                             //let user know of success
                             System.out.printf("%s currently has %.2f$\n", accType,this.getTransactionHandler().checkBalance(userAccount,accType));
                             //log what happened
-                            transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),accType,time.format(LocalDateTime.now()));
+                            transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),accType,time.format(LocalDateTime.now()));
                             this.getMyHandler().logToFile(transactionLog);
 
                             System.out.println("-------------------------------------------------");
@@ -155,7 +155,7 @@ public class UserMenu extends BankMenu{
                                 continue;
                             }
                             //if success then we tell user and log it
-                            transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),deposit,accType,time.format(LocalDateTime.now()));
+                            transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),deposit,accType,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             this.getMyHandler().logToFile(transactionLog);
                             System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
@@ -209,7 +209,7 @@ public class UserMenu extends BankMenu{
                             }
                             //if success then we tell user and log it
                             System.out.printf("The transfer was a success, %.2f$ was transferred from %s to %s\n",transfer,from,to);
-                            transactionLog = String.format("%s %s transferred %.2f$ from %s to %s at %s\n",userAccount.getFName(),userAccount.getLName(),transfer,from,to,time.format(LocalDateTime.now()));
+                            transactionLog = String.format("%s %s transferred %.2f$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transfer,from,to,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             this.getMyHandler().logToFile(transactionLog);
                             break;
@@ -249,7 +249,7 @@ public class UserMenu extends BankMenu{
                                 continue;
                             }
                             //if success then we tell user and log it
-                            transactionLog = String.format("%s %s withdrew %.2f$ from the %s account at %s\n",userAccount.getFName(),userAccount.getLName(),withdrawl,accType,time.format(LocalDateTime.now()));
+                            transactionLog = String.format("%s %s withdrew %.2f$ from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withdrawl,accType,time.format(LocalDateTime.now()));
                             System.out.printf("The withdrawl of %.2f$ was a success\n",withdrawl);
                             userAccount.addTransaction(transactionLog);
                             this.getMyHandler().logToFile(transactionLog);
@@ -339,8 +339,8 @@ public class UserMenu extends BankMenu{
                                     continue;
                                 }
                                 //if success then we tell user and log it
-                                System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFName(),userToPay.getLName(),to);
-                                transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFName(),userAccount.getLName(),pay,from,userToPay.getFName(),userToPay.getLName(),to,time.format(LocalDateTime.now()));
+                                System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFirstName(),userToPay.getLastName(),to);
+                                transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),pay,from,userToPay.getFirstName(),userToPay.getLastName(),to,time.format(LocalDateTime.now()));
                                 userAccount.addTransaction(transactionLog);
                                 this.getMyHandler().logToFile(transactionLog);
                             }
@@ -450,7 +450,7 @@ public class UserMenu extends BankMenu{
                                             userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + itemToBuy.getPrice());
                                             //log transaction info
                                             System.out.printf("your purchase of %s for %.2f$ was a success\n", itemToBuy.getName(), itemToBuy.getPrice());
-                                            transactionLog = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", userAccount.getFName(), userAccount.getLName(), itemToBuy.getName(), itemToBuy.getPrice(), accType, time.format(LocalDateTime.now()));
+                                            transactionLog = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), itemToBuy.getName(), itemToBuy.getPrice(), accType, time.format(LocalDateTime.now()));
                                             userAccount.addTransaction(transactionLog);
                                             this.getMyHandler().logToFile(transactionLog);
                                         }
@@ -469,7 +469,7 @@ public class UserMenu extends BankMenu{
                         case 7:
                             //user logs out
                             System.out.println("-------------------------------------------------");
-                            System.out.println("Thank you " + userAccount.getFName() + " " + userAccount.getLName() + ", have a great day!");
+                            System.out.println("Thank you " + userAccount.getFirstName() + " " + userAccount.getLastName() + ", have a great day!");
                             System.out.println("Logging out in");
                             for(int i = 3;i > 0;i--){
                                 System.out.println(i);
@@ -525,6 +525,7 @@ public class UserMenu extends BankMenu{
     }
     /**
      * deals with the user creation
+     * has code for Jaehyeon Park/ Arturo Olmos
      */
     public void userCreation(){
         //create hashmaps to check all the pins
@@ -605,10 +606,13 @@ public class UserMenu extends BankMenu{
         int checkNum = id + 1000000;
         int saveNum = id + 2000000;
         int creditNum = id + 3000000;
-        int generatedLimit = getCreditLimit(score);
         Checking ch = new Checking("" + checkNum,chDeposit);
         Savings save = new Savings("" + saveNum,saveDeposit);
-        Credit cr = new Credit("" + creditNum,0,generatedLimit,score);
+        Credit cr = new Credit();
+        cr.setAccNum("" + creditNum);
+        cr.setBalance(0);
+        cr.setScore(score);
+        cr.generateCredit(score);
         //generate key for user
         String key = this.getMyHandler().generateKey(fName,lName);
         //generate random pin
@@ -643,42 +647,6 @@ public class UserMenu extends BankMenu{
     }
     /**
      *
-     * @param score the credit score of the new user
-     * @return return limit
-     * returns the limit based on the score
-     */
-    private int getCreditLimit(int score){
-        Random rand = new Random();
-        //generate the limit based on their score
-        if(score <= 580){
-            int min = 100;
-            int max = 699;
-
-            return rand.nextInt((max - min) + 1) + min;
-        }
-        else if(score <= 669){
-            int min = 700;
-            int max = 4999;
-            return rand.nextInt((max - min) + 1) + min;
-        }
-        else if(score <= 739){
-            int min = 5000;
-            int max = 7499;
-            return rand.nextInt((max - min) + 1) + min;
-        }
-        else if(score <= 799){
-            int min = 7500;
-            int max = 15999;
-            return rand.nextInt((max - min) + 1) + min;
-        }
-        else{//this is the score is 800 or greater
-            int min = 16000;
-            int max = 25000;
-            return rand.nextInt((max - min) + 1) + min;
-        }
-    }
-    /**
-     *
      * @param fName first name of user
      * @param lName last name of user
      * @param id id of user
@@ -693,11 +661,11 @@ public class UserMenu extends BankMenu{
         }
         //get customer
         Customer user = this.getCustomers().get(key);
-        if(user.getFName().split("\\s+").length != fName.split("\\s+").length || user.getLName().split("\\s+").length != lName.split("\\s+").length){
+        if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length){
             return false;
         }
         //compare information
-        return  user.getID() == id && this.getMyHandler().strNWS(user.getFName()).equals(this.getMyHandler().strNWS(fName)) && this.getMyHandler().strNWS(user.getLName()).equals(this.getMyHandler().strNWS(lName));
+        return  user.getID() == id && this.getMyHandler().strNWS(user.getFirstName()).equals(this.getMyHandler().strNWS(fName)) && this.getMyHandler().strNWS(user.getLastName()).equals(this.getMyHandler().strNWS(lName));
     }
     /**
      *
@@ -714,10 +682,10 @@ public class UserMenu extends BankMenu{
             return false;
         }
         //compare information
-        if(userAccount.getFName().split("\\s+").length != userToPayFirstName.split("\\s+").length || userAccount.getLName().split("\\s+").length != userToPayLastName.split("\\s+").length){
+        if(userAccount.getFirstName().split("\\s+").length != userToPayFirstName.split("\\s+").length || userAccount.getLastName().split("\\s+").length != userToPayLastName.split("\\s+").length){
             return false;
         }
-        return this.getMyHandler().strNWS(userAccount.getFName()).equals(this.getMyHandler().strNWS(userToPayFirstName)) && this.getMyHandler().strNWS(userAccount.getLName()).equals(this.getMyHandler().strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
+        return this.getMyHandler().strNWS(userAccount.getFirstName()).equals(this.getMyHandler().strNWS(userToPayFirstName)) && this.getMyHandler().strNWS(userAccount.getLastName()).equals(this.getMyHandler().strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
     }
     /**
      *
@@ -740,7 +708,7 @@ public class UserMenu extends BankMenu{
             //get the customer
             Customer user = this.getCustomers().get(key);
             //ensure that there are no wired strings the are split apart
-            if(user.getFName().split("\\s+").length != fName.split("\\s+").length || user.getLName().split("\\s+").length != lName.split("\\s+").length || user.getSave().getAccNum().split("\\s+").length != userSaveNum.split("\\s+").length || user.getCredit().getAccNum().split("\\s+").length != userCreditNum.split("\\s+").length || user.getCheck().getAccNum().split("\\s+").length != userCheckNum.split("\\s+").length){
+            if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length || user.getSave().getAccNum().split("\\s+").length != userSaveNum.split("\\s+").length || user.getCredit().getAccNum().split("\\s+").length != userCreditNum.split("\\s+").length || user.getCheck().getAccNum().split("\\s+").length != userCheckNum.split("\\s+").length){
                 System.out.println("no");
                 return false;
             }

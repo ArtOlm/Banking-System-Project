@@ -8,16 +8,12 @@ import java.io.FileWriter;
 import java.io.FileNotFoundException;
 
 /**
- * @author Arturo
+ * @author Arturo Olmos/Jaehyeon
  * @version 4.0
  * class has helpful methods used to solve problems in many classes
  * this class is my approach to a singleton design pattern
  * this file used to be known as FReaderWriter in my lab 2
  */
-/*
-I assumed that both Bank Customers 3.csv exists, as well Miner Mall.csv within the same directory as the running program
-*/
-//method calls of this class are made in RunBank.java and Transactions.java
 public class Utilities{
 	private static Utilities handler;
 	private int maxCustomerIDX;
@@ -310,7 +306,7 @@ public class Utilities{
 				updateFileInfo.write("ID,Pin,First Name,Last Name,Address,City,State,Zip,Phone Number,Date of Birth,Checking Account Number,Checking Balance,Savings Account Number,Savings Balance,Credit Account Number,Credit Balance,Credit Score,Credit Limit\n");
 				for(int i = 1;i < integerMapped.size() + 1;i++){
 					Customer user = integerMapped.get(i);
-					updateFileInfo.write(user.getID()+","+ user.getPin()+","+user.getFName()+","+user.getLName()+","+user.getAddress()+","+user.getCity()+","+user.getState()+","+user.getZip()+","+user.getPhone()+","+user.getDOB() + "," + user.getCheck().getAccNum() + "," + user.getCheck().getBalance() + "," + user.getSave().getAccNum() + "," + user.getSave().getBalance() + "," + user.getCredit().getAccNum() + "," + user.getCredit().getBalance()+ "," + user.getCredit().getScore()+ "," + user.getCredit().getLimit() + "\n");
+					updateFileInfo.write(user.getID()+","+ user.getPin()+","+user.getFirstName()+","+user.getLastName()+","+user.getAddress()+","+user.getCity()+","+user.getState()+","+user.getZipCode()+","+user.getPhoneNum()+","+user.getDOB() + "," + user.getCheck().getAccNum() + "," + user.getCheck().getBalance() + "," + user.getSave().getAccNum() + "," + user.getSave().getBalance() + "," + user.getCredit().getAccNum() + "," + user.getCredit().getBalance()+ "," + user.getCredit().getScore()+ "," + user.getCredit().getLimit() + "\n");
 				}
 				updateFileInfo.close();
 			} catch (IOException e){
@@ -370,7 +366,7 @@ public class Utilities{
 	 */
 	public void writeBankStatement(Customer cus, String statement){
 		try {
-			String path = String.format("src/Generated_Files/%s_%s_Bank_Statement.txt",cus.getFName(),cus.getLName());
+			String path = String.format("src/Generated_Files/%s_%s_Bank_Statement.txt",cus.getFirstName(),cus.getLastName());
 			File f = new File(path);
 			if(!f.exists()){
 				f.createNewFile();

@@ -1,5 +1,5 @@
 /**
- * @author Arturo Olmos
+ * @author Jaehyeon Park
  * @version 1.0
  * class represents the savings account of a Customer
  */

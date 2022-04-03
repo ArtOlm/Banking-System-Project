@@ -10,8 +10,6 @@ public abstract class BankMenu {
     private Transactions transactionHandler;
     //has useful methods which are related to the file information
     private Utilities myHandler;
-    //manager action handler
-    private ManagerActions manHandler;
     //scanner objects used to take user input
     private Scanner userInput;
     //map containing the customers
@@ -29,7 +27,6 @@ public abstract class BankMenu {
     public BankMenu(Scanner userInput,CustomerCollection customers,ItemCollection items){
         this.transactionHandler = Transactions.getInstance();
         this.myHandler = Utilities.getInstance();
-        this.manHandler = ManagerActions.getInstance();
         this.userInput = userInput;
         this.customers = customers;
         this.items = items;
@@ -52,13 +49,6 @@ public abstract class BankMenu {
      */
     public Utilities getMyHandler() {
         return myHandler;
-    }
-    /**
-     * gets a referance to the single ManagerActions object
-     * @return returns a ManagerActions object
-     */
-    public ManagerActions getManHandler() {
-        return manHandler;
     }
     /**
      * get the reference to a Scanner object used to take in user input

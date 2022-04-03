@@ -144,7 +144,7 @@ public class ManagerActions{
 			return;
 		}
 		//if everything goes log happens
-		String fString = String.format("%s %s deposited %.2f$ from their %s account at %s\n",depositDestination.getFName(),depositDestination.getLName(),Double.parseDouble(transaction[7].toString()),transaction[6].toString(),time.format(LocalDateTime.now()));
+		String fString = String.format("%s %s deposited %.2f$ from their %s account at %s\n",depositDestination.getFirstName(),depositDestination.getLastName(),Double.parseDouble(transaction[7].toString()),transaction[6].toString(),time.format(LocalDateTime.now()));
 		depositDestination.addTransaction(fString);
 		handler.logToFile(fString);
 		//set the end of the session
@@ -175,7 +175,7 @@ public class ManagerActions{
 		}
 		//at this point everything went well so just log everything
 		//formatted string to be logged
-		String fString = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",cus.getFName(),cus.getLName(),Double.parseDouble(transaction[7].toString()),transaction[2].toString(),customerToPay.getFName(),customerToPay.getLName(),transaction[6].toString(),time.format(LocalDateTime.now()));
+		String fString = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",cus.getFirstName(),cus.getLastName(),Double.parseDouble(transaction[7].toString()),transaction[2].toString(),customerToPay.getFirstName(),customerToPay.getLastName(),transaction[6].toString(),time.format(LocalDateTime.now()));
 		handler.logToFile(fString);
 		//log transaction to customer
 		cus.addTransaction(fString);
@@ -210,7 +210,7 @@ public class ManagerActions{
 			return;
 		}
 		//at this point everything went well so i then just proceed log everything
-		String fString = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", cus.getFName(), cus.getLName(), item.getName(), item.getPrice(), transaction[2].toString(), time.format(LocalDateTime.now()));
+		String fString = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", cus.getFirstName(), cus.getLastName(), item.getName(), item.getPrice(), transaction[2].toString(), time.format(LocalDateTime.now()));
 		//updates transactions made by the user
 		cus.addTransaction(fString);
 		//update the total money spent
@@ -243,7 +243,7 @@ public class ManagerActions{
 		}
 		Customer cus = customers.get(key);
 		//ensure the name is not split somewhere in the string
-		if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
+		if(name.split("\\s+").length != (cus.getFirstName() + " " + cus.getLastName()).split("\\s+").length){
 			System.out.println("no users found");
 			return;
 		}

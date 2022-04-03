@@ -6,8 +6,11 @@ import java.util.Scanner;
  * this class handles the manager menu
  */
 public class ManagerMenu extends BankMenu{
+    //manager action handler
+    private ManagerActions manHandler;
     public ManagerMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
+        this.manHandler = ManagerActions.getInstance();
     }
     /**
      * this helps handle the manager interface
@@ -37,7 +40,7 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("-------------------------------------------------");
                     System.out.println("Enter a name: ");
 
-                    this.getManHandler().managerInquire(this.getUserInput().nextLine(),this.getCustomers());
+                    this.manHandler.managerInquire(this.getUserInput().nextLine(),this.getCustomers());
                     System.out.println("-------------------------------------------------");
                     break;
                 //search by account
@@ -64,13 +67,13 @@ public class ManagerMenu extends BankMenu{
                     }
                     System.out.println("Provide the number of the account");
                     String num = this.getUserInput().nextLine();
-                    this.getManHandler().managerInquire(op,num,this.getCustomers());
+                    this.manHandler.managerInquire(op,num,this.getCustomers());
                     System.out.println("-------------------------------------------------");
                     break;
                 //execute actions.csv file
                 case 3:
                     System.out.println("-------------------------------------------");
-                    this.getManHandler().execTransactions(this.getCustomers(),this.getItems());
+                    this.manHandler.execTransactions(this.getCustomers(),this.getItems());
                     System.out.println("-------------------------------------------");
                     break;
                 //create bank statement for a user
@@ -112,12 +115,12 @@ public class ManagerMenu extends BankMenu{
                             }
                             //generate key by name
                             cus = this.getCustomers().get(key);
-                            if(name.split("\\s+").length != (cus.getFName() + " " + cus.getLName()).split("\\s+").length){
+                            if(name.split("\\s+").length != (cus.getFirstName() + " " + cus.getLastName()).split("\\s+").length){
                                 System.out.println("no users found");
                                 continue;
                             }
                             //generate bank statement
-                            statement = this.getManHandler().generateBankStatement(cus);
+                            statement = this.manHandler.generateBankStatement(cus);
                             if( statement != null){
                                 this.getMyHandler().writeBankStatement(cus,statement);
                             }
@@ -160,7 +163,7 @@ public class ManagerMenu extends BankMenu{
                             this.getCustomerIterator().reset();
                             //if the customer is not null it was found
                             if(cus != null){
-                                statement = this.getManHandler().generateBankStatement(cus);
+                                statement = this.manHandler.generateBankStatement(cus);
                                 if( statement != null){//check the statement is not null
                                     this.getMyHandler().writeBankStatement(cus,statement);
                                 }

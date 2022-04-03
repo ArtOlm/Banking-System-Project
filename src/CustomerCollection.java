@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 /**
- * @author Arturo Olmos
+ * @author Arturo Olmos/JaehYeon Park
  * @version 1.0
  * This class is used to handle the customers of the bank
  */

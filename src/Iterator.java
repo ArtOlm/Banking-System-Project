@@ -1,5 +1,5 @@
 /**
- * @author Arturo Olmos
+ * @author Arturo Olmos/Jaehyeon Park
  * @version 1.0
  * This interface helps iterate over a Collection
  */
