@@ -9,7 +9,7 @@ public class Checking extends Account{
 	}
 
 	/**
-	 *
+	 *Constructor-sets all the attributes of the object
 	 * @param accNum the account number of the Checking account
 	 * @param bal the balance of the Checking account
 	 */

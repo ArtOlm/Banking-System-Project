@@ -24,6 +24,10 @@ public class Customer extends Person{
 	private double endSaveBal;
 	private double endCreditBal;
 	private int pin;
+
+	/**
+	 * default
+	 */
 	public Customer(){}
 	/**
 	 * @param fname
@@ -39,7 +43,7 @@ public class Customer extends Person{
 	 * @param sAcc
 	 * @param crAcc
 	 * @param pin
-	 * takes in all parameters needed to create a cusotmer
+	 * takes in all parameters needed to create a Customer
 	 */
 	public Customer(String fname,String lname,String address,String city,String state,String zip,String phoneNum,String dob,int id,Checking cAcc,Savings sAcc,Credit crAcc,int pin){
 		super(fname,lname,address,city,state,zip,phoneNum,dob);
@@ -143,7 +147,7 @@ public class Customer extends Person{
 	}
 	/**
 	 * @return returns a formatted String containing the customers information
-	 * override method from Object
+	 * override method from Object, returns a string based on the Customer
 	 */
 	public String toString(){
 		String temp = super.toString() +  "\nID: " + id + "\nChecking Account Number: " + cAcc.getAccNum() + String.format("   Current Checking Account Balance: %.2f$",cAcc.getBalance());
@@ -296,7 +300,7 @@ public class Customer extends Person{
 		return pin;
 	}
 	/**
-	 * sets pin
+	 * sets pin of the user
 	 * @param pin users pin
 	 */
 	public void setPin(int pin) {

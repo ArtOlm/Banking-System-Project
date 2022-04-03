@@ -5,16 +5,14 @@
  */
 public class Credit extends Account{
 	//note:limit refers to the credit limit of a customer
-
 	private int limit;
 	private int score;
 	//constructors
 	public Credit(){
 
 	}
-
 	/**
-	 *
+	 *Constructor-sets all the attributes of the object
 	 * @param accNum account number of the Credit account
 	 * @param bal balance of the Credit account
 	 * @param limit the limit of the balance of the Credit account
@@ -26,11 +24,15 @@ public class Credit extends Account{
 		this.score = score;
 
 	}
+	/**
+	 * generates the credit limit based on the score if needed
+	 * @param creditScore the credit score of the user
+	 */
 	public void generateCredit(int creditScore){
 		this.limit = -9999;
 
 		if(creditScore > 800){
-			this.limit = (int)Math.floor(Math.random()*(25000-100+1)+1600);
+			this.limit = (int)Math.floor(Math.random()*(25000-100+1)+16000);
 		}else if(creditScore > 739){
 			this.limit = (int)Math.floor(Math.random()*(15999-100+1)+7500);
 

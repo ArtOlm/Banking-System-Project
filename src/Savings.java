@@ -5,11 +5,9 @@
  */
 public class Savings extends Account{
 	public Savings(){
-		
 	}
-
 	/**
-	 *
+	 *sets all the attributes of the Savings account
 	 * @param accNum sets the acount number for Savings object
 	 * @param bal sets the balance for the Savings object
 	 */

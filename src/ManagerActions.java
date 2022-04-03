@@ -1,12 +1,10 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-
 /**
  * @author Arturo
  * @version 2.0
  * class handles all the manager actions
- *
  */
 public class ManagerActions{
 	private Transactions transactionHandler;
@@ -14,11 +12,13 @@ public class ManagerActions{
 	private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 	private static ManagerActions manager = new ManagerActions();
 
+	/**
+	 * default constructor
+	 */
 	private ManagerActions(){
 		handler = Utilities.getInstance();
 		transactionHandler = Transactions.getInstance();
 	}
-
 	/**
 	 * gets the only instance of this class
 	 * @return returns an instance of the class

@@ -602,10 +602,12 @@ public class UserMenu extends BankMenu{
             }
             break;
         }
+        //gets the next biggest id
         int id = this.getMyHandler().getMaxCustomerIDX();
         int checkNum = id + 1000000;
         int saveNum = id + 2000000;
         int creditNum = id + 3000000;
+        //generate accounts
         Checking ch = new Checking("" + checkNum,chDeposit);
         Savings save = new Savings("" + saveNum,saveDeposit);
         Credit cr = new Credit();
@@ -646,7 +648,6 @@ public class UserMenu extends BankMenu{
         return pin;
     }
     /**
-     *
      * @param fName first name of user
      * @param lName last name of user
      * @param id id of user
@@ -668,8 +669,6 @@ public class UserMenu extends BankMenu{
         return  user.getID() == id && this.getMyHandler().strNWS(user.getFirstName()).equals(this.getMyHandler().strNWS(fName)) && this.getMyHandler().strNWS(user.getLastName()).equals(this.getMyHandler().strNWS(lName));
     }
     /**
-     *
-     *
      * @param userAccount users account
      * @param userToPayFirstName user that will be paid
      * @param userToPayLastName user to be paid last name
@@ -688,7 +687,6 @@ public class UserMenu extends BankMenu{
         return this.getMyHandler().strNWS(userAccount.getFirstName()).equals(this.getMyHandler().strNWS(userToPayFirstName)) && this.getMyHandler().strNWS(userAccount.getLastName()).equals(this.getMyHandler().strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
     }
     /**
-     *
      * @param id user id
      * @param fName first name of user
      * @param lName last name of user

@@ -240,29 +240,40 @@ public class Transactions{
 		//transfer from savings to other
 		else if (from.equals("Savings")) {
 			double nb = userAccount.getSave().getBalance() - pay;
-			if(nb < 0){
+			//check for funds
+			if(nb < 0) {
 				throw new TransactionException(this.notEnoughFundsMessage);
 			}
 		    if (to.equals("Checking")) {
+				//pay to checking
 		    	userToPay.getCheck().setBalance(userToPay.getCheck().getBalance() + pay);
 				userAccount.getSave().setBalance(nb);
 			} else if (to.equals("Credit")) {
+				//pay to credit
+				//check for funds
 				if(userToPay.getCredit().getBalance() - pay < 0){
 					throw new TransactionException(this.moreThanCreditBalMessage);
 				}
+				//update info
 				userToPay.getCredit().setBalance(userToPay.getCredit().getBalance() - pay);
 				userAccount.getSave().setBalance(nb);
 			} else if (to.equals("Savings")) {
+				//pay to savings
+				//update info
 				userToPay.getSave().setBalance(userToPay.getSave().getBalance() + pay);
 				userAccount.getSave().setBalance(nb);
 			} else{
+				//something went wrong
 				throw new TransactionException(this.unknownExceptionMessage);
 			}	
-		} else if (from.equals("Credit")) {//paying from the credit
+		} else if (from.equals("Credit")) {
+			//paying from the credit
 			double nb = userAccount.getCredit().getBalance() + pay;
+			//check for funds
 			if(nb > userAccount.getCredit().getLimit()){
 				throw new TransactionException(this.overCreditLimitMessage);
 			}
+			//transfer to the appropriate account and update info
 		    if (to.equals("Savings")) {
 		    	userAccount.getSave().setBalance(userAccount.getSave().getBalance() + pay);
 				userAccount.getCredit().setBalance(nb);
@@ -279,6 +290,7 @@ public class Transactions{
 				throw new TransactionException(this.unknownExceptionMessage);
 			}
 		} else{
+			//something went wrong but it was not the user
 			throw new TransactionException(this.unknownExceptionMessage);
 		}
 	}
@@ -301,8 +313,10 @@ public class Transactions{
 			//update balance
 			userAccount.getCheck().setBalance(nb);
 		} else if (accType.equals("Savings")) {
+			//user cannot pay with savings
 			throw new TransactionException("Error: Unable to use savings to purchase items!");
 		} else if (accType.equals("Credit")) {
+			//check for funds and update info
 			double nb = userAccount.getCredit().getBalance() + itemValue;
 			if(nb > userAccount.getCredit().getLimit()){//credit not allowed to continue if credit limit is reached
 				throw new TransactionException(this.overCreditLimitMessage);

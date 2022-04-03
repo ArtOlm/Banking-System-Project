@@ -20,7 +20,6 @@ public class Utilities{
 	//default editor
 	private Utilities(){ this.maxCustomerIDX = 0;}
 	/**
-	 *
 	 * @return an array list filled with an array of string
 	 * populates an array list with lines from the actions.csv
 	 */
@@ -49,10 +48,8 @@ public class Utilities{
 		return transactions;
 	}
 	/**
-	 *
 	 * @param fName the first name of the user
 	 * @param lName the last name of the user
-	 *
 	 * @return returns a generated string based on the users first and last name
 	 * generates a key for the hash map
 	 */
@@ -70,7 +67,6 @@ public class Utilities{
 		return nwsFName + nwsLName;
 	}
 	/**
-	 *
 	 * @return returns the instance of this class to be called in different classes
 	 * my approach to a singleton design pattern
 	 */
@@ -82,7 +78,7 @@ public class Utilities{
 		return handler;
 	}
 	/**
-	 * read Bank Customers 3 and populates an HashMap of Customers
+	 * read Bank Customers 4.csv and populates an HashMap of Customers
 	 * @return HashMap containing Customer Objects
 	 */
 	public HashMap<String,Customer> populateCustomers(){
@@ -150,7 +146,7 @@ public class Utilities{
 		return users;
 	}
 	/**
-	 * *
+	 * creates a cusotmer object based on the info
 	 * @param accInfo given information based on a csv we use it to split into correct data
 	 * @param users array list that is populated as Customer objects are made
 	 */
@@ -230,22 +226,20 @@ public class Utilities{
 	}
 
 	/**
-	 *
+	 *gets the next id available
 	 * @return returns next biggest index
 	 */
 	public int getMaxCustomerIDX(){
 		return this.maxCustomerIDX + 1;
 	}
 	/**
-	 *
-	 *
 	 * increments max id when new user is added
 	 */
 	public void incrementMaxCustomerIDX(){
 		 this.maxCustomerIDX++;
 	}
 	/**
-	 *
+	 *creates an Item object based on the info
 	 * @param itemInfo info from a csv file which is split and allocated accordingly
 	 * @param items ArrayList which will be populated as the Item is created
 	 */
@@ -260,7 +254,7 @@ public class Utilities{
 		items.put(id,new Item(id,name,price,max));
 	}
 	/**
-	 *
+	 *logs info to the log.txt file
 	 * @param stringToLog a string that will be logged onto a file called Log.txt
 	 */
 	//logs a formatted string to a file
@@ -327,7 +321,6 @@ public class Utilities{
 		}
 	}
 	/**
-	 *
 	 * @param str1
 	 * @param str2
 	 * @return combines two string without any white spaces
@@ -346,7 +339,6 @@ public class Utilities{
 		return nwsName;
 	}
 	/**
-	 *
 	 * @param str1 string that will be edited
 	 * @return
 	 * returns a string without any white spaces
