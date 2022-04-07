@@ -1,0 +1,11 @@
+Name: Mickey Mouse
+Address: 1313 Disneyland Dr., Anaheim, CA 92802
+Phone: (714) 781-4636
+DOB: 4/22/56
+ID: 1
+Checking Account Number: 1000001   Current Checking Account Balance: 248.60$
+Savings Account Number: 2000001   Current Savings Account Balance: 7958.80$
+Credit Account Number: 3000001   Current Credit Account Balance: 18.12$   Credit Score: 568   Credit Limit: 600
+----------------------------------------------------------------------
+
+ No session started yet
