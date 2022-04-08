@@ -392,67 +392,107 @@ public class UserMenu extends BankMenu{
                                         break;
                                     //buy item
                                     case 2:
+                                        ArrayList<Item> cart = new ArrayList<>();
                                         malMenu = true;
                                         System.out.println("-------------------------------------------------");
+                                        String line = null;
+                                        //keep track of how many items are available
+                                        HashMap<String,Integer> maxCount = new HashMap<>();
+                                        while(this.itemCollectionIterator.hasNext()){
+                                            Item it = this.itemCollectionIterator.next();
+                                            maxCount.put(it.getName(),it.getMax());
+                                        }
+                                        //reset to reuse
+                                        this.itemCollectionIterator.reset();
                                         while(malMenu) {
                                             //get item user wants
-                                            System.out.println("Enter the ID of the item you would like to buy(Enter \"E\" to stop buying) ");
-                                            int itemID = -1;
-                                            //ensure a proper item is entered
-                                            while (true) {
-                                                String buyOption = this.getUserInput().nextLine();
-                                                try {
-                                                    itemID = Integer.parseInt(buyOption);
-                                                } catch (Exception e) {
-                                                    if(buyOption.equalsIgnoreCase("E")){
-                                                        malMenu = false;
-                                                    }
-                                                    if(malMenu){
-                                                        System.out.println("Please choose an appropriate option");
-                                                        continue;
-                                                    }
-                                                }
-                                                //ensure a proper id is used
-                                                if ((itemID < 1 || itemID > this.getItems().size()) && malMenu) {
-                                                    System.out.println("Please choose an appropriate option");
-                                                    continue;
-                                                }
-                                                break;
-                                            }
-                                            //turn of the purchase feature when user wants to stop buying
-                                            if(!malMenu){
-                                                System.out.println("Thank you for your purchase");
-                                                break;
-                                            }
-                                            //get item
-                                            Item itemToBuy = this.getItems().get(itemID);
-                                            //ask the user with which account they want to pay with
-                                            System.out.println("-------------------------------------------------");
-                                            System.out.println("Please enter the name of the account you want to pay with");
-                                            System.out.println("1.Checking");
-                                            System.out.println("2.Credit");
-                                            accType = this.getUserInput().nextLine();
-                                            //ensure a proper option is entered
-                                            while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
-                                                System.out.println("Please enter a correct option");
-                                                accType = this.getUserInput().nextLine();
-                                            }
-                                            //do the transactions and check if successful or not
-
+                                            System.out.println("Enter the ID of the item you would like to add to the cart(Enter \"C\" to checkout or \"E\" to exit the mall) ");
+                                            int mallID = -1;
+                                            line = this.getUserInput().nextLine();
                                             try{
-                                                this.getTransactionHandler().buyFromMinerMall(userAccount, accType, itemToBuy.getPrice());
-                                            }catch (TransactionException eBuy){
-                                                System.out.printf("unable to buy %s using your %s account\n",itemToBuy.getName(),accType);
+                                                mallID = Integer.parseInt(line);
+                                            } catch (Exception me){
+                                                //check if the option is e or c
+                                                if(line.equalsIgnoreCase("c") || line.equalsIgnoreCase("e")){
+                                                    break;
+                                                }
+                                                //else it is not valid
+                                                System.out.println("Error: not a valid ID");
                                                 continue;
                                             }
-                                            //keeps track of items bought plus money spent
-                                            userAccount.addItemBought(itemToBuy.getName());
-                                            userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + itemToBuy.getPrice());
-                                            //log transaction info
-                                            System.out.printf("your purchase of %s for %.2f$ was a success\n", itemToBuy.getName(), itemToBuy.getPrice());
-                                            transactionLog = String.format("%s %s purchased a %s for %.2f$ from miners bank using their %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), itemToBuy.getName(), itemToBuy.getPrice(), accType, time.format(LocalDateTime.now()));
-                                            userAccount.addTransaction(transactionLog);
-                                            this.getMyHandler().logToFile(transactionLog);
+                                            //ensure the id is within range
+                                            //check id is valid
+                                            if((mallID  < 0) || (mallID > this.getItems().size())){
+                                                System.out.println("Error: not a valid ID");
+                                                continue;
+                                            }
+                                            //check if the item is available
+                                            Item itemAdded = this.getItems().get(mallID);
+                                            if(maxCount.get(itemAdded.getName()) < 1){
+                                                System.out.println("Error: Item is no longer available");
+                                                continue;
+                                            }
+                                            //add to cart and update the availability
+                                            cart.add(itemAdded);
+                                            maxCount.put(itemAdded.getName(),maxCount.get(itemAdded.getName()) - 1);
+                                        }
+                                        if(line.equalsIgnoreCase("c") && (cart.size() > 0)){
+                                            double total = 0;
+                                            //ask with what account they want to pay with
+                                            System.out.println("With which account would you like to pay?(Enter the name)");
+                                            System.out.println("1.Checking");
+                                            System.out.println("2.Savings");
+                                            String accountType = this.getUserInput().nextLine();
+                                            while (!accountType.equalsIgnoreCase("Checking") && !accountType.equalsIgnoreCase("Credit")){
+                                                System.out.println("Please enter checking or credit");
+                                             accountType = this.getUserInput().nextLine();
+                                            }
+                                            //make them enter their pin
+                                            if(accountType.equalsIgnoreCase("Checking")){
+                                                System.out.println("Please enter your pin");
+                                                int pin;
+                                                while (true){
+                                                    try {
+                                                        pin = Integer.parseInt(this.getUserInput().nextLine());
+                                                    }   catch (Exception ek){
+                                                        System.out.println("Please enter the correct pin");
+                                                        continue;
+                                                    }
+                                                    if(pin != userAccount.getPin()){
+                                                        System.out.println("Please enter the correct pin");
+                                                        continue;
+                                                    }
+                                                    break;
+                                                }
+
+                                            }
+                                            //get the total of all the items in their cart
+                                            for(int i = 0;i  < cart.size();i++){
+                                                total += cart.get(i).getPrice();
+                                            }
+                                            try{
+                                                this.getTransactionHandler().buyFromMinerMall(userAccount,accountType,total);
+                                            }catch (Exception me) {
+                                                System.out.println(me.getMessage());
+                                                break;
+                                            }
+                                            //update the users info and tell them they succeeded in making the purchase
+                                            System.out.printf("Your purchase of %.2f$ at Miners mall was a success!\n",total);
+                                            System.out.println("Thank you!");
+                                            for(int i = 0;i  < cart.size();i++){
+                                                Item t = cart.get(i);
+                                                //update the limit on the items
+                                                this.getItems().get(t.getID()).setMax(maxCount.get(t.getName()));
+                                                //log everything they bought if successful
+                                                transactionLog = String.format("%s %s bought %s for %.2f$ using %s account\n",userAccount.getFirstName(),userAccount.getLastName(),t.getName(),t.getPrice(),accountType);
+                                                this.getMyHandler().logToFile(transactionLog);
+                                                userAccount.addTransaction(transactionLog);
+                                                userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + t.getPrice());
+                                                userAccount.addItemBought(t.getName());
+                                            }
+                                        }
+                                        if(cart.size() == 0 || line.equalsIgnoreCase("e")){
+                                            System.out.println("No items purchased");
                                         }
                                         System.out.println("-------------------------------------------------");
                                         break;
@@ -480,7 +520,6 @@ public class UserMenu extends BankMenu{
                                     e.printStackTrace();
                                 }
                             }
-                            System.out.println("-------------------------------------------------");
                             //break does not work within the switch cases, so I used boolean to exit loop
                             onOff = false;
                             menuon = false;
@@ -491,7 +530,7 @@ public class UserMenu extends BankMenu{
                             userAccount.setEndCheckBal(userAccount.getCheck().getBalance());
                             userAccount.setEndSaveBal(userAccount.getSave().getBalance());
                             userAccount.setEndCreditBal(userAccount.getCredit().getBalance());
-                            break;
+                            continue;
                         default:
                             //ensure user enters one of the right options
                             System.out.println("-------------------------------------------------");

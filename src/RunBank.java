@@ -27,6 +27,7 @@ public class RunBank{
 		UserMenu userMenu = new UserMenu(userInput,customers,items);
 		//handles the user option
 		int option1;
+		String optionInString = null;
 		//handles the exit of the program
 		boolean exit = false;
 		//ensures ide does not mishandle double execution at the start which may still happen
@@ -34,31 +35,40 @@ public class RunBank{
 		//begining menu asks to see what type of user
 		while(!exit){
 			alreadyExec = false;
-			System.out.println("Hello Welcome to Miners Bank, who are you?(press 3 to Create Account 4 to exit)");
+			System.out.println("Hello Welcome to Miners Bank!");
+			System.out.println("Please choose an option!");
 			System.out.println("(Note: do not add unnecessary spaces, it may cause problems)");
 			System.out.println("1.Customer");
 			System.out.println("2.Manager");
 			System.out.println("3.Create account");
-			System.out.println("4.Exit");
+			System.out.println("Enter \"EXIT\" to end the session");
 			//ensure proper option is entered
 			try{
-				option1 = Integer.parseInt(userInput.nextLine());
+				optionInString = userInput.nextLine();
+				option1 = Integer.parseInt(optionInString);
 			}
 			catch(Exception e){
 				//handling issues with intellij, it sometimes runs the code twice
 				if(alreadyExec){
 					continue;
 				}
-				System.out.println("ERROR: Please enter 1-4");
-				System.out.println("Restarting in");
-				for(int i = 3;i > 0;i--){
-					System.out.println(i);
-					try {
-						Thread.sleep(1000);
-					}catch (InterruptedException e2){
-						//nothing crazy should happen here
-						e2.printStackTrace();
+				if(optionInString.equalsIgnoreCase("EXIT")){
+					exit = true;
+					System.out.println("Thank you have a nice day!");
+				}
+				if(!exit){
+					System.out.println("ERROR: Please enter 1-3 or \"EXIT\"");
+					System.out.println("Restarting in");
+					for(int i = 3;i > 0;i--){
+						System.out.println(i);
+						try {
+							Thread.sleep(1000);
+						}catch (InterruptedException et){
+							//nothing crazy should happen here
+							et.printStackTrace();
+						}
 					}
+
 				}
 				System.out.println("-------------------------------------------");
 				alreadyExec = true;
@@ -80,29 +90,31 @@ public class RunBank{
 					userMenu.userCreation();
 					System.out.println("-------------------------------------------");
 				break;
-			case 4://exit
-					System.out.println("Thank you,have a great day");
-					exit = true;
-				break;
 			default:
 				//handling issues with intellij, it sometimes runs the code twice
 				if(alreadyExec){
 					continue;
 				}
-				System.out.println("ERROR: Please enter 1-4");
-				System.out.println("Restarting in");
-				for(int i = 3;i > 0;i--){
-					System.out.println(i);
-					try {
-						Thread.sleep(1000);
-					}catch (InterruptedException e){
-						//nothing crazy should happen here
-						e.printStackTrace();
+				if(optionInString.equalsIgnoreCase("EXIT")){
+					exit = true;
+					System.out.println("Thank you have a nice day!");
+				}
+				if(!exit){
+					System.out.println("ERROR: Please enter 1-3 or \"EXIT\"");
+					System.out.println("Restarting in");
+					for(int i = 3;i > 0;i--){
+						System.out.println(i);
+						try {
+							Thread.sleep(1000);
+						}catch (InterruptedException e){
+							//nothing crazy should happen here
+							e.printStackTrace();
+						}
 					}
+
 				}
 				System.out.println("-------------------------------------------");
 				alreadyExec = true;
-				continue;
 			}
 		}
 		// this line updates and generates the new file with updated information when user exits the system
