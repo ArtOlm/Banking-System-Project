@@ -116,7 +116,6 @@ public class UserMenu extends BankMenu{
                             transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),accType,time.format(LocalDateTime.now()));
                             this.getMyHandler().logToFile(transactionLog);
 
-                            System.out.println("-------------------------------------------------");
                             break;
                         case 2://deposit procedure
                             System.out.println("-------------------------------------------------");
@@ -159,7 +158,6 @@ public class UserMenu extends BankMenu{
                             userAccount.addTransaction(transactionLog);
                             this.getMyHandler().logToFile(transactionLog);
                             System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
-                            System.out.println("-------------------------------------------------");
                             break;
                         case 3://transaction between two customer of the same customer
                             System.out.println("-------------------------------------------------");
