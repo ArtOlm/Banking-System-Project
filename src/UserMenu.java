@@ -106,7 +106,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("3.Credit");
                             accType = this.getUserInput().nextLine();
                             //ensure proper account is chosen
-                            while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
+                            while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 accType = this.getUserInput().nextLine();
                             }
@@ -126,7 +126,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("3.Credit");
                             accType = this.getUserInput().nextLine();
                             //ensure proper account is chosen
-                            while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
+                            while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 accType = this.getUserInput().nextLine();
                             }
@@ -168,7 +168,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
                             from = this.getUserInput().nextLine();
-                            while(!from.equals("Checking") && !from.equals("Savings") && !from.equals("Credit")){
+                            while(!from.equalsIgnoreCase("Checking") && !from.equalsIgnoreCase("Savings") && !from.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 from = this.getUserInput().nextLine();
                             }
@@ -177,7 +177,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
                             to = this.getUserInput().nextLine();
-                            while(!to.equals("Checking") && !to.equals("Savings") && !to.equals("Credit")){
+                            while(!to.equalsIgnoreCase("Checking") && !to.equalsIgnoreCase("Savings") && !to.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 to = this.getUserInput().nextLine();
                             }
@@ -220,7 +220,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
                             accType = this.getUserInput().nextLine();
-                            while(!accType.equals("Checking") && !accType.equals("Savings") && !accType.equals("Credit")){
+                            while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 accType = this.getUserInput().nextLine();
                             }
@@ -262,7 +262,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("3.Credit");
                             from = this.getUserInput().nextLine();
                             //ensure a proper account is entered
-                            while(!from.equals("Checking") && !from.equals("Savings") && !from.equals("Credit")){
+                            while(!from.equalsIgnoreCase("Checking") && !from.equalsIgnoreCase("Savings") && !from.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 from = this.getUserInput().nextLine();
                             }
@@ -318,7 +318,7 @@ public class UserMenu extends BankMenu{
                             System.out.println("3.Credit");
                             to = this.getUserInput().nextLine();
                             //ensure a proper option
-                            while(!to.equals("Checking") && !to.equals("Savings") && !to.equals("Credit")){
+                            while(!to.equalsIgnoreCase("Checking") && !to.equalsIgnoreCase("Savings") && !to.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
                                 to = this.getUserInput().nextLine();
 
@@ -441,54 +441,70 @@ public class UserMenu extends BankMenu{
                                             //ask with what account they want to pay with
                                             System.out.println("With which account would you like to pay?(Enter the name)");
                                             System.out.println("1.Checking");
-                                            System.out.println("2.Savings");
+                                            System.out.println("2.Credit");
                                             String accountType = this.getUserInput().nextLine();
                                             while (!accountType.equalsIgnoreCase("Checking") && !accountType.equalsIgnoreCase("Credit")){
-                                                System.out.println("Please enter checking or credit");
+                                                System.out.println("Please enter Checking or Credit");
                                              accountType = this.getUserInput().nextLine();
                                             }
+                                            //pinter to check the input
+                                            String pinStr = null;
                                             //make them enter their pin
                                             if(accountType.equalsIgnoreCase("Checking")){
                                                 System.out.println("Please enter your pin");
+
                                                 int pin;
                                                 while (true){
                                                     try {
-                                                        pin = Integer.parseInt(this.getUserInput().nextLine());
+                                                        pinStr = this.getUserInput().nextLine();
+                                                        pin = Integer.parseInt(pinStr);
                                                     }   catch (Exception ek){
-                                                        System.out.println("Please enter the correct pin");
+                                                        if(pinStr.equalsIgnoreCase("a")){
+                                                            break;
+                                                        }
+                                                        System.out.println("Please enter the correct pin or enter \"a\" to abort the checkout");
                                                         continue;
                                                     }
                                                     if(pin != userAccount.getPin()){
-                                                        System.out.println("Please enter the correct pin");
+                                                        System.out.println("Please enter the correct pin or enter \"a\" to abort the checkout");
                                                         continue;
                                                     }
                                                     break;
                                                 }
 
+                                            }else if(accountType.equalsIgnoreCase("Credit")){
+                                                //ensure pinStr is not null if they chose credit
+                                                pinStr = "c";
                                             }
-                                            //get the total of all the items in their cart
-                                            for(int i = 0;i  < cart.size();i++){
-                                                total += cart.get(i).getPrice();
-                                            }
-                                            try{
-                                                this.getTransactionHandler().buyFromMinerMall(userAccount,accountType,total);
-                                            }catch (Exception me) {
-                                                System.out.println(me.getMessage());
-                                                break;
-                                            }
-                                            //update the users info and tell them they succeeded in making the purchase
-                                            System.out.printf("Your purchase of %.2f$ at Miners mall was a success!\n",total);
-                                            System.out.println("Thank you!");
-                                            for(int i = 0;i  < cart.size();i++){
-                                                Item t = cart.get(i);
-                                                //update the limit on the items
-                                                this.getItems().get(t.getID()).setMax(maxCount.get(t.getName()));
-                                                //log everything they bought if successful
-                                                transactionLog = String.format("%s %s bought %s for %.2f$ using %s account\n",userAccount.getFirstName(),userAccount.getLastName(),t.getName(),t.getPrice(),accountType);
-                                                this.getMyHandler().logToFile(transactionLog);
-                                                userAccount.addTransaction(transactionLog);
-                                                userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + t.getPrice());
-                                                userAccount.addItemBought(t.getName());
+                                            //if the user did not abort the payment
+                                            if(!pinStr.equalsIgnoreCase("a")) {
+                                                //get the total of all the items in their cart
+                                                for (int i = 0; i < cart.size(); i++) {
+                                                    total += cart.get(i).getPrice();
+                                                }
+                                                try {
+                                                    this.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total);
+                                                } catch (Exception me) {
+                                                    System.out.println(me.getMessage());
+                                                    break;
+                                                }
+                                                //update the users info and tell them they succeeded in making the purchase
+                                                System.out.printf("Your purchase of %.2f$ at Miners mall was a success!\n", total);
+                                                System.out.println("Thank you!");
+                                                for (int i = 0; i < cart.size(); i++) {
+                                                    Item t = cart.get(i);
+                                                    //update the limit on the items
+                                                    this.getItems().get(t.getID()).setMax(maxCount.get(t.getName()));
+                                                    //log everything they bought if successful
+                                                    transactionLog = String.format("%s %s bought %s for %.2f$ using %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), t.getName(), t.getPrice(), accountType,time.format(LocalDateTime.now()));
+                                                    this.getMyHandler().logToFile(transactionLog);
+                                                    userAccount.addTransaction(transactionLog);
+                                                    userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + t.getPrice());
+                                                    userAccount.addItemBought(t.getName());
+                                                }
+
+                                            }else {
+                                                System.out.println("Checkout was aborted, no items were purchased");
                                             }
                                         }
                                         if(cart.size() == 0 || line.equalsIgnoreCase("e")){
@@ -548,16 +564,16 @@ public class UserMenu extends BankMenu{
                 // user did not enter matching credential, we then ask if they would like to retry of just exit
                 System.out.println("Look like something went wrong, would you like to try again(Enter Y to continue or n to exit)");
                 String decision = this.getUserInput().nextLine();
-                while(!decision.equals("Y") && !decision.equals("n")){
+                while(!decision.equalsIgnoreCase("Y") && !decision.equalsIgnoreCase("n")){
                     System.out.println("Please enter Y or n");
                     decision = this.getUserInput().nextLine();
                 }
-                if(decision.equals("Y")){
-                    System.out.println("-------------------------------------------");
-                    continue;
-                } else{
-                    System.out.println("-------------------------------------------");
+                if(decision.equalsIgnoreCase("n")){
                     break;
+                }
+                else {
+                    System.out.println("Please enter your information");
+                    System.out.println("-------------------------------------------");
                 }
             }
         }
