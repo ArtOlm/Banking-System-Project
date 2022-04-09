@@ -1,0 +1,440 @@
+Name: Miguel Ortiz
+Address: TX, El Paso, TX 79968
+Phone: (915) 747-5000
+DOB: 8/7/06
+ID: 69
+Checking Account Number: 1000069   Current Checking Account Balance: 49091.99$
+Savings Account Number: 2000069   Current Savings Account Balance: 122517.05$
+Credit Account Number: 3000069   Current Credit Account Balance: 524.87$   Credit Score: 488   Credit Limit: 600
+----------------------------------------------------------------------
+
+Session Start: 2022/04/09 13:20:11
+Starting Checking Balance: 2446.21$
+Starting Savings Balance: 11845.24$
+Starting Credit Balance: 6.73$
+
+----------------------------------------------------------------------
+Session End: 2022/04/09 13:21:19
+Ending Checking Balance: 44332.36$
+Ending Savings Balance: 122517.05$
+Ending Credit Balance: 524.87$
+
+----------------------------------------------------------------------
+Account Activity
+----------------
+Miguel Ortiz paid 793.27$ from their Checking account to Raymond Woodward into their Checking account at 2022/04/09 13:20:11
+
+Miguel Ortiz paid 531.40$ from their Checking account to Kimberly Richardson into their Checking account at 2022/04/09 13:20:12
+
+Miguel Ortiz paid 281.47$ from their Checking account to Craig Oconnell into their Savings account at 2022/04/09 13:20:12
+
+Miguel Ortiz deposited 2679.78$ from their Savings account at 2022/04/09 13:20:12
+
+Miguel Ortiz deposited 837.10$ from their Savings account at 2022/04/09 13:20:12
+
+Miguel Ortiz paid 909.76$ from their Checking account to Juan Brock into their Checking account at 2022/04/09 13:20:13
+
+Miguel Ortiz paid 837.17$ from their Checking account to Christopher Norris into their Savings account at 2022/04/09 13:20:13
+
+Miguel Ortiz purchased a Random Item 57 for 15.92$ from miners bank using their Checking account at 2022/04/09 13:20:14
+
+Miguel Ortiz purchased a Random Item 53 for 72.45$ from miners bank using their Credit account at 2022/04/09 13:20:16
+
+Miguel Ortiz deposited 2645.90$ from their Savings account at 2022/04/09 13:20:17
+
+Miguel Ortiz deposited 2817.21$ from their Savings account at 2022/04/09 13:20:17
+
+Miguel Ortiz deposited 2395.03$ from their Savings account at 2022/04/09 13:20:17
+
+Miguel Ortiz paid 34.04$ from their Checking account to Robin Watson into their Checking account at 2022/04/09 13:20:18
+
+Miguel Ortiz purchased a Random Item 61 for 63.10$ from miners bank using their Checking account at 2022/04/09 13:20:18
+
+Miguel Ortiz deposited 3632.43$ from their Savings account at 2022/04/09 13:20:18
+
+Miguel Ortiz purchased a Random Item 76 for 42.33$ from miners bank using their Credit account at 2022/04/09 13:20:19
+
+Miguel Ortiz paid 24.48$ from their Checking account to Nancy Robles into their Savings account at 2022/04/09 13:20:19
+
+Miguel Ortiz paid 382.31$ from their Checking account to Mark Lamb into their Checking account at 2022/04/09 13:20:19
+
+Miguel Ortiz purchased a Random Item 76 for 42.33$ from miners bank using their Checking account at 2022/04/09 13:20:19
+
+Miguel Ortiz purchased a Parking Permit B for 250.00$ from miners bank using their Credit account at 2022/04/09 13:20:20
+
+Miguel Ortiz purchased a Random Item 75 for 65.17$ from miners bank using their Credit account at 2022/04/09 13:20:21
+
+Miguel Ortiz paid 278.21$ from their Checking account to Timothy Greene into their Checking account at 2022/04/09 13:20:22
+
+Miguel Ortiz paid 535.30$ from their Checking account to Nicole Harvey into their Savings account at 2022/04/09 13:20:22
+
+Miguel Ortiz deposited 4070.11$ from their Savings account at 2022/04/09 13:20:23
+
+Miguel Ortiz purchased a Random Item 62 for 64.53$ from miners bank using their Checking account at 2022/04/09 13:20:23
+
+Miguel Ortiz deposited 1849.06$ from their Savings account at 2022/04/09 13:20:24
+
+Miguel Ortiz purchased a Random Item 2 for 27.33$ from miners bank using their Credit account at 2022/04/09 13:20:24
+
+Miguel Ortiz paid 996.45$ from their Checking account to Christopher Contreras into their Savings account at 2022/04/09 13:20:25
+
+Miguel Ortiz deposited 3469.08$ from their Savings account at 2022/04/09 13:20:25
+
+Miguel Ortiz deposited 301.73$ from their Savings account at 2022/04/09 13:20:26
+
+Miguel Ortiz deposited 4347.13$ from their Savings account at 2022/04/09 13:20:26
+
+Miguel Ortiz paid 908.76$ from their Checking account to Melissa Mcdonald into their Savings account at 2022/04/09 13:20:27
+
+Miguel Ortiz purchased a Random Item 76 for 42.33$ from miners bank using their Credit account at 2022/04/09 13:20:27
+
+Miguel Ortiz deposited 1539.46$ from their Checking account at 2022/04/09 13:20:27
+
+Miguel Ortiz paid 711.96$ from their Checking account to Patrick Larsen into their Savings account at 2022/04/09 13:20:27
+
+Miguel Ortiz purchased a Random Item 43 for 6.51$ from miners bank using their Credit account at 2022/04/09 13:20:27
+
+Miguel Ortiz purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/09 13:20:27
+
+Miguel Ortiz paid 958.47$ from their Checking account to Willie Hobbs into their Savings account at 2022/04/09 13:20:28
+
+Miguel Ortiz purchased a Random Item 74 for 55.05$ from miners bank using their Credit account at 2022/04/09 13:20:28
+
+Miguel Ortiz purchased a Random Item 14 for 52.06$ from miners bank using their Checking account at 2022/04/09 13:20:28
+
+Miguel Ortiz purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Credit account at 2022/04/09 13:20:28
+
+Miguel Ortiz paid 191.43$ from their Checking account to William Rice into their Checking account at 2022/04/09 13:20:30
+
+Miguel Ortiz deposited 1497.29$ from their Checking account at 2022/04/09 13:20:31
+
+Miguel Ortiz paid 349.09$ from their Checking account to Diego Sanchez into their Checking account at 2022/04/09 13:20:32
+
+Miguel Ortiz paid 990.53$ from their Checking account to Jerry Hampton into their Checking account at 2022/04/09 13:20:32
+
+Miguel Ortiz purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/09 13:20:32
+
+Miguel Ortiz deposited 1079.24$ from their Checking account at 2022/04/09 13:20:33
+
+Miguel Ortiz deposited 1724.40$ from their Savings account at 2022/04/09 13:20:33
+
+Miguel Ortiz paid 504.28$ from their Checking account to Brandy Wilkerson into their Checking account at 2022/04/09 13:20:33
+
+Miguel Ortiz deposited 874.89$ from their Checking account at 2022/04/09 13:20:33
+
+Miguel Ortiz paid 548.56$ from their Checking account to Anthony Hunter into their Savings account at 2022/04/09 13:20:34
+
+Miguel Ortiz deposited 2600.40$ from their Savings account at 2022/04/09 13:20:34
+
+Miguel Ortiz purchased a Parking Permit A for 200.00$ from miners bank using their Checking account at 2022/04/09 13:20:35
+
+Miguel Ortiz paid 284.94$ from their Checking account to Ariel Disney into their Savings account at 2022/04/09 13:20:35
+
+Miguel Ortiz paid 716.00$ from their Checking account to Bryan Hardy into their Savings account at 2022/04/09 13:20:35
+
+Miguel Ortiz paid 548.09$ from their Checking account to Taylor Johnson into their Checking account at 2022/04/09 13:20:36
+
+Miguel Ortiz purchased a Post-It Notes for 4.50$ from miners bank using their Credit account at 2022/04/09 13:20:36
+
+Miguel Ortiz deposited 1371.86$ from their Checking account at 2022/04/09 13:20:36
+
+Miguel Ortiz purchased a Random Item 38 for 71.34$ from miners bank using their Checking account at 2022/04/09 13:20:36
+
+Miguel Ortiz deposited 4306.68$ from their Savings account at 2022/04/09 13:20:36
+
+Miguel Ortiz paid 521.81$ from their Checking account to William Adkins into their Checking account at 2022/04/09 13:20:36
+
+Miguel Ortiz paid 342.87$ from their Checking account to Zachary Tran into their Checking account at 2022/04/09 13:20:37
+
+Miguel Ortiz paid 843.75$ from their Checking account to Mulan Disney into their Checking account at 2022/04/09 13:20:37
+
+Miguel Ortiz paid 810.58$ from their Checking account to Hannah Maldonado into their Checking account at 2022/04/09 13:20:37
+
+Miguel Ortiz purchased a Random Item 44 for 10.69$ from miners bank using their Checking account at 2022/04/09 13:20:37
+
+Miguel Ortiz deposited 4686.07$ from their Checking account at 2022/04/09 13:20:37
+
+Miguel Ortiz paid 12.24$ from their Checking account to Felicia Carlson into their Checking account at 2022/04/09 13:20:38
+
+Miguel Ortiz paid 234.72$ from their Checking account to Teresa Taylor into their Savings account at 2022/04/09 13:20:38
+
+Miguel Ortiz purchased a Random Item 12 for 12.01$ from miners bank using their Checking account at 2022/04/09 13:20:38
+
+Miguel Ortiz paid 534.25$ from their Checking account to Kathryn Perez into their Checking account at 2022/04/09 13:20:38
+
+Miguel Ortiz deposited 3395.82$ from their Checking account at 2022/04/09 13:20:39
+
+Miguel Ortiz paid 293.62$ from their Checking account to Anthony Sims into their Savings account at 2022/04/09 13:20:39
+
+Miguel Ortiz deposited 3396.35$ from their Savings account at 2022/04/09 13:20:40
+
+Miguel Ortiz paid 142.03$ from their Checking account to Brad Patel into their Checking account at 2022/04/09 13:20:40
+
+Miguel Ortiz paid 570.70$ from their Checking account to Loretta Phillips into their Checking account at 2022/04/09 13:20:40
+
+Miguel Ortiz deposited 3564.10$ from their Checking account at 2022/04/09 13:20:41
+
+Miguel Ortiz paid 862.38$ from their Checking account to Bradley Rodriguez into their Savings account at 2022/04/09 13:20:41
+
+Miguel Ortiz purchased a Random Item 59 for 17.82$ from miners bank using their Credit account at 2022/04/09 13:20:42
+
+Miguel Ortiz paid 493.59$ from their Checking account to Virginia Phelps into their Checking account at 2022/04/09 13:20:43
+
+Miguel Ortiz paid 866.55$ from their Checking account to Amanda Vang into their Savings account at 2022/04/09 13:20:43
+
+Miguel Ortiz paid 827.11$ from their Checking account to Janet Hughes into their Checking account at 2022/04/09 13:20:43
+
+Miguel Ortiz purchased a Random Item 36 for 94.10$ from miners bank using their Checking account at 2022/04/09 13:20:43
+
+Miguel Ortiz deposited 3404.20$ from their Checking account at 2022/04/09 13:20:43
+
+Miguel Ortiz paid 360.22$ from their Checking account to Shirley Foster into their Savings account at 2022/04/09 13:20:44
+
+Miguel Ortiz paid 78.38$ from their Checking account to Ricky Thompson into their Savings account at 2022/04/09 13:20:44
+
+Miguel Ortiz deposited 1514.64$ from their Checking account at 2022/04/09 13:20:44
+
+Miguel Ortiz deposited 4974.39$ from their Checking account at 2022/04/09 13:20:45
+
+Miguel Ortiz paid 989.71$ from their Checking account to Gary Mckenzie into their Savings account at 2022/04/09 13:20:45
+
+Miguel Ortiz paid 535.52$ from their Checking account to Jake Mitchell into their Checking account at 2022/04/09 13:20:45
+
+Miguel Ortiz purchased a Random Item 17 for 100.01$ from miners bank using their Checking account at 2022/04/09 13:20:45
+
+Miguel Ortiz purchased a Random Item 25 for 25.45$ from miners bank using their Checking account at 2022/04/09 13:20:46
+
+Miguel Ortiz paid 512.42$ from their Checking account to Karl Davis into their Checking account at 2022/04/09 13:20:46
+
+Miguel Ortiz deposited 917.45$ from their Savings account at 2022/04/09 13:20:47
+
+Miguel Ortiz paid 306.30$ from their Checking account to Patrick Henderson into their Savings account at 2022/04/09 13:20:47
+
+Miguel Ortiz deposited 2499.34$ from their Checking account at 2022/04/09 13:20:47
+
+Miguel Ortiz paid 636.42$ from their Checking account to Tammy Martinez into their Checking account at 2022/04/09 13:20:47
+
+Miguel Ortiz deposited 4978.44$ from their Savings account at 2022/04/09 13:20:47
+
+Miguel Ortiz deposited 4619.37$ from their Savings account at 2022/04/09 13:20:48
+
+Miguel Ortiz paid 934.98$ from their Checking account to Mitchell Gross into their Checking account at 2022/04/09 13:20:49
+
+Miguel Ortiz paid 202.38$ from their Checking account to Nicholas Copeland into their Savings account at 2022/04/09 13:20:49
+
+Miguel Ortiz paid 771.26$ from their Checking account to Peter Pan into their Savings account at 2022/04/09 13:20:49
+
+Miguel Ortiz paid 3.53$ from their Checking account to Victor Juarez into their Savings account at 2022/04/09 13:20:49
+
+Miguel Ortiz deposited 3059.94$ from their Savings account at 2022/04/09 13:20:50
+
+Miguel Ortiz deposited 2978.88$ from their Checking account at 2022/04/09 13:20:50
+
+Miguel Ortiz deposited 3975.16$ from their Savings account at 2022/04/09 13:20:51
+
+Miguel Ortiz purchased a Random Item 26 for 23.82$ from miners bank using their Checking account at 2022/04/09 13:20:51
+
+Miguel Ortiz deposited 1905.00$ from their Savings account at 2022/04/09 13:20:51
+
+Miguel Ortiz deposited 2975.97$ from their Checking account at 2022/04/09 13:20:51
+
+Miguel Ortiz deposited 576.13$ from their Credit account at 2022/04/09 13:20:52
+
+Miguel Ortiz purchased a Random Item 71 for 27.76$ from miners bank using their Credit account at 2022/04/09 13:20:53
+
+Miguel Ortiz paid 452.64$ from their Checking account to Jasmine Disney into their Checking account at 2022/04/09 13:20:53
+
+Miguel Ortiz paid 855.36$ from their Checking account to Janet Hughes into their Savings account at 2022/04/09 13:20:53
+
+Miguel Ortiz deposited 1202.49$ from their Savings account at 2022/04/09 13:20:53
+
+Miguel Ortiz purchased a Random Item 20 for 30.33$ from miners bank using their Checking account at 2022/04/09 13:20:53
+
+Miguel Ortiz paid 394.95$ from their Checking account to Buzz Lightyear into their Checking account at 2022/04/09 13:20:53
+
+Miguel Ortiz paid 958.56$ from their Checking account to Aurora Disney into their Savings account at 2022/04/09 13:20:54
+
+Miguel Ortiz purchased a Random Item 74 for 55.05$ from miners bank using their Credit account at 2022/04/09 13:20:54
+
+Miguel Ortiz paid 515.27$ from their Checking account to Luis Johnson into their Savings account at 2022/04/09 13:20:54
+
+Miguel Ortiz purchased a Parking Permit C for 300.00$ from miners bank using their Credit account at 2022/04/09 13:20:55
+
+Miguel Ortiz purchased a Sushi Meal for 11.25$ from miners bank using their Credit account at 2022/04/09 13:20:55
+
+Miguel Ortiz paid 436.56$ from their Checking account to Edward Jackson into their Checking account at 2022/04/09 13:20:56
+
+Miguel Ortiz paid 568.41$ from their Checking account to Casey Navarro into their Checking account at 2022/04/09 13:20:56
+
+Miguel Ortiz purchased a Random Item 74 for 55.05$ from miners bank using their Checking account at 2022/04/09 13:20:57
+
+Miguel Ortiz purchased a Random Item 12 for 12.01$ from miners bank using their Checking account at 2022/04/09 13:20:57
+
+Miguel Ortiz paid 76.00$ from their Checking account to Amy Bradley into their Savings account at 2022/04/09 13:20:57
+
+Miguel Ortiz purchased a Random Item 15 for 13.47$ from miners bank using their Checking account at 2022/04/09 13:20:58
+
+Miguel Ortiz paid 825.11$ from their Checking account to Julia Jones into their Checking account at 2022/04/09 13:20:58
+
+Miguel Ortiz purchased a Random Item 49 for 86.68$ from miners bank using their Credit account at 2022/04/09 13:20:59
+
+Miguel Ortiz paid 533.11$ from their Checking account to Joshua Banks into their Checking account at 2022/04/09 13:21:00
+
+Miguel Ortiz paid 305.19$ from their Checking account to Kimberly Roberts into their Checking account at 2022/04/09 13:21:01
+
+Miguel Ortiz paid 226.85$ from their Checking account to Courtney Olsen into their Checking account at 2022/04/09 13:21:01
+
+Miguel Ortiz deposited 4760.71$ from their Savings account at 2022/04/09 13:21:01
+
+Miguel Ortiz paid 887.66$ from their Checking account to Krista Beck into their Checking account at 2022/04/09 13:21:01
+
+Miguel Ortiz paid 476.25$ from their Checking account to Megan Noble into their Savings account at 2022/04/09 13:21:01
+
+Miguel Ortiz paid 222.27$ from their Checking account to Robert Lyons into their Checking account at 2022/04/09 13:21:01
+
+Miguel Ortiz paid 102.25$ from their Checking account to Angel OteroMontanez into their Checking account at 2022/04/09 13:21:01
+
+Miguel Ortiz deposited 4572.10$ from their Savings account at 2022/04/09 13:21:01
+
+Miguel Ortiz deposited 821.85$ from their Checking account at 2022/04/09 13:21:01
+
+Miguel Ortiz paid 582.15$ from their Checking account to Robert Wilson into their Checking account at 2022/04/09 13:21:02
+
+Miguel Ortiz deposited 1143.83$ from their Checking account at 2022/04/09 13:21:02
+
+Miguel Ortiz deposited 3077.40$ from their Checking account at 2022/04/09 13:21:03
+
+Miguel Ortiz purchased a Random Item 32 for 57.57$ from miners bank using their Checking account at 2022/04/09 13:21:03
+
+Miguel Ortiz purchased a Random Item 37 for 52.38$ from miners bank using their Credit account at 2022/04/09 13:21:03
+
+Miguel Ortiz deposited 2491.70$ from their Savings account at 2022/04/09 13:21:03
+
+Miguel Ortiz paid 327.55$ from their Checking account to Craig Brown into their Savings account at 2022/04/09 13:21:03
+
+Miguel Ortiz deposited 1052.24$ from their Checking account at 2022/04/09 13:21:04
+
+Miguel Ortiz paid 938.33$ from their Checking account to Kimberly Roberts into their Checking account at 2022/04/09 13:21:04
+
+Miguel Ortiz deposited 1517.89$ from their Savings account at 2022/04/09 13:21:04
+
+Miguel Ortiz deposited 2772.45$ from their Checking account at 2022/04/09 13:21:04
+
+Miguel Ortiz purchased a Random Item 18 for 56.32$ from miners bank using their Checking account at 2022/04/09 13:21:05
+
+Miguel Ortiz purchased a Random Item 25 for 25.45$ from miners bank using their Credit account at 2022/04/09 13:21:05
+
+Miguel Ortiz deposited 244.56$ from their Credit account at 2022/04/09 13:21:05
+
+Miguel Ortiz paid 875.20$ from their Checking account to Jaehyeon Park into their Checking account at 2022/04/09 13:21:05
+
+Miguel Ortiz paid 585.32$ from their Checking account to Bryan Wise into their Savings account at 2022/04/09 13:21:06
+
+Miguel Ortiz deposited 4190.78$ from their Checking account at 2022/04/09 13:21:06
+
+Miguel Ortiz paid 720.94$ from their Checking account to Robert Park into their Checking account at 2022/04/09 13:21:06
+
+Miguel Ortiz paid 963.43$ from their Checking account to Holly Schneider into their Checking account at 2022/04/09 13:21:06
+
+Miguel Ortiz purchased a Pen for 3.99$ from miners bank using their Credit account at 2022/04/09 13:21:06
+
+Miguel Ortiz purchased a Random Item 47 for 53.07$ from miners bank using their Checking account at 2022/04/09 13:21:07
+
+Miguel Ortiz deposited 4084.13$ from their Savings account at 2022/04/09 13:21:07
+
+Miguel Ortiz paid 804.60$ from their Checking account to Christopher Underwood into their Checking account at 2022/04/09 13:21:08
+
+Miguel Ortiz paid 326.08$ from their Checking account to Victoria White into their Checking account at 2022/04/09 13:21:08
+
+Miguel Ortiz deposited 4697.48$ from their Savings account at 2022/04/09 13:21:08
+
+Miguel Ortiz deposited 728.18$ from their Checking account at 2022/04/09 13:21:08
+
+Miguel Ortiz paid 94.92$ from their Checking account to Elizabeth Reyes into their Checking account at 2022/04/09 13:21:08
+
+Miguel Ortiz purchased a Random Item 46 for 14.74$ from miners bank using their Checking account at 2022/04/09 13:21:08
+
+Miguel Ortiz purchased a Random Item 38 for 71.34$ from miners bank using their Credit account at 2022/04/09 13:21:08
+
+Miguel Ortiz paid 376.64$ from their Checking account to Mary Stevens into their Savings account at 2022/04/09 13:21:09
+
+Miguel Ortiz deposited 3329.96$ from their Checking account at 2022/04/09 13:21:09
+
+Miguel Ortiz deposited 4776.60$ from their Checking account at 2022/04/09 13:21:09
+
+Miguel Ortiz purchased a Random Item 12 for 12.01$ from miners bank using their Checking account at 2022/04/09 13:21:09
+
+Miguel Ortiz purchased a Random Item 14 for 52.06$ from miners bank using their Checking account at 2022/04/09 13:21:10
+
+Miguel Ortiz paid 142.69$ from their Checking account to Christina Jones into their Savings account at 2022/04/09 13:21:10
+
+Miguel Ortiz paid 397.87$ from their Checking account to Phillip Meyer into their Checking account at 2022/04/09 13:21:10
+
+Miguel Ortiz paid 141.64$ from their Checking account to Darlene Shaw into their Savings account at 2022/04/09 13:21:10
+
+Miguel Ortiz deposited 1819.01$ from their Savings account at 2022/04/09 13:21:10
+
+Miguel Ortiz purchased a Random Item 7 for 68.76$ from miners bank using their Checking account at 2022/04/09 13:21:10
+
+Miguel Ortiz purchased a Random Item 77 for 76.92$ from miners bank using their Checking account at 2022/04/09 13:21:11
+
+Miguel Ortiz deposited 212.63$ from their Checking account at 2022/04/09 13:21:11
+
+Miguel Ortiz paid 184.25$ from their Checking account to Scott Rose into their Savings account at 2022/04/09 13:21:11
+
+Miguel Ortiz purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/09 13:21:11
+
+Miguel Ortiz purchased a Random Item 26 for 23.82$ from miners bank using their Checking account at 2022/04/09 13:21:11
+
+Miguel Ortiz paid 906.62$ from their Checking account to Mark Stewart into their Savings account at 2022/04/09 13:21:11
+
+Miguel Ortiz deposited 3086.30$ from their Checking account at 2022/04/09 13:21:11
+
+Miguel Ortiz purchased a Random Item 17 for 100.01$ from miners bank using their Credit account at 2022/04/09 13:21:12
+
+Miguel Ortiz paid 941.49$ from their Checking account to Shawn Santos into their Savings account at 2022/04/09 13:21:12
+
+Miguel Ortiz paid 94.78$ from their Checking account to Patrick Henderson into their Savings account at 2022/04/09 13:21:12
+
+Miguel Ortiz purchased a Random Item 75 for 65.17$ from miners bank using their Checking account at 2022/04/09 13:21:12
+
+Miguel Ortiz paid 401.79$ from their Checking account to Ray Booth into their Checking account at 2022/04/09 13:21:12
+
+Miguel Ortiz paid 713.74$ from their Checking account to Lori Livingston into their Checking account at 2022/04/09 13:21:13
+
+Miguel Ortiz purchased a Trenta Shaken Caramel Iced Latte with half Oat Milk and half Almond Milk with 2.5 Pumps of Vanilla and whip for 13.57$ from miners bank using their Credit account at 2022/04/09 13:21:14
+
+Miguel Ortiz purchased a Pencil for 2.99$ from miners bank using their Credit account at 2022/04/09 13:21:14
+
+Miguel Ortiz paid 165.98$ from their Checking account to Lisa Miller into their Checking account at 2022/04/09 13:21:14
+
+Miguel Ortiz paid 306.14$ from their Checking account to Jessica Fernandez into their Savings account at 2022/04/09 13:21:14
+
+Miguel Ortiz deposited 1327.44$ from their Savings account at 2022/04/09 13:21:15
+
+Miguel Ortiz paid 399.26$ from their Checking account to Monica Craig into their Checking account at 2022/04/09 13:21:15
+
+Miguel Ortiz paid 81.63$ from their Checking account to George Ayala into their Checking account at 2022/04/09 13:21:15
+
+Miguel Ortiz purchased a Random Item 41 for 58.48$ from miners bank using their Checking account at 2022/04/09 13:21:15
+
+Miguel Ortiz purchased a Random Item 17 for 100.01$ from miners bank using their Checking account at 2022/04/09 13:21:15
+
+Miguel Ortiz paid 570.56$ from their Checking account to Prince Eric into their Checking account at 2022/04/09 13:21:15
+
+Miguel Ortiz paid 415.41$ from their Checking account to Deyanira OchoaMercado into their Savings account at 2022/04/09 13:21:16
+
+Miguel Ortiz paid 471.29$ from their Checking account to Brittney Daniel into their Checking account at 2022/04/09 13:21:17
+
+Miguel Ortiz deposited 1766.75$ from their Checking account at 2022/04/09 13:21:17
+
+Miguel Ortiz paid 837.27$ from their Checking account to Christopher Sanford into their Savings account at 2022/04/09 13:21:18
+
+Miguel Ortiz purchased a Random Item 71 for 27.76$ from miners bank using their Checking account at 2022/04/09 13:21:18
+
+Miguel Ortiz paid 409.63$ from their Checking account to Christopher Coleman into their Savings account at 2022/04/09 13:21:18
+
+Miguel Ortiz deposited 4759.63$ from their Checking account at 2022/04/09 13:21:19
+
+
+----------------------------------------------------------------------

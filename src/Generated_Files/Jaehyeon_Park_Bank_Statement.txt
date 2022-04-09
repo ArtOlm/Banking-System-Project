@@ -1,0 +1,408 @@
+Name: Jaehyeon Park
+Address: TX, El Paso, TX 79968
+Phone: (915) 747-5000
+DOB: 5/16/34
+ID: 72
+Checking Account Number: 1000072   Current Checking Account Balance: 52657.37$
+Savings Account Number: 2000072   Current Savings Account Balance: 112476.53$
+Credit Account Number: 3000072   Current Credit Account Balance: 727.01$   Credit Score: 814   Credit Limit: 20500
+----------------------------------------------------------------------
+
+Session Start: 2022/04/09 13:16:39
+Starting Checking Balance: 1991.37$
+Starting Savings Balance: 23369.95$
+Starting Credit Balance: 5740.55$
+
+----------------------------------------------------------------------
+Session End: 2022/04/09 13:17:56
+Ending Checking Balance: 52657.37$
+Ending Savings Balance: 111504.59$
+Ending Credit Balance: 727.01$
+
+----------------------------------------------------------------------
+Account Activity
+----------------
+Jaehyeon Park deposited 88.64$ from their Checking account at 2022/04/09 13:16:39
+
+Jaehyeon Park paid 557.16$ from their Checking account to Kaylee Hale into their Savings account at 2022/04/09 13:16:41
+
+Jaehyeon Park paid 971.51$ from their Checking account to Kathleen Hines into their Savings account at 2022/04/09 13:16:42
+
+Jaehyeon Park purchased a Random Item 23 for 71.74$ from miners bank using their Checking account at 2022/04/09 13:16:42
+
+Jaehyeon Park paid 344.01$ from their Checking account to Carl Foley into their Savings account at 2022/04/09 13:16:42
+
+Jaehyeon Park purchased a Random Item 53 for 72.45$ from miners bank using their Credit account at 2022/04/09 13:16:43
+
+Jaehyeon Park purchased a Random Item 45 for 87.51$ from miners bank using their Checking account at 2022/04/09 13:16:43
+
+Jaehyeon Park deposited 3460.69$ from their Savings account at 2022/04/09 13:16:44
+
+Jaehyeon Park deposited 1144.29$ from their Checking account at 2022/04/09 13:16:44
+
+Jaehyeon Park paid 68.82$ from their Checking account to Richard Paul into their Savings account at 2022/04/09 13:16:44
+
+Jaehyeon Park paid 94.31$ from their Checking account to Mark Lozano into their Savings account at 2022/04/09 13:16:45
+
+Jaehyeon Park purchased a Random Item 25 for 25.45$ from miners bank using their Credit account at 2022/04/09 13:16:45
+
+Jaehyeon Park deposited 969.55$ from their Checking account at 2022/04/09 13:16:45
+
+Jaehyeon Park paid 702.58$ from their Checking account to Susan Alvarez into their Savings account at 2022/04/09 13:16:47
+
+Jaehyeon Park paid 764.38$ from their Checking account to Amy Parsons into their Checking account at 2022/04/09 13:16:47
+
+Jaehyeon Park purchased a UTEP Hoodie for 29.99$ from miners bank using their Credit account at 2022/04/09 13:16:47
+
+Jaehyeon Park deposited 3631.71$ from their Savings account at 2022/04/09 13:16:48
+
+Jaehyeon Park deposited 1833.28$ from their Credit account at 2022/04/09 13:16:49
+
+Jaehyeon Park paid 849.39$ from their Checking account to Linda Robles into their Checking account at 2022/04/09 13:16:50
+
+Jaehyeon Park purchased a Random Item 76 for 42.33$ from miners bank using their Credit account at 2022/04/09 13:16:51
+
+Jaehyeon Park deposited 3067.59$ from their Credit account at 2022/04/09 13:16:51
+
+Jaehyeon Park purchased a Highlighters for 4.99$ from miners bank using their Checking account at 2022/04/09 13:16:52
+
+Jaehyeon Park purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Checking account at 2022/04/09 13:16:53
+
+Jaehyeon Park paid 562.69$ from their Checking account to Sherri Velasquez into their Checking account at 2022/04/09 13:16:55
+
+Jaehyeon Park deposited 1281.00$ from their Savings account at 2022/04/09 13:16:55
+
+Jaehyeon Park purchased a Random Item 1 for 86.30$ from miners bank using their Credit account at 2022/04/09 13:16:55
+
+Jaehyeon Park purchased a Random Item 37 for 52.38$ from miners bank using their Checking account at 2022/04/09 13:16:56
+
+Jaehyeon Park paid 675.85$ from their Checking account to Theresa Hardy into their Checking account at 2022/04/09 13:16:59
+
+Jaehyeon Park paid 613.86$ from their Checking account to Gaston Disney into their Checking account at 2022/04/09 13:16:59
+
+Jaehyeon Park purchased a Trenta Shaken Caramel Iced Latte with half Oat Milk and half Almond Milk with 2.5 Pumps of Vanilla and whip for 13.57$ from miners bank using their Credit account at 2022/04/09 13:17:00
+
+Jaehyeon Park purchased a Random Item 41 for 58.48$ from miners bank using their Credit account at 2022/04/09 13:17:00
+
+Jaehyeon Park purchased a Random Item 65 for 68.65$ from miners bank using their Checking account at 2022/04/09 13:17:01
+
+Jaehyeon Park deposited 1847.68$ from their Savings account at 2022/04/09 13:17:03
+
+Jaehyeon Park paid 105.49$ from their Checking account to David Summers into their Checking account at 2022/04/09 13:17:03
+
+Jaehyeon Park paid 671.62$ from their Checking account to Donald Haynes into their Savings account at 2022/04/09 13:17:03
+
+Jaehyeon Park paid 985.41$ from their Checking account to Denise Williams into their Checking account at 2022/04/09 13:17:03
+
+Jaehyeon Park purchased a Pen for 3.99$ from miners bank using their Checking account at 2022/04/09 13:17:04
+
+Jaehyeon Park purchased a Random Item 25 for 25.45$ from miners bank using their Checking account at 2022/04/09 13:17:04
+
+Jaehyeon Park paid 695.35$ from their Checking account to Wendy Campos into their Savings account at 2022/04/09 13:17:04
+
+Jaehyeon Park purchased a Random Item 9 for 14.37$ from miners bank using their Checking account at 2022/04/09 13:17:04
+
+Jaehyeon Park purchased a Random Item 71 for 27.76$ from miners bank using their Credit account at 2022/04/09 13:17:05
+
+Jaehyeon Park purchased a Random Item 22 for 47.43$ from miners bank using their Checking account at 2022/04/09 13:17:05
+
+Jaehyeon Park deposited 3953.21$ from their Savings account at 2022/04/09 13:17:05
+
+Jaehyeon Park paid 362.97$ from their Checking account to Ashley Frye into their Checking account at 2022/04/09 13:17:05
+
+Jaehyeon Park paid 393.30$ from their Checking account to Mercedes Nichols into their Savings account at 2022/04/09 13:17:05
+
+Jaehyeon Park purchased a Random Item 16 for 79.33$ from miners bank using their Checking account at 2022/04/09 13:17:05
+
+Jaehyeon Park purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/09 13:17:06
+
+Jaehyeon Park purchased a Random Item 15 for 13.47$ from miners bank using their Credit account at 2022/04/09 13:17:06
+
+Jaehyeon Park purchased a Random Item 30 for 9.84$ from miners bank using their Credit account at 2022/04/09 13:17:06
+
+Jaehyeon Park purchased a Random Item 22 for 47.43$ from miners bank using their Credit account at 2022/04/09 13:17:06
+
+Jaehyeon Park paid 9.49$ from their Checking account to Ashley Romero into their Checking account at 2022/04/09 13:17:08
+
+Jaehyeon Park deposited 3235.77$ from their Checking account at 2022/04/09 13:17:09
+
+Jaehyeon Park purchased a Parking Permit C for 300.00$ from miners bank using their Credit account at 2022/04/09 13:17:09
+
+Jaehyeon Park deposited 4674.75$ from their Savings account at 2022/04/09 13:17:09
+
+Jaehyeon Park purchased a Random Item 18 for 56.32$ from miners bank using their Credit account at 2022/04/09 13:17:09
+
+Jaehyeon Park purchased a UTEP T-Shirt for 19.97$ from miners bank using their Credit account at 2022/04/09 13:17:09
+
+Jaehyeon Park paid 484.25$ from their Checking account to Christopher Foster into their Checking account at 2022/04/09 13:17:10
+
+Jaehyeon Park purchased a Random Item 59 for 17.82$ from miners bank using their Credit account at 2022/04/09 13:17:10
+
+Jaehyeon Park deposited 321.57$ from their Credit account at 2022/04/09 13:17:10
+
+Jaehyeon Park paid 581.31$ from their Checking account to Jason Clark into their Checking account at 2022/04/09 13:17:10
+
+Jaehyeon Park purchased a Random Item 46 for 14.74$ from miners bank using their Credit account at 2022/04/09 13:17:10
+
+Jaehyeon Park purchased a Random Item 50 for 65.22$ from miners bank using their Checking account at 2022/04/09 13:17:10
+
+Jaehyeon Park purchased a Random Item 16 for 79.33$ from miners bank using their Credit account at 2022/04/09 13:17:11
+
+Jaehyeon Park paid 805.66$ from their Checking account to Carol Elliott into their Savings account at 2022/04/09 13:17:11
+
+Jaehyeon Park purchased a Random Item 43 for 6.51$ from miners bank using their Credit account at 2022/04/09 13:17:11
+
+Jaehyeon Park purchased a Random Item 54 for 88.54$ from miners bank using their Checking account at 2022/04/09 13:17:11
+
+Jaehyeon Park purchased a Random Item 21 for 76.82$ from miners bank using their Credit account at 2022/04/09 13:17:11
+
+Jaehyeon Park purchased a Random Item 69 for 11.28$ from miners bank using their Checking account at 2022/04/09 13:17:12
+
+Jaehyeon Park deposited 4619.91$ from their Savings account at 2022/04/09 13:17:12
+
+Jaehyeon Park deposited 4690.89$ from their Checking account at 2022/04/09 13:17:12
+
+Jaehyeon Park paid 345.96$ from their Checking account to John Blevins into their Savings account at 2022/04/09 13:17:12
+
+Jaehyeon Park paid 132.92$ from their Checking account to Jeffrey Weiss into their Checking account at 2022/04/09 13:17:12
+
+Jaehyeon Park purchased a Random Item 62 for 64.53$ from miners bank using their Credit account at 2022/04/09 13:17:13
+
+Jaehyeon Park paid 615.27$ from their Checking account to Shere Khan into their Savings account at 2022/04/09 13:17:13
+
+Jaehyeon Park deposited 564.25$ from their Savings account at 2022/04/09 13:17:13
+
+Jaehyeon Park purchased a Random Item 8 for 78.06$ from miners bank using their Credit account at 2022/04/09 13:17:14
+
+Jaehyeon Park deposited 3057.96$ from their Savings account at 2022/04/09 13:17:14
+
+Jaehyeon Park paid 748.73$ from their Checking account to Jared Scott into their Checking account at 2022/04/09 13:17:14
+
+Jaehyeon Park purchased a Random Item 74 for 55.05$ from miners bank using their Checking account at 2022/04/09 13:17:14
+
+Jaehyeon Park purchased a Parking Permit A for 200.00$ from miners bank using their Checking account at 2022/04/09 13:17:14
+
+Jaehyeon Park paid 477.39$ from their Checking account to David Thomas into their Checking account at 2022/04/09 13:17:14
+
+Jaehyeon Park deposited 3401.77$ from their Savings account at 2022/04/09 13:17:15
+
+Jaehyeon Park purchased a Random Item 72 for 39.83$ from miners bank using their Checking account at 2022/04/09 13:17:16
+
+Jaehyeon Park deposited 3957.35$ from their Checking account at 2022/04/09 13:17:16
+
+Jaehyeon Park deposited 4241.81$ from their Checking account at 2022/04/09 13:17:16
+
+Jaehyeon Park purchased a Random Item 60 for 92.64$ from miners bank using their Checking account at 2022/04/09 13:17:16
+
+Jaehyeon Park paid 87.33$ from their Checking account to Zachary Campbell into their Checking account at 2022/04/09 13:17:17
+
+Jaehyeon Park purchased a Random Item 18 for 56.32$ from miners bank using their Credit account at 2022/04/09 13:17:17
+
+Jaehyeon Park purchased a Random Item 76 for 42.33$ from miners bank using their Checking account at 2022/04/09 13:17:17
+
+Jaehyeon Park paid 244.60$ from their Checking account to Pablo Martinez into their Savings account at 2022/04/09 13:17:17
+
+Jaehyeon Park deposited 950.77$ from their Checking account at 2022/04/09 13:17:18
+
+Jaehyeon Park deposited 3606.23$ from their Savings account at 2022/04/09 13:17:18
+
+Jaehyeon Park deposited 2973.04$ from their Checking account at 2022/04/09 13:17:18
+
+Jaehyeon Park paid 23.80$ from their Checking account to Chris King into their Checking account at 2022/04/09 13:17:18
+
+Jaehyeon Park paid 199.57$ from their Checking account to Andrew Hall into their Savings account at 2022/04/09 13:17:18
+
+Jaehyeon Park deposited 4260.73$ from their Savings account at 2022/04/09 13:17:19
+
+Jaehyeon Park purchased a Random Item 20 for 30.33$ from miners bank using their Checking account at 2022/04/09 13:17:20
+
+Jaehyeon Park purchased a Sushi Meal for 11.25$ from miners bank using their Credit account at 2022/04/09 13:17:20
+
+Jaehyeon Park paid 715.26$ from their Checking account to Sonia Durham into their Checking account at 2022/04/09 13:17:21
+
+Jaehyeon Park purchased a Random Item 40 for 20.87$ from miners bank using their Checking account at 2022/04/09 13:17:22
+
+Jaehyeon Park purchased a Small Textbook for 20.00$ from miners bank using their Checking account at 2022/04/09 13:17:22
+
+Jaehyeon Park paid 154.32$ from their Checking account to Brian Rojas into their Checking account at 2022/04/09 13:17:23
+
+Jaehyeon Park paid 268.29$ from their Checking account to Taylor Johnson into their Savings account at 2022/04/09 13:17:23
+
+Jaehyeon Park paid 113.96$ from their Checking account to Tiffany Jones into their Checking account at 2022/04/09 13:17:24
+
+Jaehyeon Park paid 25.72$ from their Checking account to Joseph Fritz into their Checking account at 2022/04/09 13:17:24
+
+Jaehyeon Park paid 321.63$ from their Checking account to Christopher Osborne into their Savings account at 2022/04/09 13:17:24
+
+Jaehyeon Park purchased a Random Item 42 for 38.93$ from miners bank using their Checking account at 2022/04/09 13:17:25
+
+Jaehyeon Park paid 304.66$ from their Checking account to Richard Paul into their Savings account at 2022/04/09 13:17:25
+
+Jaehyeon Park purchased a Random Item 36 for 94.10$ from miners bank using their Checking account at 2022/04/09 13:17:25
+
+Jaehyeon Park purchased a Random Item 39 for 62.03$ from miners bank using their Checking account at 2022/04/09 13:17:26
+
+Jaehyeon Park deposited 4662.40$ from their Checking account at 2022/04/09 13:17:27
+
+Jaehyeon Park deposited 2220.86$ from their Checking account at 2022/04/09 13:17:27
+
+Jaehyeon Park paid 409.06$ from their Checking account to Wesley Lambert into their Savings account at 2022/04/09 13:17:28
+
+Jaehyeon Park deposited 43.05$ from their Credit account at 2022/04/09 13:17:28
+
+Jaehyeon Park paid 867.08$ from their Checking account to Nicole Johnson into their Checking account at 2022/04/09 13:17:28
+
+Jaehyeon Park purchased a Random Item 37 for 52.38$ from miners bank using their Checking account at 2022/04/09 13:17:28
+
+Jaehyeon Park deposited 4498.50$ from their Checking account at 2022/04/09 13:17:29
+
+Jaehyeon Park paid 234.99$ from their Checking account to Zachary Campbell into their Checking account at 2022/04/09 13:17:29
+
+Jaehyeon Park paid 67.23$ from their Checking account to Kathleen Small into their Checking account at 2022/04/09 13:17:29
+
+Jaehyeon Park paid 547.50$ from their Checking account to Michael Parrish into their Checking account at 2022/04/09 13:17:30
+
+Jaehyeon Park paid 213.44$ from their Checking account to Christopher Norris into their Savings account at 2022/04/09 13:17:30
+
+Jaehyeon Park deposited 107.66$ from their Credit account at 2022/04/09 13:17:30
+
+Jaehyeon Park purchased a Random Item 6 for 43.57$ from miners bank using their Credit account at 2022/04/09 13:17:31
+
+Jaehyeon Park deposited 4013.74$ from their Savings account at 2022/04/09 13:17:32
+
+Jaehyeon Park purchased a Post-It Notes for 4.50$ from miners bank using their Credit account at 2022/04/09 13:17:32
+
+Jaehyeon Park deposited 3088.16$ from their Checking account at 2022/04/09 13:17:32
+
+Jaehyeon Park paid 955.80$ from their Checking account to Mary Stevens into their Savings account at 2022/04/09 13:17:33
+
+Jaehyeon Park paid 36.51$ from their Checking account to Destiny Ferguson into their Checking account at 2022/04/09 13:17:33
+
+Jaehyeon Park purchased a Random Item 9 for 14.37$ from miners bank using their Checking account at 2022/04/09 13:17:33
+
+Jaehyeon Park paid 178.75$ from their Checking account to Teresa Jacobs into their Checking account at 2022/04/09 13:17:33
+
+Jaehyeon Park deposited 2273.46$ from their Savings account at 2022/04/09 13:17:34
+
+Jaehyeon Park deposited 1451.35$ from their Savings account at 2022/04/09 13:17:34
+
+Jaehyeon Park purchased a Random Item 2 for 27.33$ from miners bank using their Checking account at 2022/04/09 13:17:34
+
+Jaehyeon Park paid 830.66$ from their Checking account to Valeria MartinDelCampo into their Checking account at 2022/04/09 13:17:34
+
+Jaehyeon Park paid 563.64$ from their Checking account to Brian Castillo into their Checking account at 2022/04/09 13:17:34
+
+Jaehyeon Park purchased a Random Item 36 for 94.10$ from miners bank using their Credit account at 2022/04/09 13:17:34
+
+Jaehyeon Park deposited 4337.22$ from their Savings account at 2022/04/09 13:17:34
+
+Jaehyeon Park purchased a Random Item 54 for 88.54$ from miners bank using their Credit account at 2022/04/09 13:17:35
+
+Jaehyeon Park purchased a Random Item 30 for 9.84$ from miners bank using their Checking account at 2022/04/09 13:17:35
+
+Jaehyeon Park purchased a Random Item 11 for 88.89$ from miners bank using their Credit account at 2022/04/09 13:17:35
+
+Jaehyeon Park paid 672.16$ from their Checking account to Mindy Ross into their Savings account at 2022/04/09 13:17:36
+
+Jaehyeon Park purchased a Random Item 52 for 42.60$ from miners bank using their Credit account at 2022/04/09 13:17:36
+
+Jaehyeon Park deposited 126.26$ from their Credit account at 2022/04/09 13:17:36
+
+Jaehyeon Park deposited 419.34$ from their Checking account at 2022/04/09 13:17:36
+
+Jaehyeon Park purchased a Random Item 50 for 65.22$ from miners bank using their Credit account at 2022/04/09 13:17:37
+
+Jaehyeon Park paid 422.64$ from their Checking account to Justin Wilson into their Checking account at 2022/04/09 13:17:37
+
+Jaehyeon Park deposited 1276.82$ from their Checking account at 2022/04/09 13:17:37
+
+Jaehyeon Park purchased a Random Item 37 for 52.38$ from miners bank using their Credit account at 2022/04/09 13:17:37
+
+Jaehyeon Park purchased a Parking Permit A for 200.00$ from miners bank using their Credit account at 2022/04/09 13:17:38
+
+Jaehyeon Park deposited 2022.04$ from their Savings account at 2022/04/09 13:17:38
+
+Jaehyeon Park purchased a Random Item 57 for 15.92$ from miners bank using their Checking account at 2022/04/09 13:17:39
+
+Jaehyeon Park paid 641.18$ from their Checking account to Michelle Holland into their Savings account at 2022/04/09 13:17:40
+
+Jaehyeon Park paid 826.04$ from their Checking account to Lisa Miller into their Savings account at 2022/04/09 13:17:40
+
+Jaehyeon Park paid 892.82$ from their Checking account to Jorge Haley into their Savings account at 2022/04/09 13:17:40
+
+Jaehyeon Park paid 582.11$ from their Checking account to Mark Washington into their Checking account at 2022/04/09 13:17:41
+
+Jaehyeon Park purchased a Pencil for 2.99$ from miners bank using their Credit account at 2022/04/09 13:17:41
+
+Jaehyeon Park purchased a Random Item 15 for 13.47$ from miners bank using their Checking account at 2022/04/09 13:17:41
+
+Jaehyeon Park deposited 1239.28$ from their Savings account at 2022/04/09 13:17:41
+
+Jaehyeon Park deposited 1170.93$ from their Checking account at 2022/04/09 13:17:42
+
+Jaehyeon Park purchased a Random Item 2 for 27.33$ from miners bank using their Credit account at 2022/04/09 13:17:42
+
+Jaehyeon Park purchased a Random Item 42 for 38.93$ from miners bank using their Credit account at 2022/04/09 13:17:42
+
+Jaehyeon Park purchased a Post-It Notes for 4.50$ from miners bank using their Checking account at 2022/04/09 13:17:43
+
+Jaehyeon Park deposited 1015.67$ from their Checking account at 2022/04/09 13:17:44
+
+Jaehyeon Park purchased a Random Item 13 for 62.71$ from miners bank using their Credit account at 2022/04/09 13:17:44
+
+Jaehyeon Park purchased a Random Item 61 for 63.10$ from miners bank using their Credit account at 2022/04/09 13:17:44
+
+Jaehyeon Park deposited 4926.72$ from their Savings account at 2022/04/09 13:17:45
+
+Jaehyeon Park deposited 524.84$ from their Credit account at 2022/04/09 13:17:46
+
+Jaehyeon Park paid 714.15$ from their Checking account to Amanda Shepherd into their Checking account at 2022/04/09 13:17:46
+
+Jaehyeon Park purchased a Parking Permit C for 300.00$ from miners bank using their Checking account at 2022/04/09 13:17:46
+
+Jaehyeon Park deposited 1285.33$ from their Credit account at 2022/04/09 13:17:46
+
+Jaehyeon Park deposited 2399.35$ from their Savings account at 2022/04/09 13:17:47
+
+Jaehyeon Park purchased a Parking Permit C for 300.00$ from miners bank using their Checking account at 2022/04/09 13:17:47
+
+Jaehyeon Park paid 97.91$ from their Checking account to Gloria Page into their Checking account at 2022/04/09 13:17:47
+
+Jaehyeon Park deposited 3280.92$ from their Checking account at 2022/04/09 13:17:48
+
+Jaehyeon Park deposited 4800.21$ from their Checking account at 2022/04/09 13:17:49
+
+Jaehyeon Park deposited 1891.29$ from their Savings account at 2022/04/09 13:17:50
+
+Jaehyeon Park purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Checking account at 2022/04/09 13:17:51
+
+Jaehyeon Park deposited 3310.06$ from their Checking account at 2022/04/09 13:17:51
+
+Jaehyeon Park purchased a Random Item 36 for 94.10$ from miners bank using their Credit account at 2022/04/09 13:17:51
+
+Jaehyeon Park paid 65.24$ from their Checking account to Rachel Phillips into their Savings account at 2022/04/09 13:17:51
+
+Jaehyeon Park paid 635.20$ from their Checking account to Jeffrey Best into their Savings account at 2022/04/09 13:17:51
+
+Jaehyeon Park purchased a Random Item 5 for 74.47$ from miners bank using their Checking account at 2022/04/09 13:17:51
+
+Jaehyeon Park purchased a Random Item 67 for 38.45$ from miners bank using their Credit account at 2022/04/09 13:17:52
+
+Jaehyeon Park deposited 156.89$ from their Savings account at 2022/04/09 13:17:53
+
+Jaehyeon Park deposited 1451.09$ from their Checking account at 2022/04/09 13:17:54
+
+Jaehyeon Park deposited 3730.25$ from their Checking account at 2022/04/09 13:17:55
+
+Jaehyeon Park paid 387.12$ from their Checking account to Felicia Carlson into their Checking account at 2022/04/09 13:17:55
+
+Jaehyeon Park deposited 2958.44$ from their Savings account at 2022/04/09 13:17:55
+
+Jaehyeon Park purchased a Random Item 10 for 79.89$ from miners bank using their Credit account at 2022/04/09 13:17:56
+
+Jaehyeon Park paid 349.74$ from their Checking account to George Proctor into their Checking account at 2022/04/09 13:17:56
+
+Jaehyeon Park paid 634.32$ from their Checking account to Anthony Kramer into their Checking account at 2022/04/09 13:17:56
+
+
+----------------------------------------------------------------------

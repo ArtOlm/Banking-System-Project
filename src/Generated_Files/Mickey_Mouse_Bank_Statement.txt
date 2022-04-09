@@ -1,11 +1,454 @@
 Name: Mickey Mouse
-Address: 1313 Disneyland Dr., Anaheim, CA 92802
+Address: CA, Anaheim, CA 92802
 Phone: (714) 781-4636
-DOB: 4/22/56
+DOB: 7/8/19
 ID: 1
-Checking Account Number: 1000001   Current Checking Account Balance: 248.60$
-Savings Account Number: 2000001   Current Savings Account Balance: 7958.80$
-Credit Account Number: 3000001   Current Credit Account Balance: 18.12$   Credit Score: 568   Credit Limit: 600
+Checking Account Number: 1000001   Current Checking Account Balance: 50753.43$
+Savings Account Number: 2000001   Current Savings Account Balance: 119516.87$
+Credit Account Number: 3000001   Current Credit Account Balance: 565.28$   Credit Score: 812   Credit Limit: 20300
 ----------------------------------------------------------------------
 
- No session started yet
+Session Start: 2022/04/09 13:20:11
+Starting Checking Balance: 1608.66$
+Starting Savings Balance: 21826.79$
+Starting Credit Balance: 5075.37$
+
+----------------------------------------------------------------------
+Session End: 2022/04/09 13:21:18
+Ending Checking Balance: 50753.43$
+Ending Savings Balance: 119516.87$
+Ending Credit Balance: 565.28$
+
+----------------------------------------------------------------------
+Account Activity
+----------------
+Mickey Mouse purchased a Random Item 3 for 50.87$ from miners bank using their Credit account at 2022/04/09 13:20:11
+
+Mickey Mouse paid 906.70$ from their Checking account to Michael Johnson into their Savings account at 2022/04/09 13:20:11
+
+Mickey Mouse paid 119.04$ from their Checking account to Victoria White into their Checking account at 2022/04/09 13:20:12
+
+Mickey Mouse deposited 4119.92$ from their Credit account at 2022/04/09 13:20:12
+
+Mickey Mouse deposited 953.61$ from their Checking account at 2022/04/09 13:20:12
+
+Mickey Mouse purchased a Random Item 24 for 37.23$ from miners bank using their Credit account at 2022/04/09 13:20:13
+
+Mickey Mouse deposited 869.40$ from their Credit account at 2022/04/09 13:20:13
+
+Mickey Mouse deposited 500.86$ from their Savings account at 2022/04/09 13:20:13
+
+Mickey Mouse purchased a Random Item 35 for 97.90$ from miners bank using their Checking account at 2022/04/09 13:20:14
+
+Mickey Mouse paid 953.79$ from their Checking account to Bryan Hardy into their Checking account at 2022/04/09 13:20:14
+
+Mickey Mouse paid 842.94$ from their Checking account to Barbara Lane into their Checking account at 2022/04/09 13:20:15
+
+Mickey Mouse paid 159.87$ from their Checking account to Lorelyne Chavez into their Checking account at 2022/04/09 13:20:15
+
+Mickey Mouse purchased a Random Item 67 for 38.45$ from miners bank using their Credit account at 2022/04/09 13:20:15
+
+Mickey Mouse deposited 181.24$ from their Credit account at 2022/04/09 13:20:16
+
+Mickey Mouse purchased a Random Item 34 for 22.49$ from miners bank using their Checking account at 2022/04/09 13:20:16
+
+Mickey Mouse paid 901.37$ from their Checking account to Mark Gonzalez into their Checking account at 2022/04/09 13:20:16
+
+Mickey Mouse paid 736.82$ from their Checking account to Sandra Sutton into their Savings account at 2022/04/09 13:20:17
+
+Mickey Mouse purchased a Random Item 72 for 39.83$ from miners bank using their Credit account at 2022/04/09 13:20:18
+
+Mickey Mouse deposited 4140.06$ from their Checking account at 2022/04/09 13:20:18
+
+Mickey Mouse deposited 997.96$ from their Checking account at 2022/04/09 13:20:18
+
+Mickey Mouse deposited 980.75$ from their Checking account at 2022/04/09 13:20:18
+
+Mickey Mouse paid 628.89$ from their Checking account to Sherry Mora into their Savings account at 2022/04/09 13:20:18
+
+Mickey Mouse purchased a Small Textbook for 20.00$ from miners bank using their Checking account at 2022/04/09 13:20:19
+
+Mickey Mouse purchased a Random Item 30 for 9.84$ from miners bank using their Checking account at 2022/04/09 13:20:19
+
+Mickey Mouse purchased a Random Item 13 for 62.71$ from miners bank using their Checking account at 2022/04/09 13:20:19
+
+Mickey Mouse purchased a Random Item 43 for 6.51$ from miners bank using their Credit account at 2022/04/09 13:20:20
+
+Mickey Mouse deposited 1390.14$ from their Savings account at 2022/04/09 13:20:21
+
+Mickey Mouse paid 629.79$ from their Checking account to Ruth Ponce into their Savings account at 2022/04/09 13:20:21
+
+Mickey Mouse deposited 3797.33$ from their Savings account at 2022/04/09 13:20:22
+
+Mickey Mouse deposited 2808.16$ from their Checking account at 2022/04/09 13:20:23
+
+Mickey Mouse deposited 622.36$ from their Savings account at 2022/04/09 13:20:23
+
+Mickey Mouse paid 971.50$ from their Checking account to Curtis Phillips into their Checking account at 2022/04/09 13:20:24
+
+Mickey Mouse paid 433.31$ from their Checking account to Karla Johnson into their Savings account at 2022/04/09 13:20:25
+
+Mickey Mouse deposited 2001.53$ from their Savings account at 2022/04/09 13:20:25
+
+Mickey Mouse purchased a Random Item 72 for 39.83$ from miners bank using their Credit account at 2022/04/09 13:20:27
+
+Mickey Mouse paid 917.49$ from their Checking account to Benjamin Ramirez into their Checking account at 2022/04/09 13:20:27
+
+Mickey Mouse paid 490.08$ from their Checking account to Kayla Morgan into their Checking account at 2022/04/09 13:20:27
+
+Mickey Mouse paid 190.29$ from their Checking account to Laura Smith into their Savings account at 2022/04/09 13:20:27
+
+Mickey Mouse deposited 4672.02$ from their Savings account at 2022/04/09 13:20:28
+
+Mickey Mouse deposited 897.99$ from their Savings account at 2022/04/09 13:20:28
+
+Mickey Mouse purchased a Random Item 17 for 100.01$ from miners bank using their Checking account at 2022/04/09 13:20:28
+
+Mickey Mouse paid 6.73$ from their Checking account to Julian Gutierrez into their Checking account at 2022/04/09 13:20:28
+
+Mickey Mouse deposited 399.97$ from their Savings account at 2022/04/09 13:20:28
+
+Mickey Mouse purchased a Random Item 19 for 29.86$ from miners bank using their Credit account at 2022/04/09 13:20:28
+
+Mickey Mouse purchased a Random Item 67 for 38.45$ from miners bank using their Credit account at 2022/04/09 13:20:29
+
+Mickey Mouse paid 999.06$ from their Checking account to Barbara Lane into their Checking account at 2022/04/09 13:20:30
+
+Mickey Mouse paid 663.31$ from their Checking account to Brandon Neal into their Savings account at 2022/04/09 13:20:30
+
+Mickey Mouse deposited 4133.44$ from their Checking account at 2022/04/09 13:20:30
+
+Mickey Mouse purchased a Small Textbook for 20.00$ from miners bank using their Checking account at 2022/04/09 13:20:31
+
+Mickey Mouse paid 511.46$ from their Checking account to Pablo Martinez into their Checking account at 2022/04/09 13:20:33
+
+Mickey Mouse purchased a Random Item 1 for 86.30$ from miners bank using their Credit account at 2022/04/09 13:20:33
+
+Mickey Mouse paid 896.44$ from their Checking account to Timothy Wagner into their Savings account at 2022/04/09 13:20:34
+
+Mickey Mouse paid 497.50$ from their Checking account to Andres DeLaRosa into their Checking account at 2022/04/09 13:20:34
+
+Mickey Mouse paid 729.30$ from their Checking account to David Johnson into their Checking account at 2022/04/09 13:20:34
+
+Mickey Mouse paid 418.67$ from their Checking account to John Morris into their Savings account at 2022/04/09 13:20:34
+
+Mickey Mouse purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Checking account at 2022/04/09 13:20:34
+
+Mickey Mouse deposited 776.79$ from their Checking account at 2022/04/09 13:20:35
+
+Mickey Mouse paid 405.09$ from their Checking account to Maria Kelly into their Checking account at 2022/04/09 13:20:35
+
+Mickey Mouse deposited 2659.90$ from their Savings account at 2022/04/09 13:20:35
+
+Mickey Mouse purchased a Random Item 75 for 65.17$ from miners bank using their Credit account at 2022/04/09 13:20:35
+
+Mickey Mouse purchased a Random Item 75 for 65.17$ from miners bank using their Checking account at 2022/04/09 13:20:35
+
+Mickey Mouse purchased a Random Item 21 for 76.82$ from miners bank using their Checking account at 2022/04/09 13:20:35
+
+Mickey Mouse deposited 2111.25$ from their Checking account at 2022/04/09 13:20:35
+
+Mickey Mouse purchased a Random Item 28 for 3.60$ from miners bank using their Credit account at 2022/04/09 13:20:36
+
+Mickey Mouse paid 500.43$ from their Checking account to Philip Holt into their Savings account at 2022/04/09 13:20:36
+
+Mickey Mouse deposited 1597.58$ from their Checking account at 2022/04/09 13:20:36
+
+Mickey Mouse purchased a Pen for 3.99$ from miners bank using their Credit account at 2022/04/09 13:20:37
+
+Mickey Mouse deposited 4414.75$ from their Checking account at 2022/04/09 13:20:37
+
+Mickey Mouse purchased a Random Item 6 for 43.57$ from miners bank using their Checking account at 2022/04/09 13:20:37
+
+Mickey Mouse purchased a Random Item 59 for 17.82$ from miners bank using their Checking account at 2022/04/09 13:20:37
+
+Mickey Mouse purchased a UTEP T-Shirt for 19.97$ from miners bank using their Credit account at 2022/04/09 13:20:37
+
+Mickey Mouse paid 429.07$ from their Checking account to Rhonda Kane into their Checking account at 2022/04/09 13:20:38
+
+Mickey Mouse deposited 1856.93$ from their Savings account at 2022/04/09 13:20:38
+
+Mickey Mouse paid 50.59$ from their Checking account to Shannon Holden into their Checking account at 2022/04/09 13:20:38
+
+Mickey Mouse deposited 295.58$ from their Savings account at 2022/04/09 13:20:39
+
+Mickey Mouse paid 145.96$ from their Checking account to Tami Weaver into their Savings account at 2022/04/09 13:20:39
+
+Mickey Mouse paid 226.31$ from their Checking account to Paul Herman into their Checking account at 2022/04/09 13:20:39
+
+Mickey Mouse purchased a Random Item 69 for 11.28$ from miners bank using their Credit account at 2022/04/09 13:20:39
+
+Mickey Mouse paid 816.91$ from their Checking account to Alicia Jenkins into their Savings account at 2022/04/09 13:20:39
+
+Mickey Mouse purchased a Random Item 33 for 66.62$ from miners bank using their Checking account at 2022/04/09 13:20:40
+
+Mickey Mouse paid 300.26$ from their Checking account to Irvin Sanchez into their Checking account at 2022/04/09 13:20:40
+
+Mickey Mouse deposited 744.73$ from their Savings account at 2022/04/09 13:20:40
+
+Mickey Mouse purchased a Random Item 72 for 39.83$ from miners bank using their Checking account at 2022/04/09 13:20:40
+
+Mickey Mouse paid 720.64$ from their Checking account to Anthony Kramer into their Checking account at 2022/04/09 13:20:40
+
+Mickey Mouse purchased a Random Item 38 for 71.34$ from miners bank using their Checking account at 2022/04/09 13:20:41
+
+Mickey Mouse purchased a Random Item 20 for 30.33$ from miners bank using their Checking account at 2022/04/09 13:20:41
+
+Mickey Mouse deposited 2903.13$ from their Checking account at 2022/04/09 13:20:41
+
+Mickey Mouse deposited 1328.36$ from their Savings account at 2022/04/09 13:20:41
+
+Mickey Mouse deposited 3560.86$ from their Savings account at 2022/04/09 13:20:41
+
+Mickey Mouse deposited 1851.14$ from their Checking account at 2022/04/09 13:20:42
+
+Mickey Mouse paid 527.34$ from their Checking account to James Nolan into their Savings account at 2022/04/09 13:20:42
+
+Mickey Mouse deposited 197.36$ from their Checking account at 2022/04/09 13:20:42
+
+Mickey Mouse deposited 2779.16$ from their Checking account at 2022/04/09 13:20:42
+
+Mickey Mouse paid 781.10$ from their Checking account to Daniel Romero into their Savings account at 2022/04/09 13:20:43
+
+Mickey Mouse purchased a Random Item 17 for 100.01$ from miners bank using their Credit account at 2022/04/09 13:20:43
+
+Mickey Mouse purchased a Random Item 27 for 56.28$ from miners bank using their Credit account at 2022/04/09 13:20:43
+
+Mickey Mouse purchased a Random Item 22 for 47.43$ from miners bank using their Credit account at 2022/04/09 13:20:43
+
+Mickey Mouse purchased a Random Item 73 for 24.98$ from miners bank using their Credit account at 2022/04/09 13:20:43
+
+Mickey Mouse deposited 541.05$ from their Savings account at 2022/04/09 13:20:44
+
+Mickey Mouse paid 463.57$ from their Checking account to Juan Brock into their Savings account at 2022/04/09 13:20:45
+
+Mickey Mouse purchased a Random Item 6 for 43.57$ from miners bank using their Checking account at 2022/04/09 13:20:45
+
+Mickey Mouse paid 6.41$ from their Checking account to Roger Casey into their Savings account at 2022/04/09 13:20:46
+
+Mickey Mouse purchased a Random Item 37 for 52.38$ from miners bank using their Credit account at 2022/04/09 13:20:46
+
+Mickey Mouse paid 522.72$ from their Checking account to Ulysses Martinez into their Checking account at 2022/04/09 13:20:46
+
+Mickey Mouse deposited 1551.22$ from their Savings account at 2022/04/09 13:20:46
+
+Mickey Mouse purchased a Random Item 37 for 52.38$ from miners bank using their Credit account at 2022/04/09 13:20:46
+
+Mickey Mouse paid 782.43$ from their Checking account to Tammy Martinez into their Savings account at 2022/04/09 13:20:48
+
+Mickey Mouse purchased a Random Item 45 for 87.51$ from miners bank using their Credit account at 2022/04/09 13:20:48
+
+Mickey Mouse deposited 2607.76$ from their Checking account at 2022/04/09 13:20:49
+
+Mickey Mouse deposited 277.06$ from their Credit account at 2022/04/09 13:20:50
+
+Mickey Mouse deposited 4440.63$ from their Savings account at 2022/04/09 13:20:50
+
+Mickey Mouse paid 175.83$ from their Checking account to Sherri Velasquez into their Checking account at 2022/04/09 13:20:50
+
+Mickey Mouse purchased a Pick N Shovel Meal for 10.87$ from miners bank using their Credit account at 2022/04/09 13:20:51
+
+Mickey Mouse purchased a Random Item 45 for 87.51$ from miners bank using their Credit account at 2022/04/09 13:20:51
+
+Mickey Mouse paid 115.22$ from their Checking account to Pluto Disney into their Checking account at 2022/04/09 13:20:51
+
+Mickey Mouse paid 711.25$ from their Checking account to Danielle Gardner into their Savings account at 2022/04/09 13:20:52
+
+Mickey Mouse deposited 3336.10$ from their Checking account at 2022/04/09 13:20:52
+
+Mickey Mouse paid 957.75$ from their Checking account to Holly Davidson into their Checking account at 2022/04/09 13:20:52
+
+Mickey Mouse deposited 252.75$ from their Savings account at 2022/04/09 13:20:52
+
+Mickey Mouse purchased a Random Item 30 for 9.84$ from miners bank using their Checking account at 2022/04/09 13:20:52
+
+Mickey Mouse purchased a Random Item 12 for 12.01$ from miners bank using their Credit account at 2022/04/09 13:20:53
+
+Mickey Mouse deposited 4868.28$ from their Savings account at 2022/04/09 13:20:53
+
+Mickey Mouse deposited 3922.66$ from their Savings account at 2022/04/09 13:20:53
+
+Mickey Mouse purchased a Random Item 59 for 17.82$ from miners bank using their Credit account at 2022/04/09 13:20:54
+
+Mickey Mouse purchased a Random Item 2 for 27.33$ from miners bank using their Credit account at 2022/04/09 13:20:54
+
+Mickey Mouse paid 6.80$ from their Checking account to Rachel Hart into their Savings account at 2022/04/09 13:20:54
+
+Mickey Mouse purchased a Random Item 14 for 52.06$ from miners bank using their Checking account at 2022/04/09 13:20:55
+
+Mickey Mouse paid 250.48$ from their Checking account to Tanya Turner into their Checking account at 2022/04/09 13:20:55
+
+Mickey Mouse paid 485.72$ from their Checking account to Marcia Snyder into their Savings account at 2022/04/09 13:20:55
+
+Mickey Mouse deposited 1277.78$ from their Checking account at 2022/04/09 13:20:57
+
+Mickey Mouse purchased a Random Item 14 for 52.06$ from miners bank using their Checking account at 2022/04/09 13:20:57
+
+Mickey Mouse purchased a Random Item 34 for 22.49$ from miners bank using their Checking account at 2022/04/09 13:20:57
+
+Mickey Mouse deposited 324.52$ from their Checking account at 2022/04/09 13:20:57
+
+Mickey Mouse deposited 1928.63$ from their Checking account at 2022/04/09 13:20:57
+
+Mickey Mouse deposited 2864.45$ from their Checking account at 2022/04/09 13:20:57
+
+Mickey Mouse paid 261.66$ from their Checking account to Michael Prince into their Checking account at 2022/04/09 13:20:58
+
+Mickey Mouse purchased a Random Item 39 for 62.03$ from miners bank using their Checking account at 2022/04/09 13:20:58
+
+Mickey Mouse paid 42.53$ from their Checking account to Courtney Johnson into their Savings account at 2022/04/09 13:20:58
+
+Mickey Mouse purchased a Random Item 51 for 85.52$ from miners bank using their Checking account at 2022/04/09 13:20:58
+
+Mickey Mouse purchased a Random Item 71 for 27.76$ from miners bank using their Credit account at 2022/04/09 13:20:59
+
+Mickey Mouse deposited 327.51$ from their Checking account at 2022/04/09 13:20:59
+
+Mickey Mouse paid 510.52$ from their Checking account to Cynthia Ellis into their Savings account at 2022/04/09 13:20:59
+
+Mickey Mouse paid 758.76$ from their Checking account to Nicholas Copeland into their Savings account at 2022/04/09 13:20:59
+
+Mickey Mouse paid 368.05$ from their Checking account to Buzz Lightyear into their Savings account at 2022/04/09 13:21:00
+
+Mickey Mouse deposited 3388.17$ from their Savings account at 2022/04/09 13:21:00
+
+Mickey Mouse paid 774.28$ from their Checking account to Valerie Moore into their Savings account at 2022/04/09 13:21:01
+
+Mickey Mouse paid 0.73$ from their Checking account to Sarah Jones into their Savings account at 2022/04/09 13:21:01
+
+Mickey Mouse deposited 944.40$ from their Savings account at 2022/04/09 13:21:01
+
+Mickey Mouse deposited 3603.76$ from their Savings account at 2022/04/09 13:21:01
+
+Mickey Mouse purchased a Random Item 59 for 17.82$ from miners bank using their Checking account at 2022/04/09 13:21:01
+
+Mickey Mouse paid 937.14$ from their Checking account to Timothy Romero into their Savings account at 2022/04/09 13:21:02
+
+Mickey Mouse purchased a Random Item 3 for 50.87$ from miners bank using their Credit account at 2022/04/09 13:21:02
+
+Mickey Mouse deposited 719.39$ from their Checking account at 2022/04/09 13:21:02
+
+Mickey Mouse paid 522.03$ from their Checking account to Javier Venegas into their Checking account at 2022/04/09 13:21:02
+
+Mickey Mouse deposited 1116.78$ from their Checking account at 2022/04/09 13:21:02
+
+Mickey Mouse purchased a Random Item 22 for 47.43$ from miners bank using their Credit account at 2022/04/09 13:21:03
+
+Mickey Mouse paid 385.69$ from their Checking account to Teresa Gardner into their Savings account at 2022/04/09 13:21:03
+
+Mickey Mouse purchased a Random Item 41 for 58.48$ from miners bank using their Checking account at 2022/04/09 13:21:03
+
+Mickey Mouse purchased a Post-It Notes for 4.50$ from miners bank using their Credit account at 2022/04/09 13:21:03
+
+Mickey Mouse paid 140.21$ from their Checking account to Jose Farley into their Savings account at 2022/04/09 13:21:03
+
+Mickey Mouse paid 763.06$ from their Checking account to Scott Dunn into their Checking account at 2022/04/09 13:21:03
+
+Mickey Mouse purchased a Random Item 36 for 94.10$ from miners bank using their Credit account at 2022/04/09 13:21:04
+
+Mickey Mouse deposited 3805.03$ from their Savings account at 2022/04/09 13:21:04
+
+Mickey Mouse paid 60.22$ from their Checking account to Nicole Lloyd into their Savings account at 2022/04/09 13:21:04
+
+Mickey Mouse deposited 1507.42$ from their Checking account at 2022/04/09 13:21:05
+
+Mickey Mouse paid 63.05$ from their Checking account to Sarah Cline into their Checking account at 2022/04/09 13:21:05
+
+Mickey Mouse paid 182.39$ from their Checking account to Sherry Mora into their Savings account at 2022/04/09 13:21:05
+
+Mickey Mouse deposited 1180.70$ from their Checking account at 2022/04/09 13:21:05
+
+Mickey Mouse paid 34.49$ from their Checking account to Kristina Patrick into their Savings account at 2022/04/09 13:21:05
+
+Mickey Mouse paid 77.55$ from their Checking account to Craig Brown into their Checking account at 2022/04/09 13:21:05
+
+Mickey Mouse deposited 3327.97$ from their Checking account at 2022/04/09 13:21:05
+
+Mickey Mouse purchased a Random Item 71 for 27.76$ from miners bank using their Credit account at 2022/04/09 13:21:06
+
+Mickey Mouse deposited 4758.47$ from their Savings account at 2022/04/09 13:21:06
+
+Mickey Mouse purchased a Notebook for 1.25$ from miners bank using their Credit account at 2022/04/09 13:21:06
+
+Mickey Mouse deposited 249.28$ from their Credit account at 2022/04/09 13:21:06
+
+Mickey Mouse purchased a Random Item 29 for 30.99$ from miners bank using their Credit account at 2022/04/09 13:21:07
+
+Mickey Mouse deposited 1429.93$ from their Checking account at 2022/04/09 13:21:07
+
+Mickey Mouse purchased a Random Item 2 for 27.33$ from miners bank using their Checking account at 2022/04/09 13:21:07
+
+Mickey Mouse deposited 1501.42$ from their Checking account at 2022/04/09 13:21:07
+
+Mickey Mouse paid 64.94$ from their Checking account to Daniel Hampton into their Checking account at 2022/04/09 13:21:08
+
+Mickey Mouse purchased a Random Item 8 for 78.06$ from miners bank using their Credit account at 2022/04/09 13:21:08
+
+Mickey Mouse purchased a Notebook for 1.25$ from miners bank using their Checking account at 2022/04/09 13:21:09
+
+Mickey Mouse paid 660.36$ from their Checking account to Emily Jackson into their Checking account at 2022/04/09 13:21:09
+
+Mickey Mouse deposited 4255.69$ from their Savings account at 2022/04/09 13:21:10
+
+Mickey Mouse deposited 1505.34$ from their Checking account at 2022/04/09 13:21:10
+
+Mickey Mouse paid 600.73$ from their Checking account to Mark Richards into their Savings account at 2022/04/09 13:21:10
+
+Mickey Mouse deposited 4644.68$ from their Checking account at 2022/04/09 13:21:10
+
+Mickey Mouse deposited 3589.47$ from their Savings account at 2022/04/09 13:21:10
+
+Mickey Mouse purchased a Random Item 28 for 3.60$ from miners bank using their Credit account at 2022/04/09 13:21:10
+
+Mickey Mouse purchased a Trenta Shaken Caramel Iced Latte with half Oat Milk and half Almond Milk with 2.5 Pumps of Vanilla and whip for 13.57$ from miners bank using their Credit account at 2022/04/09 13:21:10
+
+Mickey Mouse deposited 1988.91$ from their Savings account at 2022/04/09 13:21:12
+
+Mickey Mouse purchased a Random Item 40 for 20.87$ from miners bank using their Credit account at 2022/04/09 13:21:12
+
+Mickey Mouse deposited 449.87$ from their Savings account at 2022/04/09 13:21:13
+
+Mickey Mouse paid 818.37$ from their Checking account to Donald Haynes into their Checking account at 2022/04/09 13:21:13
+
+Mickey Mouse paid 726.66$ from their Checking account to Molly Cohen into their Checking account at 2022/04/09 13:21:13
+
+Mickey Mouse paid 593.87$ from their Checking account to Suzanne Kennedy into their Savings account at 2022/04/09 13:21:13
+
+Mickey Mouse paid 275.62$ from their Checking account to Michelle Sexton into their Savings account at 2022/04/09 13:21:14
+
+Mickey Mouse paid 111.60$ from their Checking account to Rachel Roberson into their Checking account at 2022/04/09 13:21:14
+
+Mickey Mouse deposited 115.18$ from their Checking account at 2022/04/09 13:21:14
+
+Mickey Mouse paid 15.37$ from their Checking account to Becky Gray into their Savings account at 2022/04/09 13:21:15
+
+Mickey Mouse paid 72.86$ from their Checking account to Jamie Conner into their Checking account at 2022/04/09 13:21:15
+
+Mickey Mouse paid 103.07$ from their Checking account to Katherine Evans into their Checking account at 2022/04/09 13:21:15
+
+Mickey Mouse deposited 320.10$ from their Credit account at 2022/04/09 13:21:16
+
+Mickey Mouse deposited 4365.52$ from their Savings account at 2022/04/09 13:21:16
+
+Mickey Mouse purchased a Pick N Shovel Meal for 10.87$ from miners bank using their Credit account at 2022/04/09 13:21:16
+
+Mickey Mouse deposited 3440.31$ from their Savings account at 2022/04/09 13:21:16
+
+Mickey Mouse paid 323.89$ from their Checking account to Alexander Carter into their Checking account at 2022/04/09 13:21:16
+
+Mickey Mouse purchased a Random Item 3 for 50.87$ from miners bank using their Checking account at 2022/04/09 13:21:17
+
+Mickey Mouse purchased a Random Item 22 for 47.43$ from miners bank using their Credit account at 2022/04/09 13:21:17
+
+Mickey Mouse deposited 2542.59$ from their Checking account at 2022/04/09 13:21:17
+
+Mickey Mouse paid 176.04$ from their Checking account to Andrew Garcia into their Checking account at 2022/04/09 13:21:17
+
+Mickey Mouse deposited 2322.49$ from their Checking account at 2022/04/09 13:21:18
+
+Mickey Mouse deposited 4194.43$ from their Checking account at 2022/04/09 13:21:18
+
+Mickey Mouse paid 907.00$ from their Checking account to Jerry Smith into their Savings account at 2022/04/09 13:21:18
+
+
+----------------------------------------------------------------------
