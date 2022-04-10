@@ -112,4 +112,65 @@ class TransactionsTest {
         }
         Assertions.assertFalse(testResult);
     }
+    @Test
+    void buyItem1(){
+       Customer cus = new Customer();
+       Checking c =  new Checking();
+       c.setBalance(100000);
+       Item apple = new Item();
+       apple.setPrice(100000);
+       cus.setCheck(c);
+       boolean didBuy = true;
+       try{
+           Transactions.getInstance().buyFromMinerMall(cus,"Checking", apple.getPrice());
+       }catch (TransactionException e){
+           didBuy = false;
+       }
+       Assertions.assertTrue(didBuy);
+    }
+    @Test
+    void buyItem2(){
+        Customer cus = new Customer();
+        Checking c =  new Checking();
+        c.setBalance(1);
+        Item apple = new Item();
+        apple.setPrice(100000);
+        cus.setCheck(c);
+        boolean didNotBuy = false;
+        try{
+            Transactions.getInstance().buyFromMinerMall(cus,"Checking", apple.getPrice());
+        }catch (TransactionException e){
+            didNotBuy = true;
+        }
+        Assertions.assertTrue(didNotBuy);
+    }
+    @Test
+    void withdraw1(){
+        Customer cus = new Customer();
+        Checking c = new Checking();
+        c.setBalance(100);
+        cus.setCheck(c);
+        boolean didNotWithraw = false;
+        try {
+            Transactions.getInstance().userWithdraw(cus, "Checking", -111);
+        }catch (TransactionException e){
+            didNotWithraw = true;
+        }
+        Assertions.assertTrue(didNotWithraw);
+    }
+    @Test
+    void withdraw2(){
+        Customer cus = new Customer();
+        Checking c = new Checking();
+        c.setBalance(100);
+        cus.setCheck(c);
+        boolean didWithraw = true;
+        try {
+            Transactions.getInstance().userWithdraw(cus, "Checking", 100);
+        }catch (TransactionException e){
+            didWithraw = false;
+        }
+        Assertions.assertTrue(didWithraw);
+    }
+
 }
