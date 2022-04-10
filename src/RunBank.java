@@ -15,7 +15,10 @@ import java.util.Scanner;
  */
 
 public class RunBank{
-
+	/**
+	 * main method for the bank
+	 * @param args the arguments
+	 */
 	public static void main(String[] args){
 		//populates the main data structures
 		CustomerCollection customers = new CustomerCollection(Utilities.getInstance().populateCustomers());

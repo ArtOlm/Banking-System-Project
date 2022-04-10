@@ -7,7 +7,10 @@ public class Credit extends Account{
 	//note:limit refers to the credit limit of a customer
 	private int limit;
 	private int score;
-	//constructors
+
+	/**
+	 * default constructor
+	 */
 	public Credit(){
 
 	}

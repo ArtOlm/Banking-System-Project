@@ -27,7 +27,7 @@ public class ItemCollection implements Collections{
     /**
      * gets the object mapped to the key
      * @param key used to access the objects
-     * @return
+     * @return returns an item of the collection
      */
     public Item get(Object key){
         return this.items.get((Integer) key);
@@ -44,7 +44,7 @@ public class ItemCollection implements Collections{
 
     /**
      * returns the size of the Collection
-     * @return
+     * @return returns the size
      */
     public int size(){
         return this.items.size();

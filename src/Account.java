@@ -3,17 +3,20 @@
  * @version 1.0
  * abstracts class of an account
  */
+
 public abstract class Account{
 	private double balance;
 	private String accNum;
 
-	//constructors
+	/**
+	 * default constructor
+	 */
 	public Account(){
 
 	}
 
 	/**
-	 *
+	 *creates an account
 	 * @param num the account number
 	 * @param bal sets the balance
 	 */
@@ -24,9 +27,8 @@ public abstract class Account{
 	}
 
 	/**
-	 *
+	 *setter method
 	 * @param bal sets the balance of the account
-	 * setter method
 	 */
 	//setters/getters
 	public void setBalance(double bal){

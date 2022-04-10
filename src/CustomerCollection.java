@@ -1,5 +1,4 @@
 import java.util.HashMap;
-
 /**
  * @author Arturo Olmos/JaehYeon Park
  * @version 1.0
@@ -10,7 +9,7 @@ public class CustomerCollection implements Collections {
     private HashMap<String,Customer> customers;
     /**
      * Constructor- sets the data structure
-     * @param customers
+     * @param customers the customer collection
      */
     public CustomerCollection(HashMap<String,Customer> customers){
         this.customers = customers;
@@ -31,7 +30,6 @@ public class CustomerCollection implements Collections {
     public Customer get(Object key){
         return customers.get(key.toString());
     }
-
     /**
      * checks to see if the key exists
      * @param key will be tested to see if it exists
@@ -40,7 +38,6 @@ public class CustomerCollection implements Collections {
     public boolean hasKey(Object key){
         return this.customers.containsKey(key.toString());
     }
-
     /**
      * creates an Iterator objects used to iterte over the collection
      * @return returns a CustomerCollectionIterator

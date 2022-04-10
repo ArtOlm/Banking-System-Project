@@ -20,8 +20,8 @@ public class Utilities{
 	//default editor
 	private Utilities(){ this.maxCustomerIDX = 0;}
 	/**
-	 * @return an array list filled with an array of string
 	 * populates an array list with lines from the actions.csv
+	 * @return an array list filled with an array of string
 	 */
 	public ArrayList<String[]> loadTransactions(){
 		//arraylist containing the transactions
@@ -48,10 +48,10 @@ public class Utilities{
 		return transactions;
 	}
 	/**
+	 * generates a key for the hash map
 	 * @param fName the first name of the user
 	 * @param lName the last name of the user
 	 * @return returns a generated string based on the users first and last name
-	 * generates a key for the hash map
 	 */
 	public String generateKey(String fName,String lName){
 		String nwsFName = "";
@@ -67,8 +67,8 @@ public class Utilities{
 		return nwsFName + nwsLName;
 	}
 	/**
-	 * @return returns the instance of this class to be called in different classes
 	 * my approach to a singleton design pattern
+	 * @return returns the instance of this class to be called in different classes
 	 */
 	public static Utilities getInstance(){
 
@@ -146,7 +146,7 @@ public class Utilities{
 		return users;
 	}
 	/**
-	 * creates a cusotmer object based on the info
+	 * creates a Customer object based on the info
 	 * @param accInfo given information based on a csv we use it to split into correct data
 	 * @param users array list that is populated as Customer objects are made
 	 */
@@ -321,10 +321,10 @@ public class Utilities{
 		}
 	}
 	/**
-	 * @param str1
-	 * @param str2
-	 * @return combines two string without any white spaces
 	 * returns a string without any white spaces
+	 * @param str1 string 1
+	 * @param str2 string 2
+	 * @return combines two string without any white spaces
 	 */
 	public String strNWS(String str1,String str2){
 		String nwsName = "";
@@ -339,9 +339,9 @@ public class Utilities{
 		return nwsName;
 	}
 	/**
+	 * returns a string without any white spaces
 	 * @param str1 string that will be edited
 	 * @return
-	 * returns a string without any white spaces
 	 */
 	public String strNWS(String str1){
 		String nwsName = "";

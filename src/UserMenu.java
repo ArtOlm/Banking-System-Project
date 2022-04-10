@@ -14,6 +14,13 @@ public class UserMenu extends BankMenu{
     private String transactionLog = "";
     //format to the date
     final private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+
+    /**
+     * crates a complete user menu
+     * @param scnr user input
+     * @param customers customer collection
+     * @param items items collection
+     */
     public UserMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
         this.itemCollectionIterator = this.getItems().createIterator();
@@ -159,7 +166,7 @@ public class UserMenu extends BankMenu{
                             this.getMyHandler().logToFile(transactionLog);
                             System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
                             break;
-                        case 3://transaction between two customer of the same customer
+                        case 3://transaction between two accounts of the same customer
                             System.out.println("-------------------------------------------------");
                             System.out.println("Please enter the name of the account you want to transfer from");
                             System.out.println("1.Checking");

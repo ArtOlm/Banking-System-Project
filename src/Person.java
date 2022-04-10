@@ -42,7 +42,7 @@ public class Person {
 
 	/**
 	 * sets the first name
-	 * @param firstName
+	 * @param firstName user firtname
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -50,7 +50,7 @@ public class Person {
 
 	/**
 	 * sets the last name
-	 * @param lastName
+	 * @param lastName user last name
 	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -58,7 +58,7 @@ public class Person {
 
 	/**
 	 * set the address
-	 * @param address
+	 * @param address user address
 	 */
 	public void setAddress(String address) {
 		this.address = address;
@@ -66,7 +66,7 @@ public class Person {
 
 	/**
 	 * sets the city
-	 * @param city
+	 * @param city user city
 	 */
 	public void setCity(String city) {
 		this.city = city;
@@ -74,7 +74,7 @@ public class Person {
 
 	/**
 	 * sets the state
-	 * @param state
+	 * @param state user state
 	 */
 	public void setState(String state) {
 		this.state = state;
@@ -82,7 +82,7 @@ public class Person {
 
 	/**
 	 * sets the zip code
-	 * @param zipCode
+	 * @param zipCode user zip code
 	 */
 	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
@@ -90,7 +90,7 @@ public class Person {
 
 	/**
 	 * sets the phone number
-	 * @param phoneNum
+	 * @param phoneNum user phone number
 	 */
 	public void setPhoneNum(String phoneNum) {
 		this.phoneNum = phoneNum;
@@ -98,7 +98,7 @@ public class Person {
 
 	/**
 	 * sets the date of birth
-	 * @param DOB
+	 * @param DOB user date of birth
 	 */
 	public void setDOB(String DOB) {
 		this.DOB = DOB;
@@ -106,7 +106,7 @@ public class Person {
 
 	/**
 	 * gets the first name
-	 * @return
+	 * @return returns user first name
 	 */
 	public String getFirstName() {
 		return this.firstName;
@@ -114,7 +114,7 @@ public class Person {
 
 	/**
 	 * gets the last name
-	 * @return
+	 * @return returns users last name
 	 */
 	public String getLastName() {
 		return this.lastName;
@@ -122,7 +122,7 @@ public class Person {
 
 	/**
 	 * get the address
-	 * @return
+	 * @return the address
 	 */
 	public String getAddress() {
 		return this.address;
@@ -130,7 +130,7 @@ public class Person {
 
 	/**
 	 * gets the city
-	 * @return
+	 * @return the city
 	 */
 	public String getCity() {
 		return this.city;
@@ -138,7 +138,7 @@ public class Person {
 
 	/**
 	 * gets the state
-	 * @return
+	 * @return the state
 	 */
 	public String getState() {
 		return this.state;
@@ -146,7 +146,7 @@ public class Person {
 
 	/**
 	 * ges the zip code
-	 * @return
+	 * @return the zip code
 	 */
 	public String getZipCode() {
 		return this.zipCode;
@@ -154,7 +154,7 @@ public class Person {
 
 	/**
 	 * gets the phone number
-	 * @return
+	 * @return the phone number
 	 */
 	public String getPhoneNum() {
 		return this.phoneNum;
@@ -162,7 +162,7 @@ public class Person {
 
 	/**
 	 * gets the date of birth
-	 * @return
+	 * @return the date of birth
 	 */
 	public String getDOB() {
 		return this.DOB;
@@ -170,7 +170,7 @@ public class Person {
 
 	/**
 	 * returns a formatted string based on the persons information
-	 * @return
+	 * @return persons information
 	 */
 	public String toString(){
 		return ("Name: " + this.firstName + " " + this.lastName + "\nAddress: " + this.address + ", " + this.city + ", " + this.state + " " + this.zipCode + "\nPhone: " + this.phoneNum + "\nDOB: " + this.DOB);

@@ -4,6 +4,9 @@
  * class represents the savings account of a Customer
  */
 public class Savings extends Account{
+	/**
+	 * default constructor
+	 */
 	public Savings(){
 	}
 	/**

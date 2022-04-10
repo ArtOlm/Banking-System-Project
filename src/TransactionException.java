@@ -6,7 +6,7 @@
 public class TransactionException extends Exception{
     /**
      * Constructor-sets the message for the exception
-     * @param exMessage
+     * @param exMessage the message of the exception
      */
     public TransactionException(String exMessage){
         super(exMessage);

@@ -10,15 +10,19 @@ public class Item{
 	private double price;
 	private int max;
 
+	/**
+	 * default constructor
+	 */
 	public Item(){
 		
 	}
 
 	/**
-	 *
+	 * Constructor for creating a complete Item
 	 * @param id sets the id attribute
 	 * @param name sets the name attribute
 	 * @param price sets the price attribute
+	 * @param max sets the max items
 	 */
 	public Item(int id,String name,double price,int max){
 		this.max = max;
@@ -29,7 +33,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 *sets name
 	 * @param name sets the name attribute
 	 */
 	public void setName(String name){
@@ -37,7 +41,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 * sets id
 	 * @param id sets the id attribute
 	 */
 	public void setID(int id){
@@ -45,7 +49,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 *sets the price
 	 * @param price sets the price attribute
 	 */
 	public void setPrice(double price){
@@ -53,7 +57,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 *gets item name
 	 * @return returns the name of the Item
 	 */
 	public String getName(){
@@ -61,7 +65,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 *gets item id
 	 * @return returns the id of the Item
 	 */
 	public int getID(){
@@ -69,7 +73,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 *gets item price
 	 * @return returns the price of the Item
 	 */
 	public double getPrice(){
@@ -77,7 +81,7 @@ public class Item{
 	}
 
 	/**
-	 *
+	 *returns a string based on the item
 	 * @return returns a formatted String with the Item information
 	 */
 	public String toString(){
@@ -85,18 +89,16 @@ public class Item{
 	}
 
 	/**
-	 *
-	 * @return max purchases
 	 * returns the max number of purchases of the item
+	 * @return max purchases
 	 */
 	public int getMax() {
 		return max;
 	}
 
 	/**
-	 *
-	 * @param max
 	 * sets item max
+	 * @param max
 	 */
 	public void setMax(int max) {
 		this.max = max;

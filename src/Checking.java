@@ -4,6 +4,9 @@
  * checking account of a Customer
  */
 public class Checking extends Account{
+	/**
+	 * default constructor
+	 */
 	public Checking(){
 		
 	}

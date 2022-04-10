@@ -8,6 +8,13 @@ import java.util.Scanner;
 public class ManagerMenu extends BankMenu{
     //manager action handler
     private ManagerActions manHandler;
+
+    /**
+     * creates a manager menu
+     * @param scnr Scanner object for user input
+     * @param customers customer collection
+     * @param items item collection
+     */
     public ManagerMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
         this.manHandler = ManagerActions.getInstance();

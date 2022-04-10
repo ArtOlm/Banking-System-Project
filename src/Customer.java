@@ -30,20 +30,20 @@ public class Customer extends Person{
 	 */
 	public Customer(){}
 	/**
-	 * @param fname
-	 * @param lname
-	 * @param address
-	 * @param city
-	 * @param state
-	 * @param zip
-	 * @param phoneNum
-	 * @param dob
-	 * @param id
-	 * @param cAcc
-	 * @param sAcc
-	 * @param crAcc
-	 * @param pin
 	 * takes in all parameters needed to create a Customer
+	 * @param fname the first name
+	 * @param lname the last name
+	 * @param address the address
+	 * @param city the city
+	 * @param state the state
+	 * @param zip user zip code
+	 * @param phoneNum user phone number
+	 * @param dob user date of birth
+	 * @param id user id
+	 * @param cAcc user checking account
+	 * @param sAcc user svings account
+	 * @param crAcc user credit account
+	 * @param pin user pin
 	 */
 	public Customer(String fname,String lname,String address,String city,String state,String zip,String phoneNum,String dob,int id,Checking cAcc,Savings sAcc,Credit crAcc,int pin){
 		super(fname,lname,address,city,state,zip,phoneNum,dob);
@@ -56,98 +56,106 @@ public class Customer extends Person{
 		this.pin = pin;
 	}
 	/**
-	 * @return
 	 * gets start balance when user first logs in
+	 * @return starting balance for checking
 	 */
 	public double getStartCheckBal() {
 		return startCheckBal;
 	}
 	/**
 	 * sets start balance when user logs in
-	 * @param startCheckBal
+	 * @param startCheckBal the starting balance of checking
 	 */
 	public void setStartCheckBal(double startCheckBal) {
 		this.startCheckBal = startCheckBal;
 	}
 	/**
 	 * gets start balance when user logs in
-	 * @return
+	 * @return the start vbalancve for the savings
 	 */
 	public double getStartSaveBal() {
 		return startSaveBal;
 	}
 	/**
 	 * sets start balance when user logs in
-	 * @param startSaveBal
+	 * @param startSaveBal the starting balance of the savings account
 	 */
 	public void setStartSaveBal(double startSaveBal) {
 		this.startSaveBal = startSaveBal;
 	}
 	/**
 	 * gets start balance when user logs in
-	 * @return
+	 * @return the starting credit balance
 	 */
 	public double getStartCreditBal() {
 		return startCreditBal;
 	}
 	/**
 	 * sets start balance when user logs in
-	 * @param startCreditBal
+	 * @param startCreditBal the stating credit balance
 	 */
 	public void setStartCreditBal(double startCreditBal) {
 		this.startCreditBal = startCreditBal;
 	}
 	/**
+	 * sets the id
 	 * @param id sets id attribute
 	 */
 	public void setID(int id){
 		this.id = id;
 	}
 	/**
+	 * sets the checking account
 	 * @param c sets Checking attribute
 	 */
 	public void setCheck(Checking c){
 		this.cAcc = c;
 	}
 	/**
+	 * sets the savings account
 	 * @param s sets Savings attribute
 	 */
 	public void setSave(Savings s){
 		this.sAcc = s;
 	}
 	/**
+	 * sets the credit account
 	 * @param cr sets the Credit attribute
 	 */
 	public void setCredit(Credit cr){
 		this.crAcc = cr;
 	}
 	/**
+	 * gets the id
 	 * @return returns the id attribute
 	 */
 	public int getID(){
 		return this.id;
 	}
 	/**
+	 * gets a reference to the checking object
 	 * @return returns a reference to the Checking attribute
 	 */
 	public Checking getCheck(){
 		return this.cAcc;
 	}
 	/**
+	 * gets reference to the credit object
 	 * @return returns reference to the Savings attribute
 	 */
 	public Savings getSave(){
 		return this.sAcc;
 	}
 	/**
+	 * gets reference to the savings object
 	 * @return returns reference of the Credit attribute
 	 */
 	public Credit getCredit(){
 		return this.crAcc;
 	}
 	/**
-	 * @return returns a formatted String containing the customers information
 	 * override method from Object, returns a string based on the Customer
+	 * @return returns a formatted String containing the customers information
 	 */
 	public String toString(){
 		String temp = super.toString() +  "\nID: " + id + "\nChecking Account Number: " + cAcc.getAccNum() + String.format("   Current Checking Account Balance: %.2f$",cAcc.getBalance());
@@ -156,8 +164,8 @@ public class Customer extends Person{
 		return temp;
 	}
 	/**
-	 * @param name the name of a bought Item
 	 * keeps track of the purchases made by a customer
+	 * @param name the name of a bought Item
 	 */
 	public void addItemBought(String name){//keeps track of items bought
 			//maps items and the number of purchases made
@@ -187,8 +195,8 @@ public class Customer extends Person{
 		System.out.println("No items bought yet");
 	}
 	/**
-	 * @param timeBought the time of purchase of an Item
 	 * adds a string containing the name and time of a purchase
+	 * @param timeBought the time of purchase of an Item
 	 */
 	public void addTransaction(String timeBought){
 		logTransactions.add(timeBought);
@@ -206,43 +214,43 @@ public class Customer extends Person{
 		}
 	}
 	/**
-	 * @param totalMoneySpent the total money spent by customer in miners mall
 	 * sets the total money spent by a customer at miners mall
+	 * @param totalMoneySpent the total money spent by customer in miners mall
 	 */
 	public void setTotalMoneySpent(double totalMoneySpent){
 		this.totalMoneySpent = totalMoneySpent;
 	}
 	/**
-	 * @return the total money spent
 	 * gets total money spent at miners mall
+	 * @return the total money spent
 	 */
 	public double getTotalMoneySpent(){
 		return totalMoneySpent;
 	}
 	/**
-	 * @return returns the start of the session as a string
 	 * returns the start of the session for this user objects
+	 * @return returns the start of the session as a string
 	 */
 	public String getSessionStart() {
 		return sessionStart;
 	}
 	/**
-	 * @param sessionStart formatted string as the time
 	 * sets the start of the session for this user objects
+	 * @param sessionStart formatted string as the time
 	 */
 	public void setSessionStart(String sessionStart) {
 		this.sessionStart = sessionStart;
 	}
 	/**
-	 * @return returns the time of end as a string
 	 * return the end of the session for this user objects
+	 * @return returns the time of end as a string
 	 */
 	public String getSesstionEnd() {
 		return sesstionEnd;
 	}
 	/**
-	 * @param sesstionEnd time when session ends
 	 * sets the end of the session for this user objects
+	 * @param sesstionEnd time when session ends
 	 */
 	public void setSesstionEnd(String sesstionEnd) {
 		this.sesstionEnd = sesstionEnd;
@@ -296,6 +304,11 @@ public class Customer extends Person{
 	public void setEndCreditBal(double endCreditBal) {
 		this.endCreditBal = endCreditBal;
 	}
+
+	/**
+	 * returns the users pin
+	 * @return user pin
+	 */
 	public int getPin() {
 		return pin;
 	}
