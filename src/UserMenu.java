@@ -483,10 +483,12 @@ public class UserMenu extends BankMenu{
                                                     numIt = Integer.parseInt(this.getUserInput().nextLine());
                                                 }catch (Exception eit){
                                                     System.out.println("Please enter a correct value");
+                                                    continue;
                                                 }
                                                 if(numIt < 0 || numIt > maxCount.get(itemAdded.getName())){
-                                                    System.out.println("Error: Not within the amount range");
+                                                    System.out.printf("Error: Not within the amount range, there is only %d %s in stock\n",maxCount.get(itemAdded.getName()),itemAdded.getName());
                                                     System.out.println("################################################################################");
+                                                    System.out.println("Enter an amount or 0 to not add any");
                                                     continue;
                                                 }
 
@@ -506,7 +508,7 @@ public class UserMenu extends BankMenu{
                                                 total += totalPerItem;
                                                 System.out.printf("Added %d %s to cart for a total of %.2f$\n",numIt,itemAdded.getName(),totalPerItem);
                                                 System.out.printf("Current Total is: %.2f$\n",total);
-                                                System.out.printf("There are currently %s %d left in stock\n",itemAdded.getName(),maxCount.get(itemAdded.getName()));
+                                                System.out.printf("There are currently %d %s left in stock\n",maxCount.get(itemAdded.getName()),itemAdded.getName());
                                                 System.out.println("################################################################################");
                                             }
 
