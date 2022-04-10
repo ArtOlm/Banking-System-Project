@@ -73,25 +73,25 @@ public class RunBank{
 					}
 
 				}
-				System.out.println("-------------------------------------------");
+				System.out.println("################################################################################");
 				alreadyExec = true;
 				continue;
 			}
 			switch(option1){
 			case 1://go to the user menu
-					System.out.println("-------------------------------------------");
+					System.out.println("################################################################################");
 					userMenu.display();
-					System.out.println("-------------------------------------------");
+					System.out.println("################################################################################");
 				break;
 			case 2://go to the managed menu
-					System.out.println("-------------------------------------------");
+					System.out.println("################################################################################");
 					managerMenu.display();
-					System.out.println("-------------------------------------------");
+					System.out.println("################################################################################");
 			    break;
 			case 3://menu for creating user
-					System.out.println("-------------------------------------------");
+					System.out.println("################################################################################");
 					userMenu.userCreation();
-					System.out.println("-------------------------------------------");
+					System.out.println("################################################################################");
 				break;
 			default:
 				//handling issues with intellij, it sometimes runs the code twice
@@ -116,7 +116,7 @@ public class RunBank{
 					}
 
 				}
-				System.out.println("-------------------------------------------");
+				System.out.println("################################################################################");
 				alreadyExec = true;
 			}
 		}

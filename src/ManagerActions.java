@@ -10,7 +10,7 @@ public class ManagerActions{
 	private Transactions transactionHandler;
 	private Utilities handler;
 	private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-	private static ManagerActions manager = new ManagerActions();
+	private static ManagerActions manager;
 
 	/**
 	 * default constructor
@@ -24,6 +24,10 @@ public class ManagerActions{
 	 * @return returns an instance of the class
 	 */
 	public static ManagerActions getInstance(){
+		if(manager == null){
+			manager = new ManagerActions();
+		}
+
 		return manager;
 	}
 
@@ -33,25 +37,27 @@ public class ManagerActions{
 	 * @return returns a formatted string for the bank statement
 	 */
 	public String generateBankStatement(Customer cus){
-		String statement = cus.toString() + "\n----------------------------------------------------------------------\n";
+		String statement = cus.toString() + "\n###############################################\n";
 
 		if(cus.getSessionStart() != null){
 			statement += "\nSession Start: " + cus.getSessionStart() + "\n";
 			statement += String.format("Starting Checking Balance: %.2f$\n",cus.getStartCheckBal());
 			statement += String.format("Starting Savings Balance: %.2f$\n",cus.getStartSaveBal());
 			statement += String.format("Starting Credit Balance: %.2f$\n",cus.getStartCreditBal());
-			statement += "\n----------------------------------------------------------------------\n";
+			statement += "\n###############################################\n";
 			statement += "Session End: " + cus.getSesstionEnd();
 			statement += String.format("\nEnding Checking Balance: %.2f$\n",cus.getEndCheckBal());
 			statement += String.format("Ending Savings Balance: %.2f$\n",cus.getEndSaveBal());
 			statement += String.format("Ending Credit Balance: %.2f$\n",cus.getEndCreditBal());
 
-			statement += "\n----------------------------------------------------------------------\n";
-			statement += "Account Activity\n----------------\n";
+			statement += "\n###############################################\n";
+			statement += String.format("Total money spent at Miners Mall: %.2f$",cus.getTotalMoneySpent());
+			statement += "\n###############################################\n";
+			statement += "Account Activity\n################\n";
 			for(int i = 0;i < cus.getTransactions().size();i++){
 				statement += cus.getTransactions().get(i) + "\n";
 			}
-			statement += "\n----------------------------------------------------------------------\n";
+			statement += "\n###############################################\n";
 		}
 		else {
 			statement += "\n No session started yet";
@@ -65,10 +71,11 @@ public class ManagerActions{
 	 * executes the transactions in actions.csv file
 	 * @param customers all customers in the system
 	 * @param items all items in the system
+	 * @param end the ending index which we want to execute to
+	 * @param start  the starting index from where we want to start the execution of the actions
 	 */
-	public void execTransactions(CustomerCollection customers,ItemCollection items){
-		ArrayList<String[]> transactions = handler.loadTransactions();
-		for(int i = 0;i < transactions.size();i++){
+	public void execTransactions(CustomerCollection customers,ItemCollection items,int start, int end,ArrayList<String[]> transactions){
+		for(int i = start;i < end;i++){
 			Object[] transaction = transactions.get(i);
 			//generate key based on the name
 			String key = handler.generateKey(transaction[0].toString(),transaction[1].toString());
@@ -229,7 +236,7 @@ public class ManagerActions{
 	 */
 	public void managerInquire(String name, CustomerCollection customers){
 		System.out.println("The following accounts where found given the name");
-		System.out.println("-------------------------------------------------");
+		System.out.println("#################################################");
 
 		if(name.length() <= 0){
 			System.out.println("Error: not enough info provided");
@@ -251,13 +258,13 @@ public class ManagerActions{
 		// in general everything abut a Customer is printed
 		System.out.println(cus);
 		System.out.println("Items bought");
-		System.out.println("-------------------------");
+		System.out.println("############");
 		cus.printItemsBought();
 		System.out.println("Time of purchase and item purchased ");
-		System.out.println("-------------------------");
+		System.out.println("###################################");
 		cus.printTransactions();
 		System.out.println("Total Money Spent at Miners Mall");
-		System.out.println("---------------------------------");
+		System.out.println("#################################");
 		System.out.printf("%.2f$\n",cus.getTotalMoneySpent());
 	}
 
@@ -270,7 +277,7 @@ public class ManagerActions{
 	//this one below handles id manager is looking by account
 	public void managerInquire(int type,String number,CustomerCollection customers){
 		System.out.println("The following accounts where found given the name");
-		System.out.println("-------------------------------------------------");
+		System.out.println("#################################################");
 		int c = 0;
 		CustomerCollectionIterator customerCollectionIterator = customers.createIterator();
 		//based on the account type 1 is checking 2 is savings 3 is credit
@@ -295,13 +302,13 @@ public class ManagerActions{
 					}
 					System.out.println(cus);
 					System.out.println("Items bought");
-					System.out.println("-------------------------");
+					System.out.println("############");
 					cus.printItemsBought();
 					System.out.println("Time of purchased items");
-					System.out.println("-------------------------");
+					System.out.println("#######################");
 					cus.printTransactions();
 					System.out.println("Total Money Spent at Miners Mall");
-					System.out.println("---------------------------------");
+					System.out.println("#################################");
 					System.out.printf("%.2f$\n",cus.getTotalMoneySpent());
 					c++;
 				}
@@ -325,13 +332,13 @@ public class ManagerActions{
 					}
 					System.out.println(cus);
 					System.out.println("Items bought");
-					System.out.println("-------------------------");
+					System.out.println("############");
 					cus.printItemsBought();
 					System.out.println("Time of purchased items");
-					System.out.println("-------------------------");
+					System.out.println("#######################");
 					cus.printTransactions();
 					System.out.println("Total Money Spent at Miners Mall");
-					System.out.println("---------------------------------");
+					System.out.println("#################################");
 					System.out.printf("%.2f$\n",cus.getTotalMoneySpent());
 					c++;
 				}
@@ -357,13 +364,13 @@ public class ManagerActions{
 					}
 					System.out.println(cus);
 					System.out.println("Items bought");
-					System.out.println("-------------------------");
+					System.out.println("############");
 					cus.printItemsBought();
 					System.out.println("Time of purchased items");
-					System.out.println("-------------------------");
+					System.out.println("#######################");
 					cus.printTransactions();
 					System.out.println("Total Money Spent at Miners Mall");
-					System.out.println("---------------------------------");
+					System.out.println("################################");
 					System.out.printf("%.2f$\n",cus.getTotalMoneySpent());
 					c++;
 				}

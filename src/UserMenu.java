@@ -73,7 +73,7 @@ public class UserMenu extends BankMenu{
                     userAccount.setStartSaveBal(userAccount.getSave().getBalance());
                     userAccount.setStartCreditBal(userAccount.getCredit().getBalance());
                 }
-                System.out.println("-------------------------------------------------");
+                System.out.println("################################################################################");
                 System.out.println("Hello " + userAccount.getFirstName() + " " + userAccount.getLastName() + " what would you like to do today?(Enter 1-7)");
                 //string pointers is used later on to point to account chosen by user
                 String accType;
@@ -97,7 +97,7 @@ public class UserMenu extends BankMenu{
                             option = Integer.parseInt(this.getUserInput().nextLine());
                         }
                         catch(Exception e){
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Please choose an appropriate option(1-7)");
                             continue;
                         }
@@ -106,7 +106,7 @@ public class UserMenu extends BankMenu{
                     //switch statement to do something based on decision
                     switch(option){
                         case 1://inquire procedure
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Enter the name of the account you would like to inquire?");
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
@@ -125,7 +125,7 @@ public class UserMenu extends BankMenu{
 
                             break;
                         case 2://deposit procedure
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Enter the name of the account would you like to deposit to?");
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
@@ -156,7 +156,7 @@ public class UserMenu extends BankMenu{
                                 //Transaction was a failure
                                 System.out.println(eDep.getMessage());
                                 System.out.println("Returning to menu");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("################################################################################");
                                 System.out.println("Please choose an option");
                                 continue;
                             }
@@ -167,7 +167,7 @@ public class UserMenu extends BankMenu{
                             System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
                             break;
                         case 3://transaction between two accounts of the same customer
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Please enter the name of the account you want to transfer from");
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
@@ -208,7 +208,7 @@ public class UserMenu extends BankMenu{
                             catch (TransactionException eTransfer){
                                 System.out.println(eTransfer.getMessage());
                                 System.out.println("Returning to menu");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("################################################################################");
                                 System.out.println("Please choose an option");
                                 continue;
                             }
@@ -219,7 +219,7 @@ public class UserMenu extends BankMenu{
                             this.getMyHandler().logToFile(transactionLog);
                             break;
                         case 4://withdraw procedure
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Enter the name of the account would you like to withdraw from?");
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
@@ -249,7 +249,7 @@ public class UserMenu extends BankMenu{
                                 //there was transaction failure
                                 System.out.println(eWith.getMessage());
                                 System.out.println("Returning to menu");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("################################################################################");
                                 System.out.println("Please choose an option");
                                 continue;
                             }
@@ -260,7 +260,7 @@ public class UserMenu extends BankMenu{
                             this.getMyHandler().logToFile(transactionLog);
                             break;
                         case 5://pay another user procedure
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Please enter the name of the account you want to pay from");
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
@@ -313,7 +313,7 @@ public class UserMenu extends BankMenu{
                             if(credentialValid(userAccount,userToPayFirstName,userToPayLastName,userToPayID)){
                                 System.out.println("Error: cannot pay yourself");
                                 System.out.println("returning to menu.....");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("################################################################################");
                                 System.out.println("Please choose an option");
                                 continue;
                             }
@@ -339,7 +339,7 @@ public class UserMenu extends BankMenu{
                                     //there was transaction failure
                                     System.out.println(eTransfer.getMessage());
                                     System.out.println("Returning to menu");
-                                    System.out.println("-------------------------------------------------");
+                                    System.out.println("################################################################################");
                                     System.out.println("Please choose an option");
                                     continue;
                                 }
@@ -362,7 +362,7 @@ public class UserMenu extends BankMenu{
                             int mallOpt;
                             //control used to ensure user views menu before purchasing item
                             boolean viewedMenu = false;
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             //print all items
                             System.out.println("Hello Welcome to Miners Mall");
                             while(outerMenu){
@@ -399,7 +399,7 @@ public class UserMenu extends BankMenu{
                                     case 2:
                                         ArrayList<Item> cart = new ArrayList<>();
                                         malMenu = true;
-                                        System.out.println("-------------------------------------------------");
+                                        System.out.println("################################################################################");
                                         String line = null;
                                         //keep track of how many items are available
                                         HashMap<String,Integer> maxCount = new HashMap<>();
@@ -408,42 +408,95 @@ public class UserMenu extends BankMenu{
                                             maxCount.put(it.getName(),it.getMax());
                                         }
                                         //reset to reuse
+                                        double total = 0;
                                         this.itemCollectionIterator.reset();
                                         while(malMenu) {
                                             //get item user wants
-                                            System.out.println("Enter the ID of the item you would like to add to the cart(Enter \"C\" to checkout or \"E\" to exit the mall) ");
+                                            System.out.println("Enter the ID of the item you would like to add to the cart\n(Enter \"C\" to checkout or \"V\" to view cart or \"R\" to remove an Item from the cart or \"E\" to exit the mall) ");
                                             int mallID = -1;
                                             line = this.getUserInput().nextLine();
                                             try{
                                                 mallID = Integer.parseInt(line);
                                             } catch (Exception me){
                                                 //check if the option is e or c
-                                                if(line.equalsIgnoreCase("c") || line.equalsIgnoreCase("e")){
+                                                if(line.equalsIgnoreCase("c") || line.equalsIgnoreCase("e")) {
                                                     break;
+                                                } else if(line.equalsIgnoreCase("R")){//remove the item from the cart
+                                                    System.out.println("################################################################################");
+                                                    System.out.println("What item do you want to remove?");
+                                                    line = this.getUserInput().nextLine();
+                                                    boolean didRemove = false;
+                                                    for(int j = 0;j < cart.size();j++){
+                                                        if(cart.get(j).getName().equalsIgnoreCase(line)){
+                                                            cart.remove(j);
+                                                            didRemove = true;
+                                                            break;
+                                                        }
+                                                    }
+                                                    if(!didRemove){
+                                                        System.out.println("Item was not found in the cart");
+                                                    }else {
+                                                        System.out.printf("%s was remover from cart\n",line);
+                                                    }
+                                                    System.out.println("################################################################################");
+                                                    continue;
+                                                }else if(line.equalsIgnoreCase("V")){//print the contents of the cart
+                                                    System.out.println("################################################################################");
+                                                    if(cart.size() <= 0){
+                                                        System.out.println("Your cart is empty");
+                                                        System.out.println("################################################################################");
+                                                        continue;
+                                                    }
+                                                    System.out.println("Your cart currently has");
+                                                    for(int j = 0;j < cart.size() ;j++){
+                                                        System.out.printf("Name: %s Price: %.2f$\n",cart.get(j).getName(),cart.get(j).getPrice());
+                                                    }
+                                                    System.out.println("################################################################################");
+                                                    continue;
                                                 }
                                                 //else it is not valid
                                                 System.out.println("Error: not a valid ID");
+                                                System.out.println("################################################################################");
                                                 continue;
                                             }
                                             //ensure the id is within range
                                             //check id is valid
                                             if((mallID  < 0) || (mallID > this.getItems().size())){
                                                 System.out.println("Error: not a valid ID");
+                                                System.out.println("################################################################################");
                                                 continue;
                                             }
                                             //check if the item is available
                                             Item itemAdded = this.getItems().get(mallID);
                                             if(maxCount.get(itemAdded.getName()) < 1){
                                                 System.out.println("Error: Item is no longer available");
+                                                System.out.println("################################################################################");
                                                 continue;
                                             }
+                                            System.out.printf("How many %s would you like to add to you cart?\n",itemAdded.getName());
+                                            int numIt = this.getUserInput().nextInt();
+                                            this.getUserInput().nextLine();
+                                            if(numIt > maxCount.get(itemAdded.getName())){
+                                                System.out.println("Error: amount is over the limit");
+                                                System.out.println("################################################################################");
+                                                continue;
+                                            }
+                                            double totalPerItem = 0;
                                             //add to cart and update the availability
-                                            cart.add(itemAdded);
-                                            maxCount.put(itemAdded.getName(),maxCount.get(itemAdded.getName()) - 1);
+                                            for(int j = 0;j < numIt;j++) {
+                                                totalPerItem += itemAdded.getPrice();
+                                                cart.add(itemAdded);
+                                                maxCount.put(itemAdded.getName(), maxCount.get(itemAdded.getName()) - 1);
+                                            }
+                                            total += totalPerItem;
+                                            System.out.printf("Added %d %s to cart for a total of %.2f$\n",numIt,itemAdded.getName(),totalPerItem);
+                                            System.out.printf("Current Total is: %.2f$\n",total);
+                                            System.out.printf("There are currently %s %d left in stock\n",itemAdded.getName(),maxCount.get(itemAdded.getName()));
+                                            System.out.println("################################################################################");
                                         }
                                         if(line.equalsIgnoreCase("c") && (cart.size() > 0)){
-                                            double total = 0;
                                             //ask with what account they want to pay with
+                                            System.out.println("################################################################################");
                                             System.out.println("With which account would you like to pay?(Enter the name)");
                                             System.out.println("1.Checking");
                                             System.out.println("2.Credit");
@@ -483,10 +536,7 @@ public class UserMenu extends BankMenu{
                                             }
                                             //if the user did not abort the payment
                                             if(!pinStr.equalsIgnoreCase("a")) {
-                                                //get the total of all the items in their cart
-                                                for (int i = 0; i < cart.size(); i++) {
-                                                    total += cart.get(i).getPrice();
-                                                }
+                                                //check if they can buy all the stuff in the cart
                                                 try {
                                                     this.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total);
                                                 } catch (Exception me) {
@@ -512,24 +562,24 @@ public class UserMenu extends BankMenu{
                                                 System.out.println("Checkout was aborted, no items were purchased");
                                             }
                                         }
+                                        //if they do not make a pruchase
                                         if(cart.size() == 0 || line.equalsIgnoreCase("e")){
                                             System.out.println("No items purchased");
                                         }
-                                        System.out.println("-------------------------------------------------");
+                                        System.out.println("################################################################################");
                                         break;
                                     case 3:
                                         outerMenu = false;
                                         break;
                                     default:
-                                        System.out.println("Something went wrong");
+                                        System.out.println("Please enter (1-3)");
                                         break;
                                 }
                             }
-                            System.out.println("-------------------------------------------");
                             break;
                         case 7:
                             //user logs out
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Thank you " + userAccount.getFirstName() + " " + userAccount.getLastName() + ", have a great day!");
                             System.out.println("Logging out in");
                             for(int i = 3;i > 0;i--){
@@ -554,18 +604,18 @@ public class UserMenu extends BankMenu{
                             continue;
                         default:
                             //ensure user enters one of the right options
-                            System.out.println("-------------------------------------------------");
+                            System.out.println("################################################################################");
                             System.out.println("Please look at the options again and choose an appropriate one");
                             continue;
                     }
-                    System.out.println("-------------------------------------------------");
+                    System.out.println("################################################################################");
                     //only done if the user chooses to continue doing stuff
                     if(onOff){
                         System.out.println("What else would you like to do today?");
                     }
                 }
             } else{
-                System.out.println("-------------------------------------------");
+                System.out.println("################################################################################");
                 // user did not enter matching credential, we then ask if they would like to retry of just exit
                 System.out.println("Look like something went wrong, would you like to try again(Enter Y to continue or n to exit)");
                 String decision = this.getUserInput().nextLine();
@@ -578,7 +628,7 @@ public class UserMenu extends BankMenu{
                 }
                 else {
                     System.out.println("Please enter your information");
-                    System.out.println("-------------------------------------------");
+                    System.out.println("################################################################################");
                 }
             }
         }
@@ -601,8 +651,33 @@ public class UserMenu extends BankMenu{
         String fName = this.getUserInput().nextLine();
         System.out.println("Last Name");
         String lName = this.getUserInput().nextLine();
-        System.out.println("Date of Birth");
-        String dob = this.getUserInput().nextLine();
+        System.out.println("Date of Birth MM/DD/YYYY");
+        String dob = "";
+        boolean isCorrectDOB = false;
+        //check it is a valid date of birth with a format
+        while((dob.length() != ("MM/DD/YYYY").length()) || !isCorrectDOB){
+
+            dob = this.getUserInput().nextLine();
+            String[] dates = dob.split("/");
+            if(dates.length != 3 || ((dates[0].length() != 2) || (dates[1].length() != 2) || (dates[2].length() != 4))){
+                System.out.println("Enter the date of birth in the following format MM/DD/YYYY add the \"/\" and make sure you use integers only");
+                continue;
+            }
+            isCorrectDOB = true;
+            //check they are integers
+            for(String date : dates) {
+                try {
+                    Integer.parseInt(date);
+                } catch (Exception de) {
+                    isCorrectDOB = false;
+                    break;
+                }
+            }
+            if(!isCorrectDOB || (dob.length() != ("MM/DD/YYYY").length())){
+                System.out.println("Enter the date of birth in the following format MM/DD/YYYY add the \"/\" and make sure you use integers only");
+            }
+
+        }
         System.out.println("Address");
         String add = this.getUserInput().nextLine();
         System.out.println("City");
@@ -610,9 +685,47 @@ public class UserMenu extends BankMenu{
         System.out.println("State");
         String state = this.getUserInput().nextLine();
         System.out.println("Zip");
-        String zip = this.getUserInput().nextLine();
+        String zip = "";
+        boolean isZip = false;
+        //ensure zip is something valid
+        while(zip.length() != 5 || !isZip){
+            isZip = true;
+            zip = this.getUserInput().nextLine();
+            //check it is an integer
+            try{
+                Integer.parseInt(zip);
+            }catch (Exception ze){
+                isZip = false;
+            }
+            if(!isZip || zip.length() != 5){
+                System.out.println("Zip must be an integer of 5 digits e.g 79930");
+            }
+        }
         System.out.println("Phone Number");
-        String phoneNum = this.getUserInput().nextLine();
+        String phoneNum = "";
+        boolean isCorrectPhone = false;
+        //ensure the phone is the right
+        while((phoneNum.length() != ("555-555-5555").length()) || !isCorrectPhone){
+            phoneNum = this.getUserInput().nextLine();
+            String[] nums = phoneNum.split("-");
+            if(nums.length != 3 || ((nums[0].length() != 3) || (nums[1].length() != 3) || (nums[2].length() != 4))){
+                System.out.println("Phone number must be entered in the following pattern 555-555-5555");
+                continue;
+            }
+            isCorrectPhone = true;
+            //check for integers
+            for(String num : nums){
+                try {
+                    Integer.parseInt(num);
+                }catch (Exception pe){
+                    isCorrectPhone = false;
+                    break;
+                }
+            }
+            if(!isCorrectPhone || (phoneNum.length() != ("555-555-5555").length())){
+                System.out.println("Phone number must be entered in the following pattern 555-555-5555");
+            }
+        }
         System.out.println("Checking deposit");
         double chDeposit;
         //ensure a proper deposit for all customer
@@ -632,6 +745,7 @@ public class UserMenu extends BankMenu{
         }
         System.out.println("Savings Deposit");
         double saveDeposit;
+        //ensure the deposit a a correct value
         while(true){
             try{
                 saveDeposit = Double.parseDouble(this.getUserInput().nextLine());
@@ -648,6 +762,7 @@ public class UserMenu extends BankMenu{
         }
         System.out.println("Credit score");
         int score;
+        //ensure the score is something valid
         while(true){
             try{
                 score = Integer.parseInt(this.getUserInput().nextLine());
@@ -684,7 +799,7 @@ public class UserMenu extends BankMenu{
         //add 1 to last max id for next user created
         this.getMyHandler().incrementMaxCustomerIDX();
         //let the user know of their credentials
-        System.out.println("-------------------------------------------------");
+        System.out.println("################################################################################");
         System.out.println("The account was successfully created!");
         System.out.println("Note: The following credential are important to you login keep safe");
         System.out.println("Your ID is: " + id);
@@ -778,7 +893,7 @@ public class UserMenu extends BankMenu{
      * prints all the items found in miner mall
      */
     private void printItemMenu(){
-        System.out.println("-------------------------------------------------");
+        System.out.println("################################################################################");
         while (this.itemCollectionIterator.hasNext()){
             try {
                 System.out.println(this.itemCollectionIterator.next());
@@ -788,6 +903,6 @@ public class UserMenu extends BankMenu{
         }
         //reset so that iterator can be reused
         this.itemCollectionIterator.reset();
-        System.out.println("-------------------------------------------------");
+        System.out.println("################################################################################");
     }
 }
