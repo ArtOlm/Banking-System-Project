@@ -423,19 +423,21 @@ public class UserMenu extends BankMenu{
                                                     break;
                                                 } else if(line.equalsIgnoreCase("R")){//remove the item from the cart
                                                     System.out.println("################################################################################");
-                                                    System.out.println("What item do you want to remove?");
+                                                    System.out.println("What item do you want to remove?(Enter the name)");
                                                     line = this.getUserInput().nextLine();
                                                     boolean didRemove = false;
                                                     for(int j = 0;j < cart.size();j++){
                                                         if(cart.get(j).getName().equalsIgnoreCase(line)){
                                                             cart.remove(j);
                                                             didRemove = true;
+                                                            total -= cart.get(j).getPrice();
                                                             break;
                                                         }
                                                     }
                                                     if(!didRemove){
                                                         System.out.println("Item was not found in the cart");
                                                     }else {
+                                                        maxCount.put(line,maxCount.get(line) + 1);
                                                         System.out.printf("%s was remover from cart\n",line);
                                                     }
                                                     System.out.println("################################################################################");
@@ -451,6 +453,7 @@ public class UserMenu extends BankMenu{
                                                     for(int j = 0;j < cart.size() ;j++){
                                                         System.out.printf("Name: %s Price: %.2f$\n",cart.get(j).getName(),cart.get(j).getPrice());
                                                     }
+                                                    System.out.printf("The current total is %.2f$\n",total);
                                                     System.out.println("################################################################################");
                                                     continue;
                                                 }
@@ -473,13 +476,21 @@ public class UserMenu extends BankMenu{
                                                 System.out.println("################################################################################");
                                                 continue;
                                             }
-                                            System.out.printf("How many %s would you like to add to you cart?\n",itemAdded.getName());
-                                            int numIt = this.getUserInput().nextInt();
-                                            this.getUserInput().nextLine();
-                                            if(numIt > maxCount.get(itemAdded.getName())){
-                                                System.out.println("Error: amount is over the limit");
-                                                System.out.println("################################################################################");
-                                                continue;
+                                            System.out.printf("How many %s would you like to add to you cart?(Enter 0 to not add any)\n",itemAdded.getName());
+                                            int numIt = -1;
+                                            while(true){
+                                                try {
+                                                    numIt = Integer.parseInt(this.getUserInput().nextLine());
+                                                }catch (Exception eit){
+                                                    System.out.println("Please enter a correct value");
+                                                }
+                                                if(numIt < 0 || numIt > maxCount.get(itemAdded.getName())){
+                                                    System.out.println("Error: Not within the amount range");
+                                                    System.out.println("################################################################################");
+                                                    continue;
+                                                }
+
+                                                break;
                                             }
                                             double totalPerItem = 0;
                                             //add to cart and update the availability
@@ -488,11 +499,17 @@ public class UserMenu extends BankMenu{
                                                 cart.add(itemAdded);
                                                 maxCount.put(itemAdded.getName(), maxCount.get(itemAdded.getName()) - 1);
                                             }
-                                            total += totalPerItem;
-                                            System.out.printf("Added %d %s to cart for a total of %.2f$\n",numIt,itemAdded.getName(),totalPerItem);
-                                            System.out.printf("Current Total is: %.2f$\n",total);
-                                            System.out.printf("There are currently %s %d left in stock\n",itemAdded.getName(),maxCount.get(itemAdded.getName()));
-                                            System.out.println("################################################################################");
+                                            if(numIt == 0){
+                                                System.out.println("No items added to cart");
+                                                System.out.println("################################################################################");
+                                            }else {
+                                                total += totalPerItem;
+                                                System.out.printf("Added %d %s to cart for a total of %.2f$\n",numIt,itemAdded.getName(),totalPerItem);
+                                                System.out.printf("Current Total is: %.2f$\n",total);
+                                                System.out.printf("There are currently %s %d left in stock\n",itemAdded.getName(),maxCount.get(itemAdded.getName()));
+                                                System.out.println("################################################################################");
+                                            }
+
                                         }
                                         if(line.equalsIgnoreCase("c") && (cart.size() > 0)){
                                             //ask with what account they want to pay with

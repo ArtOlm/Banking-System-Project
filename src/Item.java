@@ -85,7 +85,7 @@ public class Item{
 	 * @return returns a formatted String with the Item information
 	 */
 	public String toString(){
-		return String.format("ID: %d Name: %s  Price: %.2f$ Max: %d",this.id,this.name,this.price,this.max);
+		return String.format("ID: %d Name: %s  Price: %.2f$ Stock: %d",this.id,this.name,this.price,this.max);
 	}
 
 	/**
