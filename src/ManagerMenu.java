@@ -97,12 +97,11 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("################################################################################");
                     System.out.println("YOU HAVE BEEN WARNED");
                     ArrayList <String[]> transactions = this.getMyHandler().loadTransactions();
-                    //execute the first half in parallel to execute faster
+                    //execute the actions in half in parallel to execute faster
                     ExecutionHelper execHelper = new ExecutionHelper((transactions.size() / 2),transactions.size(),transactions,this.getCustomers(),this.getItems());
                     execHelper.run();
                     this.manHandler.execTransactions(this.getCustomers(),this.getItems(),0, (transactions.size() / 2),transactions);
-                    //execute the second half in parallel to execute faster
-                    try{
+                    try{//wait for the thread to fish execution
                         execHelper.join();
                     }catch (InterruptedException ei){
                         ei.printStackTrace();
