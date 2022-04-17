@@ -26,7 +26,7 @@ public class Customer extends Person{
 	private double endCheckBal;
 	private double endSaveBal;
 	private double endCreditBal;
-	private int pin;
+	private String pin;
 	private Lock cusLock;
 
 	/**
@@ -51,7 +51,7 @@ public class Customer extends Person{
 	 * @param crAcc user credit account
 	 * @param pin user pin
 	 */
-	public Customer(String fname,String lname,String address,String city,String state,String zip,String phoneNum,String dob,int id,Checking cAcc,Savings sAcc,Credit crAcc,int pin){
+	public Customer(String fname,String lname,String address,String city,String state,String zip,String phoneNum,String dob,int id,Checking cAcc,Savings sAcc,Credit crAcc,String pin){
 		super(fname,lname,address,city,state,zip,phoneNum,dob);
 		this.id = id;
 		this.cAcc = cAcc;
@@ -347,14 +347,14 @@ public class Customer extends Person{
 	 * returns the users pin
 	 * @return user pin
 	 */
-	public int getPin() {
+	public String  getPin() {
 		return pin;
 	}
 	/**
 	 * sets pin of the user
 	 * @param pin users pin
 	 */
-	public void setPin(int pin) {
+	public void setPin(String pin) {
 		this.pin = pin;
 	}
 }

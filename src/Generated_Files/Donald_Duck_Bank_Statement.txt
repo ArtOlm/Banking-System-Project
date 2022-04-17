@@ -1,0 +1,336 @@
+Name: Donald Duck
+Address: CA, Anaheim, CA 92802
+Phone: (714) 781-4636
+DOB: 1/9/80
+ID: 2
+Checking Account Number: 1000002   Current Checking Account Balance: 28490.80$
+Savings Account Number: 2000002   Current Savings Account Balance: 97104.12$
+Credit Account Number: 3000002   Current Credit Account Balance: 192.51$   Credit Score: 483   Credit Limit: 200
+----------------------------------------------------------------------
+
+Session Start: 2022/04/09 18:51:34
+Starting Checking Balance: 1525.45$
+Starting Savings Balance: 15788.24$
+Starting Credit Balance: 16.51$
+
+----------------------------------------------------------------------
+Session End: 2022/04/09 18:56:17
+Ending Checking Balance: 28490.80$
+Ending Savings Balance: 97104.12$
+Ending Credit Balance: 192.51$
+
+----------------------------------------------------------------------
+Account Activity
+----------------
+Donald Duck paid 717.62$ from their Checking account to David Harvey into their Checking account at 2022/04/09 18:51:34
+
+Donald Duck paid 519.47$ from their Checking account to Angela Lang into their Checking account at 2022/04/09 18:51:35
+
+Donald Duck deposited 639.28$ from their Savings account at 2022/04/09 18:51:35
+
+Donald Duck deposited 2617.85$ from their Savings account at 2022/04/09 18:51:36
+
+Donald Duck purchased a Random Item 61 for 63.10$ from miners bank using their Credit account at 2022/04/09 18:51:37
+
+Donald Duck purchased a Small Textbook for 20.00$ from miners bank using their Checking account at 2022/04/09 18:51:38
+
+Donald Duck paid 51.87$ from their Checking account to Kimberly Mejia into their Checking account at 2022/04/09 18:51:41
+
+Donald Duck paid 525.95$ from their Checking account to Peter Pan into their Savings account at 2022/04/09 18:51:48
+
+Donald Duck purchased a Medium Textbook for 50.00$ from miners bank using their Checking account at 2022/04/09 18:51:49
+
+Donald Duck purchased a Random Item 11 for 88.89$ from miners bank using their Checking account at 2022/04/09 18:51:50
+
+Donald Duck paid 95.46$ from their Checking account to Ulysses Martinez into their Checking account at 2022/04/09 18:51:51
+
+Donald Duck deposited 632.90$ from their Checking account at 2022/04/09 18:51:54
+
+Donald Duck purchased a Random Item 72 for 39.83$ from miners bank using their Checking account at 2022/04/09 18:51:57
+
+Donald Duck paid 148.66$ from their Checking account to Sheri Adams into their Savings account at 2022/04/09 18:52:00
+
+Donald Duck paid 821.38$ from their Checking account to Rita Owens into their Checking account at 2022/04/09 18:52:01
+
+Donald Duck purchased a Random Item 22 for 47.43$ from miners bank using their Credit account at 2022/04/09 18:52:01
+
+Donald Duck purchased a Random Item 23 for 71.74$ from miners bank using their Credit account at 2022/04/09 18:52:05
+
+Donald Duck purchased a UTEP Hoodie for 29.99$ from miners bank using their Checking account at 2022/04/09 18:52:11
+
+Donald Duck paid 4.28$ from their Checking account to Christopher Jones into their Checking account at 2022/04/09 18:52:18
+
+Donald Duck paid 401.49$ from their Checking account to Michael Nunez into their Checking account at 2022/04/09 18:52:19
+
+Donald Duck paid 380.21$ from their Checking account to Christopher Robinson into their Checking account at 2022/04/09 18:52:19
+
+Donald Duck deposited 849.75$ from their Savings account at 2022/04/09 18:52:21
+
+Donald Duck paid 324.98$ from their Checking account to Kelly Herring into their Savings account at 2022/04/09 18:52:23
+
+Donald Duck deposited 8.99$ from their Credit account at 2022/04/09 18:52:24
+
+Donald Duck purchased a Random Item 57 for 15.92$ from miners bank using their Checking account at 2022/04/09 18:52:26
+
+Donald Duck paid 203.23$ from their Checking account to Jessica Smith into their Checking account at 2022/04/09 18:52:31
+
+Donald Duck purchased a Random Item 61 for 63.10$ from miners bank using their Checking account at 2022/04/09 18:52:37
+
+Donald Duck deposited 1033.89$ from their Checking account at 2022/04/09 18:52:40
+
+Donald Duck paid 486.10$ from their Checking account to Jared Scott into their Savings account at 2022/04/09 18:52:40
+
+Donald Duck purchased a Random Item 70 for 37.14$ from miners bank using their Checking account at 2022/04/09 18:52:40
+
+Donald Duck deposited 4397.40$ from their Checking account at 2022/04/09 18:52:41
+
+Donald Duck deposited 926.31$ from their Checking account at 2022/04/09 18:52:42
+
+Donald Duck deposited 1125.03$ from their Savings account at 2022/04/09 18:52:42
+
+Donald Duck deposited 2439.73$ from their Checking account at 2022/04/09 18:52:44
+
+Donald Duck deposited 3182.56$ from their Savings account at 2022/04/09 18:52:46
+
+Donald Duck deposited 2712.02$ from their Savings account at 2022/04/09 18:52:51
+
+Donald Duck paid 472.76$ from their Checking account to John Blevins into their Savings account at 2022/04/09 18:52:54
+
+Donald Duck paid 970.65$ from their Checking account to Andrew Marshall into their Checking account at 2022/04/09 18:52:55
+
+Donald Duck paid 508.69$ from their Checking account to Emily Brady into their Savings account at 2022/04/09 18:52:56
+
+Donald Duck purchased a Random Item 63 for 72.69$ from miners bank using their Checking account at 2022/04/09 18:52:56
+
+Donald Duck deposited 795.70$ from their Checking account at 2022/04/09 18:52:58
+
+Donald Duck deposited 186.57$ from their Credit account at 2022/04/09 18:52:58
+
+Donald Duck paid 386.34$ from their Checking account to Rodney Moss into their Checking account at 2022/04/09 18:52:59
+
+Donald Duck paid 890.38$ from their Checking account to Jerry Curtis into their Checking account at 2022/04/09 18:53:00
+
+Donald Duck deposited 4656.00$ from their Checking account at 2022/04/09 18:53:01
+
+Donald Duck paid 543.11$ from their Checking account to Robert Davis into their Savings account at 2022/04/09 18:53:02
+
+Donald Duck purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Checking account at 2022/04/09 18:53:03
+
+Donald Duck paid 402.78$ from their Checking account to Mary Stevens into their Savings account at 2022/04/09 18:53:04
+
+Donald Duck paid 800.12$ from their Checking account to Shane Miller into their Checking account at 2022/04/09 18:53:05
+
+Donald Duck purchased a Random Item 73 for 24.98$ from miners bank using their Checking account at 2022/04/09 18:53:05
+
+Donald Duck paid 817.18$ from their Checking account to Corey Wilson into their Savings account at 2022/04/09 18:53:06
+
+Donald Duck purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Credit account at 2022/04/09 18:53:07
+
+Donald Duck deposited 3456.05$ from their Savings account at 2022/04/09 18:53:08
+
+Donald Duck paid 720.54$ from their Checking account to David Johnson into their Savings account at 2022/04/09 18:53:08
+
+Donald Duck paid 382.62$ from their Checking account to George Proctor into their Savings account at 2022/04/09 18:53:08
+
+Donald Duck purchased a Random Item 27 for 56.28$ from miners bank using their Credit account at 2022/04/09 18:53:08
+
+Donald Duck deposited 467.01$ from their Savings account at 2022/04/09 18:53:08
+
+Donald Duck paid 183.16$ from their Checking account to Kristen Martinez into their Savings account at 2022/04/09 18:53:12
+
+Donald Duck paid 796.88$ from their Checking account to Kyle Hodges into their Savings account at 2022/04/09 18:53:12
+
+Donald Duck purchased a UTEP Hoodie for 29.99$ from miners bank using their Checking account at 2022/04/09 18:53:13
+
+Donald Duck purchased a Random Item 30 for 9.84$ from miners bank using their Checking account at 2022/04/09 18:53:13
+
+Donald Duck purchased a Random Item 13 for 62.71$ from miners bank using their Checking account at 2022/04/09 18:53:15
+
+Donald Duck purchased a Random Item 46 for 14.74$ from miners bank using their Checking account at 2022/04/09 18:53:16
+
+Donald Duck paid 170.19$ from their Checking account to Steven Cabrera into their Savings account at 2022/04/09 18:53:17
+
+Donald Duck purchased a Random Item 35 for 97.90$ from miners bank using their Checking account at 2022/04/09 18:53:17
+
+Donald Duck paid 446.05$ from their Checking account to Anna Davis into their Checking account at 2022/04/09 18:53:18
+
+Donald Duck paid 987.42$ from their Checking account to Linda Bennett into their Savings account at 2022/04/09 18:53:19
+
+Donald Duck paid 289.35$ from their Checking account to Cody Scott into their Checking account at 2022/04/09 18:53:19
+
+Donald Duck purchased a Random Item 1 for 86.30$ from miners bank using their Credit account at 2022/04/09 18:53:20
+
+Donald Duck deposited 2140.99$ from their Savings account at 2022/04/09 18:53:22
+
+Donald Duck paid 366.54$ from their Checking account to Marissa Oconnell into their Savings account at 2022/04/09 18:53:25
+
+Donald Duck deposited 3797.99$ from their Savings account at 2022/04/09 18:53:27
+
+Donald Duck purchased a Random Item 12 for 12.01$ from miners bank using their Checking account at 2022/04/09 18:53:28
+
+Donald Duck paid 456.07$ from their Checking account to Ulysses Martinez into their Checking account at 2022/04/09 18:53:33
+
+Donald Duck purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/09 18:53:39
+
+Donald Duck paid 354.07$ from their Checking account to Hunter Moore into their Savings account at 2022/04/09 18:53:40
+
+Donald Duck paid 149.73$ from their Checking account to Tyler Evans into their Checking account at 2022/04/09 18:53:41
+
+Donald Duck purchased a Random Item 44 for 10.69$ from miners bank using their Credit account at 2022/04/09 18:53:41
+
+Donald Duck deposited 4151.51$ from their Savings account at 2022/04/09 18:53:50
+
+Donald Duck paid 141.09$ from their Checking account to Mary Cruz into their Checking account at 2022/04/09 18:53:53
+
+Donald Duck paid 160.22$ from their Checking account to Brandy Valenzuela into their Checking account at 2022/04/09 18:53:53
+
+Donald Duck purchased a Random Item 13 for 62.71$ from miners bank using their Checking account at 2022/04/09 18:53:57
+
+Donald Duck purchased a Random Item 22 for 47.43$ from miners bank using their Checking account at 2022/04/09 18:53:57
+
+Donald Duck paid 276.02$ from their Checking account to Austin Lewis into their Savings account at 2022/04/09 18:53:59
+
+Donald Duck paid 222.46$ from their Checking account to Debra Blackwell into their Savings account at 2022/04/09 18:54:01
+
+Donald Duck deposited 863.87$ from their Checking account at 2022/04/09 18:54:03
+
+Donald Duck deposited 4996.04$ from their Checking account at 2022/04/09 18:54:07
+
+Donald Duck deposited 4988.60$ from their Checking account at 2022/04/09 18:54:07
+
+Donald Duck deposited 1355.12$ from their Savings account at 2022/04/09 18:54:07
+
+Donald Duck paid 308.29$ from their Checking account to Jasmine Disney into their Savings account at 2022/04/09 18:54:08
+
+Donald Duck deposited 543.96$ from their Savings account at 2022/04/09 18:54:12
+
+Donald Duck deposited 89.93$ from their Savings account at 2022/04/09 18:54:17
+
+Donald Duck paid 396.86$ from their Checking account to Stephen Villegas into their Savings account at 2022/04/09 18:54:19
+
+Donald Duck paid 21.05$ from their Checking account to Julie Alexander into their Savings account at 2022/04/09 18:54:21
+
+Donald Duck purchased a Random Item 10 for 79.89$ from miners bank using their Checking account at 2022/04/09 18:54:22
+
+Donald Duck purchased a Random Item 47 for 53.07$ from miners bank using their Checking account at 2022/04/09 18:54:22
+
+Donald Duck deposited 3180.03$ from their Savings account at 2022/04/09 18:54:23
+
+Donald Duck purchased a Random Item 43 for 6.51$ from miners bank using their Credit account at 2022/04/09 18:54:24
+
+Donald Duck deposited 3025.66$ from their Savings account at 2022/04/09 18:54:25
+
+Donald Duck deposited 100.87$ from their Savings account at 2022/04/09 18:54:29
+
+Donald Duck paid 934.76$ from their Checking account to Cynthia Powell into their Savings account at 2022/04/09 18:54:30
+
+Donald Duck purchased a Einsteins Bagals for 3.99$ from miners bank using their Credit account at 2022/04/09 18:54:31
+
+Donald Duck purchased a Pencil for 2.99$ from miners bank using their Checking account at 2022/04/09 18:54:33
+
+Donald Duck purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Checking account at 2022/04/09 18:54:34
+
+Donald Duck deposited 1650.47$ from their Savings account at 2022/04/09 18:54:34
+
+Donald Duck purchased a Notebook for 1.25$ from miners bank using their Credit account at 2022/04/09 18:54:41
+
+Donald Duck deposited 2517.30$ from their Savings account at 2022/04/09 18:54:42
+
+Donald Duck deposited 158.85$ from their Credit account at 2022/04/09 18:54:44
+
+Donald Duck purchased a Random Item 64 for 53.51$ from miners bank using their Checking account at 2022/04/09 18:54:44
+
+Donald Duck paid 661.75$ from their Checking account to Natasha Wheeler into their Savings account at 2022/04/09 18:54:45
+
+Donald Duck deposited 3569.81$ from their Checking account at 2022/04/09 18:54:47
+
+Donald Duck deposited 589.32$ from their Checking account at 2022/04/09 18:54:48
+
+Donald Duck purchased a Random Item 40 for 20.87$ from miners bank using their Credit account at 2022/04/09 18:54:48
+
+Donald Duck purchased a Random Item 66 for 22.42$ from miners bank using their Credit account at 2022/04/09 18:54:48
+
+Donald Duck deposited 991.97$ from their Checking account at 2022/04/09 18:54:49
+
+Donald Duck purchased a Random Item 35 for 97.90$ from miners bank using their Credit account at 2022/04/09 18:54:50
+
+Donald Duck deposited 4863.35$ from their Checking account at 2022/04/09 18:54:51
+
+Donald Duck paid 641.08$ from their Checking account to Prince Eric into their Checking account at 2022/04/09 18:54:52
+
+Donald Duck paid 569.73$ from their Checking account to Zachary Campbell into their Checking account at 2022/04/09 18:54:53
+
+Donald Duck deposited 3653.93$ from their Checking account at 2022/04/09 18:54:54
+
+Donald Duck paid 348.11$ from their Checking account to Brian Gates into their Savings account at 2022/04/09 18:54:56
+
+Donald Duck purchased a Random Item 40 for 20.87$ from miners bank using their Credit account at 2022/04/09 18:54:58
+
+Donald Duck purchased a Random Item 28 for 3.60$ from miners bank using their Credit account at 2022/04/09 18:55:01
+
+Donald Duck purchased a Random Item 47 for 53.07$ from miners bank using their Checking account at 2022/04/09 18:55:02
+
+Donald Duck deposited 2947.13$ from their Savings account at 2022/04/09 18:55:03
+
+Donald Duck purchased a Random Item 14 for 52.06$ from miners bank using their Checking account at 2022/04/09 18:55:05
+
+Donald Duck paid 300.31$ from their Checking account to Krista Beck into their Savings account at 2022/04/09 18:55:06
+
+Donald Duck paid 107.50$ from their Checking account to James Romero into their Checking account at 2022/04/09 18:55:09
+
+Donald Duck deposited 1092.46$ from their Checking account at 2022/04/09 18:55:10
+
+Donald Duck deposited 4901.44$ from their Checking account at 2022/04/09 18:55:12
+
+Donald Duck deposited 4119.65$ from their Savings account at 2022/04/09 18:55:20
+
+Donald Duck paid 824.24$ from their Checking account to Anthony Carson into their Checking account at 2022/04/09 18:55:27
+
+Donald Duck paid 557.45$ from their Checking account to Andrew Garcia into their Checking account at 2022/04/09 18:55:27
+
+Donald Duck paid 463.27$ from their Checking account to Allen Arnold into their Savings account at 2022/04/09 18:55:29
+
+Donald Duck purchased a Random Item 15 for 13.47$ from miners bank using their Credit account at 2022/04/09 18:55:30
+
+Donald Duck deposited 4976.66$ from their Savings account at 2022/04/09 18:55:31
+
+Donald Duck purchased a Random Item 63 for 72.69$ from miners bank using their Checking account at 2022/04/09 18:55:35
+
+Donald Duck paid 475.92$ from their Checking account to Erica Harrison into their Checking account at 2022/04/09 18:55:36
+
+Donald Duck purchased a Random Item 76 for 42.33$ from miners bank using their Checking account at 2022/04/09 18:55:40
+
+Donald Duck purchased a Random Item 64 for 53.51$ from miners bank using their Checking account at 2022/04/09 18:55:41
+
+Donald Duck deposited 3278.04$ from their Savings account at 2022/04/09 18:55:43
+
+Donald Duck purchased a Random Item 63 for 72.69$ from miners bank using their Checking account at 2022/04/09 18:55:44
+
+Donald Duck paid 788.25$ from their Checking account to David Mills into their Checking account at 2022/04/09 18:55:44
+
+Donald Duck purchased a Random Item 9 for 14.37$ from miners bank using their Checking account at 2022/04/09 18:55:45
+
+Donald Duck paid 897.56$ from their Checking account to Jose Farley into their Checking account at 2022/04/09 18:55:47
+
+Donald Duck paid 401.18$ from their Checking account to Dakota Harper into their Savings account at 2022/04/09 18:55:49
+
+Donald Duck paid 18.54$ from their Checking account to Jacob Norton into their Savings account at 2022/04/09 18:55:55
+
+Donald Duck purchased a Random Item 15 for 13.47$ from miners bank using their Checking account at 2022/04/09 18:55:56
+
+Donald Duck purchased a Highlighters for 4.99$ from miners bank using their Checking account at 2022/04/09 18:55:57
+
+Donald Duck paid 406.87$ from their Checking account to Douglas Rodriguez into their Savings account at 2022/04/09 18:55:59
+
+Donald Duck deposited 2868.21$ from their Savings account at 2022/04/09 18:55:59
+
+Donald Duck deposited 324.02$ from their Savings account at 2022/04/09 18:56:12
+
+Donald Duck purchased a Random Item 14 for 52.06$ from miners bank using their Checking account at 2022/04/09 18:56:13
+
+Donald Duck purchased a Random Item 76 for 42.33$ from miners bank using their Checking account at 2022/04/09 18:56:13
+
+Donald Duck paid 841.17$ from their Checking account to Stacy Maldonado into their Checking account at 2022/04/09 18:56:17
+
+
+----------------------------------------------------------------------

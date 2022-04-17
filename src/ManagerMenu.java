@@ -36,7 +36,7 @@ public class ManagerMenu extends BankMenu{
             System.out.println("5.Logout");
             //ensure a proper action happens
             try{
-                moption = Integer.parseInt(this.getUserInput().nextLine());
+                moption = Integer.parseInt(super.getUserInput().nextLine());
             }
             catch(Exception e){
                 System.out.println("error enter an appropriate integer(1-5)");
@@ -48,7 +48,7 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("################################################################################");
                     System.out.println("Enter a name: ");
 
-                    this.manHandler.managerInquire(this.getUserInput().nextLine(),this.getCustomers());
+                    this.manHandler.managerInquire(super.getUserInput().nextLine(),super.getCustomers());
                     System.out.println("################################################################################");
                     break;
                 //search by account
@@ -63,7 +63,7 @@ public class ManagerMenu extends BankMenu{
                     while((op < 1 || op > 3)){
                         while(true){
                             try{
-                                op = Integer.parseInt(this.getUserInput().nextLine());
+                                op = Integer.parseInt(super.getUserInput().nextLine());
                             }
                             catch(Exception e){
                                 System.out.println("Choose appropriate option(1-3)");
@@ -74,8 +74,8 @@ public class ManagerMenu extends BankMenu{
                         System.out.println("Choose appropriate option(1-3)");
                     }
                     System.out.println("Provide the number of the account");
-                    String num = this.getUserInput().nextLine();
-                    this.manHandler.managerInquire(op,num,this.getCustomers());
+                    String num = super.getUserInput().nextLine();
+                    this.manHandler.managerInquire(op,num,super.getCustomers());
                     System.out.println("################################################################################");
                     break;
                 //execute actions.csv file
@@ -84,10 +84,10 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("################################################################################");
                     System.out.println("Are you sure you want to execute transactions?(Y/N)");
                     System.out.println("Action can take a while due to the log of every transaction to log.txt");
-                    String cont = this.getUserInput().nextLine();
+                    String cont = super.getUserInput().nextLine();
                     while(!cont.equalsIgnoreCase("N") && !cont.equalsIgnoreCase("y")){
                         System.out.println("Please enter Y or N");
-                        cont = this.getUserInput().nextLine();
+                        cont = super.getUserInput().nextLine();
                     }
                     if(cont.equalsIgnoreCase("n")){
                         System.out.println("Execution aborted");
@@ -98,11 +98,15 @@ public class ManagerMenu extends BankMenu{
                     System.out.println("YOU HAVE BEEN WARNED");
                     ArrayList <String[]> transactions = this.getMyHandler().loadTransactions();
                     //execute the actions in half in parallel to execute faster
-                    ExecutionHelper execHelper = new ExecutionHelper((transactions.size() / 2),transactions.size(),transactions,this.getCustomers(),this.getItems());
-                    execHelper.run();
-                    this.manHandler.execTransactions(this.getCustomers(),this.getItems(),0, (transactions.size() / 2),transactions);
+                    ExecutionHelper execHelper1 = new ExecutionHelper(transactions.size() /2 ,transactions.size(),transactions,super.getCustomers(),super.getItems());
+                    ExecutionHelper execHelper2 = new ExecutionHelper(((2 * transactions.size()) / 3),transactions.size(),transactions,super.getCustomers(),super.getItems());
+                    execHelper1.run();
+//                    execHelper2.run();
+
+                    this.manHandler.execTransactions(super.getCustomers(),super.getItems(),0, transactions.size() / 2,transactions);
                     try{//wait for the thread to fish execution
-                        execHelper.join();
+                        execHelper1.join();
+                        //execHelper2.join();
                     }catch (InterruptedException ei){
                         ei.printStackTrace();
                     }
@@ -118,7 +122,7 @@ public class ManagerMenu extends BankMenu{
                     int option;
                     while(true){
                         try {
-                            option = Integer.parseInt(this.getUserInput().nextLine());
+                            option = Integer.parseInt(super.getUserInput().nextLine());
                         }
                         catch (Exception e){
                             System.out.println("Please choose an appropriate option 1-3");
@@ -138,17 +142,17 @@ public class ManagerMenu extends BankMenu{
                         case 1:
                             System.out.println("Please enter a name");
                             //get name
-                            String name = this.getUserInput().nextLine();
+                            String name = super.getUserInput().nextLine();
                             //create a key
-                            String key = this.getMyHandler().generateKey("",name);
+                            String key = super.getMyHandler().generateKey("",name);
                             //check customer exists
-                            if(!this.getCustomers().hasKey(key)){
+                            if(!super.getCustomers().hasKey(key)){
                                 System.out.println("No user found, cannot generate bank statement");
                                 System.out.println("################################################################################");
                                 continue;
                             }
                             //generate key by name
-                            cus = this.getCustomers().get(key);
+                            cus = super.getCustomers().get(key);
                             if(name.split("\\s+").length != (cus.getFirstName() + " " + cus.getLastName()).split("\\s+").length){
                                 System.out.println("no users found");
                                 System.out.println("################################################################################");
@@ -157,7 +161,7 @@ public class ManagerMenu extends BankMenu{
                             //generate bank statement
                             statement = this.manHandler.generateBankStatement(cus);
                             if( statement != null){
-                                this.getMyHandler().writeBankStatement(cus,statement);
+                                super.getMyHandler().writeBankStatement(cus,statement);
                             }
                             break;
                         //by id
@@ -167,7 +171,7 @@ public class ManagerMenu extends BankMenu{
                             //ensure id is an integer
                             while(true){
                                 try {
-                                    id = Integer.parseInt(this.getUserInput().nextLine());
+                                    id = Integer.parseInt(super.getUserInput().nextLine());
                                 }
                                 catch (Exception e){
                                     System.out.println("Please choose an appropriate option");
@@ -176,7 +180,7 @@ public class ManagerMenu extends BankMenu{
                                 break;
                             }
                             //ensure id is in range
-                            if(id < 1 || id > this.getCustomers().size()){
+                            if(id < 1 || id > super.getCustomers().size()){
                                 System.out.println("ID is out of range");
                                 System.out.println("################################################################################");
 
@@ -184,10 +188,10 @@ public class ManagerMenu extends BankMenu{
                             }
                             //search for customer by id
                             cus = null;
-                            while(this.getCustomerIterator().hasNext()){
+                            while(super.getCustomerIterator().hasNext()){
                                 Customer temp = null;
                                 try {
-                                    temp = this.getCustomerIterator().next();
+                                    temp = super.getCustomerIterator().next();
                                 }catch (IndexOutOfBoundsException e){
                                     System.out.println(e.getMessage());
                                 }
@@ -197,12 +201,12 @@ public class ManagerMenu extends BankMenu{
                                 }
                             }
                             //reset to ensure iteration starts at 0 again to reuse obj
-                            this.getCustomerIterator().reset();
+                            super.getCustomerIterator().reset();
                             //if the customer is not null it was found
                             if(cus != null){
                                 statement = this.manHandler.generateBankStatement(cus);
                                 if( statement != null){//check the statement is not null
-                                    this.getMyHandler().writeBankStatement(cus,statement);
+                                    super.getMyHandler().writeBankStatement(cus,statement);
                                 }
                             }
                             else {

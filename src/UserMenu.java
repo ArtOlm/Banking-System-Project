@@ -14,6 +14,8 @@ public class UserMenu extends BankMenu{
     private String transactionLog = "";
     //format to the date
     final private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+    
+    Customer userAccount;
 
     /**
      * crates a complete user menu
@@ -23,48 +25,17 @@ public class UserMenu extends BankMenu{
      */
     public UserMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
-        this.itemCollectionIterator = this.getItems().createIterator();
+        this.itemCollectionIterator = super.getItems().createIterator();
     }
     /**
      * this helps handle the customer interface
      */
     public void display(){
-        System.out.println("Welcome customer, please enter the following information to properly help you.");
         //pointer to keys which is used to index into the hashmap
         String key;
         //ask user for their information which is how they will be identified
         boolean menuon = true;
         while(menuon){
-            System.out.print("First Name: ");
-            String userFirstName = this.getUserInput().nextLine();
-            System.out.print("Last Name: ");
-            String userLastName = this.getUserInput().nextLine();
-            //getting their id helps since we stored  with indexing
-            int userID;
-            System.out.print("ID: ");
-            //ensure the user inputs an integer
-            //user is able to type random string
-            while(true){
-                try{
-                    userID = Integer.parseInt(this.getUserInput().nextLine());
-                }
-                catch(Exception e){
-                    //tell user what they need to fix
-                    System.out.println("ID must be integer");
-                    continue;
-                }
-                break;
-            }
-            System.out.print("Checking Account Number: ");
-            String userCheckNum = this.getUserInput().nextLine();
-            System.out.print("Savings Account Number: ");
-            String userSaveNum = this.getUserInput().nextLine();
-            System.out.print("Credit Account Number: ");
-            String userCreditNum = this.getUserInput().nextLine();
-            // check that the user exists
-            if(credentialValid(userID,userFirstName,userLastName,userCheckNum,userSaveNum,userCreditNum)){
-                key = this.getMyHandler().generateKey(userFirstName,userLastName);
-                Customer userAccount = this.getCustomers().get(key);
                 //sets the time of login for that user
                 //also set the starting balances
                 if(userAccount.getSessionStart() == null){
@@ -73,7 +44,6 @@ public class UserMenu extends BankMenu{
                     userAccount.setStartSaveBal(userAccount.getSave().getBalance());
                     userAccount.setStartCreditBal(userAccount.getCredit().getBalance());
                 }
-                System.out.println("################################################################################");
                 System.out.println("Hello " + userAccount.getFirstName() + " " + userAccount.getLastName() + " what would you like to do today?(Enter 1-7)");
                 //string pointers is used later on to point to account chosen by user
                 String accType;
@@ -94,7 +64,7 @@ public class UserMenu extends BankMenu{
                     //ensure the user chooses and appropriate option
                     while(true){
                         try{
-                            option = Integer.parseInt(this.getUserInput().nextLine());
+                            option = Integer.parseInt(super.getUserInput().nextLine());
                         }
                         catch(Exception e){
                             System.out.println("################################################################################");
@@ -111,17 +81,17 @@ public class UserMenu extends BankMenu{
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            accType = this.getUserInput().nextLine();
+                            accType = super.getUserInput().nextLine();
                             //ensure proper account is chosen
                             while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                accType = this.getUserInput().nextLine();
+                                accType = super.getUserInput().nextLine();
                             }
                             //let user know of success
-                            System.out.printf("%s currently has %.2f$\n", accType,this.getTransactionHandler().checkBalance(userAccount,accType));
+                            System.out.printf("%s currently has %.2f$\n", accType,super.getTransactionHandler().checkBalance(userAccount,accType));
                             //log what happened
                             transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),accType,time.format(LocalDateTime.now()));
-                            this.getMyHandler().logToFile(transactionLog);
+                            super.getMyHandler().logToFile(transactionLog);
 
                             break;
                         case 2://deposit procedure
@@ -130,18 +100,18 @@ public class UserMenu extends BankMenu{
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            accType = this.getUserInput().nextLine();
+                            accType = super.getUserInput().nextLine();
                             //ensure proper account is chosen
                             while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                accType = this.getUserInput().nextLine();
+                                accType = super.getUserInput().nextLine();
                             }
                             System.out.println("Please enter the amount you would like to Deposit:(DO NOT USE COMMA)");
                             double deposit;
                             //ensure that entered value is acceptable
                             while(true){
                                 try{
-                                    deposit = Double.parseDouble(this.getUserInput().nextLine());
+                                    deposit = Double.parseDouble(super.getUserInput().nextLine());
                                 }
                                 catch(Exception e){
                                     System.out.println("Error: not a proper value");
@@ -150,7 +120,7 @@ public class UserMenu extends BankMenu{
                                 break;
                             }
                             try {
-                                this.getTransactionHandler().userDeposit(userAccount,accType,deposit);
+                                super.getTransactionHandler().userDeposit(userAccount,accType,deposit);
                             }
                             catch(TransactionException eDep){
                                 //Transaction was a failure
@@ -163,7 +133,7 @@ public class UserMenu extends BankMenu{
                             //if success then we tell user and log it
                             transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),deposit,accType,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
-                            this.getMyHandler().logToFile(transactionLog);
+                            super.getMyHandler().logToFile(transactionLog);
                             System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
                             break;
                         case 3://transaction between two accounts of the same customer
@@ -172,25 +142,25 @@ public class UserMenu extends BankMenu{
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            from = this.getUserInput().nextLine();
+                            from = super.getUserInput().nextLine();
                             while(!from.equalsIgnoreCase("Checking") && !from.equalsIgnoreCase("Savings") && !from.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                from = this.getUserInput().nextLine();
+                                from = super.getUserInput().nextLine();
                             }
                             System.out.println("Please enter the name of the account you want to transfer to");
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            to = this.getUserInput().nextLine();
+                            to = super.getUserInput().nextLine();
                             while(!to.equalsIgnoreCase("Checking") && !to.equalsIgnoreCase("Savings") && !to.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                to = this.getUserInput().nextLine();
+                                to = super.getUserInput().nextLine();
                             }
                             System.out.println("How much would you like to transfer?(Do not include comma)");
                             double transfer;
                             while(true){
                                 try{
-                                    transfer = Double.parseDouble(this.getUserInput().nextLine());
+                                    transfer = Double.parseDouble(super.getUserInput().nextLine());
                                 }
                                 catch(Exception e){
                                     System.out.println("Please enter a proper amount(e.g 100.05)");
@@ -203,7 +173,7 @@ public class UserMenu extends BankMenu{
                                 break;
                             }
                             try {
-                                this.getTransactionHandler().accountTransfer(userAccount,from,to,transfer);
+                                super.getTransactionHandler().accountTransfer(userAccount,from,to,transfer);
                             }
                             catch (TransactionException eTransfer){
                                 System.out.println(eTransfer.getMessage());
@@ -216,7 +186,7 @@ public class UserMenu extends BankMenu{
                             System.out.printf("The transfer was a success, %.2f$ was transferred from %s to %s\n",transfer,from,to);
                             transactionLog = String.format("%s %s transferred %.2f$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transfer,from,to,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
-                            this.getMyHandler().logToFile(transactionLog);
+                            super.getMyHandler().logToFile(transactionLog);
                             break;
                         case 4://withdraw procedure
                             System.out.println("################################################################################");
@@ -224,17 +194,17 @@ public class UserMenu extends BankMenu{
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            accType = this.getUserInput().nextLine();
+                            accType = super.getUserInput().nextLine();
                             while(!accType.equalsIgnoreCase("Checking") && !accType.equalsIgnoreCase("Savings") && !accType.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                accType = this.getUserInput().nextLine();
+                                accType = super.getUserInput().nextLine();
                             }
                             System.out.println("Please enter the amount you would like to withdraw:(DO NOT USE COMMA)");
                             double withdrawl;
                             //ensure that entered value is acceptable
                             while(true){
                                 try{
-                                    withdrawl = Double.parseDouble(this.getUserInput().nextLine());
+                                    withdrawl = Double.parseDouble(super.getUserInput().nextLine());
                                 }
                                 catch(Exception e){
                                     System.out.println("Error: not a proper value");
@@ -243,7 +213,7 @@ public class UserMenu extends BankMenu{
                                 break;
                             }
                             try{
-                                this.getTransactionHandler().userWithdraw(userAccount,accType,withdrawl);
+                                super.getTransactionHandler().userWithdraw(userAccount,accType,withdrawl);
                             }
                             catch(TransactionException eWith){
                                 //there was transaction failure
@@ -257,7 +227,7 @@ public class UserMenu extends BankMenu{
                             transactionLog = String.format("%s %s withdrew %.2f$ from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withdrawl,accType,time.format(LocalDateTime.now()));
                             System.out.printf("The withdrawl of %.2f$ was a success\n",withdrawl);
                             userAccount.addTransaction(transactionLog);
-                            this.getMyHandler().logToFile(transactionLog);
+                            super.getMyHandler().logToFile(transactionLog);
                             break;
                         case 5://pay another user procedure
                             System.out.println("################################################################################");
@@ -265,18 +235,18 @@ public class UserMenu extends BankMenu{
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            from = this.getUserInput().nextLine();
+                            from = super.getUserInput().nextLine();
                             //ensure a proper account is entered
                             while(!from.equalsIgnoreCase("Checking") && !from.equalsIgnoreCase("Savings") && !from.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                from = this.getUserInput().nextLine();
+                                from = super.getUserInput().nextLine();
                             }
                             System.out.println("How much would you like to pay?(Do not include comma)");
                             double pay;
                             //ensure proper pay is entered
                             while(true){
                                 try{
-                                    pay = Double.parseDouble(this.getUserInput().nextLine());
+                                    pay = Double.parseDouble(super.getUserInput().nextLine());
                                 }
                                 catch(Exception e){
                                     System.out.println("Please enter a proper amount(e.g 100.05)");
@@ -290,21 +260,21 @@ public class UserMenu extends BankMenu{
                             }
                             System.out.println("Enter the following information about the user you would like to pay");
                             System.out.print("First Name: ");
-                            String userToPayFirstName = this.getUserInput().nextLine();
+                            String userToPayFirstName = super.getUserInput().nextLine();
                             System.out.print("Last Name: ");
-                            String userToPayLastName = this.getUserInput().nextLine();
+                            String userToPayLastName = super.getUserInput().nextLine();
                             int userToPayID;
                             System.out.print("ID: ");
                             //ensure a proper id is entered
                             while(true){
                                 try{
-                                    userToPayID = Integer.parseInt(this.getUserInput().nextLine());
+                                    userToPayID = Integer.parseInt(super.getUserInput().nextLine());
                                 }
                                 catch(Exception e){
                                     System.out.println("Please enter an integer");
                                     continue;
                                 }
-                                if(userToPayID < 0 || userToPayID > this.getCustomers().size()){
+                                if(userToPayID < 0 || userToPayID > super.getCustomers().size()){
                                     System.out.println("Not a valid ID");
                                 }
                                 break;
@@ -321,19 +291,19 @@ public class UserMenu extends BankMenu{
                             System.out.println("1.Checking");
                             System.out.println("2.Savings");
                             System.out.println("3.Credit");
-                            to = this.getUserInput().nextLine();
+                            to = super.getUserInput().nextLine();
                             //ensure a proper option
                             while(!to.equalsIgnoreCase("Checking") && !to.equalsIgnoreCase("Savings") && !to.equalsIgnoreCase("Credit")){
                                 System.out.println("Please enter a correct option");
-                                to = this.getUserInput().nextLine();
+                                to = super.getUserInput().nextLine();
 
                             }
                             //ensure a customer with the info exists
                             if(credentialValid(userToPayFirstName,userToPayLastName,userToPayID)){
-                                key = this.getMyHandler().generateKey(userToPayFirstName,userToPayLastName);
-                                Customer userToPay = this.getCustomers().get(key);
+                                key = super.getMyHandler().generateKey(userToPayFirstName,userToPayLastName);
+                                Customer userToPay = super.getCustomers().get(key);
                                 try{
-                                    this.getTransactionHandler().transactionToOther(userAccount,userToPay,from,to,pay);
+                                    super.getTransactionHandler().transactionToOther(userAccount,userToPay,from,to,pay);
                                 }
                                 catch(TransactionException eTransfer){
                                     //there was transaction failure
@@ -347,7 +317,7 @@ public class UserMenu extends BankMenu{
                                 System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFirstName(),userToPay.getLastName(),to);
                                 transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),pay,from,userToPay.getFirstName(),userToPay.getLastName(),to,time.format(LocalDateTime.now()));
                                 userAccount.addTransaction(transactionLog);
-                                this.getMyHandler().logToFile(transactionLog);
+                                super.getMyHandler().logToFile(transactionLog);
                             }
                             else{
                                 System.out.println("Error: no user found with provided information");
@@ -372,7 +342,7 @@ public class UserMenu extends BankMenu{
                                 System.out.println("3.Exit mall");
                                 //get the option and ensure it is appropriate
                                 while (true) {
-                                    String buyOption = this.getUserInput().nextLine();
+                                    String buyOption = super.getUserInput().nextLine();
                                     try {
                                         mallOpt = Integer.parseInt(buyOption);
                                     } catch (Exception e) {
@@ -408,13 +378,14 @@ public class UserMenu extends BankMenu{
                                             maxCount.put(it.getName(),it.getMax());
                                         }
                                         //reset to reuse
-                                        double total = 0;
                                         this.itemCollectionIterator.reset();
+                                        //the total money spent
+                                        double total = 0;
                                         while(malMenu) {
                                             //get item user wants
                                             System.out.println("Enter the ID of the item you would like to add to the cart\n(Enter \"C\" to checkout or \"V\" to view cart or \"R\" to remove an Item from the cart or \"E\" to exit the mall) ");
                                             int mallID = -1;
-                                            line = this.getUserInput().nextLine();
+                                            line = super.getUserInput().nextLine();
                                             try{
                                                 mallID = Integer.parseInt(line);
                                             } catch (Exception me){
@@ -424,7 +395,7 @@ public class UserMenu extends BankMenu{
                                                 } else if(line.equalsIgnoreCase("R")){//remove the item from the cart
                                                     System.out.println("################################################################################");
                                                     System.out.println("What item do you want to remove?(Enter the name)");
-                                                    line = this.getUserInput().nextLine();
+                                                    line = super.getUserInput().nextLine();
                                                     boolean didRemove = false;
                                                     for(int j = 0;j < cart.size();j++){
                                                         if(cart.get(j).getName().equalsIgnoreCase(line)){
@@ -464,13 +435,13 @@ public class UserMenu extends BankMenu{
                                             }
                                             //ensure the id is within range
                                             //check id is valid
-                                            if((mallID  < 0) || (mallID > this.getItems().size())){
+                                            if((mallID  < 0) || (mallID > super.getItems().size())){
                                                 System.out.println("Error: not a valid ID");
                                                 System.out.println("################################################################################");
                                                 continue;
                                             }
                                             //check if the item is available
-                                            Item itemAdded = this.getItems().get(mallID);
+                                            Item itemAdded = super.getItems().get(mallID);
                                             if(maxCount.get(itemAdded.getName()) < 1){
                                                 System.out.println("Error: Item is no longer available");
                                                 System.out.println("################################################################################");
@@ -480,7 +451,7 @@ public class UserMenu extends BankMenu{
                                             int numIt = -1;
                                             while(true){
                                                 try {
-                                                    numIt = Integer.parseInt(this.getUserInput().nextLine());
+                                                    numIt = Integer.parseInt(super.getUserInput().nextLine());
                                                 }catch (Exception eit){
                                                     System.out.println("Please enter a correct value");
                                                     continue;
@@ -513,76 +484,42 @@ public class UserMenu extends BankMenu{
                                             }
 
                                         }
-                                        if(line.equalsIgnoreCase("c") && (cart.size() > 0)){
+                                        if(line.equalsIgnoreCase("c")){
                                             //ask with what account they want to pay with
                                             System.out.println("################################################################################");
                                             System.out.println("With which account would you like to pay?(Enter the name)");
                                             System.out.println("1.Checking");
                                             System.out.println("2.Credit");
-                                            String accountType = this.getUserInput().nextLine();
+                                            String accountType = super.getUserInput().nextLine();
                                             while (!accountType.equalsIgnoreCase("Checking") && !accountType.equalsIgnoreCase("Credit")){
                                                 System.out.println("Please enter Checking or Credit");
-                                             accountType = this.getUserInput().nextLine();
-                                            }
-                                            //pinter to check the input
-                                            String pinStr = null;
-                                            //make them enter their pin
-                                            if(accountType.equalsIgnoreCase("Checking")){
-                                                System.out.println("Please enter your pin");
-
-                                                int pin;
-                                                while (true){
-                                                    try {
-                                                        pinStr = this.getUserInput().nextLine();
-                                                        pin = Integer.parseInt(pinStr);
-                                                    }   catch (Exception ek){
-                                                        if(pinStr.equalsIgnoreCase("a")){
-                                                            break;
-                                                        }
-                                                        System.out.println("Please enter the correct pin or enter \"a\" to abort the checkout");
-                                                        continue;
-                                                    }
-                                                    if(pin != userAccount.getPin()){
-                                                        System.out.println("Please enter the correct pin or enter \"a\" to abort the checkout");
-                                                        continue;
-                                                    }
-                                                    break;
-                                                }
-
-                                            }else if(accountType.equalsIgnoreCase("Credit")){
-                                                //ensure pinStr is not null if they chose credit
-                                                pinStr = "c";
+                                             accountType = super.getUserInput().nextLine();
                                             }
                                             //if the user did not abort the payment
-                                            if(!pinStr.equalsIgnoreCase("a")) {
-                                                //check if they can buy all the stuff in the cart
-                                                try {
-                                                    this.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total);
-                                                } catch (Exception me) {
-                                                    System.out.println(me.getMessage());
-                                                    break;
-                                                }
-                                                //update the users info and tell them they succeeded in making the purchase
-                                                System.out.printf("Your purchase of %.2f$ at Miners mall was a success!\n", total);
-                                                System.out.println("Thank you!");
-                                                for (int i = 0; i < cart.size(); i++) {
-                                                    Item t = cart.get(i);
-                                                    //update the limit on the items
-                                                    this.getItems().get(t.getID()).setMax(maxCount.get(t.getName()));
-                                                    //log everything they bought if successful
-                                                    transactionLog = String.format("%s %s bought %s for %.2f$ using %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), t.getName(), t.getPrice(), accountType,time.format(LocalDateTime.now()));
-                                                    this.getMyHandler().logToFile(transactionLog);
-                                                    userAccount.addTransaction(transactionLog);
-                                                    userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + t.getPrice());
-                                                    userAccount.addItemBought(t.getName());
-                                                }
 
-                                            }else {
-                                                System.out.println("Checkout was aborted, no items were purchased");
+                                            //check if they can buy all the stuff in the cart
+                                            try {
+                                                super.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total);
+                                            } catch (Exception me) {
+                                                System.out.println(me.getMessage());
+                                                break;
                                             }
-                                        }
-                                        //if they do not make a pruchase
-                                        if(cart.size() == 0 || line.equalsIgnoreCase("e")){
+                                            //update the users info and tell them they succeeded in making the purchase
+                                            System.out.printf("Your purchase of %.2f$ at Miners mall was a success!\n", total);
+                                            System.out.println("Thank you!");
+                                            for (int i = 0; i < cart.size(); i++) {
+                                                Item t = cart.get(i);
+                                                //update the limit on the items
+                                                super.getItems().get(t.getID()).setMax(maxCount.get(t.getName()));
+                                                //log everything they bought if successful
+                                                transactionLog = String.format("%s %s bought %s for %.2f$ using %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), t.getName(), t.getPrice(), accountType,time.format(LocalDateTime.now()));
+                                                super.getMyHandler().logToFile(transactionLog);
+                                                userAccount.addTransaction(transactionLog);
+                                                userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + t.getPrice());
+                                                userAccount.addItemBought(t.getName());
+                                            }
+                                        }else{
+                                            //if they do not make a purchase
                                             System.out.println("No items purchased");
                                         }
                                         System.out.println("################################################################################");
@@ -633,23 +570,6 @@ public class UserMenu extends BankMenu{
                         System.out.println("What else would you like to do today?");
                     }
                 }
-            } else{
-                System.out.println("################################################################################");
-                // user did not enter matching credential, we then ask if they would like to retry of just exit
-                System.out.println("Look like something went wrong, would you like to try again(Enter Y to continue or n to exit)");
-                String decision = this.getUserInput().nextLine();
-                while(!decision.equalsIgnoreCase("Y") && !decision.equalsIgnoreCase("n")){
-                    System.out.println("Please enter Y or n");
-                    decision = this.getUserInput().nextLine();
-                }
-                if(decision.equalsIgnoreCase("n")){
-                    break;
-                }
-                else {
-                    System.out.println("Please enter your information");
-                    System.out.println("################################################################################");
-                }
-            }
         }
     }
     /**
@@ -658,25 +578,25 @@ public class UserMenu extends BankMenu{
      */
     public void userCreation(){
         //create hashmaps to check all the pins
-        Set<Integer> pins = new HashSet<>();
-        while(this.getCustomerIterator().hasNext()){
-            pins.add(this.getCustomerIterator().next().getPin());
+        Set<String> pins = new HashSet<>();
+        while(super.getCustomerIterator().hasNext()){
+            pins.add(super.getCustomerIterator().next().getPin());
         }
         //ensure object starts at 0 again for future calls
-        this.getCustomerIterator().reset();
+        super.getCustomerIterator().reset();
         //get the user information needed to create account
         System.out.println("Please enter the following information");
         System.out.println("First Name: ");
-        String fName = this.getUserInput().nextLine();
+        String fName = super.getUserInput().nextLine();
         System.out.println("Last Name");
-        String lName = this.getUserInput().nextLine();
+        String lName = super.getUserInput().nextLine();
         System.out.println("Date of Birth MM/DD/YYYY");
         String dob = "";
         boolean isCorrectDOB = false;
         //check it is a valid date of birth with a format
         while((dob.length() != ("MM/DD/YYYY").length()) || !isCorrectDOB){
 
-            dob = this.getUserInput().nextLine();
+            dob = super.getUserInput().nextLine();
             String[] dates = dob.split("/");
             if(dates.length != 3 || ((dates[0].length() != 2) || (dates[1].length() != 2) || (dates[2].length() != 4))){
                 System.out.println("Enter the date of birth in the following format MM/DD/YYYY add the \"/\" and make sure you use integers only");
@@ -698,18 +618,18 @@ public class UserMenu extends BankMenu{
 
         }
         System.out.println("Address");
-        String add = this.getUserInput().nextLine();
+        String add = super.getUserInput().nextLine();
         System.out.println("City");
-        String city = this.getUserInput().nextLine();
+        String city = super.getUserInput().nextLine();
         System.out.println("State");
-        String state = this.getUserInput().nextLine();
+        String state = super.getUserInput().nextLine();
         System.out.println("Zip");
         String zip = "";
         boolean isZip = false;
         //ensure zip is something valid
         while(zip.length() != 5 || !isZip){
             isZip = true;
-            zip = this.getUserInput().nextLine();
+            zip = super.getUserInput().nextLine();
             //check it is an integer
             try{
                 Integer.parseInt(zip);
@@ -725,7 +645,7 @@ public class UserMenu extends BankMenu{
         boolean isCorrectPhone = false;
         //ensure the phone is the right
         while((phoneNum.length() != ("555-555-5555").length()) || !isCorrectPhone){
-            phoneNum = this.getUserInput().nextLine();
+            phoneNum = super.getUserInput().nextLine();
             String[] nums = phoneNum.split("-");
             if(nums.length != 3 || ((nums[0].length() != 3) || (nums[1].length() != 3) || (nums[2].length() != 4))){
                 System.out.println("Phone number must be entered in the following pattern 555-555-5555");
@@ -750,7 +670,7 @@ public class UserMenu extends BankMenu{
         //ensure a proper deposit for all customer
         while(true){
             try{
-                chDeposit = Double.parseDouble(this.getUserInput().nextLine());
+                chDeposit = Double.parseDouble(super.getUserInput().nextLine());
             }
             catch (Exception e){
                 System.out.println("Please enter a proper balance to deposit");
@@ -767,7 +687,7 @@ public class UserMenu extends BankMenu{
         //ensure the deposit a a correct value
         while(true){
             try{
-                saveDeposit = Double.parseDouble(this.getUserInput().nextLine());
+                saveDeposit = Double.parseDouble(super.getUserInput().nextLine());
             }
             catch (Exception e){
                 System.out.println("Please enter a proper balance to deposit");
@@ -784,7 +704,7 @@ public class UserMenu extends BankMenu{
         //ensure the score is something valid
         while(true){
             try{
-                score = Integer.parseInt(this.getUserInput().nextLine());
+                score = Integer.parseInt(super.getUserInput().nextLine());
             }
             catch (Exception e){
                 System.out.println("Please enter a proper integer");
@@ -797,7 +717,7 @@ public class UserMenu extends BankMenu{
             break;
         }
         //gets the next biggest id
-        int id = this.getMyHandler().getMaxCustomerIDX();
+        int id = super.getMyHandler().getMaxCustomerIDX();
         int checkNum = id + 1000000;
         int saveNum = id + 2000000;
         int creditNum = id + 3000000;
@@ -810,13 +730,13 @@ public class UserMenu extends BankMenu{
         cr.setScore(score);
         cr.generateCredit(score);
         //generate key for user
-        String key = this.getMyHandler().generateKey(fName,lName);
+        String key = super.getMyHandler().generateKey(fName,lName);
         //generate random pin
-        int pin = generatePin(pins);
+        String pin = generatePin(pins);
         Customer cus = new Customer(fName,lName,add,city,state,zip,phoneNum,dob,id,ch,save,cr,pin);
-        this.getCustomers().add(key,cus);
+        super.getCustomers().add(key,cus);
         //add 1 to last max id for next user created
-        this.getMyHandler().incrementMaxCustomerIDX();
+        super.getMyHandler().incrementMaxCustomerIDX();
         //let the user know of their credentials
         System.out.println("################################################################################");
         System.out.println("The account was successfully created!");
@@ -832,14 +752,16 @@ public class UserMenu extends BankMenu{
      * @param pins all the pins found in the customers collection
      * @return returns a generated pin
      */
-    private int generatePin(Set<Integer> pins){
+    private String generatePin(Set<String> pins){
         Random rand = new Random();
-        int pin = rand.nextInt(9000) + 1000;
+        int pin = rand.nextInt(9000);
+        String pinStr = String.format("%04d",pin);
         //ensure pin is unique
-        while(pins.contains(pin)){
-            pin = rand.nextInt(9000) + 1000;
+        while(pins.contains(pinStr)){
+            pin = rand.nextInt(9000);
+            pinStr = String.format("%04d",pin);
         }
-        return pin;
+        return pinStr;
     }
     /**
      * @param fName first name of user
@@ -849,18 +771,18 @@ public class UserMenu extends BankMenu{
      * ensures customer exists
      */
     private boolean credentialValid(String fName,String lName,int id){
-        String key = this.getMyHandler().generateKey(fName,lName);
+        String key = super.getMyHandler().generateKey(fName,lName);
         //check the customer exists
-        if(id <= 0 || id > this.getCustomers().size() || !this.getCustomers().hasKey(key)){
+        if(id <= 0 || id > super.getCustomers().size() || !super.getCustomers().hasKey(key)){
             return false;
         }
         //get customer
-        Customer user = this.getCustomers().get(key);
+        Customer user = super.getCustomers().get(key);
         if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length){
             return false;
         }
         //compare information
-        return  user.getID() == id && this.getMyHandler().strNWS(user.getFirstName()).equals(this.getMyHandler().strNWS(fName)) && this.getMyHandler().strNWS(user.getLastName()).equals(this.getMyHandler().strNWS(lName));
+        return  user.getID() == id && super.getMyHandler().strNWS(user.getFirstName()).equals(super.getMyHandler().strNWS(fName)) && super.getMyHandler().strNWS(user.getLastName()).equals(super.getMyHandler().strNWS(lName));
     }
     /**
      * @param userAccount users account
@@ -871,14 +793,14 @@ public class UserMenu extends BankMenu{
      * ensures customer cannot pay themselves
      */
     private boolean credentialValid(Customer userAccount,String userToPayFirstName,String userToPayLastName,int userToPayID){
-        if(userToPayID <= 0 || userToPayID > this.getCustomers().size()){
+        if(userToPayID <= 0 || userToPayID > super.getCustomers().size()){
             return false;
         }
         //compare information
         if(userAccount.getFirstName().split("\\s+").length != userToPayFirstName.split("\\s+").length || userAccount.getLastName().split("\\s+").length != userToPayLastName.split("\\s+").length){
             return false;
         }
-        return this.getMyHandler().strNWS(userAccount.getFirstName()).equals(this.getMyHandler().strNWS(userToPayFirstName)) && this.getMyHandler().strNWS(userAccount.getLastName()).equals(this.getMyHandler().strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
+        return super.getMyHandler().strNWS(userAccount.getFirstName()).equals(super.getMyHandler().strNWS(userToPayFirstName)) && super.getMyHandler().strNWS(userAccount.getLastName()).equals(super.getMyHandler().strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
     }
     /**
      * @param id user id
@@ -891,21 +813,21 @@ public class UserMenu extends BankMenu{
      * ensures use logging in exists
      */
     private boolean credentialValid(int id, String fName, String lName, String userCheckNum, String userSaveNum, String userCreditNum){
-        String key = this.getMyHandler().generateKey(fName,lName);
+        String key = super.getMyHandler().generateKey(fName,lName);
         //check the customer exists
-        if(id <= 0 || id > this.getCustomers().size() || !this.getCustomers().hasKey(key)){
+        if(id <= 0 || id > super.getCustomers().size() || !super.getCustomers().hasKey(key)){
             return false;
         }
         else{
             //get the customer
-            Customer user = this.getCustomers().get(key);
+            Customer user = super.getCustomers().get(key);
             //ensure that there are no wired strings the are split apart
             if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length || user.getSave().getAccNum().split("\\s+").length != userSaveNum.split("\\s+").length || user.getCredit().getAccNum().split("\\s+").length != userCreditNum.split("\\s+").length || user.getCheck().getAccNum().split("\\s+").length != userCheckNum.split("\\s+").length){
                 System.out.println("no");
                 return false;
             }
             //return true if info matches
-            return  user.getID() == id && user.getCheck().getAccNum().equals(this.getMyHandler().strNWS(userCheckNum)) && user.getSave().getAccNum().equals(this.getMyHandler().strNWS(userSaveNum)) && user.getCredit().getAccNum().equals(this.getMyHandler().strNWS(userCreditNum));
+            return  user.getID() == id && user.getCheck().getAccNum().equals(super.getMyHandler().strNWS(userCheckNum)) && user.getSave().getAccNum().equals(super.getMyHandler().strNWS(userSaveNum)) && user.getCredit().getAccNum().equals(super.getMyHandler().strNWS(userCreditNum));
         }
     }
     /**
@@ -923,5 +845,11 @@ public class UserMenu extends BankMenu{
         //reset so that iterator can be reused
         this.itemCollectionIterator.reset();
         System.out.println("################################################################################");
+    }
+    /**
+     * sets the current user of the session
+     */
+    public void setUser(Customer userAccount){
+        this.userAccount = userAccount;
     }
 }

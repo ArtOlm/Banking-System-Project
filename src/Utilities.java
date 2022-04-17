@@ -26,18 +26,18 @@ public class Utilities{
 	public ArrayList<String[]> loadTransactions(){
 		//arraylist containing the transactions
 		ArrayList<String []> transactions = new ArrayList<>();
-		File transactionFile = new File("src/Read_Only_Files/actions PA4.csv");
+		File transactionFile = new File("src/Read_Only_Files/actions PA5.csv");
 		Scanner transactionsReader = null;
 		try {
 			transactionsReader = new Scanner(transactionFile);
 		}
 		catch (FileNotFoundException e){
-			System.out.println("Error: File actions PA4.csv not found, cannot continue");
+			System.out.println("Error: File actions PA5.csv not found, cannot continue");
 			System.exit(1);
 		}
 		if(!transactionsReader.hasNextLine()){
-			System.out.println("Error: actions PA4.csv is empty");
-			return transactions;
+			System.out.println("Error: actions PA5.csv is empty");
+			System.exit(1);
 		}
 		//get rid of header
 		transactionsReader.nextLine();
@@ -83,13 +83,13 @@ public class Utilities{
 	 */
 	public HashMap<String,Customer> populateCustomers(){
 		//File object so I can read with Scanner
-		File customerInfoFile = new File("src/Read_Only_Files/Bank Customers 4.csv");
+		File customerInfoFile = new File("src/Read_Only_Files/Bank Customers 5.csv");
 		Scanner fileReader = null;
 		try {
 			fileReader = new Scanner(customerInfoFile);
 		}
 		catch (FileNotFoundException e){
-			System.out.println("Error: Cannot find src/Read_Only_Files/Bank Customers 4.csv");
+			System.out.println("Error: Cannot find src/Read_Only_Files/Bank Customers 5.csv");
 			System.exit(1);
 		}
 		//use the header to dynamically read csv file
@@ -166,7 +166,7 @@ public class Utilities{
 		double sBalance = Double.parseDouble(info[indexes[13]]);
 		String phoneNum = info[indexes[8]];
 		int id = Integer.parseInt(info[indexes[0]]);
-		int pin = Integer.parseInt(info[indexes[1]]);
+		String pin = info[indexes[1]];
 		String sNum = info[indexes[12]];
 		String dob = info[indexes[9]];
 		String cNum = info[indexes[14]];
@@ -191,13 +191,13 @@ public class Utilities{
 	 */
 	public HashMap<Integer,Item> populateItems(){
 		//File object so I can read with Scanner
-		File customerInfoFile = new File("src/Read_Only_Files/Miner Mall.csv");
+		File customerInfoFile = new File("src/Read_Only_Files/Miner Mall 5.csv");
 		Scanner fileReader = null;
 		try{
 			fileReader = new Scanner(customerInfoFile);
 		}
 		catch (FileNotFoundException e){
-			System.out.println("Error: Cannot find src/Read_Only_Files/Miner Mall.csv");
+			System.out.println("Error: Cannot find src/Read_Only_Files/Miner Mall 5.csv");
 			System.exit(1);
 		}
 		//assuming it has a header

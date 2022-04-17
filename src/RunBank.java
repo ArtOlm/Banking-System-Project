@@ -19,6 +19,7 @@ public class RunBank{
 	 * main method for the bank
 	 * @param args the arguments
 	 */
+	static final String MANAGERPIN = "0000";
 	public static void main(String[] args){
 		//populates the main data structures
 		CustomerCollection customers = new CustomerCollection(Utilities.getInstance().populateCustomers());
@@ -39,11 +40,10 @@ public class RunBank{
 		while(!exit){
 			alreadyExec = false;
 			System.out.println("Hello Welcome to Miners Bank!");
-			System.out.println("Please choose an option!");
-			System.out.println("(Note: do not add unnecessary spaces, it may cause problems)");
-			System.out.println("1.Customer");
-			System.out.println("2.Manager");
-			System.out.println("3.Create account");
+			System.out.println("What would you like to do today?");
+			System.out.println("(Note: do not add unnecessary spaces, results may be affected)");
+			System.out.println("1.Log In");
+			System.out.println("2.Create New Account");
 			System.out.println("Enter \"EXIT\" to end the session");
 			//ensure proper option is entered
 			try{
@@ -60,7 +60,7 @@ public class RunBank{
 					System.out.println("Thank you have a nice day!");
 				}
 				if(!exit){
-					System.out.println("ERROR: Please enter 1-3 or \"EXIT\"");
+					System.out.println("ERROR: Please enter 1-2 or \"EXIT\"");
 					System.out.println("Restarting in");
 					for(int i = 3;i > 0;i--){
 						System.out.println(i);
@@ -79,16 +79,70 @@ public class RunBank{
 			}
 			switch(option1){
 			case 1://go to the user menu
+				int attempts = 3;
+				while (attempts > 0) {
 					System.out.println("################################################################################");
-					userMenu.display();
+					System.out.print("Please enter your pin: ");
+					String pinStr = userInput.nextLine();
+					//ensure the pin is correct
+					try {
+						Integer.parseInt(pinStr);
+					} catch (Exception ex) {
+						System.out.println("Error: Not a valid pin");
+						attempts--;
+						continue;
+					}
+					if ((pinStr.length() != 4)) {
+						System.out.println("Error: Not a valid");
+						attempts--;
+						continue;
+					}
+					//at this point a valid pin has been entered
 					System.out.println("################################################################################");
+					if(pinStr.equals(MANAGERPIN)){
+						//manager pin was entered
+						managerMenu.display();
+					}else {
+						//search for the customer if anything else
+						CustomerCollectionIterator cusIter = customers.createIterator();
+						boolean userFound = false;
+						while(cusIter.hasNext()) {
+							Customer cus = cusIter.next();
+							if (cus.getPin().equals(pinStr)) {
+								userFound = true;
+								//a customer was found
+								userMenu.setUser(cus);
+								userMenu.display();
+								break;
+							}
+						}
+						//let the user know no user was found
+						if(!userFound) {
+							System.out.println("No user found");
+							attempts--;
+							continue;
+						}
+					}
+						//break out of the loop to go back to the main menu
+						break;
+				}
+				System.out.println("################################################################################");
+				if(attempts <= 0){
+					System.out.println("ERROR: Attempts limit reached");
+					System.out.println("Returning to main menu in");
+					for(int i = 3;i > 0;i--){
+						System.out.println(i);
+						try {
+							Thread.sleep(1000);
+						}catch (InterruptedException e){
+							//nothing crazy should happen here
+							e.printStackTrace();
+						}
+					}
+					System.out.println("################################################################################");
+				}
 				break;
-			case 2://go to the managed menu
-					System.out.println("################################################################################");
-					managerMenu.display();
-					System.out.println("################################################################################");
-			    break;
-			case 3://menu for creating user
+			case 2://menu for creating user
 					System.out.println("################################################################################");
 					userMenu.userCreation();
 					System.out.println("################################################################################");
@@ -103,7 +157,7 @@ public class RunBank{
 					System.out.println("Thank you have a nice day!");
 				}
 				if(!exit){
-					System.out.println("ERROR: Please enter 1-3 or \"EXIT\"");
+					System.out.println("ERROR: Please enter 1-2 or \"EXIT\"");
 					System.out.println("Restarting in");
 					for(int i = 3;i > 0;i--){
 						System.out.println(i);
