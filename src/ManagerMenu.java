@@ -80,10 +80,9 @@ public class ManagerMenu extends BankMenu{
                     break;
                 //execute actions.csv file
                 case 3:
-
                     System.out.println("################################################################################");
                     System.out.println("Are you sure you want to execute transactions?(Y/N)");
-                    System.out.println("Action can take a while due to the log of every transaction to log.txt");
+                    System.out.println("Action can take a while");
                     String cont = super.getUserInput().nextLine();
                     while(!cont.equalsIgnoreCase("N") && !cont.equalsIgnoreCase("y")){
                         System.out.println("Please enter Y or N");
@@ -94,22 +93,11 @@ public class ManagerMenu extends BankMenu{
                         System.out.println("################################################################################");
                         continue;
                     }
+                    // at this pin the actions are executed in another thread
                     System.out.println("################################################################################");
                     System.out.println("YOU HAVE BEEN WARNED");
-                    ArrayList <String[]> transactions = this.getMyHandler().loadTransactions();
                     //execute the actions in half in parallel to execute faster
-                    ExecutionHelper execHelper1 = new ExecutionHelper(transactions.size() /2 ,transactions.size(),transactions,super.getCustomers(),super.getItems());
-                    ExecutionHelper execHelper2 = new ExecutionHelper(((2 * transactions.size()) / 3),transactions.size(),transactions,super.getCustomers(),super.getItems());
-                    execHelper1.run();
-//                    execHelper2.run();
-
-                    this.manHandler.execTransactions(super.getCustomers(),super.getItems(),0, transactions.size() / 2,transactions);
-                    try{//wait for the thread to fish execution
-                        execHelper1.join();
-                        //execHelper2.join();
-                    }catch (InterruptedException ei){
-                        ei.printStackTrace();
-                    }
+                    this.manHandler.execTransactions(super.getCustomers(),super.getItems());
                     System.out.println("################################################################################");
                     break;
                 //create bank statement for a user
@@ -187,21 +175,21 @@ public class ManagerMenu extends BankMenu{
                                 continue;
                             }
                             //search for customer by id
+                            CustomerCollectionIterator newIter = this.getCustomers().createIterator();
                             cus = null;
-                            while(super.getCustomerIterator().hasNext()){
+                            while(newIter.hasNext()){
                                 Customer temp = null;
                                 try {
-                                    temp = super.getCustomerIterator().next();
+                                    temp = newIter.next();
                                 }catch (IndexOutOfBoundsException e){
                                     System.out.println(e.getMessage());
                                 }
+
                                 if(id == temp.getID()){
                                     cus = temp;
                                     break;
                                 }
                             }
-                            //reset to ensure iteration starts at 0 again to reuse obj
-                            super.getCustomerIterator().reset();
                             //if the customer is not null it was found
                             if(cus != null){
                                 statement = this.manHandler.generateBankStatement(cus);

@@ -1,0 +1,12 @@
+Name: 1 1
+Address: 1, 1, 1 11111
+Phone: 111-111-1111
+DOB: 11/11/1111
+ID: 1040
+Pin: 8816
+Checking Account Number: 1001040   Current Checking Account Balance: 0.01$
+Savings Account Number: 2001040   Current Savings Account Balance: 11111.00$
+Credit Account Number: 3001040   Current Credit Account Balance: 0.00$   Credit Score: 11111   Credit Limit: 39218
+###############################################
+
+ No session started yet

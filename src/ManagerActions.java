@@ -1,6 +1,8 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
+import java.util.Scanner;
 /**
  * @author Arturo
  * @version 2.0
@@ -11,13 +13,12 @@ public class ManagerActions{
 	private Utilities handler;
 	private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 	private static ManagerActions manager;
-
 	/**
 	 * default constructor
 	 */
 	private ManagerActions(){
-		handler = Utilities.getInstance();
-		transactionHandler = Transactions.getInstance();
+		this.handler = Utilities.getInstance();
+		this.transactionHandler = Transactions.getInstance();
 	}
 	/**
 	 * gets the only instance of this class
@@ -71,12 +72,28 @@ public class ManagerActions{
 	 * executes the transactions in actions.csv file
 	 * @param customers all customers in the system
 	 * @param items all items in the system
-	 * @param end the ending index which we want to execute to
-	 * @param start  the starting index from where we want to start the execution of the actions
 	 */
-	public void execTransactions(CustomerCollection customers,ItemCollection items,int start, int end,ArrayList<String[]> transactions){
-		for(int i = start;i < end;i++){
-			Object[] transaction = transactions.get(i);
+	public void execTransactions(CustomerCollection customers,ItemCollection items){
+		File transactionFile = new File("src/Read_Only_Files/actions PA5.csv");
+		Scanner transactionsReader = null;
+		try {
+			transactionsReader = new Scanner(transactionFile);
+		}
+		catch (FileNotFoundException e){
+			System.out.println("Error: File actions PA5.csv not found, cannot continue");
+			System.exit(1);
+		}
+		if(!transactionsReader.hasNextLine()){
+			System.out.println("Error: actions PA5.csv is empty");
+			System.exit(1);
+		}
+		//get rid of header
+		transactionsReader.nextLine();
+		//execute the transactions as we read from the file
+		while(transactionsReader.hasNextLine()){
+			//while reading from the file I add the array containing the information of the transactions
+
+			Object[] transaction = transactionsReader.nextLine().split(",");
 			//generate key based on the name
 			String key = handler.generateKey(transaction[0].toString(),transaction[1].toString());
 			//check if the customer exists within the hashmap
@@ -145,7 +162,7 @@ public class ManagerActions{
 		}
 		//try the deposit
 		try{
-			transactionHandler.userDeposit(depositDestination,transaction[6].toString(),Double.parseDouble(transaction[7].toString()));
+			transactionHandler.userDeposit(depositDestination,transaction[6].toString(),Double.parseDouble(transaction[7].toString()),0);
 		}catch (TransactionException eDep){
 			System.out.println(eDep.getMessage());
 			return;
@@ -175,7 +192,7 @@ public class ManagerActions{
 		//see if the transaction was successful
 		//if not then just return from the method
 		try{
-			transactionHandler.transactionToOther(cus,customerToPay,transaction[2].toString(),transaction[6].toString(),Double.parseDouble(transaction[7].toString()));
+			transactionHandler.transactionToOther(cus,customerToPay,transaction[2].toString(),transaction[6].toString(),Double.parseDouble(transaction[7].toString()),0);
 		}catch (TransactionException ePay){
 			System.out.println(ePay.getMessage());
 			return;
@@ -211,7 +228,7 @@ public class ManagerActions{
 		String accType = transaction[2].toString();
 		// the method updates the customer info
 		try{
-			transactionHandler.buyFromMinerMall(cus,accType,item.getPrice());
+			transactionHandler.buyFromMinerMall(cus,accType,item.getPrice(),0);
 		}catch (TransactionException eBuy){
 			System.out.println(eBuy.getMessage());
 			return;

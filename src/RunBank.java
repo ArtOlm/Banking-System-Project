@@ -7,13 +7,10 @@
  * Honesty statement: I did not receive any help from anyone.
  */
 import java.util.Scanner;
-
-
 /**
  * @author Arturo Olmos
  *this is the class where the main method runs, it only handles a little of the user interface
  */
-
 public class RunBank{
 	/**
 	 * main method for the bank
@@ -22,8 +19,8 @@ public class RunBank{
 	static final String MANAGERPIN = "0000";
 	public static void main(String[] args){
 		//populates the main data structures
-		CustomerCollection customers = new CustomerCollection(Utilities.getInstance().populateCustomers());
-		ItemCollection items = new ItemCollection(Utilities.getInstance().populateItems());
+		CustomerCollection customers = new CustomerCollection();
+		ItemCollection items = new ItemCollection();
 		//object that handles the user input
 		Scanner userInput = new Scanner(System.in);
 		//handles the menus depending on the user
@@ -71,7 +68,6 @@ public class RunBank{
 							et.printStackTrace();
 						}
 					}
-
 				}
 				System.out.println("################################################################################");
 				alreadyExec = true;
@@ -168,7 +164,6 @@ public class RunBank{
 							e.printStackTrace();
 						}
 					}
-
 				}
 				System.out.println("################################################################################");
 				alreadyExec = true;

@@ -15,9 +15,4 @@ public interface Iterator {
      * @return an object of the Collection
      */
     public Object next();
-
-    /**
-     * resets the Iterator to reuse
-     */
-    public void reset();
 }

@@ -44,11 +44,5 @@ public class ItemCollectionIterator implements Iterator{
         return temp;
     }
 
-    /**
-     * resets the iterator for reuse
-     */
-    public void reset(){
-        pos = 0;
-    }
 
 }

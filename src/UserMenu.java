@@ -1,3 +1,5 @@
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -8,15 +10,12 @@ import java.util.*;
  * Class is used to handle the user menu
  */
 public class UserMenu extends BankMenu{
-    //item iterator only for this class since it is the only that iterates over hash map
-    private ItemCollectionIterator itemCollectionIterator;
     //string pointer user to log the transaction
     private String transactionLog = "";
     //format to the date
     final private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-    
-    Customer userAccount;
-
+    final private DecimalFormat df = new DecimalFormat("#.##");
+    private Customer userAccount;
     /**
      * crates a complete user menu
      * @param scnr user input
@@ -25,7 +24,7 @@ public class UserMenu extends BankMenu{
      */
     public UserMenu(Scanner scnr,CustomerCollection customers,ItemCollection items){
         super(scnr,customers,items);
-        this.itemCollectionIterator = super.getItems().createIterator();
+        df.setRoundingMode(RoundingMode.DOWN);
     }
     /**
      * this helps handle the customer interface
@@ -88,7 +87,16 @@ public class UserMenu extends BankMenu{
                                 accType = super.getUserInput().nextLine();
                             }
                             //let user know of success
-                            System.out.printf("%s currently has %.2f$\n", accType,super.getTransactionHandler().checkBalance(userAccount,accType));
+                            try {
+                                String amm = df.format(super.getTransactionHandler().checkBalance(userAccount, accType));
+                                System.out.printf("%s currently has %s$\n", accType,amm);
+                            }catch (Exception iq){
+                                System.out.println(iq.getMessage());
+                                System.out.println("Returning to menu");
+                                System.out.println("################################################################################");
+                                System.out.println("Please choose an option");
+                                continue;
+                            }
                             //log what happened
                             transactionLog = String.format("%s %s inquired their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),accType,time.format(LocalDateTime.now()));
                             super.getMyHandler().logToFile(transactionLog);
@@ -120,7 +128,7 @@ public class UserMenu extends BankMenu{
                                 break;
                             }
                             try {
-                                super.getTransactionHandler().userDeposit(userAccount,accType,deposit);
+                                super.getTransactionHandler().userDeposit(userAccount,accType,deposit,0);
                             }
                             catch(TransactionException eDep){
                                 //Transaction was a failure
@@ -131,10 +139,10 @@ public class UserMenu extends BankMenu{
                                 continue;
                             }
                             //if success then we tell user and log it
-                            transactionLog = String.format("%s %s deposited %.2f$ from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),deposit,accType,time.format(LocalDateTime.now()));
+                            transactionLog = String.format("%s %s deposited %s$ from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),df.format(deposit),accType,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             super.getMyHandler().logToFile(transactionLog);
-                            System.out.printf("The deposit of %.2f$ into %s was a success!\n",deposit,accType);
+                            System.out.printf("The deposit of %s$ into %s was a success!\n",df.format(deposit),accType);
                             break;
                         case 3://transaction between two accounts of the same customer
                             System.out.println("################################################################################");
@@ -183,8 +191,9 @@ public class UserMenu extends BankMenu{
                                 continue;
                             }
                             //if success then we tell user and log it
-                            System.out.printf("The transfer was a success, %.2f$ was transferred from %s to %s\n",transfer,from,to);
-                            transactionLog = String.format("%s %s transferred %.2f$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transfer,from,to,time.format(LocalDateTime.now()));
+                            String transferStr = df.format(transfer);
+                            System.out.printf("The transfer was a success, %s$ was transferred from %s to %s\n",transferStr,from,to);
+                            transactionLog = String.format("%s %s transferred %s$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transferStr,from,to,time.format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             super.getMyHandler().logToFile(transactionLog);
                             break;
@@ -224,8 +233,9 @@ public class UserMenu extends BankMenu{
                                 continue;
                             }
                             //if success then we tell user and log it
-                            transactionLog = String.format("%s %s withdrew %.2f$ from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withdrawl,accType,time.format(LocalDateTime.now()));
-                            System.out.printf("The withdrawl of %.2f$ was a success\n",withdrawl);
+                            String withStr = df.format(withdrawl);
+                            transactionLog = String.format("%s %s withdrew %s$ from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withStr,accType,time.format(LocalDateTime.now()));
+                            System.out.printf("The withdrawl of %s$ was a success\n",withStr);
                             userAccount.addTransaction(transactionLog);
                             super.getMyHandler().logToFile(transactionLog);
                             break;
@@ -303,7 +313,7 @@ public class UserMenu extends BankMenu{
                                 key = super.getMyHandler().generateKey(userToPayFirstName,userToPayLastName);
                                 Customer userToPay = super.getCustomers().get(key);
                                 try{
-                                    super.getTransactionHandler().transactionToOther(userAccount,userToPay,from,to,pay);
+                                    super.getTransactionHandler().transactionToOther(userAccount,userToPay,from,to,pay,0);
                                 }
                                 catch(TransactionException eTransfer){
                                     //there was transaction failure
@@ -313,9 +323,10 @@ public class UserMenu extends BankMenu{
                                     System.out.println("Please choose an option");
                                     continue;
                                 }
+                                String payStr = df.format(pay);
                                 //if success then we tell user and log it
-                                System.out.printf("payment of %.2f$ from %s account to %s %s into their %s account was a success\n",pay,from,userToPay.getFirstName(),userToPay.getLastName(),to);
-                                transactionLog = String.format("%s %s paid %.2f$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),pay,from,userToPay.getFirstName(),userToPay.getLastName(),to,time.format(LocalDateTime.now()));
+                                System.out.printf("payment of %s$ from %s account to %s %s into their %s account was a success\n",payStr,from,userToPay.getFirstName(),userToPay.getLastName(),to);
+                                transactionLog = String.format("%s %s paid %s$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),payStr,from,userToPay.getFirstName(),userToPay.getLastName(),to,time.format(LocalDateTime.now()));
                                 userAccount.addTransaction(transactionLog);
                                 super.getMyHandler().logToFile(transactionLog);
                             }
@@ -372,18 +383,17 @@ public class UserMenu extends BankMenu{
                                         System.out.println("################################################################################");
                                         String line = null;
                                         //keep track of how many items are available
-                                        HashMap<String,Integer> maxCount = new HashMap<>();
-                                        while(this.itemCollectionIterator.hasNext()){
-                                            Item it = this.itemCollectionIterator.next();
-                                            maxCount.put(it.getName(),it.getMax());
+                                        HashMap<Integer,Integer> maxCount = new HashMap<>();
+                                        ItemCollectionIterator iter = this.getItems().createIterator();
+                                        while(iter.hasNext()){
+                                            Item it = iter.next();
+                                            maxCount.put(it.getID(),it.getMax());
                                         }
-                                        //reset to reuse
-                                        this.itemCollectionIterator.reset();
                                         //the total money spent
                                         double total = 0;
                                         while(malMenu) {
                                             //get item user wants
-                                            System.out.println("Enter the ID of the item you would like to add to the cart\n(Enter \"C\" to checkout or \"V\" to view cart or \"R\" to remove an Item from the cart or \"E\" to exit the mall) ");
+                                            System.out.println("Enter the ID of the item you would like to add to the cart\n(Enter \"C\" to checkout or \"V\" to view cart or \"R\" to remove an Item from the cart or \"E\" to stop purchase) ");
                                             int mallID = -1;
                                             line = super.getUserInput().nextLine();
                                             try{
@@ -394,22 +404,35 @@ public class UserMenu extends BankMenu{
                                                     break;
                                                 } else if(line.equalsIgnoreCase("R")){//remove the item from the cart
                                                     System.out.println("################################################################################");
-                                                    System.out.println("What item do you want to remove?(Enter the name)");
+                                                    System.out.println("What item do you want to remove?(Enter the ID)");
                                                     line = super.getUserInput().nextLine();
+                                                    int rid = -1;
+                                                    try{
+                                                        rid = Integer.parseInt(line);
+                                                    }catch (Exception q){
+                                                        System.out.println("Error: not a proper id");
+                                                        System.out.println("################################################################################");
+                                                        continue;
+                                                    }
+                                                    if(rid < 0 || rid > super.getItems().size()){
+                                                        System.out.println("Error: ID out of range");
+                                                        System.out.println("################################################################################");
+                                                        continue;
+                                                    }
                                                     boolean didRemove = false;
                                                     for(int j = 0;j < cart.size();j++){
-                                                        if(cart.get(j).getName().equalsIgnoreCase(line)){
-                                                            cart.remove(j);
+                                                        if(cart.get(j).getID() == rid){
                                                             didRemove = true;
                                                             total -= cart.get(j).getPrice();
+                                                            cart.remove(j);
                                                             break;
                                                         }
                                                     }
                                                     if(!didRemove){
                                                         System.out.println("Item was not found in the cart");
                                                     }else {
-                                                        maxCount.put(line,maxCount.get(line) + 1);
-                                                        System.out.printf("%s was remover from cart\n",line);
+                                                        maxCount.put(rid,maxCount.get(rid) + 1);
+                                                        System.out.printf("Item was removed was remover from cart\n");
                                                     }
                                                     System.out.println("################################################################################");
                                                     continue;
@@ -442,7 +465,7 @@ public class UserMenu extends BankMenu{
                                             }
                                             //check if the item is available
                                             Item itemAdded = super.getItems().get(mallID);
-                                            if(maxCount.get(itemAdded.getName()) < 1){
+                                            if(maxCount.get(itemAdded.getID()) < 1){
                                                 System.out.println("Error: Item is no longer available");
                                                 System.out.println("################################################################################");
                                                 continue;
@@ -456,8 +479,8 @@ public class UserMenu extends BankMenu{
                                                     System.out.println("Please enter a correct value");
                                                     continue;
                                                 }
-                                                if(numIt < 0 || numIt > maxCount.get(itemAdded.getName())){
-                                                    System.out.printf("Error: Not within the amount range, there is only %d %s in stock\n",maxCount.get(itemAdded.getName()),itemAdded.getName());
+                                                if(numIt < 0 || numIt > maxCount.get(itemAdded.getID())){
+                                                    System.out.printf("Error: Not within the amount range, there is only %d %s in stock\n",maxCount.get(itemAdded.getID()),itemAdded.getName());
                                                     System.out.println("################################################################################");
                                                     System.out.println("Enter an amount or 0 to not add any");
                                                     continue;
@@ -470,7 +493,7 @@ public class UserMenu extends BankMenu{
                                             for(int j = 0;j < numIt;j++) {
                                                 totalPerItem += itemAdded.getPrice();
                                                 cart.add(itemAdded);
-                                                maxCount.put(itemAdded.getName(), maxCount.get(itemAdded.getName()) - 1);
+                                                maxCount.put(itemAdded.getID(), maxCount.get(itemAdded.getID()) - 1);
                                             }
                                             if(numIt == 0){
                                                 System.out.println("No items added to cart");
@@ -479,7 +502,7 @@ public class UserMenu extends BankMenu{
                                                 total += totalPerItem;
                                                 System.out.printf("Added %d %s to cart for a total of %.2f$\n",numIt,itemAdded.getName(),totalPerItem);
                                                 System.out.printf("Current Total is: %.2f$\n",total);
-                                                System.out.printf("There are currently %d %s left in stock\n",maxCount.get(itemAdded.getName()),itemAdded.getName());
+                                                System.out.printf("There are currently %d %s left in stock\n",maxCount.get(itemAdded.getID()),itemAdded.getName());
                                                 System.out.println("################################################################################");
                                             }
 
@@ -499,18 +522,19 @@ public class UserMenu extends BankMenu{
 
                                             //check if they can buy all the stuff in the cart
                                             try {
-                                                super.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total);
+                                                super.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total,0);
                                             } catch (Exception me) {
                                                 System.out.println(me.getMessage());
                                                 break;
                                             }
                                             //update the users info and tell them they succeeded in making the purchase
-                                            System.out.printf("Your purchase of %.2f$ at Miners mall was a success!\n", total);
+                                            String totalStr = df.format(total);
+                                            System.out.printf("Your purchase of %s$ at Miners mall was a success!\n", totalStr);
                                             System.out.println("Thank you!");
                                             for (int i = 0; i < cart.size(); i++) {
                                                 Item t = cart.get(i);
                                                 //update the limit on the items
-                                                super.getItems().get(t.getID()).setMax(maxCount.get(t.getName()));
+                                                super.getItems().get(t.getID()).setMax(maxCount.get(t.getID()));
                                                 //log everything they bought if successful
                                                 transactionLog = String.format("%s %s bought %s for %.2f$ using %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), t.getName(), t.getPrice(), accountType,time.format(LocalDateTime.now()));
                                                 super.getMyHandler().logToFile(transactionLog);
@@ -578,12 +602,11 @@ public class UserMenu extends BankMenu{
      */
     public void userCreation(){
         //create hashmaps to check all the pins
+        CustomerCollectionIterator iter = this.getCustomers().createIterator();
         Set<String> pins = new HashSet<>();
-        while(super.getCustomerIterator().hasNext()){
-            pins.add(super.getCustomerIterator().next().getPin());
+        while(iter.hasNext()){
+            pins.add(iter.next().getPin());
         }
-        //ensure object starts at 0 again for future calls
-        super.getCustomerIterator().reset();
         //get the user information needed to create account
         System.out.println("Please enter the following information");
         System.out.println("First Name: ");
@@ -717,7 +740,7 @@ public class UserMenu extends BankMenu{
             break;
         }
         //gets the next biggest id
-        int id = super.getMyHandler().getMaxCustomerIDX();
+        int id = super.getCustomers().getMaxCustomerIDX();
         int checkNum = id + 1000000;
         int saveNum = id + 2000000;
         int creditNum = id + 3000000;
@@ -731,12 +754,17 @@ public class UserMenu extends BankMenu{
         cr.generateCredit(score);
         //generate key for user
         String key = super.getMyHandler().generateKey(fName,lName);
+        if(super.getCustomers().hasKey(key)){
+            System.out.println("Error: customer with the same name exists");
+            return;
+        }
         //generate random pin
         String pin = generatePin(pins);
         Customer cus = new Customer(fName,lName,add,city,state,zip,phoneNum,dob,id,ch,save,cr,pin);
+
         super.getCustomers().add(key,cus);
         //add 1 to last max id for next user created
-        super.getMyHandler().incrementMaxCustomerIDX();
+        super.getCustomers().incrementMaxCustomerIDX();
         //let the user know of their credentials
         System.out.println("################################################################################");
         System.out.println("The account was successfully created!");
@@ -803,47 +831,18 @@ public class UserMenu extends BankMenu{
         return super.getMyHandler().strNWS(userAccount.getFirstName()).equals(super.getMyHandler().strNWS(userToPayFirstName)) && super.getMyHandler().strNWS(userAccount.getLastName()).equals(super.getMyHandler().strNWS(userToPayLastName)) && userAccount.getID() == userToPayID;
     }
     /**
-     * @param id user id
-     * @param fName first name of user
-     * @param lName last name of user
-     * @param userCheckNum user checking account number
-     * @param userSaveNum user savings account number
-     * @param userCreditNum user credit account number
-     * @return returns true if matching
-     * ensures use logging in exists
-     */
-    private boolean credentialValid(int id, String fName, String lName, String userCheckNum, String userSaveNum, String userCreditNum){
-        String key = super.getMyHandler().generateKey(fName,lName);
-        //check the customer exists
-        if(id <= 0 || id > super.getCustomers().size() || !super.getCustomers().hasKey(key)){
-            return false;
-        }
-        else{
-            //get the customer
-            Customer user = super.getCustomers().get(key);
-            //ensure that there are no wired strings the are split apart
-            if(user.getFirstName().split("\\s+").length != fName.split("\\s+").length || user.getLastName().split("\\s+").length != lName.split("\\s+").length || user.getSave().getAccNum().split("\\s+").length != userSaveNum.split("\\s+").length || user.getCredit().getAccNum().split("\\s+").length != userCreditNum.split("\\s+").length || user.getCheck().getAccNum().split("\\s+").length != userCheckNum.split("\\s+").length){
-                System.out.println("no");
-                return false;
-            }
-            //return true if info matches
-            return  user.getID() == id && user.getCheck().getAccNum().equals(super.getMyHandler().strNWS(userCheckNum)) && user.getSave().getAccNum().equals(super.getMyHandler().strNWS(userSaveNum)) && user.getCredit().getAccNum().equals(super.getMyHandler().strNWS(userCreditNum));
-        }
-    }
-    /**
      * prints all the items found in miner mall
      */
     private void printItemMenu(){
         System.out.println("################################################################################");
-        while (this.itemCollectionIterator.hasNext()){
+        ItemCollectionIterator iter = this.getItems().createIterator();
+        while (iter.hasNext()){
             try {
-                System.out.println(this.itemCollectionIterator.next());
+                System.out.println(iter.next());
             }catch (IndexOutOfBoundsException e){
                 System.out.println(e.getMessage());
             }
         }
-        //reset so that iterator can be reused
-        this.itemCollectionIterator.reset();
         System.out.println("################################################################################");
     }
     /**

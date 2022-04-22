@@ -40,10 +40,4 @@ public class CustomerCollectionIterator implements Iterator{
         pos++;
         return cus;
     }
-    /**
-     * resets the iterator for reuse
-     */
-    public void reset(){
-        this.pos = 0;
-    }
 }

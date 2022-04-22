@@ -1,4 +1,7 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * @author Arturo Olmos
@@ -10,10 +13,10 @@ public class ItemCollection implements Collections{
     private HashMap<Integer,Item> items;
     /**
      * Constructor-used to set the data structure
-     * @param items HashMap used for the collection
      */
-    public ItemCollection(HashMap<Integer,Item> items){
-        this.items = items;
+    public ItemCollection(){
+        this.items = new HashMap<>();
+        populateItems();
     }
 
     /**
@@ -56,5 +59,54 @@ public class ItemCollection implements Collections{
      */
     public ItemCollectionIterator createIterator(){
         return new ItemCollectionIterator(this.items);
+    }
+    /**
+     * reads Miners Mall.csv and populates HashMap of Item objects
+     */
+    private void populateItems(){
+        //File object so I can read with Scanner
+        File customerInfoFile = new File("src/Read_Only_Files/Miner Mall 5.csv");
+        Scanner fileReader = null;
+        try{
+            fileReader = new Scanner(customerInfoFile);
+        }
+        catch (FileNotFoundException e){
+            System.out.println("Error: Cannot find src/Read_Only_Files/Miner Mall 5.csv");
+            System.exit(1);
+        }
+        //assuming it has a header
+        //based on the header set up indexes for attributes of the item
+        String[] header = fileReader.nextLine().split(",");
+        int[] headerIndexes = new int[header.length];
+        //set up indexes so that file can be read in any order
+        for(int i = 0;i < header.length;i++) {
+            if (header[i].equals("ID")) {
+                headerIndexes[0] = i;
+            } else if (header[i].equals("Item")) {
+                headerIndexes[1] = i;
+            } else if (header[i].equals("Price")) {
+                headerIndexes[2] = i;
+            } else if (header[i].equals("Max")) {
+                headerIndexes[3] = i;
+            }
+        }
+        while(fileReader.hasNextLine()){
+            createItem(fileReader.nextLine(),headerIndexes);//adds Item object to the users list
+        }
+        fileReader.close();
+    }
+    /**
+     *creates an Item object based on the info
+     * @param itemInfo info from a csv file which is split and allocated accordingly
+     */
+    private void createItem(String itemInfo,int[] indexes) {
+        //split the info
+        String[] info = itemInfo.split(",");
+        double price = Double.parseDouble(info[indexes[2]]);
+        String name = info[indexes[1]];
+        int max = Integer.parseInt(info[indexes[3]]);
+        int id = Integer.parseInt(info[indexes[0]]);
+        //add item
+        this.items.put(id,new Item(id,name,price,max));
     }
 }

@@ -9,13 +9,13 @@ Savings Account Number: 2000067   Current Savings Account Balance: 24648.35$
 Credit Account Number: 3000067   Current Credit Account Balance: 3080.56$   Credit Score: 793   Credit Limit: 14000
 ###############################################
 
-Session Start: 2022/04/16 20:05:11
+Session Start: 2022/04/22 17:07:00
 Starting Checking Balance: 1969.17$
 Starting Savings Balance: 24648.35$
 Starting Credit Balance: 3080.56$
 
 ###############################################
-Session End: 2022/04/16 20:08:20
+Session End: 2022/04/22 17:09:37
 Ending Checking Balance: 1823.07$
 Ending Savings Balance: 24648.35$
 Ending Credit Balance: 3080.56$
@@ -25,65 +25,65 @@ Total money spent at Miners Mall: 146.10$
 ###############################################
 Account Activity
 ################
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:07:41
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
-Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using Checking account at 2022/04/16 20:08:03
+Arturo Olmos bought Grande Vanilla Iced Latte for 4.87$ using checking account at 2022/04/22 17:09:30
 
 
 ###############################################

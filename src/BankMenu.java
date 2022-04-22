@@ -17,7 +17,6 @@ public abstract class BankMenu {
     //map containing the items
     private ItemCollection items;
     //iterates over the customer iterator
-    private CustomerCollectionIterator customerIterator;
     /**
      * Constructor-sets the fields for the menu
      * @param userInput Scanner object used to take in the user input
@@ -30,7 +29,6 @@ public abstract class BankMenu {
         this.userInput = userInput;
         this.customers = customers;
         this.items = items;
-        this.customerIterator = this.customers.createIterator();
     }
     /**
      * displays the menu
@@ -71,11 +69,5 @@ public abstract class BankMenu {
     public ItemCollection getItems() {
         return items;
     }
-    /**
-     * gets a referance to the CustomerCollectionIterator of the menu
-     * @return retusn a CustomerCollectionIterator object
-     */
-    public CustomerCollectionIterator getCustomerIterator() {
-        return customerIterator;
-    }
+
 }
