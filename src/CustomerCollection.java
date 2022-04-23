@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -11,16 +10,14 @@ import java.util.Scanner;
 public class CustomerCollection implements Collections {
     //data structure used for the collection
     private HashMap<String,Customer> customers;
-    private Utilities handler;
     private int maxCustomerIDX;
     /**
      * Constructor- sets the data structure
      */
     public CustomerCollection(){
         maxCustomerIDX = 0;
-        this.handler = Utilities.getInstance();
         this.customers = new HashMap<>();
-        populateCustomers();
+        populate();
     }
     /**
      * adds a Customer objects to the collection
@@ -63,9 +60,8 @@ public class CustomerCollection implements Collections {
     }
     /**
      * read Bank Customers 4.csv and populates an HashMap of Customers
-     * @return HashMap containing Customer Objects
      */
-    private void populateCustomers(){
+    public void populate(){
         //File object so I can read with Scanner
         File customerInfoFile = new File("src/Read_Only_Files/Bank Customers 5.csv");
         Scanner fileReader = null;
@@ -159,7 +155,7 @@ public class CustomerCollection implements Collections {
         if(this.getMaxCustomerIDX() < id){
             this.setMaxCustomerIDX(id);
         }
-        String key = handler.generateKey(fName,lName);
+        String key = this.generateKey(fName,lName);
         //add the customer to the hash map
         this.customers.put(key,cus);
     }
@@ -183,5 +179,62 @@ public class CustomerCollection implements Collections {
      */
     public void incrementMaxCustomerIDX(){
         this.maxCustomerIDX++;
+    }
+    /**
+     * updates the Bank Customers.csv file
+     */
+    public void updateCSVFile(){
+        HashMap<Integer,Customer> integerMapped = new HashMap<>();
+        CustomerCollectionIterator customerCollectionIterator = this.createIterator();
+        while (customerCollectionIterator.hasNext()){
+            Customer cus = customerCollectionIterator.next();
+            integerMapped.put(cus.getID(),cus);
+        }
+        while(true){
+            try{
+                BufferedWriter updateFileInfo =  new BufferedWriter(new FileWriter("src/Generated_Files/Updated Customers Sheet.csv",false));
+                //header of the file to keep data organized
+                //we rewrite the file based on updates
+                updateFileInfo.write("ID,Pin,First Name,Last Name,Address,City,State,Zip,Phone Number,Date of Birth,Checking Account Number,Checking Balance,Savings Account Number,Savings Balance,Credit Account Number,Credit Balance,Credit Score,Credit Limit\n");
+                for(int i = 1;i < integerMapped.size() + 1;i++){
+                    Customer user = integerMapped.get(i);
+                    updateFileInfo.write(user.getID()+","+ user.getPin()+","+user.getFirstName()+","+user.getLastName()+","+user.getAddress()+","+user.getCity()+","+user.getState()+","+user.getZipCode()+","+user.getPhoneNum()+","+user.getDOB() + "," + user.getCheck().getAccNum() + "," + user.getCheck().getBalance() + "," + user.getSave().getAccNum() + "," + user.getSave().getBalance() + "," + user.getCredit().getAccNum() + "," + user.getCredit().getBalance()+ "," + user.getCredit().getScore()+ "," + user.getCredit().getLimit() + "\n");
+                }
+                updateFileInfo.close();
+            } catch (IOException e){
+                //if the file is open then we let user know to close it and give them some time to close it
+                System.out.println("ERROR: Please close the file src/Generated_Files/Updated Customers Sheet.csv");
+                System.out.println("Data might not have been updated!");
+                System.out.println("We will resume in three seconds, please close by then");
+                System.out.println("-------------------------------------------------");
+                try {
+                    Thread.sleep(3000);
+                }catch (InterruptedException ex){
+                    //honestly nothing should happen
+                    ex.printStackTrace();
+                }
+                continue;
+            }
+            break;
+        }
+    }
+    /**
+     * generates a key for the hash map
+     * @param fName the first name of the user
+     * @param lName the last name of the user
+     * @return returns a generated string based on the users first and last name
+     */
+    public String generateKey(String fName,String lName){
+        String nwsFName = "";
+        String nwsLName = "";
+        String[] fnameNWS = fName.split("\\s+");
+        for(int i = 0;i < fnameNWS.length;i++){
+            nwsFName += fnameNWS[i];
+        }
+        String[] lnameNWS = lName.split("\\s+");
+        for(int i = 0;i < lnameNWS.length;i++){
+            nwsLName += lnameNWS[i];
+        }
+        return nwsFName + nwsLName;
     }
 }

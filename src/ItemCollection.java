@@ -16,7 +16,7 @@ public class ItemCollection implements Collections{
      */
     public ItemCollection(){
         this.items = new HashMap<>();
-        populateItems();
+        populate();
     }
 
     /**
@@ -63,7 +63,7 @@ public class ItemCollection implements Collections{
     /**
      * reads Miners Mall.csv and populates HashMap of Item objects
      */
-    private void populateItems(){
+    public void populate(){
         //File object so I can read with Scanner
         File customerInfoFile = new File("src/Read_Only_Files/Miner Mall 5.csv");
         Scanner fileReader = null;

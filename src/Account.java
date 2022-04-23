@@ -3,18 +3,15 @@
  * @version 1.0
  * abstracts class of an account
  */
-
 public abstract class Account{
 	private double balance;
 	private String accNum;
-
 	/**
 	 * default constructor
 	 */
 	public Account(){
 
 	}
-
 	/**
 	 *creates an account
 	 * @param num the account number
@@ -23,7 +20,6 @@ public abstract class Account{
 	public Account(String num,double bal){
 		this.balance = bal;
 		this.accNum = num;
-
 	}
 
 	/**

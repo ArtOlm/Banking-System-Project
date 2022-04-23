@@ -36,4 +36,9 @@ public interface Collections {
      * @return returns the size of the Collection
      */
     public int size();
+
+    /**
+     * populates the Collection with a file provided
+     */
+    public void populate();
 }

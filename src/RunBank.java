@@ -23,9 +23,9 @@ public class RunBank{
 		ItemCollection items = new ItemCollection();
 		//object that handles the user input
 		Scanner userInput = new Scanner(System.in);
-		//handles the menus depending on the user
+		//menus for each user, manager/customer
 		ManagerMenu managerMenu = new ManagerMenu(userInput,customers,items);
-		UserMenu userMenu = new UserMenu(userInput,customers,items);
+		CustomerMenu customerMenu = new CustomerMenu(userInput,customers,items);
 		//handles the user option
 		int option1;
 		String optionInString = null;
@@ -80,16 +80,21 @@ public class RunBank{
 					System.out.println("################################################################################");
 					System.out.print("Please enter your pin: ");
 					String pinStr = userInput.nextLine();
+					if(pinStr.length() != 4){
+						System.out.println("Error: Pin is entered in the following format ####");
+						attempts--;
+						continue;
+					}
 					//ensure the pin is correct
 					try {
 						Integer.parseInt(pinStr);
 					} catch (Exception ex) {
-						System.out.println("Error: Not a valid pin");
+						System.out.println("Error: Pin is entered in the following format ####");
 						attempts--;
 						continue;
 					}
 					if ((pinStr.length() != 4)) {
-						System.out.println("Error: Not a valid");
+						System.out.println("Error: Pin is entered in the following format ####");
 						attempts--;
 						continue;
 					}
@@ -97,7 +102,7 @@ public class RunBank{
 					System.out.println("################################################################################");
 					if(pinStr.equals(MANAGERPIN)){
 						//manager pin was entered
-						managerMenu.display();
+						managerMenu.display(null);
 					}else {
 						//search for the customer if anything else
 						CustomerCollectionIterator cusIter = customers.createIterator();
@@ -106,9 +111,7 @@ public class RunBank{
 							Customer cus = cusIter.next();
 							if (cus.getPin().equals(pinStr)) {
 								userFound = true;
-								//a customer was found
-								userMenu.setUser(cus);
-								userMenu.display();
+								customerMenu.display(cus);
 								break;
 							}
 						}
@@ -140,7 +143,7 @@ public class RunBank{
 				break;
 			case 2://menu for creating user
 					System.out.println("################################################################################");
-					userMenu.userCreation();
+					customerMenu.userCreation();
 					System.out.println("################################################################################");
 				break;
 			default:
@@ -170,6 +173,6 @@ public class RunBank{
 			}
 		}
 		// this line updates and generates the new file with updated information when user exits the system
-		Utilities.getInstance().updateCustomerInfo(customers);
+		customers.updateCSVFile();
 	}
 }

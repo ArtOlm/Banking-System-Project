@@ -1,3 +1,8 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 /**
@@ -8,14 +13,14 @@ import java.util.Scanner;
 public abstract class BankMenu {
     //handles transactions
     private Transactions transactionHandler;
-    //has useful methods which are related to the file information
-    private Utilities myHandler;
     //scanner objects used to take user input
     private Scanner userInput;
     //map containing the customers
     private CustomerCollection customers;
     //map containing the items
     private ItemCollection items;
+
+    private DateTimeFormatter time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
     //iterates over the customer iterator
     /**
      * Constructor-sets the fields for the menu
@@ -25,7 +30,6 @@ public abstract class BankMenu {
      */
     public BankMenu(Scanner userInput,CustomerCollection customers,ItemCollection items){
         this.transactionHandler = Transactions.getInstance();
-        this.myHandler = Utilities.getInstance();
         this.userInput = userInput;
         this.customers = customers;
         this.items = items;
@@ -33,20 +37,13 @@ public abstract class BankMenu {
     /**
      * displays the menu
      */
-    public abstract void display();
+    public abstract void display(Customer userAccount);
     /**
      * get a reference to the single Transactions object
      * @return returns Transactions object
      */
     public Transactions getTransactionHandler() {
         return transactionHandler;
-    }
-    /**
-     * gets a reference to the single Utilities object
-     * @return returns Utilities object
-     */
-    public Utilities getMyHandler() {
-        return myHandler;
     }
     /**
      * get the reference to a Scanner object used to take in user input
@@ -68,6 +65,49 @@ public abstract class BankMenu {
      */
     public ItemCollection getItems() {
         return items;
+    }
+    /**
+     * returns a string without any white spaces
+     * @param str1 string that will be edited
+     * @return
+     */
+    public String strNWS(String str1){
+        String nwsName = "";
+        String[] fnameNWS = str1.split("\\s+");
+        for(int i = 0;i < fnameNWS.length;i++){
+            nwsName += fnameNWS[i];
+        }
+        return nwsName;
+    }
+    /**
+     *logs info to the log.txt file
+     * @param stringToLog a string that will be logged onto a file called Log.txt
+     */
+    //logs a formatted string to a file
+    public void logToFile(String stringToLog){
+        //Initialize File object, this helps in using the identifier within the try and catch scopes
+        File findFile = new File("src/Generated_Files/Log.txt");
+        try{
+            if(findFile.exists()){//look for file and append new transaction
+                //write to file
+                BufferedWriter logger = new BufferedWriter(new FileWriter("src/Generated_Files/Log.txt",true));
+                logger.write(stringToLog);
+                logger.close();
+            } else{//if file not found the create it and write to it
+                BufferedWriter logger = new BufferedWriter(new FileWriter("src/Generated_Files/Log.txt"));
+                logger.write(stringToLog);
+                logger.close();
+            }
+        }
+        catch(IOException e){
+            System.out.println("Something went wrong");
+            e.printStackTrace();
+            //exits with 1 to let it be known the code exited with error
+            System.exit(1);
+        }
+    }
+    public DateTimeFormatter getTime() {
+        return time;
     }
 
 }
