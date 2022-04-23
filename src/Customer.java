@@ -27,13 +27,10 @@ public class Customer extends Person{
 	private double endSaveBal;
 	private double endCreditBal;
 	private String pin;
-	private Lock cusLock;
-
 	/**
 	 * default
 	 */
 	public Customer(){
-		this.cusLock = new ReentrantLock();
 	}
 	/**
 	 * takes in all parameters needed to create a Customer
@@ -60,7 +57,6 @@ public class Customer extends Person{
 		itemsBought = new HashMap<String,Integer>();
 		logTransactions = new ArrayList<String>();
 		this.pin = pin;
-		this.cusLock = new ReentrantLock();
 	}
 	/**
 	 * gets start balance when user first logs in
@@ -74,9 +70,7 @@ public class Customer extends Person{
 	 * @param startCheckBal the starting balance of checking
 	 */
 	public void setStartCheckBal(double startCheckBal) {
-		this.cusLock.lock();
 		this.startCheckBal = startCheckBal;
-		this.cusLock.unlock();
 	}
 	/**
 	 * gets start balance when user logs in
@@ -90,9 +84,7 @@ public class Customer extends Person{
 	 * @param startSaveBal the starting balance of the savings account
 	 */
 	public void setStartSaveBal(double startSaveBal) {
-		this.cusLock.lock();
 		this.startSaveBal = startSaveBal;
-		this.cusLock.unlock();
 	}
 	/**
 	 * gets start balance when user logs in
@@ -106,45 +98,35 @@ public class Customer extends Person{
 	 * @param startCreditBal the stating credit balance
 	 */
 	public void setStartCreditBal(double startCreditBal) {
-		this.cusLock.lock();
 		this.startCreditBal = startCreditBal;
-		this.cusLock.unlock();
 	}
 	/**
 	 * sets the id
 	 * @param id sets id attribute
 	 */
 	public void setID(int id){
-		this.cusLock.lock();
 		this.id = id;
-		this.cusLock.unlock();
 	}
 	/**
 	 * sets the checking account
 	 * @param c sets Checking attribute
 	 */
 	public void setCheck(Checking c){
-		this.cusLock.lock();
 		this.cAcc = c;
-		this.cusLock.unlock();
 	}
 	/**
 	 * sets the savings account
 	 * @param s sets Savings attribute
 	 */
 	public void setSave(Savings s){
-		this.cusLock.lock();
 		this.sAcc = s;
-		this.cusLock.unlock();
 	}
 	/**
 	 * sets the credit account
 	 * @param cr sets the Credit attribute
 	 */
 	public void setCredit(Credit cr){
-		this.cusLock.lock();
 		this.crAcc = cr;
-		this.cusLock.lock();
 	}
 	/**
 	 * gets the id
@@ -189,64 +171,61 @@ public class Customer extends Person{
 	 * @param name the name of a bought Item
 	 */
 	public void addItemBought(String name){//keeps track of items bought
-		    this.cusLock.lock();
+		    
 			//maps items and the number of purchases made
 			if(itemsBought.containsKey(name)){
 				int currentValue = itemsBought.get(name).intValue();
 				currentValue++;
 				itemsBought.remove(name,itemsBought.get(name));
 				itemsBought.put(name,(Integer)currentValue);
-				this.cusLock.unlock();
+				
 				return;
 			}
 			//for new items just add to the map
 			itemsBought.put(name,(Integer)1);
-			this.cusLock.unlock();
 	}
 	/**
 	 * prints everything the customer has purchased
 	 */
-	public void printItemsBought(){
+	public String getAllItemsBought(){
 		if(itemsBought.size() > 0){
+			String allItems = "";
 			Set<String> keySet = itemsBought.keySet();
 			Object[] itemNameArray = keySet.toArray();
 			for(int i =0;i < itemNameArray.length;i++){
 				String name = (String)itemNameArray[i];
-				System.out.printf("customer bought %d %s\n",itemsBought.get(name).intValue(),name);
+				allItems += String.format("customer bought %d %s\n",itemsBought.get(name).intValue(),name);
 			}
-			return;
+			return allItems;
 		}
-		System.out.println("No items bought yet");
+		return "No items bought yet";
 	}
 	/**
 	 * adds a string containing the name and time of a purchase
 	 * @param timeBought the time of purchase of an Item
 	 */
 	public void addTransaction(String timeBought){
-		this.cusLock.lock();
 		logTransactions.add(timeBought);
-		this.cusLock.unlock();
 	}
 	/**
 	 * prints the name and time a purchase was made by the customer
 	 */
-	public void printTransactions(){
+	public String getAllTransactions(){
 		if(logTransactions.size() == 0){
-			System.out.println("No items bought yet");
-			return;
+			return "No items bought yet";
 		}
+		String transactions = "";
 		for(int i  = 0;i < logTransactions.size();i++){
-			System.out.println(logTransactions.get(i));
+			transactions += logTransactions.get(i) + "\n";
 		}
+		return transactions;
 	}
 	/**
 	 * sets the total money spent by a customer at miners mall
 	 * @param totalMoneySpent the total money spent by customer in miners mall
 	 */
 	public void setTotalMoneySpent(double totalMoneySpent){
-		this.cusLock.lock();
 		this.totalMoneySpent = totalMoneySpent;
-		this.cusLock.unlock();
 	}
 	/**
 	 * gets total money spent at miners mall
@@ -267,9 +246,7 @@ public class Customer extends Person{
 	 * @param sessionStart formatted string as the time
 	 */
 	public void setSessionStart(String sessionStart) {
-		this.cusLock.lock();
 		this.sessionStart = sessionStart;
-		this.cusLock.unlock();
 	}
 	/**
 	 * return the end of the session for this user objects
@@ -283,9 +260,7 @@ public class Customer extends Person{
 	 * @param sesstionEnd time when session ends
 	 */
 	public void setSesstionEnd(String sesstionEnd) {
-		this.cusLock.lock();
 		this.sesstionEnd = sesstionEnd;
-		this.cusLock.unlock();
 	}
 	/**
 	 * returns all transactions of the user
@@ -306,9 +281,7 @@ public class Customer extends Person{
 	 * @param endCheckBal sets the ending checking balance of a session
 	 */
 	public void setEndCheckBal(double endCheckBal) {
-		this.cusLock.lock();
 		this.endCheckBal = endCheckBal;
-		this.cusLock.unlock();
 	}
 	/**
 	 * gets the ending balance of the session
@@ -322,9 +295,7 @@ public class Customer extends Person{
 	 * @param endSaveBal sets the ending savings balance of a session
 	 */
 	public void setEndSaveBal(double endSaveBal) {
-		this.cusLock.lock();
 		this.endSaveBal = endSaveBal;
-		this.cusLock.unlock();
 	}
 	/**
 	 * gets the ending balance of the session
@@ -338,11 +309,8 @@ public class Customer extends Person{
 	 * @param endCreditBal the ending balance of credit
 	 */
 	public void setEndCreditBal(double endCreditBal) {
-		this.cusLock.lock();
 		this.endCreditBal = endCreditBal;
-		this.cusLock.unlock();
 	}
-
 	/**
 	 * returns the users pin
 	 * @return user pin
