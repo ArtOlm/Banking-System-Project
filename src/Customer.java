@@ -184,6 +184,7 @@ public class Customer extends Person{
 	}
 	/**
 	 * prints everything the customer has purchased
+	 * @return returns a string of all items bought
 	 */
 	public String getAllItemsBought(){
 		if(itemsBought.size() > 0){
@@ -207,6 +208,7 @@ public class Customer extends Person{
 	}
 	/**
 	 * prints the name and time a purchase was made by the customer
+	 * @return returns a string containing all transactions
 	 */
 	public String getAllTransactions(){
 		if(logTransactions.size() == 0){

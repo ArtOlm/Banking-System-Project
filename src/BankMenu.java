@@ -36,8 +36,11 @@ public abstract class BankMenu {
     }
     /**
      * displays the menu
+     * @param userAccount the current user for the menu
      */
-    public abstract void display(Customer userAccount);
+    public void display(Customer userAccount){
+        System.out.println("Menu");
+    }
     /**
      * get a reference to the single Transactions object
      * @return returns Transactions object
@@ -69,7 +72,7 @@ public abstract class BankMenu {
     /**
      * returns a string without any white spaces
      * @param str1 string that will be edited
-     * @return
+     * @return returns a string with no white space
      */
     public String strNWS(String str1){
         String nwsName = "";
@@ -106,6 +109,11 @@ public abstract class BankMenu {
             System.exit(1);
         }
     }
+
+    /**
+     * is used to format the time
+     * @return returns a format for the time
+     */
     public DateTimeFormatter getTime() {
         return time;
     }

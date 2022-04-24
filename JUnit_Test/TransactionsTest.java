@@ -13,7 +13,7 @@ class TransactionsTest {
         cust.getCheck().setBalance(100);
         //user enters a correct value
         try {
-            transactionHandler.userDeposit(cust, "Checking", 30,0);
+            transactionHandler.userDeposit(cust, "Checking", 30);
         }catch (TransactionException e){
                 testResult = false;
         }
@@ -26,7 +26,7 @@ class TransactionsTest {
         cust.setCheck(new Checking());
         //user enters a bad value
         try {
-            transactionHandler.userDeposit(cust,"Savings",-100,0);
+            transactionHandler.userDeposit(cust,"Savings",-100);
         }catch (TransactionException e){
             testResult = false;
         }
@@ -84,7 +84,7 @@ class TransactionsTest {
         cust2.setID(2);
         //transaction is successful
         try {
-            transactionHandler.transactionToOther(cust1, cust2, "Checking", "Savings", 100,0);
+            transactionHandler.transactionToOther(cust1, cust2, "Checking", "Savings", 100);
         } catch (TransactionException e) {
             testResult = false;
         }
@@ -106,7 +106,7 @@ class TransactionsTest {
         cust2.getSave().setBalance(10000);
         //the transaction fails due to insufficient funds
         try {
-            transactionHandler.transactionToOther(cust1, cust2, "checking", "Savings", 1000000,0);
+            transactionHandler.transactionToOther(cust1, cust2, "checking", "Savings", 1000000);
         } catch (TransactionException e) {
             testResult = false;
         }
@@ -122,7 +122,7 @@ class TransactionsTest {
        cus.setCheck(c);
        boolean didBuy = true;
        try{
-           Transactions.getInstance().buyFromMinerMall(cus,"Checking", apple.getPrice(),0);
+           Transactions.getInstance().buyFromMinerMall(cus,"Checking", apple.getPrice());
        }catch (TransactionException e){
            didBuy = false;
        }
@@ -138,7 +138,7 @@ class TransactionsTest {
         cus.setCheck(c);
         boolean didNotBuy = false;
         try{
-            Transactions.getInstance().buyFromMinerMall(cus,"Checking", apple.getPrice(),0);
+            Transactions.getInstance().buyFromMinerMall(cus,"Checking", apple.getPrice());
         }catch (TransactionException e){
             didNotBuy = true;
         }

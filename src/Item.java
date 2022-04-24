@@ -98,7 +98,7 @@ public class Item{
 
 	/**
 	 * sets item max
-	 * @param max
+	 * @param max the quantity for the item
 	 */
 	public void setMax(int max) {
 		this.max = max;

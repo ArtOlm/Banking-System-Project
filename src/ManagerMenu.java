@@ -428,7 +428,7 @@ public class ManagerMenu extends BankMenu{
         String accType = transaction[2].toString();
         // the method updates the customer info
         try{
-            super.getTransactionHandler().buyFromMinerMall(cus,accType,item.getPrice(),0);
+            super.getTransactionHandler().buyFromMinerMall(cus,accType,item.getPrice());
         }catch (TransactionException eBuy){
             System.out.println(eBuy.getMessage());
             return;
@@ -468,7 +468,7 @@ public class ManagerMenu extends BankMenu{
         }
         //try the deposit
         try{
-            super.getTransactionHandler().userDeposit(depositDestination,transaction[6].toString(),Double.parseDouble(transaction[7].toString()),0);
+            super.getTransactionHandler().userDeposit(depositDestination,transaction[6].toString(),Double.parseDouble(transaction[7].toString()));
         }catch (TransactionException eDep){
             System.out.println(eDep.getMessage());
             return;
@@ -497,7 +497,7 @@ public class ManagerMenu extends BankMenu{
         //see if the transaction was successful
         //if not then just return from the method
         try{
-            super.getTransactionHandler().transactionToOther(cus,customerToPay,transaction[2].toString(),transaction[6].toString(),Double.parseDouble(transaction[7].toString()),0);
+            super.getTransactionHandler().transactionToOther(cus,customerToPay,transaction[2].toString(),transaction[6].toString(),Double.parseDouble(transaction[7].toString()));
         }catch (TransactionException ePay){
             System.out.println(ePay.getMessage());
             return;

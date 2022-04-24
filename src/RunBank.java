@@ -12,11 +12,12 @@ import java.util.Scanner;
  *this is the class where the main method runs, it only handles a little of the user interface
  */
 public class RunBank{
-	/**
-	 * main method for the bank
-	 * @param args the arguments
-	 */
 	static final String MANAGERPIN = "0000";
+
+	/**
+	 * Where everything runs, it has some code which handles mainly the starting meni
+	 * @param args arguments
+	 */
 	public static void main(String[] args){
 		//populates the main data structures
 		CustomerCollection customers = new CustomerCollection();

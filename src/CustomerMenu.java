@@ -125,7 +125,7 @@ public class CustomerMenu extends BankMenu{
                                 break;
                             }
                             try {
-                                super.getTransactionHandler().userDeposit(userAccount,accType,deposit,0);
+                                super.getTransactionHandler().userDeposit(userAccount,accType,deposit);
                             }
                             catch(TransactionException eDep){
                                 //Transaction was a failure
@@ -310,7 +310,7 @@ public class CustomerMenu extends BankMenu{
                                 key = super.getCustomers().generateKey(userToPayFirstName,userToPayLastName);
                                 Customer userToPay = super.getCustomers().get(key);
                                 try{
-                                    super.getTransactionHandler().transactionToOther(userAccount,userToPay,from,to,pay,0);
+                                    super.getTransactionHandler().transactionToOther(userAccount,userToPay,from,to,pay);
                                 }
                                 catch(TransactionException eTransfer){
                                     //there was transaction failure
@@ -519,7 +519,7 @@ public class CustomerMenu extends BankMenu{
 
                                             //check if they can buy all the stuff in the cart
                                             try {
-                                                super.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total,0);
+                                                super.getTransactionHandler().buyFromMinerMall(userAccount, accountType, total);
                                             } catch (Exception me) {
                                                 System.out.println(me.getMessage());
                                                 break;
