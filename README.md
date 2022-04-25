@@ -1,10 +1,10 @@
-The JavaDoc folder has the javadoc
+The Javadoc_PA5 folder has the javadoc
 
-The JUnit_Test has the junit tests for the 5 methdos
+The JUnit_Test has the junit tests for the 5 methods
 
-The PDF_FILES has all the UML Diagrams as well as the lab report
+The Team AOOP-A-P has all the documents required to be turned in.
 
-The src direcoty has all the sourse code
+The src directory has all the source code
 
 The src/Generated_Files has the bank satements, log file, updated customer sheet.
 
