@@ -7,8 +7,8 @@ public class Transactions{
 	private static Transactions transactionHandler;
 	final private String NEGATIVE_VALUE_MESSAGE = "Error: Cannot deposit negative values";
 	final private String NOT_ENOUGH_FUNDS_MESSAGE  = "Error: cannot deposit more than credit balance";
-	final private String OVER_CREDIT_LIMIT_MESSAGE = "Error: Not enough funds";
-	final private String MORE_THAN_CREDIT_BALANCE_MESSAGE = "Error: Transaction puts you over the credit limit";
+	final private String OVER_CREDIT_LIMIT_MESSAGE = "Error: Not enough funds, check credit limit";
+	final private String MORE_THAN_CREDIT_BALANCE_MESSAGE = "Error: Transaction is more than the balance";
 	final private String UNKNOWN_EXCEPTION_MESSAGE  = "Error: Something went wrong, ensure all inputs are correct and try again";
 	private Transactions(){
 	}

@@ -86,7 +86,7 @@ public class CustomerMenu extends BankMenu{
                             //let user know of success
                             try {
                                 String amm = df.format(super.getTransactionHandler().checkBalance(userAccount, accType));
-                                System.out.printf("%s currently has %s$\n", accType,amm);
+                                System.out.printf("%s currently has $%s\n", accType,amm);
                             }catch (Exception iq){
                                 System.out.println(iq.getMessage());
                                 System.out.println("Returning to menu");
@@ -136,10 +136,10 @@ public class CustomerMenu extends BankMenu{
                                 continue;
                             }
                             //if success then we tell user and log it
-                            transactionLog = String.format("%s %s deposited %s$ from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),df.format(deposit),accType,super.getTime().format(LocalDateTime.now()));
+                            transactionLog = String.format("%s %s deposited $%s from their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),df.format(deposit),accType,super.getTime().format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             super.logToFile(transactionLog);
-                            System.out.printf("The deposit of %s$ into %s was a success!\n",df.format(deposit),accType);
+                            System.out.printf("The deposit of $%s into %s was a success!\n",df.format(deposit),accType);
                             break;
                         case 3://transaction between two accounts of the same customer
                             System.out.println("################################################################################");
@@ -189,8 +189,8 @@ public class CustomerMenu extends BankMenu{
                             }
                             //if success then we tell user and log it
                             String transferStr = df.format(transfer);
-                            System.out.printf("The transfer was a success, %s$ was transferred from %s to %s\n",transferStr,from,to);
-                            transactionLog = String.format("%s %s transferred %s$ from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transferStr,from,to,super.getTime().format(LocalDateTime.now()));
+                            System.out.printf("The transfer was a success, $%s was transferred from %s to %s\n",transferStr,from,to);
+                            transactionLog = String.format("%s %s transferred $%s from %s to %s at %s\n",userAccount.getFirstName(),userAccount.getLastName(),transferStr,from,to,super.getTime().format(LocalDateTime.now()));
                             userAccount.addTransaction(transactionLog);
                             super.logToFile(transactionLog);
                             break;
@@ -231,8 +231,8 @@ public class CustomerMenu extends BankMenu{
                             }
                             //if success then we tell user and log it
                             String withStr = df.format(withdrawl);
-                            transactionLog = String.format("%s %s withdrew %s$ from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withStr,accType,super.getTime().format(LocalDateTime.now()));
-                            System.out.printf("The withdrawl of %s$ was a success\n",withStr);
+                            transactionLog = String.format("%s %s withdrew $%s from the %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),withStr,accType,super.getTime().format(LocalDateTime.now()));
+                            System.out.printf("The withdrawl of $%s was a success\n",withStr);
                             userAccount.addTransaction(transactionLog);
                             super.logToFile(transactionLog);
                             break;
@@ -322,8 +322,8 @@ public class CustomerMenu extends BankMenu{
                                 }
                                 String payStr = df.format(pay);
                                 //if success then we tell user and log it
-                                System.out.printf("payment of %s$ from %s account to %s %s into their %s account was a success\n",payStr,from,userToPay.getFirstName(),userToPay.getLastName(),to);
-                                transactionLog = String.format("%s %s paid %s$ from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),payStr,from,userToPay.getFirstName(),userToPay.getLastName(),to,super.getTime().format(LocalDateTime.now()));
+                                System.out.printf("payment of $%s from %s account to %s %s into their %s account was a success\n",payStr,from,userToPay.getFirstName(),userToPay.getLastName(),to);
+                                transactionLog = String.format("%s %s paid $%s from their %s account to %s %s into their %s account at %s\n",userAccount.getFirstName(),userAccount.getLastName(),payStr,from,userToPay.getFirstName(),userToPay.getLastName(),to,super.getTime().format(LocalDateTime.now()));
                                 userAccount.addTransaction(transactionLog);
                                 super.logToFile(transactionLog);
                             }
@@ -526,14 +526,14 @@ public class CustomerMenu extends BankMenu{
                                             }
                                             //update the users info and tell them they succeeded in making the purchase
                                             String totalStr = df.format(total);
-                                            System.out.printf("Your purchase of %s$ at Miners mall was a success!\n", totalStr);
+                                            System.out.printf("Your purchase of $%s at Miners mall was a success!\n", totalStr);
                                             System.out.println("Thank you!");
                                             for (int i = 0; i < cart.size(); i++) {
                                                 Item t = cart.get(i);
                                                 //update the limit on the items
                                                 super.getItems().get(t.getID()).setMax(maxCount.get(t.getID()));
                                                 //log everything they bought if successful
-                                                transactionLog = String.format("%s %s bought %s for %.2f$ using %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), t.getName(), t.getPrice(), accountType,super.getTime().format(LocalDateTime.now()));
+                                                transactionLog = String.format("%s %s bought %s for $%.2f using %s account at %s\n", userAccount.getFirstName(), userAccount.getLastName(), t.getName(), t.getPrice(), accountType,super.getTime().format(LocalDateTime.now()));
                                                 super.logToFile(transactionLog);
                                                 userAccount.addTransaction(transactionLog);
                                                 userAccount.setTotalMoneySpent(userAccount.getTotalMoneySpent() + t.getPrice());

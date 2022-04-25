@@ -1,0 +1,843 @@
+Name: Buzz Lightyear
+Address: 723, Anaheim, CA 92802
+Phone: (714) 781-4636
+DOB: 1/22/83
+ID: 17
+Pin: 5921
+Checking Account Number: 1000017   Current Checking Account Balance: $92774.80
+Savings Account Number: 2000017   Current Savings Account Balance: $171338.42
+Credit Account Number: 3000017   Current Credit Account Balance: $1300.82   Credit Score: 723   Credit Limit: 6000
+###############################################
+
+Session Start: 2022/04/24 20:10:18
+Starting Checking Balance: 2203.88$
+Starting Savings Balance: 12688.46$
+Starting Credit Balance: 780.69$
+
+###############################################
+Session End: 2022/04/24 20:15:53
+Ending Checking Balance: 92269.85$
+Ending Savings Balance: 168580.18$
+Ending Credit Balance: 1300.82$
+
+###############################################
+Total money spent at Miners Mall: 9532.74$
+###############################################
+Account Activity
+################
+Buzz Lightyear deposited 1630.79$ from their Checking account at 2022/04/24 20:10:18
+
+Buzz Lightyear deposited 7.03$ from their Checking account at 2022/04/24 20:10:19
+
+Buzz Lightyear paid 749.47$ from their Checking account to Perry Hill into their Checking account at 2022/04/24 20:10:19
+
+Buzz Lightyear paid 372.73$ from their Checking account to Joel Arellano into their Savings account at 2022/04/24 20:10:20
+
+Buzz Lightyear deposited 1715.53$ from their Checking account at 2022/04/24 20:10:21
+
+Buzz Lightyear purchased a Random Item 26 for 34.23$ from miners bank using their Credit account at 2022/04/24 20:10:23
+
+Buzz Lightyear purchased a Random Item 40 for 63.71$ from miners bank using their Checking account at 2022/04/24 20:10:23
+
+Buzz Lightyear deposited 537.90$ from their Credit account at 2022/04/24 20:10:23
+
+Buzz Lightyear paid 359.19$ from their Checking account to Jessica Smith into their Savings account at 2022/04/24 20:10:23
+
+Buzz Lightyear purchased a Random Item 74 for 83.76$ from miners bank using their Credit account at 2022/04/24 20:10:24
+
+Buzz Lightyear purchased a Pick N Shovel Meal for 10.87$ from miners bank using their Checking account at 2022/04/24 20:10:24
+
+Buzz Lightyear purchased a Random Item 75 for 82.45$ from miners bank using their Checking account at 2022/04/24 20:10:24
+
+Buzz Lightyear purchased a Random Item 14 for 38.84$ from miners bank using their Checking account at 2022/04/24 20:10:25
+
+Buzz Lightyear paid 414.03$ from their Checking account to Lisa Robinson into their Checking account at 2022/04/24 20:10:26
+
+Buzz Lightyear purchased a Trenta Shaken Caramel Iced Latte with half Oat Milk and half Almond Milk with 2.5 Pumps of Vanilla and whip for 13.57$ from miners bank using their Checking account at 2022/04/24 20:10:28
+
+Buzz Lightyear purchased a Random Item 63 for 91.30$ from miners bank using their Checking account at 2022/04/24 20:10:29
+
+Buzz Lightyear paid 269.72$ from their Checking account to Elizabeth Dominguez into their Savings account at 2022/04/24 20:10:30
+
+Buzz Lightyear purchased a Pencil for 2.99$ from miners bank using their Checking account at 2022/04/24 20:10:31
+
+Buzz Lightyear purchased a Small Textbook for 20.00$ from miners bank using their Credit account at 2022/04/24 20:10:31
+
+Buzz Lightyear paid 414.77$ from their Checking account to Lisa Stafford into their Savings account at 2022/04/24 20:10:32
+
+Buzz Lightyear paid 323.22$ from their Checking account to Mark Rogers into their Checking account at 2022/04/24 20:10:32
+
+Buzz Lightyear purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Checking account at 2022/04/24 20:10:33
+
+Buzz Lightyear purchased a Pencil for 2.99$ from miners bank using their Credit account at 2022/04/24 20:10:34
+
+Buzz Lightyear deposited 2372.46$ from their Savings account at 2022/04/24 20:10:34
+
+Buzz Lightyear deposited 4897.67$ from their Savings account at 2022/04/24 20:10:36
+
+Buzz Lightyear purchased a Einsteins Bagals for 3.99$ from miners bank using their Credit account at 2022/04/24 20:10:40
+
+Buzz Lightyear paid 537.41$ from their Checking account to Kenneth Boyd into their Savings account at 2022/04/24 20:10:47
+
+Buzz Lightyear paid 597.18$ from their Checking account to Juan Brock into their Savings account at 2022/04/24 20:10:50
+
+Buzz Lightyear deposited 3399.97$ from their Savings account at 2022/04/24 20:10:51
+
+Buzz Lightyear paid 240.79$ from their Checking account to Alyssa Poole into their Checking account at 2022/04/24 20:10:52
+
+Buzz Lightyear purchased a Random Item 66 for 97.81$ from miners bank using their Credit account at 2022/04/24 20:10:57
+
+Buzz Lightyear deposited 473.41$ from their Checking account at 2022/04/24 20:10:57
+
+Buzz Lightyear deposited 3045.29$ from their Checking account at 2022/04/24 20:10:58
+
+Buzz Lightyear purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Credit account at 2022/04/24 20:11:01
+
+Buzz Lightyear purchased a Random Item 56 for 50.18$ from miners bank using their Credit account at 2022/04/24 20:11:04
+
+Buzz Lightyear paid 242.11$ from their Checking account to Derek Irwin into their Savings account at 2022/04/24 20:11:04
+
+Buzz Lightyear purchased a Random Item 75 for 82.45$ from miners bank using their Checking account at 2022/04/24 20:11:04
+
+Buzz Lightyear deposited 3485.77$ from their Checking account at 2022/04/24 20:11:06
+
+Buzz Lightyear paid 192.71$ from their Checking account to Mark Lozano into their Checking account at 2022/04/24 20:11:07
+
+Buzz Lightyear purchased a Random Item 31 for 53.22$ from miners bank using their Checking account at 2022/04/24 20:11:07
+
+Buzz Lightyear purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Checking account at 2022/04/24 20:11:07
+
+Buzz Lightyear paid 701.32$ from their Checking account to Lauren Coleman into their Checking account at 2022/04/24 20:11:08
+
+Buzz Lightyear paid 653.64$ from their Checking account to Lisa Robinson into their Checking account at 2022/04/24 20:11:08
+
+Buzz Lightyear deposited 4930.04$ from their Checking account at 2022/04/24 20:11:08
+
+Buzz Lightyear deposited 1291.89$ from their Savings account at 2022/04/24 20:11:10
+
+Buzz Lightyear deposited 922.20$ from their Checking account at 2022/04/24 20:11:10
+
+Buzz Lightyear purchased a Random Item 23 for 28.58$ from miners bank using their Credit account at 2022/04/24 20:11:10
+
+Buzz Lightyear purchased a Random Item 34 for 60.83$ from miners bank using their Checking account at 2022/04/24 20:11:11
+
+Buzz Lightyear deposited 1510.52$ from their Checking account at 2022/04/24 20:11:12
+
+Buzz Lightyear deposited 95.68$ from their Checking account at 2022/04/24 20:11:14
+
+Buzz Lightyear paid 84.06$ from their Checking account to Hayden Mcdaniel into their Savings account at 2022/04/24 20:11:14
+
+Buzz Lightyear paid 913.44$ from their Checking account to Jessica Fernandez into their Checking account at 2022/04/24 20:11:14
+
+Buzz Lightyear paid 967.73$ from their Checking account to Brandy Valenzuela into their Savings account at 2022/04/24 20:11:15
+
+Buzz Lightyear deposited 4473.53$ from their Savings account at 2022/04/24 20:11:15
+
+Buzz Lightyear deposited 1978.01$ from their Checking account at 2022/04/24 20:11:16
+
+Buzz Lightyear purchased a Random Item 24 for 20.44$ from miners bank using their Checking account at 2022/04/24 20:11:17
+
+Buzz Lightyear deposited 4167.23$ from their Savings account at 2022/04/24 20:11:17
+
+Buzz Lightyear purchased a Random Item 22 for 65.99$ from miners bank using their Credit account at 2022/04/24 20:11:18
+
+Buzz Lightyear deposited 861.30$ from their Checking account at 2022/04/24 20:11:19
+
+Buzz Lightyear paid 620.63$ from their Checking account to Daniel Pedroza into their Checking account at 2022/04/24 20:11:20
+
+Buzz Lightyear paid 620.99$ from their Checking account to Jason Burke into their Savings account at 2022/04/24 20:11:20
+
+Buzz Lightyear paid 892.17$ from their Checking account to Mary Gonzalez into their Checking account at 2022/04/24 20:11:20
+
+Buzz Lightyear purchased a Random Item 35 for 24.71$ from miners bank using their Credit account at 2022/04/24 20:11:23
+
+Buzz Lightyear paid 904.75$ from their Checking account to John Davis into their Savings account at 2022/04/24 20:11:23
+
+Buzz Lightyear deposited 4789.98$ from their Savings account at 2022/04/24 20:11:23
+
+Buzz Lightyear purchased a Random Item 66 for 97.81$ from miners bank using their Credit account at 2022/04/24 20:11:25
+
+Buzz Lightyear paid 49.66$ from their Checking account to Jesse Montgomery into their Checking account at 2022/04/24 20:11:26
+
+Buzz Lightyear paid 1.99$ from their Checking account to Jessica Olsen into their Savings account at 2022/04/24 20:11:26
+
+Buzz Lightyear paid 362.99$ from their Checking account to Mark Ramos into their Savings account at 2022/04/24 20:11:26
+
+Buzz Lightyear paid 866.80$ from their Checking account to Kevin Harrison into their Checking account at 2022/04/24 20:11:27
+
+Buzz Lightyear purchased a Random Item 3 for 8.74$ from miners bank using their Credit account at 2022/04/24 20:11:30
+
+Buzz Lightyear paid 340.78$ from their Checking account to Laura Smith into their Savings account at 2022/04/24 20:11:31
+
+Buzz Lightyear paid 124.80$ from their Checking account to Kelly Herring into their Savings account at 2022/04/24 20:11:32
+
+Buzz Lightyear paid 738.38$ from their Checking account to Rebecca Fisher into their Savings account at 2022/04/24 20:11:32
+
+Buzz Lightyear deposited 2515.42$ from their Checking account at 2022/04/24 20:11:33
+
+Buzz Lightyear purchased a Random Item 17 for 30.75$ from miners bank using their Credit account at 2022/04/24 20:11:34
+
+Buzz Lightyear paid 965.34$ from their Checking account to Krista Blake into their Checking account at 2022/04/24 20:11:36
+
+Buzz Lightyear purchased a Random Item 44 for 13.45$ from miners bank using their Credit account at 2022/04/24 20:11:36
+
+Buzz Lightyear paid 185.61$ from their Checking account to Mikayla Dennis into their Savings account at 2022/04/24 20:11:37
+
+Buzz Lightyear purchased a Random Item 15 for 13.82$ from miners bank using their Credit account at 2022/04/24 20:11:37
+
+Buzz Lightyear purchased a Random Item 60 for 95.85$ from miners bank using their Credit account at 2022/04/24 20:11:37
+
+Buzz Lightyear purchased a Parking Permit B for 250.00$ from miners bank using their Credit account at 2022/04/24 20:11:37
+
+Buzz Lightyear purchased a Random Item 21 for 98.36$ from miners bank using their Checking account at 2022/04/24 20:11:38
+
+Buzz Lightyear purchased a Random Item 17 for 30.75$ from miners bank using their Credit account at 2022/04/24 20:11:39
+
+Buzz Lightyear purchased a Random Item 22 for 65.99$ from miners bank using their Checking account at 2022/04/24 20:11:41
+
+Buzz Lightyear paid 498.51$ from their Checking account to Erin Barton into their Savings account at 2022/04/24 20:11:41
+
+Buzz Lightyear paid 579.87$ from their Checking account to William Ortiz into their Savings account at 2022/04/24 20:11:41
+
+Buzz Lightyear purchased a Random Item 75 for 82.45$ from miners bank using their Checking account at 2022/04/24 20:11:42
+
+Buzz Lightyear paid 722.78$ from their Checking account to Carl Foley into their Checking account at 2022/04/24 20:11:43
+
+Buzz Lightyear paid 75.21$ from their Checking account to Monica Craig into their Checking account at 2022/04/24 20:11:45
+
+Buzz Lightyear purchased a Random Item 14 for 38.84$ from miners bank using their Credit account at 2022/04/24 20:11:45
+
+Buzz Lightyear paid 885.81$ from their Checking account to Pluto Disney into their Savings account at 2022/04/24 20:11:45
+
+Buzz Lightyear purchased a Parking Permit C for 300.00$ from miners bank using their Checking account at 2022/04/24 20:11:46
+
+Buzz Lightyear purchased a Backpack for 21.23$ from miners bank using their Credit account at 2022/04/24 20:11:46
+
+Buzz Lightyear purchased a Small Textbook for 20.00$ from miners bank using their Checking account at 2022/04/24 20:11:47
+
+Buzz Lightyear deposited 2263.95$ from their Savings account at 2022/04/24 20:11:48
+
+Buzz Lightyear paid 53.47$ from their Checking account to Francisco Moore into their Checking account at 2022/04/24 20:11:48
+
+Buzz Lightyear paid 297.00$ from their Checking account to Christopher Wright into their Checking account at 2022/04/24 20:11:49
+
+Buzz Lightyear purchased a Random Item 37 for 85.78$ from miners bank using their Checking account at 2022/04/24 20:11:50
+
+Buzz Lightyear purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:11:52
+
+Buzz Lightyear paid 626.44$ from their Checking account to Amy Chase into their Savings account at 2022/04/24 20:11:53
+
+Buzz Lightyear purchased a Random Item 45 for 72.89$ from miners bank using their Credit account at 2022/04/24 20:12:00
+
+Buzz Lightyear deposited 1097.42$ from their Savings account at 2022/04/24 20:12:06
+
+Buzz Lightyear deposited 1660.88$ from their Savings account at 2022/04/24 20:12:07
+
+Buzz Lightyear purchased a Random Item 17 for 30.75$ from miners bank using their Checking account at 2022/04/24 20:12:07
+
+Buzz Lightyear purchased a Random Item 9 for 22.21$ from miners bank using their Checking account at 2022/04/24 20:12:08
+
+Buzz Lightyear purchased a Post-It Notes for 4.50$ from miners bank using their Checking account at 2022/04/24 20:12:08
+
+Buzz Lightyear purchased a Random Item 45 for 72.89$ from miners bank using their Checking account at 2022/04/24 20:12:16
+
+Buzz Lightyear purchased a Chick-Fil-A Combo for 9.87$ from miners bank using their Checking account at 2022/04/24 20:12:16
+
+Buzz Lightyear deposited 1155.05$ from their Checking account at 2022/04/24 20:12:17
+
+Buzz Lightyear paid 94.73$ from their Checking account to Marissa Oconnell into their Savings account at 2022/04/24 20:12:17
+
+Buzz Lightyear paid 378.96$ from their Checking account to Austin Lewis into their Checking account at 2022/04/24 20:12:17
+
+Buzz Lightyear deposited 2180.22$ from their Savings account at 2022/04/24 20:12:21
+
+Buzz Lightyear paid 54.40$ from their Checking account to Dana Park into their Checking account at 2022/04/24 20:12:21
+
+Buzz Lightyear purchased a Random Item 38 for 32.33$ from miners bank using their Credit account at 2022/04/24 20:12:21
+
+Buzz Lightyear paid 391.91$ from their Checking account to Brian Castillo into their Savings account at 2022/04/24 20:12:21
+
+Buzz Lightyear paid 7.43$ from their Checking account to Stephanie Obrien into their Checking account at 2022/04/24 20:12:22
+
+Buzz Lightyear purchased a UTEP Hoodie for 29.99$ from miners bank using their Checking account at 2022/04/24 20:12:23
+
+Buzz Lightyear deposited 2129.35$ from their Checking account at 2022/04/24 20:12:23
+
+Buzz Lightyear paid 494.31$ from their Checking account to Alberto Delgado into their Checking account at 2022/04/24 20:12:24
+
+Buzz Lightyear paid 968.27$ from their Checking account to Ariel Disney into their Checking account at 2022/04/24 20:12:28
+
+Buzz Lightyear purchased a UTEP Hoodie for 29.99$ from miners bank using their Credit account at 2022/04/24 20:12:29
+
+Buzz Lightyear paid 918.20$ from their Checking account to Rhonda Kane into their Checking account at 2022/04/24 20:12:30
+
+Buzz Lightyear paid 444.68$ from their Checking account to Jody Sanchez into their Checking account at 2022/04/24 20:12:31
+
+Buzz Lightyear deposited 2945.33$ from their Savings account at 2022/04/24 20:12:31
+
+Buzz Lightyear purchased a Random Item 40 for 63.71$ from miners bank using their Checking account at 2022/04/24 20:12:31
+
+Buzz Lightyear deposited 1621.29$ from their Checking account at 2022/04/24 20:12:32
+
+Buzz Lightyear purchased a Random Item 52 for 64.45$ from miners bank using their Credit account at 2022/04/24 20:12:32
+
+Buzz Lightyear paid 936.32$ from their Checking account to Renee Zimmerman into their Checking account at 2022/04/24 20:12:34
+
+Buzz Lightyear paid 801.67$ from their Checking account to Hunter Moore into their Checking account at 2022/04/24 20:12:35
+
+Buzz Lightyear deposited 4706.51$ from their Checking account at 2022/04/24 20:12:35
+
+Buzz Lightyear purchased a Random Item 76 for 41.60$ from miners bank using their Checking account at 2022/04/24 20:12:36
+
+Buzz Lightyear paid 565.61$ from their Checking account to Jose Evans into their Checking account at 2022/04/24 20:12:37
+
+Buzz Lightyear paid 352.94$ from their Checking account to Jody Sanchez into their Savings account at 2022/04/24 20:12:37
+
+Buzz Lightyear paid 45.63$ from their Checking account to Becky Gray into their Savings account at 2022/04/24 20:12:37
+
+Buzz Lightyear paid 34.97$ from their Checking account to David Summers into their Checking account at 2022/04/24 20:12:39
+
+Buzz Lightyear purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Credit account at 2022/04/24 20:12:39
+
+Buzz Lightyear purchased a Random Item 57 for 93.53$ from miners bank using their Credit account at 2022/04/24 20:12:40
+
+Buzz Lightyear deposited 1944.06$ from their Savings account at 2022/04/24 20:12:40
+
+Buzz Lightyear deposited 3188.51$ from their Savings account at 2022/04/24 20:12:43
+
+Buzz Lightyear deposited 2711.83$ from their Checking account at 2022/04/24 20:12:45
+
+Buzz Lightyear paid 59.53$ from their Checking account to Alexis Ford into their Savings account at 2022/04/24 20:12:45
+
+Buzz Lightyear purchased a Parking Permit C for 300.00$ from miners bank using their Credit account at 2022/04/24 20:12:45
+
+Buzz Lightyear paid 866.69$ from their Checking account to Brandy Valenzuela into their Checking account at 2022/04/24 20:12:47
+
+Buzz Lightyear paid 951.75$ from their Checking account to Kathryn Perez into their Checking account at 2022/04/24 20:12:47
+
+Buzz Lightyear paid 168.57$ from their Checking account to Becky Gray into their Savings account at 2022/04/24 20:12:47
+
+Buzz Lightyear purchased a Random Item 58 for 46.01$ from miners bank using their Credit account at 2022/04/24 20:12:47
+
+Buzz Lightyear deposited 3787.35$ from their Savings account at 2022/04/24 20:12:47
+
+Buzz Lightyear paid 395.78$ from their Checking account to Kelly Harris into their Checking account at 2022/04/24 20:12:48
+
+Buzz Lightyear paid 650.99$ from their Checking account to Norman Freeman into their Checking account at 2022/04/24 20:12:48
+
+Buzz Lightyear deposited 3185.87$ from their Checking account at 2022/04/24 20:12:50
+
+Buzz Lightyear purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/24 20:12:51
+
+Buzz Lightyear purchased a Random Item 58 for 46.01$ from miners bank using their Checking account at 2022/04/24 20:12:52
+
+Buzz Lightyear purchased a Random Item 26 for 34.23$ from miners bank using their Credit account at 2022/04/24 20:12:53
+
+Buzz Lightyear paid 769.39$ from their Checking account to Arturo Olmos into their Checking account at 2022/04/24 20:12:53
+
+Buzz Lightyear paid 893.69$ from their Checking account to Mark Stewart into their Savings account at 2022/04/24 20:12:55
+
+Buzz Lightyear paid 526.30$ from their Checking account to Michael Mccormick into their Savings account at 2022/04/24 20:12:56
+
+Buzz Lightyear purchased a Random Item 20 for 65.92$ from miners bank using their Checking account at 2022/04/24 20:12:56
+
+Buzz Lightyear deposited 4199.77$ from their Checking account at 2022/04/24 20:12:56
+
+Buzz Lightyear purchased a Random Item 10 for 5.34$ from miners bank using their Credit account at 2022/04/24 20:12:57
+
+Buzz Lightyear paid 119.83$ from their Checking account to Monica Davenport into their Checking account at 2022/04/24 20:12:58
+
+Buzz Lightyear deposited 3383.41$ from their Savings account at 2022/04/24 20:13:00
+
+Buzz Lightyear deposited 3824.94$ from their Savings account at 2022/04/24 20:13:00
+
+Buzz Lightyear deposited 26.89$ from their Savings account at 2022/04/24 20:13:00
+
+Buzz Lightyear purchased a Random Item 58 for 46.01$ from miners bank using their Checking account at 2022/04/24 20:13:01
+
+Buzz Lightyear purchased a Random Item 37 for 85.78$ from miners bank using their Credit account at 2022/04/24 20:13:02
+
+Buzz Lightyear deposited 1389.51$ from their Credit account at 2022/04/24 20:13:02
+
+Buzz Lightyear deposited 4364.83$ from their Checking account at 2022/04/24 20:13:02
+
+Buzz Lightyear purchased a Random Item 43 for 69.31$ from miners bank using their Checking account at 2022/04/24 20:13:04
+
+Buzz Lightyear deposited 4242.65$ from their Checking account at 2022/04/24 20:13:07
+
+Buzz Lightyear deposited 1825.44$ from their Savings account at 2022/04/24 20:13:07
+
+Buzz Lightyear purchased a Random Item 64 for 3.68$ from miners bank using their Credit account at 2022/04/24 20:13:07
+
+Buzz Lightyear purchased a Random Item 13 for 52.23$ from miners bank using their Credit account at 2022/04/24 20:13:07
+
+Buzz Lightyear purchased a Random Item 23 for 28.58$ from miners bank using their Checking account at 2022/04/24 20:13:08
+
+Buzz Lightyear paid 432.82$ from their Checking account to Jose Smith into their Savings account at 2022/04/24 20:13:08
+
+Buzz Lightyear deposited 2977.18$ from their Savings account at 2022/04/24 20:13:09
+
+Buzz Lightyear paid 662.39$ from their Checking account to Daniel Mejia into their Savings account at 2022/04/24 20:13:09
+
+Buzz Lightyear deposited 597.34$ from their Savings account at 2022/04/24 20:13:09
+
+Buzz Lightyear purchased a Random Item 52 for 64.45$ from miners bank using their Checking account at 2022/04/24 20:13:11
+
+Buzz Lightyear purchased a Random Item 55 for 85.68$ from miners bank using their Checking account at 2022/04/24 20:13:13
+
+Buzz Lightyear paid 991.53$ from their Checking account to Christopher Jones into their Checking account at 2022/04/24 20:13:13
+
+Buzz Lightyear deposited 811.43$ from their Savings account at 2022/04/24 20:13:13
+
+Buzz Lightyear paid 973.80$ from their Checking account to Keith Ortiz into their Savings account at 2022/04/24 20:13:13
+
+Buzz Lightyear purchased a Random Item 72 for 53.21$ from miners bank using their Checking account at 2022/04/24 20:13:13
+
+Buzz Lightyear deposited 4855.86$ from their Savings account at 2022/04/24 20:13:14
+
+Buzz Lightyear deposited 2903.64$ from their Checking account at 2022/04/24 20:13:15
+
+Buzz Lightyear paid 850.93$ from their Checking account to Robert Leblanc into their Checking account at 2022/04/24 20:13:15
+
+Buzz Lightyear purchased a Random Item 3 for 8.74$ from miners bank using their Credit account at 2022/04/24 20:13:15
+
+Buzz Lightyear purchased a Random Item 14 for 38.84$ from miners bank using their Credit account at 2022/04/24 20:13:16
+
+Buzz Lightyear paid 296.68$ from their Checking account to Simba Disney into their Checking account at 2022/04/24 20:13:17
+
+Buzz Lightyear deposited 2496.34$ from their Savings account at 2022/04/24 20:13:17
+
+Buzz Lightyear purchased a Random Item 53 for 34.65$ from miners bank using their Checking account at 2022/04/24 20:13:19
+
+Buzz Lightyear deposited 4043.91$ from their Savings account at 2022/04/24 20:13:19
+
+Buzz Lightyear purchased a Random Item 55 for 85.68$ from miners bank using their Checking account at 2022/04/24 20:13:20
+
+Buzz Lightyear deposited 1140.63$ from their Savings account at 2022/04/24 20:13:21
+
+Buzz Lightyear paid 589.17$ from their Checking account to Dana Jones into their Checking account at 2022/04/24 20:13:24
+
+Buzz Lightyear paid 313.86$ from their Checking account to Christina Dodson into their Checking account at 2022/04/24 20:13:24
+
+Buzz Lightyear paid 506.81$ from their Checking account to David Hayes into their Savings account at 2022/04/24 20:13:24
+
+Buzz Lightyear paid 505.91$ from their Checking account to Kimberly Harris into their Checking account at 2022/04/24 20:13:26
+
+Buzz Lightyear paid 46.67$ from their Checking account to John Davis into their Checking account at 2022/04/24 20:13:26
+
+Buzz Lightyear deposited 212.34$ from their Checking account at 2022/04/24 20:13:27
+
+Buzz Lightyear purchased a Random Item 54 for 31.13$ from miners bank using their Checking account at 2022/04/24 20:13:27
+
+Buzz Lightyear deposited 4995.89$ from their Checking account at 2022/04/24 20:13:28
+
+Buzz Lightyear purchased a Random Item 5 for 68.67$ from miners bank using their Credit account at 2022/04/24 20:13:28
+
+Buzz Lightyear purchased a Random Item 7 for 15.63$ from miners bank using their Credit account at 2022/04/24 20:13:29
+
+Buzz Lightyear paid 531.08$ from their Checking account to Michelle Maynard into their Checking account at 2022/04/24 20:13:30
+
+Buzz Lightyear purchased a Random Item 31 for 53.22$ from miners bank using their Credit account at 2022/04/24 20:13:30
+
+Buzz Lightyear purchased a Random Item 66 for 97.81$ from miners bank using their Credit account at 2022/04/24 20:13:31
+
+Buzz Lightyear purchased a Random Item 42 for 7.36$ from miners bank using their Checking account at 2022/04/24 20:13:31
+
+Buzz Lightyear paid 484.23$ from their Checking account to Gary Smith into their Checking account at 2022/04/24 20:13:32
+
+Buzz Lightyear deposited 590.26$ from their Checking account at 2022/04/24 20:13:33
+
+Buzz Lightyear purchased a Random Item 51 for 85.02$ from miners bank using their Checking account at 2022/04/24 20:13:33
+
+Buzz Lightyear purchased a Large Textbook for 100.00$ from miners bank using their Credit account at 2022/04/24 20:13:33
+
+Buzz Lightyear purchased a Random Item 69 for 38.62$ from miners bank using their Credit account at 2022/04/24 20:13:33
+
+Buzz Lightyear paid 272.22$ from their Checking account to David Brown into their Savings account at 2022/04/24 20:13:34
+
+Buzz Lightyear deposited 4252.39$ from their Checking account at 2022/04/24 20:13:34
+
+Buzz Lightyear purchased a Random Item 72 for 53.21$ from miners bank using their Credit account at 2022/04/24 20:13:36
+
+Buzz Lightyear purchased a Random Item 7 for 15.63$ from miners bank using their Checking account at 2022/04/24 20:13:36
+
+Buzz Lightyear purchased a Einsteins Bagals for 3.99$ from miners bank using their Credit account at 2022/04/24 20:13:37
+
+Buzz Lightyear paid 88.23$ from their Checking account to Alexandra Fox into their Savings account at 2022/04/24 20:13:38
+
+Buzz Lightyear purchased a Random Item 76 for 41.60$ from miners bank using their Checking account at 2022/04/24 20:13:38
+
+Buzz Lightyear paid 144.80$ from their Checking account to Marissa Oconnell into their Savings account at 2022/04/24 20:13:39
+
+Buzz Lightyear purchased a Pen for 3.99$ from miners bank using their Checking account at 2022/04/24 20:13:40
+
+Buzz Lightyear purchased a Random Item 12 for 48.23$ from miners bank using their Checking account at 2022/04/24 20:13:40
+
+Buzz Lightyear paid 962.14$ from their Checking account to Paul Salas into their Savings account at 2022/04/24 20:13:42
+
+Buzz Lightyear deposited 51.53$ from their Checking account at 2022/04/24 20:13:43
+
+Buzz Lightyear purchased a Sushi Meal for 11.25$ from miners bank using their Credit account at 2022/04/24 20:13:43
+
+Buzz Lightyear purchased a Random Item 51 for 85.02$ from miners bank using their Credit account at 2022/04/24 20:13:44
+
+Buzz Lightyear paid 372.57$ from their Checking account to Jenny Henry into their Savings account at 2022/04/24 20:13:45
+
+Buzz Lightyear paid 941.63$ from their Checking account to Patrick Henderson into their Savings account at 2022/04/24 20:13:45
+
+Buzz Lightyear paid 191.12$ from their Checking account to Carlos Irwin into their Checking account at 2022/04/24 20:13:45
+
+Buzz Lightyear paid 901.83$ from their Checking account to Kathryn Perez into their Checking account at 2022/04/24 20:13:46
+
+Buzz Lightyear purchased a Random Item 59 for 73.76$ from miners bank using their Checking account at 2022/04/24 20:13:46
+
+Buzz Lightyear paid 616.99$ from their Checking account to Daniel Summers into their Savings account at 2022/04/24 20:13:47
+
+Buzz Lightyear paid 213.10$ from their Checking account to Nathan Coleman into their Checking account at 2022/04/24 20:13:48
+
+Buzz Lightyear paid 683.93$ from their Checking account to Jason Lee into their Savings account at 2022/04/24 20:13:49
+
+Buzz Lightyear purchased a Random Item 24 for 20.44$ from miners bank using their Credit account at 2022/04/24 20:13:49
+
+Buzz Lightyear purchased a Large Textbook for 100.00$ from miners bank using their Credit account at 2022/04/24 20:13:49
+
+Buzz Lightyear paid 838.06$ from their Checking account to Tiffany Davis into their Checking account at 2022/04/24 20:13:53
+
+Buzz Lightyear paid 642.34$ from their Checking account to Richard Vargas into their Savings account at 2022/04/24 20:13:53
+
+Buzz Lightyear paid 577.51$ from their Checking account to Michael Murray into their Savings account at 2022/04/24 20:13:54
+
+Buzz Lightyear deposited 4560.90$ from their Checking account at 2022/04/24 20:13:54
+
+Buzz Lightyear deposited 2886.03$ from their Checking account at 2022/04/24 20:13:56
+
+Buzz Lightyear deposited 1615.40$ from their Checking account at 2022/04/24 20:13:58
+
+Buzz Lightyear purchased a Random Item 5 for 68.67$ from miners bank using their Credit account at 2022/04/24 20:14:01
+
+Buzz Lightyear purchased a Random Item 7 for 15.63$ from miners bank using their Checking account at 2022/04/24 20:14:02
+
+Buzz Lightyear purchased a Random Item 24 for 20.44$ from miners bank using their Credit account at 2022/04/24 20:14:02
+
+Buzz Lightyear paid 210.14$ from their Checking account to Gary Smith into their Checking account at 2022/04/24 20:14:02
+
+Buzz Lightyear purchased a Random Item 33 for 11.41$ from miners bank using their Credit account at 2022/04/24 20:14:02
+
+Buzz Lightyear deposited 2957.39$ from their Savings account at 2022/04/24 20:14:03
+
+Buzz Lightyear paid 12.19$ from their Checking account to Kevin Swanson into their Checking account at 2022/04/24 20:14:04
+
+Buzz Lightyear paid 655.57$ from their Checking account to David Wright into their Checking account at 2022/04/24 20:14:05
+
+Buzz Lightyear deposited 3054.98$ from their Savings account at 2022/04/24 20:14:05
+
+Buzz Lightyear paid 655.47$ from their Checking account to Gabriel Sanders into their Savings account at 2022/04/24 20:14:05
+
+Buzz Lightyear paid 742.54$ from their Checking account to John White into their Savings account at 2022/04/24 20:14:05
+
+Buzz Lightyear deposited 4710.83$ from their Checking account at 2022/04/24 20:14:06
+
+Buzz Lightyear purchased a Random Item 18 for 95.67$ from miners bank using their Checking account at 2022/04/24 20:14:07
+
+Buzz Lightyear paid 126.60$ from their Checking account to Joseph Hanna into their Checking account at 2022/04/24 20:14:08
+
+Buzz Lightyear paid 497.36$ from their Checking account to Krista Blake into their Checking account at 2022/04/24 20:14:08
+
+Buzz Lightyear paid 565.40$ from their Checking account to Stitch Disney into their Savings account at 2022/04/24 20:14:09
+
+Buzz Lightyear purchased a Random Item 30 for 60.44$ from miners bank using their Credit account at 2022/04/24 20:14:09
+
+Buzz Lightyear paid 867.59$ from their Checking account to Nicholas Anderson into their Checking account at 2022/04/24 20:14:10
+
+Buzz Lightyear purchased a Backpack for 21.23$ from miners bank using their Credit account at 2022/04/24 20:14:10
+
+Buzz Lightyear deposited 462.35$ from their Credit account at 2022/04/24 20:14:11
+
+Buzz Lightyear paid 726.79$ from their Checking account to Paul Herman into their Checking account at 2022/04/24 20:14:11
+
+Buzz Lightyear paid 305.16$ from their Checking account to John Davis into their Checking account at 2022/04/24 20:14:11
+
+Buzz Lightyear purchased a Random Item 37 for 85.78$ from miners bank using their Credit account at 2022/04/24 20:14:11
+
+Buzz Lightyear purchased a Random Item 52 for 64.45$ from miners bank using their Checking account at 2022/04/24 20:14:12
+
+Buzz Lightyear deposited 3184.67$ from their Checking account at 2022/04/24 20:14:13
+
+Buzz Lightyear deposited 4096.01$ from their Savings account at 2022/04/24 20:14:13
+
+Buzz Lightyear purchased a Random Item 53 for 34.65$ from miners bank using their Checking account at 2022/04/24 20:14:13
+
+Buzz Lightyear paid 184.74$ from their Checking account to Brittany Richard into their Checking account at 2022/04/24 20:14:15
+
+Buzz Lightyear purchased a Macbook Pro for 2100.00$ from miners bank using their Checking account at 2022/04/24 20:14:15
+
+Buzz Lightyear deposited 121.75$ from their Checking account at 2022/04/24 20:14:16
+
+Buzz Lightyear deposited 3802.69$ from their Savings account at 2022/04/24 20:14:16
+
+Buzz Lightyear paid 955.61$ from their Checking account to Michael Clarke into their Savings account at 2022/04/24 20:14:16
+
+Buzz Lightyear paid 688.87$ from their Checking account to Brandon Miller into their Checking account at 2022/04/24 20:14:17
+
+Buzz Lightyear purchased a Random Item 39 for 91.15$ from miners bank using their Checking account at 2022/04/24 20:14:17
+
+Buzz Lightyear paid 776.18$ from their Checking account to Nicole Harvey into their Savings account at 2022/04/24 20:14:18
+
+Buzz Lightyear deposited 2935.28$ from their Checking account at 2022/04/24 20:14:18
+
+Buzz Lightyear purchased a Random Item 47 for 55.55$ from miners bank using their Credit account at 2022/04/24 20:14:18
+
+Buzz Lightyear purchased a Random Item 71 for 7.00$ from miners bank using their Credit account at 2022/04/24 20:14:18
+
+Buzz Lightyear purchased a Random Item 54 for 31.13$ from miners bank using their Checking account at 2022/04/24 20:14:19
+
+Buzz Lightyear paid 84.13$ from their Checking account to Jose Farley into their Savings account at 2022/04/24 20:14:19
+
+Buzz Lightyear purchased a Random Item 3 for 8.74$ from miners bank using their Checking account at 2022/04/24 20:14:20
+
+Buzz Lightyear purchased a Chick-Fil-A Combo for 9.87$ from miners bank using their Checking account at 2022/04/24 20:14:20
+
+Buzz Lightyear deposited 3985.05$ from their Savings account at 2022/04/24 20:14:21
+
+Buzz Lightyear paid 940.46$ from their Checking account to Rebecca Fisher into their Checking account at 2022/04/24 20:14:22
+
+Buzz Lightyear deposited 3124.28$ from their Checking account at 2022/04/24 20:14:23
+
+Buzz Lightyear deposited 2504.45$ from their Savings account at 2022/04/24 20:14:23
+
+Buzz Lightyear paid 332.99$ from their Checking account to Alexis Ford into their Checking account at 2022/04/24 20:14:23
+
+Buzz Lightyear deposited 3409.36$ from their Savings account at 2022/04/24 20:14:24
+
+Buzz Lightyear purchased a Random Item 71 for 7.00$ from miners bank using their Credit account at 2022/04/24 20:14:24
+
+Buzz Lightyear paid 389.29$ from their Checking account to Andrew Hall into their Checking account at 2022/04/24 20:14:24
+
+Buzz Lightyear paid 431.02$ from their Checking account to Martin Edwards into their Checking account at 2022/04/24 20:14:24
+
+Buzz Lightyear deposited 3068.80$ from their Checking account at 2022/04/24 20:14:25
+
+Buzz Lightyear purchased a Random Item 20 for 65.92$ from miners bank using their Credit account at 2022/04/24 20:14:25
+
+Buzz Lightyear paid 692.42$ from their Checking account to Edward Molina into their Savings account at 2022/04/24 20:14:26
+
+Buzz Lightyear purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:14:26
+
+Buzz Lightyear deposited 3746.68$ from their Checking account at 2022/04/24 20:14:28
+
+Buzz Lightyear purchased a Random Item 54 for 31.13$ from miners bank using their Checking account at 2022/04/24 20:14:28
+
+Buzz Lightyear purchased a Random Item 59 for 73.76$ from miners bank using their Credit account at 2022/04/24 20:14:28
+
+Buzz Lightyear purchased a Random Item 39 for 91.15$ from miners bank using their Checking account at 2022/04/24 20:14:29
+
+Buzz Lightyear paid 717.61$ from their Checking account to Tammy Martinez into their Checking account at 2022/04/24 20:14:30
+
+Buzz Lightyear paid 972.21$ from their Checking account to Megan Smith into their Savings account at 2022/04/24 20:14:31
+
+Buzz Lightyear paid 757.35$ from their Checking account to Crystal Johnson into their Savings account at 2022/04/24 20:14:31
+
+Buzz Lightyear deposited 1838.10$ from their Checking account at 2022/04/24 20:14:31
+
+Buzz Lightyear purchased a Parking Permit C for 300.00$ from miners bank using their Credit account at 2022/04/24 20:14:32
+
+Buzz Lightyear purchased a Random Item 36 for 12.32$ from miners bank using their Checking account at 2022/04/24 20:14:33
+
+Buzz Lightyear paid 440.31$ from their Checking account to Jessica Anderson into their Savings account at 2022/04/24 20:14:33
+
+Buzz Lightyear paid 476.21$ from their Checking account to April Turner into their Checking account at 2022/04/24 20:14:33
+
+Buzz Lightyear purchased a Random Item 45 for 72.89$ from miners bank using their Credit account at 2022/04/24 20:14:34
+
+Buzz Lightyear paid 261.37$ from their Checking account to Hannah Arias into their Savings account at 2022/04/24 20:14:34
+
+Buzz Lightyear deposited 1889.83$ from their Checking account at 2022/04/24 20:14:36
+
+Buzz Lightyear paid 178.05$ from their Checking account to Joseph Macdonald into their Savings account at 2022/04/24 20:14:37
+
+Buzz Lightyear purchased a UTEP T-Shirt for 19.97$ from miners bank using their Credit account at 2022/04/24 20:14:38
+
+Buzz Lightyear deposited 2443.45$ from their Savings account at 2022/04/24 20:14:39
+
+Buzz Lightyear purchased a Post-It Notes for 4.50$ from miners bank using their Checking account at 2022/04/24 20:14:39
+
+Buzz Lightyear paid 969.24$ from their Checking account to Margaret Smith into their Savings account at 2022/04/24 20:14:40
+
+Buzz Lightyear paid 855.47$ from their Checking account to Olivia Richardson into their Savings account at 2022/04/24 20:14:40
+
+Buzz Lightyear deposited 1450.70$ from their Checking account at 2022/04/24 20:14:40
+
+Buzz Lightyear purchased a Random Item 66 for 97.81$ from miners bank using their Credit account at 2022/04/24 20:14:40
+
+Buzz Lightyear deposited 4498.01$ from their Savings account at 2022/04/24 20:14:41
+
+Buzz Lightyear purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:14:44
+
+Buzz Lightyear purchased a Backpack for 21.23$ from miners bank using their Credit account at 2022/04/24 20:14:44
+
+Buzz Lightyear deposited 1038.76$ from their Credit account at 2022/04/24 20:14:44
+
+Buzz Lightyear paid 632.91$ from their Checking account to Christopher Berry into their Checking account at 2022/04/24 20:14:45
+
+Buzz Lightyear paid 869.88$ from their Checking account to Lance Dominguez into their Savings account at 2022/04/24 20:14:50
+
+Buzz Lightyear paid 324.86$ from their Checking account to Kayla Smith into their Checking account at 2022/04/24 20:14:52
+
+Buzz Lightyear paid 567.11$ from their Checking account to Zachary Campbell into their Checking account at 2022/04/24 20:14:55
+
+Buzz Lightyear deposited 1833.84$ from their Checking account at 2022/04/24 20:14:57
+
+Buzz Lightyear deposited 424.64$ from their Savings account at 2022/04/24 20:14:58
+
+Buzz Lightyear deposited 2594.20$ from their Checking account at 2022/04/24 20:14:58
+
+Buzz Lightyear purchased a Random Item 52 for 64.45$ from miners bank using their Checking account at 2022/04/24 20:14:59
+
+Buzz Lightyear deposited 4129.28$ from their Checking account at 2022/04/24 20:14:59
+
+Buzz Lightyear paid 489.58$ from their Checking account to Angela Mcintyre into their Checking account at 2022/04/24 20:15:00
+
+Buzz Lightyear deposited 1623.60$ from their Checking account at 2022/04/24 20:15:00
+
+Buzz Lightyear purchased a Random Item 21 for 98.36$ from miners bank using their Checking account at 2022/04/24 20:15:02
+
+Buzz Lightyear paid 614.84$ from their Checking account to Timothy Wagner into their Checking account at 2022/04/24 20:15:03
+
+Buzz Lightyear purchased a Random Item 42 for 7.36$ from miners bank using their Checking account at 2022/04/24 20:15:03
+
+Buzz Lightyear paid 408.86$ from their Checking account to Thomas Elliott into their Checking account at 2022/04/24 20:15:03
+
+Buzz Lightyear purchased a UTEP Hoodie for 29.99$ from miners bank using their Credit account at 2022/04/24 20:15:04
+
+Buzz Lightyear deposited 979.27$ from their Checking account at 2022/04/24 20:15:04
+
+Buzz Lightyear deposited 4482.05$ from their Savings account at 2022/04/24 20:15:04
+
+Buzz Lightyear paid 347.73$ from their Checking account to Pamela Carter into their Checking account at 2022/04/24 20:15:06
+
+Buzz Lightyear paid 711.87$ from their Checking account to Jennifer Mills into their Savings account at 2022/04/24 20:15:08
+
+Buzz Lightyear paid 281.52$ from their Checking account to Mary Cruz into their Savings account at 2022/04/24 20:15:08
+
+Buzz Lightyear paid 160.89$ from their Checking account to Sean Hernandez into their Savings account at 2022/04/24 20:15:09
+
+Buzz Lightyear deposited 4693.92$ from their Checking account at 2022/04/24 20:15:10
+
+Buzz Lightyear paid 351.44$ from their Checking account to Sherri Armstrong into their Savings account at 2022/04/24 20:15:10
+
+Buzz Lightyear deposited 2103.31$ from their Checking account at 2022/04/24 20:15:10
+
+Buzz Lightyear paid 185.52$ from their Checking account to Jon Lopez into their Savings account at 2022/04/24 20:15:10
+
+Buzz Lightyear deposited 4880.55$ from their Checking account at 2022/04/24 20:15:13
+
+Buzz Lightyear paid 625.10$ from their Checking account to Valeria MartinDelCampo into their Checking account at 2022/04/24 20:15:13
+
+Buzz Lightyear purchased a Pen for 3.99$ from miners bank using their Credit account at 2022/04/24 20:15:14
+
+Buzz Lightyear deposited 368.39$ from their Checking account at 2022/04/24 20:15:15
+
+Buzz Lightyear paid 682.54$ from their Checking account to Ronald Kent into their Savings account at 2022/04/24 20:15:15
+
+Buzz Lightyear paid 891.31$ from their Checking account to Sean Hernandez into their Savings account at 2022/04/24 20:15:17
+
+Buzz Lightyear purchased a Random Item 24 for 20.44$ from miners bank using their Checking account at 2022/04/24 20:15:19
+
+Buzz Lightyear paid 626.90$ from their Checking account to Mary Church into their Checking account at 2022/04/24 20:15:19
+
+Buzz Lightyear paid 564.11$ from their Checking account to Janet Hughes into their Checking account at 2022/04/24 20:15:19
+
+Buzz Lightyear deposited 4692.79$ from their Checking account at 2022/04/24 20:15:20
+
+Buzz Lightyear paid 352.06$ from their Checking account to Terrence Dixon into their Savings account at 2022/04/24 20:15:20
+
+Buzz Lightyear paid 399.36$ from their Checking account to Barbara Robertson into their Checking account at 2022/04/24 20:15:21
+
+Buzz Lightyear deposited 1961.17$ from their Savings account at 2022/04/24 20:15:22
+
+Buzz Lightyear purchased a Random Item 21 for 98.36$ from miners bank using their Checking account at 2022/04/24 20:15:22
+
+Buzz Lightyear paid 909.94$ from their Checking account to Margaret Smith into their Savings account at 2022/04/24 20:15:24
+
+Buzz Lightyear deposited 3664.77$ from their Savings account at 2022/04/24 20:15:26
+
+Buzz Lightyear paid 113.81$ from their Checking account to Jose Toriano into their Savings account at 2022/04/24 20:15:27
+
+Buzz Lightyear deposited 3346.05$ from their Savings account at 2022/04/24 20:15:28
+
+Buzz Lightyear paid 418.23$ from their Checking account to Jennifer Carr into their Savings account at 2022/04/24 20:15:28
+
+Buzz Lightyear paid 572.13$ from their Checking account to Andrew Mcclure into their Checking account at 2022/04/24 20:15:29
+
+Buzz Lightyear deposited 476.67$ from their Checking account at 2022/04/24 20:15:30
+
+Buzz Lightyear paid 458.75$ from their Checking account to Alexis Black into their Checking account at 2022/04/24 20:15:32
+
+Buzz Lightyear paid 877.57$ from their Checking account to Anita Fletcher into their Checking account at 2022/04/24 20:15:32
+
+Buzz Lightyear purchased a Random Item 36 for 12.32$ from miners bank using their Credit account at 2022/04/24 20:15:32
+
+Buzz Lightyear paid 591.49$ from their Checking account to Michelle Oliver into their Checking account at 2022/04/24 20:15:33
+
+Buzz Lightyear deposited 218.90$ from their Checking account at 2022/04/24 20:15:33
+
+Buzz Lightyear deposited 4523.30$ from their Checking account at 2022/04/24 20:15:35
+
+Buzz Lightyear paid 232.98$ from their Checking account to Melanie Kirk into their Checking account at 2022/04/24 20:15:37
+
+Buzz Lightyear purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Credit account at 2022/04/24 20:15:38
+
+Buzz Lightyear paid 652.66$ from their Checking account to Gregory Short into their Savings account at 2022/04/24 20:15:39
+
+Buzz Lightyear deposited 4257.49$ from their Savings account at 2022/04/24 20:15:39
+
+Buzz Lightyear deposited 1518.75$ from their Checking account at 2022/04/24 20:15:39
+
+Buzz Lightyear purchased a Random Item 39 for 91.15$ from miners bank using their Checking account at 2022/04/24 20:15:40
+
+Buzz Lightyear paid 658.91$ from their Checking account to Kimberly Richardson into their Checking account at 2022/04/24 20:15:40
+
+Buzz Lightyear paid 601.78$ from their Checking account to Tammy Thomas into their Checking account at 2022/04/24 20:15:41
+
+Buzz Lightyear deposited 3854.00$ from their Checking account at 2022/04/24 20:15:42
+
+Buzz Lightyear paid 300.61$ from their Checking account to Michael Thomas into their Checking account at 2022/04/24 20:15:42
+
+Buzz Lightyear purchased a Random Item 40 for 63.71$ from miners bank using their Credit account at 2022/04/24 20:15:44
+
+Buzz Lightyear paid 181.53$ from their Checking account to Pinocchio Disney into their Checking account at 2022/04/24 20:15:44
+
+Buzz Lightyear purchased a Random Item 49 for 88.31$ from miners bank using their Checking account at 2022/04/24 20:15:44
+
+Buzz Lightyear purchased a Small Textbook for 20.00$ from miners bank using their Credit account at 2022/04/24 20:15:45
+
+Buzz Lightyear paid 892.32$ from their Checking account to Christopher Ortega into their Savings account at 2022/04/24 20:15:45
+
+Buzz Lightyear paid 627.29$ from their Checking account to Monica Sullivan into their Checking account at 2022/04/24 20:15:47
+
+Buzz Lightyear paid 761.35$ from their Checking account to Brian Jensen into their Checking account at 2022/04/24 20:15:48
+
+Buzz Lightyear paid 720.01$ from their Checking account to Zachary Ellison into their Savings account at 2022/04/24 20:15:48
+
+Buzz Lightyear deposited 2214.61$ from their Checking account at 2022/04/24 20:15:49
+
+Buzz Lightyear purchased a Random Item 9 for 22.21$ from miners bank using their Checking account at 2022/04/24 20:15:49
+
+Buzz Lightyear deposited 1666.94$ from their Checking account at 2022/04/24 20:15:50
+
+Buzz Lightyear paid 595.63$ from their Checking account to Alexis Shea into their Checking account at 2022/04/24 20:15:50
+
+Buzz Lightyear purchased a Random Item 48 for 88.19$ from miners bank using their Credit account at 2022/04/24 20:15:51
+
+Buzz Lightyear paid 927.02$ from their Checking account to Michael Flores into their Savings account at 2022/04/24 20:15:51
+
+Buzz Lightyear paid 559.05$ from their Checking account to Erica Burch into their Checking account at 2022/04/24 20:15:52
+
+Buzz Lightyear deposited 2933.32$ from their Checking account at 2022/04/24 20:15:52
+
+Buzz Lightyear purchased a Parking Permit A for 200.00$ from miners bank using their Credit account at 2022/04/24 20:15:53
+
+Buzz Lightyear deposited 2758.24$ from their Savings account at 2022/04/24 20:15:53
+
+
+###############################################

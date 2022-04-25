@@ -71,7 +71,9 @@ public class ManagerMenu extends BankMenu{
                             }
                             break;
                         }
-                        System.out.println("Choose appropriate option(1-3)");
+                        if((op < 1 || op > 3)) {
+                            System.out.println("Choose appropriate option(1-3)");
+                        }
                     }
                     System.out.println("Provide the number of the account");
                     String num = super.getUserInput().nextLine();

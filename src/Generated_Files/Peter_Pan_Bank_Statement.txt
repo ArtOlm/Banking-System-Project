@@ -1,0 +1,649 @@
+Name: Peter Pan
+Address: 561, Anaheim, CA 92802
+Phone: (714) 781-4636
+DOB: 5/2/50
+ID: 15
+Pin: 5391
+Checking Account Number: 1000015   Current Checking Account Balance: $80577.65
+Savings Account Number: 2000015   Current Savings Account Balance: $187492.47
+Credit Account Number: 3000015   Current Credit Account Balance: $97.81   Credit Score: 561   Credit Limit: 100
+###############################################
+
+Session Start: 2022/04/24 20:10:16
+Starting Checking Balance: 2031.34$
+Starting Savings Balance: 22404.62$
+Starting Credit Balance: 13.72$
+
+###############################################
+Session End: 2022/04/24 20:15:52
+Ending Checking Balance: 80297.73$
+Ending Savings Balance: 187492.47$
+Ending Credit Balance: 97.81$
+
+###############################################
+Total money spent at Miners Mall: 3663.14$
+###############################################
+Account Activity
+################
+Peter Pan deposited 19.86$ from their Checking account at 2022/04/24 20:10:16
+
+Peter Pan purchased a Random Item 58 for 46.01$ from miners bank using their Credit account at 2022/04/24 20:10:22
+
+Peter Pan paid 347.19$ from their Checking account to Jennifer Carr into their Checking account at 2022/04/24 20:10:22
+
+Peter Pan paid 984.13$ from their Checking account to Alyssa Kelly into their Savings account at 2022/04/24 20:10:23
+
+Peter Pan purchased a Random Item 11 for 23.56$ from miners bank using their Checking account at 2022/04/24 20:10:23
+
+Peter Pan paid 588.06$ from their Checking account to Wesley Lambert into their Savings account at 2022/04/24 20:10:24
+
+Peter Pan purchased a Random Item 15 for 13.82$ from miners bank using their Checking account at 2022/04/24 20:10:25
+
+Peter Pan paid 366.96$ from their Checking account to Anthony Sanchez into their Checking account at 2022/04/24 20:10:25
+
+Peter Pan paid 387.62$ from their Checking account to Kathleen Small into their Savings account at 2022/04/24 20:10:27
+
+Peter Pan purchased a Chick-Fil-A Combo for 9.87$ from miners bank using their Checking account at 2022/04/24 20:10:27
+
+Peter Pan deposited 1581.73$ from their Savings account at 2022/04/24 20:10:29
+
+Peter Pan purchased a Random Item 32 for 3.37$ from miners bank using their Checking account at 2022/04/24 20:10:34
+
+Peter Pan paid 81.84$ from their Checking account to Angela Mcintyre into their Savings account at 2022/04/24 20:10:34
+
+Peter Pan purchased a Pen for 3.99$ from miners bank using their Credit account at 2022/04/24 20:10:35
+
+Peter Pan paid 455.31$ from their Checking account to Richard Torres into their Savings account at 2022/04/24 20:10:36
+
+Peter Pan purchased a Chick-Fil-A Combo for 9.87$ from miners bank using their Credit account at 2022/04/24 20:10:36
+
+Peter Pan purchased a Einsteins Bagals for 3.99$ from miners bank using their Checking account at 2022/04/24 20:10:37
+
+Peter Pan deposited 4735.69$ from their Savings account at 2022/04/24 20:10:38
+
+Peter Pan purchased a Random Item 63 for 91.30$ from miners bank using their Checking account at 2022/04/24 20:10:38
+
+Peter Pan deposited 3432.87$ from their Checking account at 2022/04/24 20:10:39
+
+Peter Pan paid 288.01$ from their Checking account to Kathleen Small into their Savings account at 2022/04/24 20:10:49
+
+Peter Pan paid 696.44$ from their Checking account to Franz Reyes into their Savings account at 2022/04/24 20:10:51
+
+Peter Pan paid 455.72$ from their Checking account to Adam Bass into their Checking account at 2022/04/24 20:10:57
+
+Peter Pan deposited 4406.61$ from their Checking account at 2022/04/24 20:11:01
+
+Peter Pan deposited 4572.23$ from their Checking account at 2022/04/24 20:11:03
+
+Peter Pan paid 232.70$ from their Checking account to Teresa Gardner into their Checking account at 2022/04/24 20:11:04
+
+Peter Pan deposited 230.43$ from their Checking account at 2022/04/24 20:11:06
+
+Peter Pan purchased a Random Item 38 for 32.33$ from miners bank using their Checking account at 2022/04/24 20:11:07
+
+Peter Pan deposited 2275.21$ from their Savings account at 2022/04/24 20:11:08
+
+Peter Pan deposited 1844.56$ from their Savings account at 2022/04/24 20:11:08
+
+Peter Pan purchased a Random Item 39 for 91.15$ from miners bank using their Checking account at 2022/04/24 20:11:11
+
+Peter Pan paid 377.00$ from their Checking account to Elizabeth Dominguez into their Checking account at 2022/04/24 20:11:13
+
+Peter Pan purchased a Random Item 5 for 68.67$ from miners bank using their Checking account at 2022/04/24 20:11:16
+
+Peter Pan paid 746.88$ from their Checking account to Teresa Gardner into their Checking account at 2022/04/24 20:11:17
+
+Peter Pan purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:11:17
+
+Peter Pan paid 395.33$ from their Checking account to Edward Molina into their Checking account at 2022/04/24 20:11:17
+
+Peter Pan purchased a Random Item 8 for 8.73$ from miners bank using their Credit account at 2022/04/24 20:11:17
+
+Peter Pan paid 852.27$ from their Checking account to David Mills into their Checking account at 2022/04/24 20:11:17
+
+Peter Pan paid 606.11$ from their Checking account to Kendra Sawyer into their Savings account at 2022/04/24 20:11:18
+
+Peter Pan purchased a Random Item 33 for 11.41$ from miners bank using their Checking account at 2022/04/24 20:11:19
+
+Peter Pan deposited 3113.27$ from their Savings account at 2022/04/24 20:11:20
+
+Peter Pan purchased a Random Item 71 for 7.00$ from miners bank using their Credit account at 2022/04/24 20:11:20
+
+Peter Pan deposited 2210.79$ from their Checking account at 2022/04/24 20:11:20
+
+Peter Pan paid 75.88$ from their Checking account to Robert Wu into their Checking account at 2022/04/24 20:11:21
+
+Peter Pan purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:11:21
+
+Peter Pan paid 276.25$ from their Checking account to Shane Arnold into their Checking account at 2022/04/24 20:11:22
+
+Peter Pan paid 275.07$ from their Checking account to George Wood into their Checking account at 2022/04/24 20:11:24
+
+Peter Pan purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Credit account at 2022/04/24 20:11:24
+
+Peter Pan purchased a Random Item 43 for 69.31$ from miners bank using their Checking account at 2022/04/24 20:11:24
+
+Peter Pan deposited 1316.72$ from their Checking account at 2022/04/24 20:11:26
+
+Peter Pan purchased a Chick-Fil-A Combo for 9.87$ from miners bank using their Checking account at 2022/04/24 20:11:27
+
+Peter Pan deposited 429.75$ from their Savings account at 2022/04/24 20:11:30
+
+Peter Pan paid 924.17$ from their Checking account to Miguel Ortiz into their Checking account at 2022/04/24 20:11:31
+
+Peter Pan deposited 4402.78$ from their Checking account at 2022/04/24 20:11:32
+
+Peter Pan paid 722.55$ from their Checking account to John Jones into their Checking account at 2022/04/24 20:11:32
+
+Peter Pan deposited 2062.46$ from their Savings account at 2022/04/24 20:11:34
+
+Peter Pan paid 750.94$ from their Checking account to Quasimodo Disney into their Savings account at 2022/04/24 20:11:34
+
+Peter Pan paid 250.69$ from their Checking account to Cynthia Powell into their Checking account at 2022/04/24 20:11:36
+
+Peter Pan paid 816.53$ from their Checking account to Thomas Sanders into their Savings account at 2022/04/24 20:11:37
+
+Peter Pan deposited 3922.37$ from their Savings account at 2022/04/24 20:11:38
+
+Peter Pan deposited 2948.90$ from their Savings account at 2022/04/24 20:11:38
+
+Peter Pan purchased a Random Item 37 for 85.78$ from miners bank using their Checking account at 2022/04/24 20:11:40
+
+Peter Pan purchased a Random Item 26 for 34.23$ from miners bank using their Checking account at 2022/04/24 20:11:40
+
+Peter Pan deposited 4025.42$ from their Checking account at 2022/04/24 20:11:41
+
+Peter Pan paid 87.17$ from their Checking account to Gail Parker into their Savings account at 2022/04/24 20:11:42
+
+Peter Pan paid 456.06$ from their Checking account to Amanda Vang into their Checking account at 2022/04/24 20:11:44
+
+Peter Pan paid 888.54$ from their Checking account to Nathan Coleman into their Checking account at 2022/04/24 20:11:45
+
+Peter Pan paid 886.97$ from their Checking account to Sean Hernandez into their Savings account at 2022/04/24 20:11:48
+
+Peter Pan deposited 3017.62$ from their Savings account at 2022/04/24 20:11:49
+
+Peter Pan purchased a Post-It Notes for 4.50$ from miners bank using their Checking account at 2022/04/24 20:11:55
+
+Peter Pan paid 333.42$ from their Checking account to Brooke Padilla into their Savings account at 2022/04/24 20:12:00
+
+Peter Pan paid 406.89$ from their Checking account to Lawrence Price into their Savings account at 2022/04/24 20:12:01
+
+Peter Pan purchased a Medium Textbook for 50.00$ from miners bank using their Checking account at 2022/04/24 20:12:02
+
+Peter Pan purchased a Random Item 54 for 31.13$ from miners bank using their Checking account at 2022/04/24 20:12:04
+
+Peter Pan purchased a Random Item 6 for 21.54$ from miners bank using their Checking account at 2022/04/24 20:12:08
+
+Peter Pan purchased a Random Item 41 for 94.07$ from miners bank using their Checking account at 2022/04/24 20:12:10
+
+Peter Pan deposited 1448.21$ from their Checking account at 2022/04/24 20:12:12
+
+Peter Pan paid 463.94$ from their Checking account to Steven Owens into their Checking account at 2022/04/24 20:12:16
+
+Peter Pan deposited 3663.64$ from their Savings account at 2022/04/24 20:12:16
+
+Peter Pan paid 27.98$ from their Checking account to Ryan Mcconnell into their Savings account at 2022/04/24 20:12:16
+
+Peter Pan deposited 3106.77$ from their Savings account at 2022/04/24 20:12:17
+
+Peter Pan deposited 2446.40$ from their Checking account at 2022/04/24 20:12:17
+
+Peter Pan deposited 839.69$ from their Checking account at 2022/04/24 20:12:17
+
+Peter Pan paid 546.03$ from their Checking account to Johnatan Garcia into their Savings account at 2022/04/24 20:12:18
+
+Peter Pan paid 302.52$ from their Checking account to Jamie Hernandez into their Savings account at 2022/04/24 20:12:19
+
+Peter Pan purchased a Random Item 8 for 8.73$ from miners bank using their Checking account at 2022/04/24 20:12:20
+
+Peter Pan deposited 4486.42$ from their Checking account at 2022/04/24 20:12:21
+
+Peter Pan purchased a Random Item 48 for 88.19$ from miners bank using their Checking account at 2022/04/24 20:12:22
+
+Peter Pan paid 591.99$ from their Checking account to Mark Butler into their Checking account at 2022/04/24 20:12:26
+
+Peter Pan purchased a Random Item 9 for 22.21$ from miners bank using their Checking account at 2022/04/24 20:12:27
+
+Peter Pan paid 980.38$ from their Checking account to Elizabeth Cruz into their Savings account at 2022/04/24 20:12:27
+
+Peter Pan paid 305.21$ from their Checking account to Jennifer Mills into their Savings account at 2022/04/24 20:12:27
+
+Peter Pan purchased a Random Item 36 for 12.32$ from miners bank using their Checking account at 2022/04/24 20:12:28
+
+Peter Pan purchased a Random Item 32 for 3.37$ from miners bank using their Checking account at 2022/04/24 20:12:30
+
+Peter Pan deposited 545.36$ from their Savings account at 2022/04/24 20:12:31
+
+Peter Pan deposited 1900.87$ from their Savings account at 2022/04/24 20:12:32
+
+Peter Pan deposited 4397.83$ from their Checking account at 2022/04/24 20:12:33
+
+Peter Pan paid 989.67$ from their Checking account to Matthew Erickson into their Savings account at 2022/04/24 20:12:33
+
+Peter Pan paid 611.84$ from their Checking account to Lindsay Webster into their Savings account at 2022/04/24 20:12:34
+
+Peter Pan purchased a Random Item 44 for 13.45$ from miners bank using their Checking account at 2022/04/24 20:12:34
+
+Peter Pan deposited 3629.49$ from their Checking account at 2022/04/24 20:12:35
+
+Peter Pan deposited 1187.61$ from their Savings account at 2022/04/24 20:12:36
+
+Peter Pan paid 940.79$ from their Checking account to Jasmine Disney into their Checking account at 2022/04/24 20:12:42
+
+Peter Pan paid 896.17$ from their Checking account to Lisa Spencer into their Checking account at 2022/04/24 20:12:42
+
+Peter Pan deposited 3473.59$ from their Savings account at 2022/04/24 20:12:43
+
+Peter Pan purchased a Random Item 45 for 72.89$ from miners bank using their Checking account at 2022/04/24 20:12:44
+
+Peter Pan paid 305.47$ from their Checking account to Brett Mathis into their Checking account at 2022/04/24 20:12:47
+
+Peter Pan purchased a Random Item 42 for 7.36$ from miners bank using their Checking account at 2022/04/24 20:12:47
+
+Peter Pan deposited 2038.29$ from their Savings account at 2022/04/24 20:12:48
+
+Peter Pan purchased a Random Item 72 for 53.21$ from miners bank using their Checking account at 2022/04/24 20:12:49
+
+Peter Pan purchased a Parking Permit C for 300.00$ from miners bank using their Checking account at 2022/04/24 20:12:50
+
+Peter Pan purchased a Random Item 66 for 97.81$ from miners bank using their Checking account at 2022/04/24 20:12:51
+
+Peter Pan purchased a Post-It Notes for 4.50$ from miners bank using their Credit account at 2022/04/24 20:12:53
+
+Peter Pan deposited 1338.32$ from their Checking account at 2022/04/24 20:12:53
+
+Peter Pan purchased a Random Item 14 for 38.84$ from miners bank using their Checking account at 2022/04/24 20:12:54
+
+Peter Pan paid 120.02$ from their Checking account to Jason Clark into their Savings account at 2022/04/24 20:12:54
+
+Peter Pan paid 484.22$ from their Checking account to Leroy Walters into their Checking account at 2022/04/24 20:12:57
+
+Peter Pan deposited 3084.75$ from their Savings account at 2022/04/24 20:12:57
+
+Peter Pan deposited 3076.56$ from their Checking account at 2022/04/24 20:12:58
+
+Peter Pan deposited 1644.20$ from their Checking account at 2022/04/24 20:12:58
+
+Peter Pan deposited 3030.35$ from their Savings account at 2022/04/24 20:12:59
+
+Peter Pan paid 109.77$ from their Checking account to Cheryl Wilson into their Savings account at 2022/04/24 20:13:00
+
+Peter Pan deposited 898.63$ from their Savings account at 2022/04/24 20:13:02
+
+Peter Pan deposited 3918.91$ from their Savings account at 2022/04/24 20:13:04
+
+Peter Pan paid 333.61$ from their Checking account to Andrew Mcclure into their Checking account at 2022/04/24 20:13:05
+
+Peter Pan purchased a Parking Permit C for 300.00$ from miners bank using their Checking account at 2022/04/24 20:13:06
+
+Peter Pan purchased a Random Item 66 for 97.81$ from miners bank using their Checking account at 2022/04/24 20:13:06
+
+Peter Pan purchased a Random Item 38 for 32.33$ from miners bank using their Checking account at 2022/04/24 20:13:07
+
+Peter Pan paid 569.19$ from their Checking account to Shawn Lee into their Checking account at 2022/04/24 20:13:07
+
+Peter Pan deposited 2722.96$ from their Savings account at 2022/04/24 20:13:07
+
+Peter Pan purchased a Random Item 46 for 16.86$ from miners bank using their Checking account at 2022/04/24 20:13:07
+
+Peter Pan paid 283.96$ from their Checking account to Paul Herman into their Checking account at 2022/04/24 20:13:07
+
+Peter Pan paid 487.95$ from their Checking account to Michelle Griffin into their Savings account at 2022/04/24 20:13:09
+
+Peter Pan deposited 654.68$ from their Checking account at 2022/04/24 20:13:10
+
+Peter Pan purchased a Sushi Meal for 11.25$ from miners bank using their Checking account at 2022/04/24 20:13:13
+
+Peter Pan paid 273.75$ from their Checking account to Rachel Vasquez into their Checking account at 2022/04/24 20:13:14
+
+Peter Pan paid 292.23$ from their Checking account to Doris Moore into their Savings account at 2022/04/24 20:13:15
+
+Peter Pan paid 284.70$ from their Checking account to Elizabeth Dominguez into their Savings account at 2022/04/24 20:13:18
+
+Peter Pan paid 605.18$ from their Checking account to Heather Robbins into their Savings account at 2022/04/24 20:13:18
+
+Peter Pan paid 520.42$ from their Checking account to Ariel Disney into their Checking account at 2022/04/24 20:13:19
+
+Peter Pan paid 570.74$ from their Checking account to Patricia Mcdonald into their Savings account at 2022/04/24 20:13:19
+
+Peter Pan purchased a Random Item 62 for 46.23$ from miners bank using their Checking account at 2022/04/24 20:13:20
+
+Peter Pan purchased a Random Item 65 for 59.95$ from miners bank using their Checking account at 2022/04/24 20:13:20
+
+Peter Pan deposited 3136.24$ from their Savings account at 2022/04/24 20:13:21
+
+Peter Pan paid 521.87$ from their Checking account to Jill Solis into their Savings account at 2022/04/24 20:13:21
+
+Peter Pan paid 713.08$ from their Checking account to Barbara Love into their Checking account at 2022/04/24 20:13:22
+
+Peter Pan deposited 2850.43$ from their Savings account at 2022/04/24 20:13:22
+
+Peter Pan deposited 4412.76$ from their Checking account at 2022/04/24 20:13:23
+
+Peter Pan purchased a Random Item 36 for 12.32$ from miners bank using their Checking account at 2022/04/24 20:13:24
+
+Peter Pan deposited 616.06$ from their Checking account at 2022/04/24 20:13:24
+
+Peter Pan paid 139.57$ from their Checking account to Michael King into their Checking account at 2022/04/24 20:13:25
+
+Peter Pan purchased a Random Item 74 for 83.76$ from miners bank using their Checking account at 2022/04/24 20:13:26
+
+Peter Pan paid 199.86$ from their Checking account to Travis Ruiz into their Checking account at 2022/04/24 20:13:27
+
+Peter Pan purchased a Random Item 14 for 38.84$ from miners bank using their Checking account at 2022/04/24 20:13:28
+
+Peter Pan paid 772.54$ from their Checking account to Amber Conley into their Checking account at 2022/04/24 20:13:28
+
+Peter Pan deposited 4099.78$ from their Checking account at 2022/04/24 20:13:29
+
+Peter Pan purchased a Random Item 24 for 20.44$ from miners bank using their Checking account at 2022/04/24 20:13:32
+
+Peter Pan paid 253.64$ from their Checking account to Mulan Disney into their Checking account at 2022/04/24 20:13:32
+
+Peter Pan paid 4.30$ from their Checking account to Sheri Adams into their Savings account at 2022/04/24 20:13:33
+
+Peter Pan paid 73.42$ from their Checking account to Daniel Pedroza into their Savings account at 2022/04/24 20:13:35
+
+Peter Pan deposited 572.46$ from their Savings account at 2022/04/24 20:13:35
+
+Peter Pan purchased a El Sazon Minero Burrito for 3.99$ from miners bank using their Checking account at 2022/04/24 20:13:36
+
+Peter Pan paid 640.05$ from their Checking account to Melissa Johnson into their Savings account at 2022/04/24 20:13:37
+
+Peter Pan paid 506.50$ from their Checking account to Diana Matthews into their Savings account at 2022/04/24 20:13:39
+
+Peter Pan paid 892.91$ from their Checking account to Danielle Conrad into their Savings account at 2022/04/24 20:13:39
+
+Peter Pan deposited 540.03$ from their Savings account at 2022/04/24 20:13:42
+
+Peter Pan paid 393.40$ from their Checking account to Sean Smith into their Checking account at 2022/04/24 20:13:44
+
+Peter Pan purchased a Random Item 13 for 52.23$ from miners bank using their Checking account at 2022/04/24 20:13:44
+
+Peter Pan paid 594.63$ from their Checking account to Alexander Kelly into their Checking account at 2022/04/24 20:13:45
+
+Peter Pan paid 589.97$ from their Checking account to Brett Mathis into their Savings account at 2022/04/24 20:13:46
+
+Peter Pan purchased a Medium Textbook for 50.00$ from miners bank using their Checking account at 2022/04/24 20:13:46
+
+Peter Pan deposited 2462.67$ from their Checking account at 2022/04/24 20:13:47
+
+Peter Pan paid 203.95$ from their Checking account to Brian Hayes into their Savings account at 2022/04/24 20:13:49
+
+Peter Pan deposited 4443.23$ from their Savings account at 2022/04/24 20:13:49
+
+Peter Pan deposited 2563.70$ from their Savings account at 2022/04/24 20:13:54
+
+Peter Pan deposited 76.41$ from their Savings account at 2022/04/24 20:13:55
+
+Peter Pan purchased a Grande Vanilla Iced Latte for 4.87$ from miners bank using their Checking account at 2022/04/24 20:13:56
+
+Peter Pan paid 171.83$ from their Checking account to Christopher Jones into their Savings account at 2022/04/24 20:13:57
+
+Peter Pan purchased a Random Item 33 for 11.41$ from miners bank using their Checking account at 2022/04/24 20:13:57
+
+Peter Pan paid 0.80$ from their Checking account to Perry Hill into their Checking account at 2022/04/24 20:13:59
+
+Peter Pan paid 817.57$ from their Checking account to Brittany Ray into their Savings account at 2022/04/24 20:14:01
+
+Peter Pan paid 503.14$ from their Checking account to Olivia Romero into their Checking account at 2022/04/24 20:14:01
+
+Peter Pan paid 634.89$ from their Checking account to Anna Davis into their Savings account at 2022/04/24 20:14:01
+
+Peter Pan paid 892.54$ from their Checking account to Thomas Sanders into their Checking account at 2022/04/24 20:14:01
+
+Peter Pan purchased a Random Item 65 for 59.95$ from miners bank using their Checking account at 2022/04/24 20:14:02
+
+Peter Pan purchased a Random Item 11 for 23.56$ from miners bank using their Checking account at 2022/04/24 20:14:02
+
+Peter Pan deposited 4561.02$ from their Checking account at 2022/04/24 20:14:02
+
+Peter Pan paid 775.05$ from their Checking account to Cody Robles into their Savings account at 2022/04/24 20:14:06
+
+Peter Pan deposited 4824.62$ from their Checking account at 2022/04/24 20:14:06
+
+Peter Pan paid 782.84$ from their Checking account to Kathleen Small into their Savings account at 2022/04/24 20:14:06
+
+Peter Pan purchased a UTEP Hoodie for 29.99$ from miners bank using their Checking account at 2022/04/24 20:14:06
+
+Peter Pan deposited 3204.48$ from their Checking account at 2022/04/24 20:14:10
+
+Peter Pan paid 810.88$ from their Checking account to Jake Mitchell into their Checking account at 2022/04/24 20:14:10
+
+Peter Pan paid 63.71$ from their Checking account to Ashley Jones into their Savings account at 2022/04/24 20:14:10
+
+Peter Pan paid 334.65$ from their Checking account to Theresa Macias into their Checking account at 2022/04/24 20:14:11
+
+Peter Pan deposited 496.26$ from their Savings account at 2022/04/24 20:14:12
+
+Peter Pan paid 298.59$ from their Checking account to Carol Elliott into their Savings account at 2022/04/24 20:14:12
+
+Peter Pan deposited 3902.98$ from their Savings account at 2022/04/24 20:14:12
+
+Peter Pan purchased a Trenta Shaken Caramel Iced Latte with half Oat Milk and half Almond Milk with 2.5 Pumps of Vanilla and whip for 13.57$ from miners bank using their Checking account at 2022/04/24 20:14:13
+
+Peter Pan deposited 4284.48$ from their Savings account at 2022/04/24 20:14:15
+
+Peter Pan paid 507.72$ from their Checking account to Donald Ramirez into their Checking account at 2022/04/24 20:14:16
+
+Peter Pan paid 187.83$ from their Checking account to Anna Gutierrez into their Checking account at 2022/04/24 20:14:17
+
+Peter Pan paid 593.32$ from their Checking account to Miranda Walker into their Checking account at 2022/04/24 20:14:18
+
+Peter Pan paid 720.43$ from their Checking account to Doris Moore into their Savings account at 2022/04/24 20:14:18
+
+Peter Pan paid 496.25$ from their Checking account to Jennifer Guzman into their Checking account at 2022/04/24 20:14:19
+
+Peter Pan paid 267.98$ from their Checking account to Robert Park into their Savings account at 2022/04/24 20:14:19
+
+Peter Pan purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:14:20
+
+Peter Pan deposited 4391.43$ from their Checking account at 2022/04/24 20:14:20
+
+Peter Pan purchased a Random Item 71 for 7.00$ from miners bank using their Checking account at 2022/04/24 20:14:24
+
+Peter Pan paid 407.68$ from their Checking account to John Hill into their Savings account at 2022/04/24 20:14:25
+
+Peter Pan deposited 1300.72$ from their Savings account at 2022/04/24 20:14:26
+
+Peter Pan paid 574.26$ from their Checking account to Mary Gonzalez into their Checking account at 2022/04/24 20:14:27
+
+Peter Pan purchased a Random Item 11 for 23.56$ from miners bank using their Checking account at 2022/04/24 20:14:27
+
+Peter Pan paid 974.14$ from their Checking account to Misty Jimenez into their Savings account at 2022/04/24 20:14:29
+
+Peter Pan paid 797.84$ from their Checking account to Alan Verdin into their Checking account at 2022/04/24 20:14:31
+
+Peter Pan paid 195.37$ from their Checking account to Curtis Phillips into their Savings account at 2022/04/24 20:14:31
+
+Peter Pan paid 875.99$ from their Checking account to Robert Kennedy into their Savings account at 2022/04/24 20:14:32
+
+Peter Pan purchased a Backpack for 21.23$ from miners bank using their Checking account at 2022/04/24 20:14:33
+
+Peter Pan purchased a Random Item 68 for 22.25$ from miners bank using their Checking account at 2022/04/24 20:14:34
+
+Peter Pan purchased a Pen for 3.99$ from miners bank using their Checking account at 2022/04/24 20:14:34
+
+Peter Pan purchased a Small Textbook for 20.00$ from miners bank using their Checking account at 2022/04/24 20:14:35
+
+Peter Pan deposited 3168.13$ from their Savings account at 2022/04/24 20:14:35
+
+Peter Pan paid 877.06$ from their Checking account to Phillip Meyer into their Savings account at 2022/04/24 20:14:36
+
+Peter Pan deposited 1310.22$ from their Checking account at 2022/04/24 20:14:37
+
+Peter Pan deposited 2687.95$ from their Savings account at 2022/04/24 20:14:37
+
+Peter Pan deposited 2154.81$ from their Checking account at 2022/04/24 20:14:39
+
+Peter Pan purchased a Random Item 5 for 68.67$ from miners bank using their Checking account at 2022/04/24 20:14:39
+
+Peter Pan paid 654.86$ from their Checking account to Richard Paul into their Savings account at 2022/04/24 20:14:39
+
+Peter Pan paid 758.46$ from their Checking account to Alexis Shea into their Checking account at 2022/04/24 20:14:39
+
+Peter Pan purchased a Random Item 34 for 60.83$ from miners bank using their Checking account at 2022/04/24 20:14:39
+
+Peter Pan paid 947.10$ from their Checking account to Victor Juarez into their Savings account at 2022/04/24 20:14:39
+
+Peter Pan deposited 4485.80$ from their Savings account at 2022/04/24 20:14:40
+
+Peter Pan deposited 3920.53$ from their Checking account at 2022/04/24 20:14:40
+
+Peter Pan paid 259.72$ from their Checking account to Michele Stevens into their Savings account at 2022/04/24 20:14:41
+
+Peter Pan paid 394.99$ from their Checking account to Donna Allen into their Savings account at 2022/04/24 20:14:42
+
+Peter Pan paid 657.15$ from their Checking account to Hunter Moore into their Checking account at 2022/04/24 20:14:42
+
+Peter Pan deposited 3385.44$ from their Checking account at 2022/04/24 20:14:43
+
+Peter Pan deposited 1686.62$ from their Checking account at 2022/04/24 20:14:44
+
+Peter Pan purchased a Random Item 72 for 53.21$ from miners bank using their Checking account at 2022/04/24 20:14:44
+
+Peter Pan paid 25.34$ from their Checking account to Julia Jones into their Checking account at 2022/04/24 20:14:49
+
+Peter Pan paid 829.84$ from their Checking account to Norman Freeman into their Savings account at 2022/04/24 20:14:49
+
+Peter Pan paid 16.57$ from their Checking account to Dario Vazquez into their Checking account at 2022/04/24 20:14:50
+
+Peter Pan paid 767.42$ from their Checking account to Alyssa Reese into their Savings account at 2022/04/24 20:14:50
+
+Peter Pan paid 678.35$ from their Checking account to Amanda Baker into their Savings account at 2022/04/24 20:14:52
+
+Peter Pan paid 711.71$ from their Checking account to Christopher Ortega into their Checking account at 2022/04/24 20:14:54
+
+Peter Pan purchased a Random Item 14 for 38.84$ from miners bank using their Checking account at 2022/04/24 20:14:55
+
+Peter Pan purchased a Random Item 70 for 51.21$ from miners bank using their Checking account at 2022/04/24 20:14:56
+
+Peter Pan deposited 3682.91$ from their Checking account at 2022/04/24 20:14:58
+
+Peter Pan deposited 4410.33$ from their Savings account at 2022/04/24 20:14:59
+
+Peter Pan deposited 3381.86$ from their Checking account at 2022/04/24 20:15:01
+
+Peter Pan paid 662.56$ from their Checking account to Mikayla Dennis into their Checking account at 2022/04/24 20:15:02
+
+Peter Pan paid 452.15$ from their Checking account to Laura Smith into their Checking account at 2022/04/24 20:15:03
+
+Peter Pan deposited 4934.90$ from their Savings account at 2022/04/24 20:15:04
+
+Peter Pan purchased a Random Item 17 for 30.75$ from miners bank using their Checking account at 2022/04/24 20:15:04
+
+Peter Pan paid 39.02$ from their Checking account to Dennis Smith into their Savings account at 2022/04/24 20:15:05
+
+Peter Pan deposited 4042.24$ from their Savings account at 2022/04/24 20:15:06
+
+Peter Pan paid 70.78$ from their Checking account to Shere Khan into their Checking account at 2022/04/24 20:15:10
+
+Peter Pan paid 324.92$ from their Checking account to Debra Blackwell into their Savings account at 2022/04/24 20:15:10
+
+Peter Pan paid 560.07$ from their Checking account to Derrick Grant into their Savings account at 2022/04/24 20:15:13
+
+Peter Pan paid 946.66$ from their Checking account to Joshua Hickman into their Savings account at 2022/04/24 20:15:14
+
+Peter Pan deposited 636.14$ from their Checking account at 2022/04/24 20:15:14
+
+Peter Pan paid 927.39$ from their Checking account to Ryan Rush into their Checking account at 2022/04/24 20:15:17
+
+Peter Pan deposited 1188.19$ from their Savings account at 2022/04/24 20:15:17
+
+Peter Pan deposited 267.47$ from their Savings account at 2022/04/24 20:15:17
+
+Peter Pan purchased a Random Item 62 for 46.23$ from miners bank using their Checking account at 2022/04/24 20:15:17
+
+Peter Pan deposited 2777.17$ from their Checking account at 2022/04/24 20:15:19
+
+Peter Pan purchased a Random Item 10 for 5.34$ from miners bank using their Checking account at 2022/04/24 20:15:21
+
+Peter Pan paid 912.68$ from their Checking account to Cory Byrd into their Savings account at 2022/04/24 20:15:21
+
+Peter Pan purchased a Random Item 8 for 8.73$ from miners bank using their Checking account at 2022/04/24 20:15:23
+
+Peter Pan paid 961.01$ from their Checking account to Jenny Henry into their Checking account at 2022/04/24 20:15:23
+
+Peter Pan paid 340.38$ from their Checking account to David Mares into their Savings account at 2022/04/24 20:15:23
+
+Peter Pan paid 372.53$ from their Checking account to David Summers into their Savings account at 2022/04/24 20:15:24
+
+Peter Pan paid 114.23$ from their Checking account to Janet Hughes into their Checking account at 2022/04/24 20:15:25
+
+Peter Pan deposited 338.27$ from their Checking account at 2022/04/24 20:15:25
+
+Peter Pan deposited 3914.34$ from their Checking account at 2022/04/24 20:15:25
+
+Peter Pan deposited 4477.87$ from their Savings account at 2022/04/24 20:15:26
+
+Peter Pan paid 61.63$ from their Checking account to David Cox into their Checking account at 2022/04/24 20:15:26
+
+Peter Pan paid 975.58$ from their Checking account to David Brown into their Checking account at 2022/04/24 20:15:27
+
+Peter Pan deposited 2007.14$ from their Checking account at 2022/04/24 20:15:27
+
+Peter Pan deposited 3586.77$ from their Checking account at 2022/04/24 20:15:27
+
+Peter Pan purchased a Random Item 16 for 17.04$ from miners bank using their Checking account at 2022/04/24 20:15:27
+
+Peter Pan paid 584.79$ from their Checking account to Gloria Page into their Savings account at 2022/04/24 20:15:27
+
+Peter Pan paid 139.55$ from their Checking account to Erika Lopez into their Savings account at 2022/04/24 20:15:27
+
+Peter Pan deposited 4255.28$ from their Savings account at 2022/04/24 20:15:30
+
+Peter Pan deposited 4524.23$ from their Savings account at 2022/04/24 20:15:30
+
+Peter Pan purchased a Random Item 28 for 51.74$ from miners bank using their Checking account at 2022/04/24 20:15:30
+
+Peter Pan deposited 3198.81$ from their Savings account at 2022/04/24 20:15:31
+
+Peter Pan paid 692.39$ from their Checking account to Nicole Hart into their Checking account at 2022/04/24 20:15:32
+
+Peter Pan deposited 1207.88$ from their Checking account at 2022/04/24 20:15:37
+
+Peter Pan purchased a Pen for 3.99$ from miners bank using their Checking account at 2022/04/24 20:15:38
+
+Peter Pan purchased a Pencil for 2.99$ from miners bank using their Checking account at 2022/04/24 20:15:38
+
+Peter Pan paid 588.59$ from their Checking account to Donald Tran into their Checking account at 2022/04/24 20:15:38
+
+Peter Pan paid 625.29$ from their Checking account to Robert Leblanc into their Checking account at 2022/04/24 20:15:39
+
+Peter Pan paid 893.62$ from their Checking account to Stephen Ellis into their Savings account at 2022/04/24 20:15:40
+
+Peter Pan purchased a Random Item 22 for 65.99$ from miners bank using their Checking account at 2022/04/24 20:15:42
+
+Peter Pan purchased a Random Item 62 for 46.23$ from miners bank using their Checking account at 2022/04/24 20:15:43
+
+Peter Pan purchased a Random Item 66 for 97.81$ from miners bank using their Checking account at 2022/04/24 20:15:44
+
+Peter Pan paid 581.19$ from their Checking account to Erika Lopez into their Checking account at 2022/04/24 20:15:45
+
+Peter Pan paid 349.26$ from their Checking account to Brandon Miller into their Savings account at 2022/04/24 20:15:45
+
+Peter Pan paid 113.44$ from their Checking account to Jerry Rodriguez into their Checking account at 2022/04/24 20:15:45
+
+Peter Pan paid 742.08$ from their Checking account to Diana Matthews into their Savings account at 2022/04/24 20:15:46
+
+Peter Pan purchased a Random Item 60 for 95.85$ from miners bank using their Checking account at 2022/04/24 20:15:46
+
+Peter Pan paid 267.57$ from their Checking account to Patricia Mcdonald into their Checking account at 2022/04/24 20:15:47
+
+Peter Pan deposited 2116.36$ from their Savings account at 2022/04/24 20:15:47
+
+Peter Pan paid 687.73$ from their Checking account to Ryan Bowman into their Savings account at 2022/04/24 20:15:47
+
+Peter Pan paid 542.21$ from their Checking account to Stephanie Harris into their Checking account at 2022/04/24 20:15:49
+
+Peter Pan deposited 4166.63$ from their Savings account at 2022/04/24 20:15:50
+
+Peter Pan purchased a Random Item 19 for 51.56$ from miners bank using their Checking account at 2022/04/24 20:15:52
+
+Peter Pan purchased a Random Item 39 for 91.15$ from miners bank using their Checking account at 2022/04/24 20:15:52
+
+Peter Pan paid 39.16$ from their Checking account to Maria Mitchell into their Savings account at 2022/04/24 20:15:52
+
+
+###############################################

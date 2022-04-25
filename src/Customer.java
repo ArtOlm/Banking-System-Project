@@ -159,9 +159,9 @@ public class Customer extends Person{
 	 * @return returns a formatted String containing the customers information
 	 */
 	public String toString(){
-		String temp = super.toString() +  "\nID: " + this.id + "\nPin: " + this.pin + "\nChecking Account Number: " + this.cAcc.getAccNum() + String.format("   Current Checking Account Balance: %.2f$",this.cAcc.getBalance());
-		temp += "\nSavings Account Number: " + this.sAcc.getAccNum() + String.format("   Current Savings Account Balance: %.2f$",this.sAcc.getBalance());
-		temp += "\nCredit Account Number: " + this.crAcc.getAccNum() + String.format("   Current Credit Account Balance: %.2f$",this.crAcc.getBalance()) + "   Credit Score: " + this.crAcc.getScore() + "   Credit Limit: " + this.crAcc.getLimit();
+		String temp = super.toString() +  "\nID: " + this.id + "\nPin: " + this.pin + "\nChecking Account Number: " + this.cAcc.getAccNum() + String.format("   Current Checking Account Balance: $%.2f",this.cAcc.getBalance());
+		temp += "\nSavings Account Number: " + this.sAcc.getAccNum() + String.format("   Current Savings Account Balance: $%.2f",this.sAcc.getBalance());
+		temp += "\nCredit Account Number: " + this.crAcc.getAccNum() + String.format("   Current Credit Account Balance: $%.2f",this.crAcc.getBalance()) + "   Credit Score: " + this.crAcc.getScore() + "   Credit Limit: " + this.crAcc.getLimit();
 		return temp;
 	}
 	/**
