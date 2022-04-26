@@ -2,7 +2,7 @@
  * @author Jaehyeon Park
  * abstarct class, serves as the template for Cutomer
  */
-public class Person {
+public abstract class Person {
 	private String firstName;
 	private String lastName;
 	private String address;
